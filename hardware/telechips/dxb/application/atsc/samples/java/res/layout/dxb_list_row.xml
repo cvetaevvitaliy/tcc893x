@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="@dimen/list_row_height"
+	>
+	<TextView
+		android:id="@+id/list_row_icon_text"
+		android:layout_x="@dimen/list_row_icon_x"
+		android:layout_y="@dimen/list_row_icon_y"
+		android:layout_width="@dimen/list_row_height"
+		android:layout_height="@dimen/list_row_height"
+		android:textSize="24px"
+		android:gravity="center"
+		>
+	</TextView>
+	
+	<TextView
+		android:id="@+id/list_row_num_text"
+		android:layout_x="@dimen/list_row_num_x"
+		android:layout_width="@dimen/list_row_num_width"
+		android:layout_height="fill_parent"
+		android:textSize="@dimen/list_row_num_font"
+		android:gravity="center_vertical"
+		>
+	</TextView>
+
+	<TextView
+		android:id="@+id/list_row_cname_text"
+		android:layout_x="@dimen/list_row_cname_x"
+		android:layout_width="@dimen/list_row_cname_width"
+		android:layout_height="fill_parent"
+		android:textSize="@dimen/list_row_cname_font"
+		android:gravity="center_vertical"
+		>
+	</TextView>
+
+	<ImageView
+		android:id="@+id/list_row_indicator"
+		android:layout_x="@dimen/list_row_indicator_x"
+		android:layout_y="@dimen/list_row_indicator_y"
+		android:layout_width="@dimen/list_row_indicator_width"
+		android:layout_height="@dimen/list_row_indicator_height" 
+		>
+	</ImageView>
+</AbsoluteLayout>

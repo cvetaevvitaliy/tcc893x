@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 Telechips, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<string name="_0to799">0~799</string>
+	<string name="age">Idade</string>
+	<string name="area_code">Código de área</string>
+	<string name="audio">Áudio</string>
+	<string name="bcas_card_error">Erro de cartão B-CAS</string>
+	<string name="bcas_card_information">Informação de cartão B-CAS</string>
+	<string name="bilingual">bilíngüe</string>
+	<string name="cancel">Cancelar</string>
+	<string name="caption">Subtítulo</string>
+	<string name="capture">Capturar</string>
+	<string name="card_identifier">Identificador de Cartão</string>
+	<string name="change_area">Alterar Área</string>
+	<string name="channel">Canal</string>
+	<string name="channel_list">Lista de Canais</string>
+	<string name="countrycode">Código do país</string>
+	<string name="dual_audio">Dual Áudio</string>
+	<string name="descriptive_video_service">DVS</string>
+	<string name="epg">EPG</string>
+	<string name="ews">Transmissão de Emergência</string>
+	<string name="failed">Falha!</string>
+	<string name="file_open_error">Erro ao abrir o arquivo !</string>
+	<string name="first_service">O primeiro serviço!</string>
+	<string name="first_data">Os primeiros dados!</string>
+	<string name="group_id">ID do grupo</string>
+	<string name="handover">Entrega</string>
+	<string name="handover_relay">Entrega Relay</string>
+	<string name="handover_affiliate">Entrega Afiliado</string>
+	<string name="individual_id">Identificação individual</string>
+	<string name="invalid_memory">Memória Invalida</string>
+	<string name="last_service">último serviço!</string>
+	<string name="language">Idioma</string>
+	<string name="loading">Carregamento...</string>
+	<string name="manual">Manual</string>
+	<string name="manual_scan">Verificação Manual</string>
+	<string name="manual_scan_title">Verificação Manual (KHz)</string>
+	<string name="manual_scan_warning">Freqüência deve ser de 6 dígitos.</string>
+	<string name="manual_scan_error">A frequência não pode ser verificado devido a uma entrada inválida.</string>
+	<string name="media_scanning">Digitalização de mídia</string>
+	<string name="memory_error">Erro de memória</string>
+	<string name="memory_full">Memória Cheia !</string>
+	<string name="no">não</string>
+	<string name="no_channel">O Canal não pode ser encontrado</string>
+	<string name="no_info">Sem informação</string>
+	<string name="not_support">Não suporta</string>
+	<string name="option">Opção</string>
+	<string name="option_subtitle">opção de Subtítulo</string>
+	<string name="off">Desligado</string>
+	<string name="ok">OK</string>
+	<string name="on">Ligado</string>
+	<string name="page">Página</string>
+	<string name="parental_rating">Classificação indicativa</string>
+	<string name="password">Senha</string>
+	<string name="please_check_bcas_card">Por favor, Verifique o Cartão B-CAS.</string>
+	<string name="please_scan">Por favor escaneie</string>
+	<string name="please_wait">Por Aguarde</string>
+	<string name="preset">Padrão</string>
+	<string name="rec">Gravar</string>
+	<string name="rec_stop">Parar Gravação</string>
+	<string name="record">Gravar</string>
+	<string name="recording">Gravação</string>
+	<string name="recording_error">Falha de Gravação!</string>
+	<string name="saved">Salvar!</string>
+	<string name="scan">Escanear</string>
+	<string name="screen">Tela</string>
+	<string name="settings">Configurações</string>
+	<string name="start">Começar</string>
+	<string name="storage">Armazenamento</string>
+	<string name="subtitle">Subtítulo</string>
+	<string name="super_impose">Sobrepor</string>
+	<string name="teletext">teletexto</string>
+	<string name="ttx">TTX</string>
+	<string name="ttx_prev">&lt;</string>
+	<string name="ttx_next">&gt;</string>
+	<string name="ttx_fprev">&lt;&lt;</string>
+	<string name="ttx_fnext">&gt;&gt;</string>
+	<string name="tv_channel">Canal de TV</string>
+	<string name="update_channel">Atualizando canal</string>	
+	<string name="video">Vídeo</string>
+	<string name="weak_signal">Sinal é fraco!</string>
+	<string name="yes">Sim</string>
+	<string name="bcas_mode">Modo B-CAS</string>
+	<string name="frequency_support">Apoio frequência</string>
+	<string name="bcas_card_detect_error_please_check_bcas_card">o cartão de B-CAS não é detectada!!!\nPor favor, verifique o cartão de BCAS!!.</string>
+	<string name="exiting_media_storage_inserted">Saindo...(Mídia de armazenamento inserida)\nPor favor executar o aplicativo mais tarde...</string>
+	<string name="for_applying_a_country_code_the_application_will_be_closed">Para a aplicação de um código de país, o aplicativo será fechado.\nPor favor, reinicie-o.</string>
+	<string name="if_you_want_to_use_radio_scan_channel">Se você quiser utilizar o Rádio, busca de canais.</string>
+	<string name="if_you_want_to_use_tv_scan_channel">Se você quiser utilizar o TV,  busca de canais.</string>
+	<string name="invalid_bcas_card_please_check_bcas_card">Inválido o cartão B-CAS!!!\nPor favor, Verifique B-CAS Cartão!!.</string>
+	<string name="now_scanning_media">Escaneando mídia agora…...\nPor favor execute o aplicativo mais tarde…</string>
+	<string name="Please_enter_the_correct_password">Por favor insira a senha correta.</string>
+	<string name="please_wait_cancel_scanning">Por favor aguarde um momento</string>
+	<string name="please_wait_while_searching">Por favor aguarde enquanto busca</string>
+	<string name="receiving_signal_strength_is_weak">Sinal de recepção está fraco.\nPor favor espere um minuto</string>
+	
+	
+	<!-- [PVR-Recording/FilePlay] -->
+	<string name="pvr">PVR</string>
+	<string name="pvr_channel">Canal de PVR</string>
+	<string name="failed_no_free_space">Falhou! Não há mais espaço livre</string>
+	<string name="failed_invalid_storage">Falhou! Favor use o armazenamento USB</string>
+	<string name="info">Informação</string>
+	
+	<!-- [PVR-Schedule] -->
+	<string name="book">Livro</string>
+	<string name="schedule">Cronograma</string>
+	<string name="event">Evento</string>
+	<string name="event_edit">Editar Evento</string>
+	<string name="program">Programa</string>
+	<string name="date">Data</string>
+	<string name="time">Hora</string>
+	<string name="repeat">Repetir</string>
+	<string name="status">Estado</string>
+	<string name="add">Adicionar</string>
+	<string name="edit">Editar</string>
+	<string name="del">Apagar</string>
+	<string name="exit">Sair</string>
+	<string name="event_add">Adicionar Evento</string>
+	<string name="channel_type">Tipo de canal</string>
+	<string name="channel_no">Não tem canal</string>
+	<string name="channel_name">Nome do canal</string>
+	<string name="start_date">Data de começo</string>
+	<string name="start_time">Tempo de começo</string>
+	<string name="end_time">Tempo de finalização</string>
+	<string name="mode">Modo</string>
+	<string name="confirm">Confirmar</string>
+	<string name="select">Selecionar</string>
+	<string name="once">Uma vez</string>
+	<string name="weekly">Semanalmente</string>
+	<string name="view">Ver</string>
+	<string name="daily">Diariamente</string>
+	
+	<string name="the_schedule_is_invalid">O cronograma é invalido.</string>
+	<string name="the_schedule_is_invalid_max_recording_time_is_10_hours">O cronograma é invalido, tempo máximo de gravação é 10 horas.</string>
+	<string name="this_schedule_is_conflict_with_event">Esse cronograma está em conflito com o evento.</string>
+	<string name="invalid_end_time">Tempo de finalização invalido!</string>
+	<string name="reminder">Lembrete</string>
+	<string name="book_event_time_up">Tempo de Evento do livre esgotado.</string> 
+
+	<!-- [ISDB-T] specific -->
+		<string name="app_name">DTV SBTVD</string>
+		<string name="dxb_options">[SBTVD] Opção</string>
+	<!-- [ISDB-T] specific -->
+		<string name="signal_quality">Qualidade do Sinal</string>
+		<string name="seamless_change">Sem costura mudar</string>
+
+	<!-- preset mode -->
+	<string name="preset_mode_select">Preset</string>
+</resources>

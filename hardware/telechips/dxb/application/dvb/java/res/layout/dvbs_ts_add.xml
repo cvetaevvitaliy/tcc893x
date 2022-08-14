@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 Telechips, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp">
+	   
+		<TextView
+			android:layout_width="200px"
+			android:textSize="20sp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:singleLine="true"
+			android:text="@string/item_no"/>
+		
+		<TextView
+		    android:id="@+id/ts_number"
+			android:layout_width="100px"
+			android:textSize="20sp"
+			android:layout_height="wrap_content"
+			android:singleLine="true"/>
+		
+	</LinearLayout>
+    
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp">
+	   
+		<TextView
+			android:id="@+id/text_ts_frequency"
+			android:layout_width="200px"
+			android:textSize="20sp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:singleLine="true"
+			android:text="@string/ts_frequency"/>
+		
+		<EditText
+		    android:id="@+id/edittext_ts_frequency"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:singleLine="true"
+			android:numeric="integer"/>
+		
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp">
+		
+		<TextView
+			android:layout_width="200px"
+			android:textSize="20sp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:singleLine="true"
+			android:text="@string/ts_symbol"/>
+
+		<EditText
+		    android:id="@+id/edittext_ts_symbol"
+			android:layout_width="120px"
+			android:layout_height="wrap_content"
+			android:singleLine="true"
+			android:numeric="integer"/>
+
+	</LinearLayout>
+	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp">
+		
+		<TextView
+			android:layout_width="200px"
+			android:textSize="20sp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:singleLine="true"
+			android:text="@string/ts_polarity"/>
+		
+		<Button
+			android:id="@+id/button_ts_polarity"
+			android:layout_width="80px"
+			android:layout_height="wrap_content"/>
+	</LinearLayout>
+ 
+</LinearLayout>

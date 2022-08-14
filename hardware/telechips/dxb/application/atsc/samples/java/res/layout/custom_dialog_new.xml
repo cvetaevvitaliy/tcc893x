@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_custom_dialog_new"
+	android:orientation="vertical" 
+	android:layout_width="@dimen/custom_dialog_width"
+	android:layout_height="@dimen/custom_dialog_height"
+	android:gravity="center"
+	>
+
+ 	<LinearLayout
+ 		android:orientation="horizontal"
+ 		android:layout_width="fill_parent"
+ 		android:layout_height="wrap_content"
+ 		>
+ 		<ListView
+ 			android:id="@+id/dialog_listview"
+ 			android:layout_width="fill_parent"
+ 			android:layout_height="@dimen/custom_dialog_list_height"
+			android:dividerHeight="1px"
+ 			android:orientation="horizontal"
+ 			android:scrollbarSize ="1px"
+ 			android:isScrollContainer ="true"
+ 			android:textColor="@drawable/custom_dialog_textcolor"
+ 		/>
+ 	</LinearLayout>
+ 	
+	<LinearLayout 
+		android:id="@+id/dialog_buttonPanel"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:minHeight="54dip"
+		android:orientation="horizontal"
+		android:background="#aaa">
+		<LinearLayout 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:paddingTop="4dip"
+			android:paddingLeft="2dip"
+			android:paddingRight="2dip"
+			>
+			<LinearLayout
+				android:id="@+id/dialog_leftSpacer"
+				android:layout_width="0dp"
+				android:layout_weight="0.25"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:visibility="gone"
+			/> 
+			<Button
+				android:id="@+id/dialog_button1"
+				android:layout_width="0dp"
+				android:layout_gravity="left"
+				android:layout_weight="1"
+				android:maxLines="3"
+				android:text="@+string/cancel"
+				android:layout_height="wrap_content"
+	 			android:textColor="#FF373737"
+			/> 
+			<Button
+				android:id="@+id/dialog_button2"
+				android:layout_width="0dp"
+				android:layout_gravity="right"
+				android:layout_weight="1"
+				android:maxLines="3"
+				android:text="@+string/ok"
+				android:layout_height="wrap_content"
+	 			android:textColor="#FF373737"
+			/> 
+			<LinearLayout
+				android:id="@+id/dialog_rightSpacer"
+				android:layout_width="0dp"
+				android:layout_weight="0.25"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:visibility="gone"
+			/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

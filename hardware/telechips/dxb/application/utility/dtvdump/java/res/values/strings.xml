@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">DTV Dump</string>
+    
+	<string name="_6_mhz">6MHz</string>
+	<string name="_7_mhz">7MHz</string>
+	<string name="_8_mhz">8MHz</string>
+	<string name="_:">:</string>
+	<string name="_VSB_8">VSB8</string>
+	<string name="_VSB_16">VSB16</string>
+	<string name="_QAM_32">QAM32</string>
+	<string name="_QAM_64">QAM64</string>
+	<string name="_QAM_128">QAM128</string>
+	<string name="_QAM_256">QAM256</string>
+	
+	<string name="modulation">Modulation</string>
+	<string name="bandwidth">Bandwidth</string>
+	<string name="channel">Channel</string>
+	<string name="ip">IP</string>
+	<string name="port">PORT</string>
+	<string name="isdbt">isdbt</string>
+	<string name="dvbt">dvbt</string>
+	<string name="dvbs">dvbs</string>
+	<string name="atsc">atsc</string>
+	<string name="iptv">iptv</string>
+	<string name="h">H</string>
+	<string name="mhz">MHz</string>
+	<string name="khz">KHz</string>
+	<string name="name">Name</string>
+	<string name="path">Path</string>
+	<string name="player">Player</string>
+	<string name="pol">POL</string>
+	<string name="Recording">Recording</string>
+	<string name="sdcard0">sdcard0</string>
+	<string name="sdcard1">sdcard1</string>
+	<string name="search">Search</string>
+	<string name="start_dump">Start dump</string>
+	<string name="stop_dump">Stop dump</string>
+	<string name="stopped_record">Stopped record.</string>
+	<string name="storage">Storage</string>
+	<string name="usb0">usb0</string>
+	<string name="usb1">usb1</string>
+	<string name="v">V</string>
+	
+	<string name="ISDB_T">ISDB-T</string>
+	<string name="DVB_T">DVB-T</string>
+	<string name="DVB_S">DVB-S</string>
+	<string name="ATSC">ATSC</string>
+	<string name="IPTV">IPTV</string>
+		
+	<string name="please_check_your_settings">Please check your settings.</string>
+	<string name="please_set_bandwidth">Please set bandwidth.</string>
+	<string name="please_set_channel">Please set channel.</string>
+	<string name="please_set_ip">Please set ip.</string>
+	<string name="please_set_port">Please set port.</string>
+	<string name="please_set_name">Please set name.</string>
+	<string name="please_set_player">Please set player.</string>
+	<string name="please_set_pol">Please set POL</string>
+	<string name="please_set_modulation">Please set modualtion.</string>
+	<string name="please_set_storage">Please set storage.</string>
+	<string name="please_start_dump">Please start dump.</string>
+	<string name="please_start_search">Please start search.</string>
+	<string name="search_fail">Search fail.</string>
+	<string name="search_success">Search success.</string>
+	<string name="fail_dump_start">Failed Dump start ....</string>
+
+</resources>

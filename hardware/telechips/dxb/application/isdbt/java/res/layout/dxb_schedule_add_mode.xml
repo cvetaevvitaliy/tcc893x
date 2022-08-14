@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 Telechips, Inc.
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		/>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="5"
+		android:orientation="horizontal"
+		>
+		<TextView
+			android:id="@+id/schedule_add_info_mode"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="11"
+			android:layout_marginLeft="10px"
+			android:gravity="center_vertical"
+			android:text="@string/mode"
+			/>
+		<AbsoluteLayout
+			android:id="@+id/schedule_add_mode_left_g"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal"
+				>
+				<View
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					/>
+	
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="2"
+					android:orientation="vertical"
+					>
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="0dp"
+						android:layout_weight="1"
+						/>
+				    
+					<ImageView
+						android:id="@+id/schedule_add_mode_left"
+						android:layout_width="match_parent"
+						android:layout_height="0dp"
+						android:layout_weight="3"
+						android:background="@drawable/dxb_portable_schedule_left_btn_ics"
+						android:focusable="true"
+						/>
+				    
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="0dp"
+						android:layout_weight="2"
+						/>
+				</LinearLayout>
+			    		    
+				<View
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					/>
+			</LinearLayout>
+		</AbsoluteLayout>
+	
+		<TextView
+			android:id="@+id/schedule_add_mode_text"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="9"
+			android:layout_marginLeft="10px"
+			android:gravity="center_vertical"
+			android:focusable="true"
+			/>
+		<AbsoluteLayout
+			android:id="@+id/schedule_add_mode_right_g"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal"
+				>
+				<View
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					/>
+	
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="2"
+					android:orientation="vertical"
+					>
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="0dp"
+						android:layout_weight="1"
+						/>
+				    
+					<ImageView
+						android:id="@+id/schedule_add_mode_right"
+						android:layout_width="match_parent"
+						android:layout_height="0dp"
+						android:layout_weight="3"
+						android:background="@drawable/dxb_portable_schedule_right_btn_ics"
+						android:focusable="true"
+						/>
+				    
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="0dp"
+						android:layout_weight="2"
+						/>
+				</LinearLayout>
+			    		    
+				<View
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					/>
+			</LinearLayout>
+		</AbsoluteLayout>
+	</LinearLayout>
+	
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+	    />
+</LinearLayout>

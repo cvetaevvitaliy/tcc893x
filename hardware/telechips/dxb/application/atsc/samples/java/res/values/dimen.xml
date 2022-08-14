@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<!-- Common -->
+		<dimen name="indicator_height">25px</dimen>
+		
+		<dimen name="indicator_section_x">670px</dimen>
+		<dimen name="indicator_section_y">2px</dimen>
+		<dimen name="indicator_section_width">40px</dimen>
+		<dimen name="indicator_section_height">21px</dimen>
+	
+		<dimen name="indicator_time_x">745px</dimen>
+		<dimen name="indicator_time_y">0px</dimen>
+		<dimen name="indicator_time_width">100px</dimen>
+		<dimen name="indicator_time_height">25px</dimen>
+		<dimen name="indicator_time_font">18px</dimen>
+	
+	<!-- Main -->
+		<dimen name="clock_x">670px</dimen>
+		<dimen name="clock_y">0px</dimen>
+		<dimen name="clock_width">150px</dimen>
+		<dimen name="clock_height">25px</dimen>
+		
+	<!-- List View -->
+		<!-- tab -->
+		<dimen name="list_body_x">0px</dimen>
+		<dimen name="list_body_y">25px</dimen>
+		<dimen name="list_body_width">490px</dimen>
+		<dimen name="list_body_height">455px</dimen>
+
+		<dimen name="list_tab_height">96px</dimen>
+		
+		<!-- list -->
+		<dimen name="list_scrollbar_size">4px</dimen>
+		<dimen name="list_divider_height">1px</dimen>
+		
+		<!-- row -->
+		<dimen name="list_row_height">58px</dimen>
+		
+		<dimen name="list_row_icon_x">10px</dimen>
+		<dimen name="list_row_icon_y">0px</dimen>
+		
+		<dimen name="list_row_name_x">68px</dimen>
+		<dimen name="list_row_name_width">400px</dimen>
+		<dimen name="list_row_name_font">18px</dimen>
+		
+		<dimen name="list_row_cname_x">118px</dimen>
+		<dimen name="list_row_cname_width">370px</dimen>
+		<dimen name="list_row_cname_font">18px</dimen>
+		
+		<dimen name="list_row_num_x">68px</dimen>
+		<dimen name="list_row_num_width">50px</dimen>
+		<dimen name="list_row_num_font">18px</dimen>
+		
+		<dimen name="list_row_indicator_x">407px</dimen>
+		<dimen name="list_row_indicator_y">5px</dimen>
+		<dimen name="list_row_indicator_width">72px</dimen>
+		<dimen name="list_row_indicator_height">48px</dimen>
+		
+		<!-- title -->		
+		<dimen name="list_title_x">565px</dimen>
+		<dimen name="list_title_y">35px</dimen>
+		<dimen name="list_title_width">207px</dimen>
+		<dimen name="list_title_height">65px</dimen>
+		<dimen name="list_title_font">18px</dimen>
+		
+		<!-- title list num-->		
+		<dimen name="list_atsc_title_x">560px</dimen>
+		<dimen name="list_atsc_title_y">35px</dimen>
+		<dimen name="list_atsc_title_width">205px</dimen>
+		<dimen name="list_atsc_title_height">25px</dimen>
+		<dimen name="list_atsc_title_font">18px</dimen>
+
+		<!-- image -->
+		<dimen name="list_title_image_x">513px</dimen>
+		<dimen name="list_title_image_y">35px</dimen>
+		<dimen name="list_title_image_width">48px</dimen>
+		<dimen name="list_title_image_height">48px</dimen>
+
+		<dimen name="list_atsc_title_image_x">507px</dimen>
+		<dimen name="list_atsc_title_image_y">35px</dimen>
+
+		<!-- message -->
+		<dimen name="list_message_x">30px</dimen>
+		<dimen name="list_message_y">150px</dimen>
+		<dimen name="list_message_width">430px</dimen>
+		<dimen name="list_message_height">90px</dimen>
+		<dimen name="list_message_font">18px</dimen>
+						
+		<!-- toast -->
+		<dimen name="list_toast_x_offset">250px</dimen>
+		<dimen name="list_toast_y_offset">-80px</dimen>
+		
+		<!-- video -->
+		<dimen name="list_view_x">507px</dimen>
+		<dimen name="list_view_y">87px</dimen>
+		<dimen name="list_view_width">279px</dimen>
+		<dimen name="list_view_height">210px</dimen>
+		
+		<dimen name="list_image_x">584px</dimen>
+		<dimen name="list_image_y">133px</dimen>
+		<dimen name="list_image_width">128px</dimen>
+		<dimen name="list_image_height">128px</dimen>
+		
+		<dimen name="list_count_x">493px</dimen>
+		<dimen name="list_count_y">325px</dimen>
+		<dimen name="list_atsc_count_y">440px</dimen>
+		<dimen name="list_count_width">307px</dimen>
+		<dimen name="list_count_height">30px</dimen>
+		<dimen name="list_count_font">18px</dimen>
+		
+		<dimen name="list_scan_x">493px</dimen>
+		<dimen name="list_scan_y">415px</dimen>
+		<dimen name="list_scan_width">308px</dimen>
+		<dimen name="list_scan_height">65px</dimen>
+		<dimen name="list_scan_font">24px</dimen>
+		
+		<dimen name="list_atsc_scan_x">507px</dimen>
+		<dimen name="list_atsc_scan_y">419px</dimen>
+		<dimen name="list_atsc_scan_width">280px</dimen>
+		<dimen name="list_atsc_scan_height">47px</dimen>
+
+		<dimen name="list_popup_width">270px</dimen>
+		<dimen name="list_popup_font">24px</dimen>
+		<dimen name="list_popup_paddingside">1dip</dimen>
+
+	<!-- Full View -->
+		<dimen name="full_title_y">25px</dimen>
+		<dimen name="full_title_height">62px</dimen>
+		<dimen name="full_title_font">18px</dimen>
+		
+		<dimen name="full_image_x">300px</dimen>
+		<dimen name="full_image_y">100px</dimen>
+		<dimen name="full_image_width">200px</dimen>
+		<dimen name="full_image_height">200px</dimen>
+		
+		<dimen name="full_text_x">200px</dimen>
+		<dimen name="full_text_y">320px</dimen>
+		<dimen name="full_text_width">400px</dimen>
+		<dimen name="full_text_height">60px</dimen>
+
+		<dimen name="full_up_x">737px</dimen>
+		<dimen name="full_up_y">127px</dimen>
+		<dimen name="full_up_width">48px</dimen>
+		<dimen name="full_up_height">48px</dimen>
+		
+		<dimen name="full_down_x">737px</dimen>
+		<dimen name="full_down_y">297px</dimen>
+		<dimen name="full_down_width">48px</dimen>
+		<dimen name="full_down_height">48px</dimen>
+
+		<!--  rec -->
+		<dimen name="full_group_rec_x">0px</dimen>
+		<dimen name="full_group_rec_y">345px</dimen>
+		<dimen name="full_group_rec_height">135px</dimen>
+
+		<dimen name="full_rec_icon_x">10px</dimen>
+		<dimen name="full_rec_icon_y">50px</dimen>
+		<dimen name="full_rec_icon_width">60px</dimen>
+		<dimen name="full_rec_icon_height">60px</dimen>
+
+		<dimen name="full_rec_text_x">45px</dimen>
+		<dimen name="full_rec_text_y">0px</dimen>
+		<dimen name="full_rec_text_width">100px</dimen>
+		<dimen name="full_rec_text_height">48px</dimen>
+		<dimen name="full_rec_text_font">18px</dimen>
+
+		<dimen name="full_rec_time_x">90px</dimen>
+		<dimen name="full_rec_time_y">0px</dimen>
+		<dimen name="full_rec_time_width">100px</dimen>
+		<dimen name="full_rec_time_height">48px</dimen>
+		<dimen name="full_rec_time_font">18px</dimen>
+
+		<dimen name="full_rec_button_x">75px</dimen>
+		<dimen name="full_rec_button_y">55px</dimen>
+		<dimen name="full_rec_button_width">130px</dimen>
+		<dimen name="full_rec_button_height">60px</dimen>
+		<dimen name="full_rec_button_font">18px</dimen>
+		
+	<!-- closed caption -->
+		<dimen name="closedcaption_x">0px</dimen>
+		<dimen name="closedcaption_y">570px</dimen>
+		<dimen name="closedcaption_width">1280px</dimen>
+		<dimen name="closedcaption_height">150px</dimen>
+
+	<!-- EPG -->
+		<dimen name="epg_list_scrollbar_size">10px</dimen>
+		<dimen name="epg_list_divider_height">1px</dimen>
+		
+		<!-- list view -->
+		<dimen name="title_x">0px</dimen>
+		<dimen name="title_y">25px</dimen>
+		<dimen name="title_width">800px</dimen>
+		<dimen name="title_height">62px</dimen>
+
+		<dimen name="title_icon_x">20px</dimen>
+		<dimen name="title_icon_y">35px</dimen>
+		<dimen name="title_icon_width">48px</dimen>
+		<dimen name="title_icon_height">48px</dimen>
+
+		<dimen name="title_text_x">89px</dimen>
+		<dimen name="title_text_y">25px</dimen>
+		<dimen name="title_text_width">400px</dimen>
+		<dimen name="title_text_height">62px</dimen>
+		<dimen name="title_text_font">24px</dimen>
+		
+		<!-- epg - index -->
+		<dimen name="epg_index_x">502px</dimen>
+		<dimen name="epg_index_y">31px</dimen>
+		<dimen name="epg_index_width">290px</dimen>
+		<dimen name="epg_index_height">48px</dimen>
+		
+		<dimen name="epg_prev_x">0px</dimen>
+		<dimen name="epg_prev_y">0px</dimen>
+		<dimen name="epg_prev_width">48px</dimen>
+		<dimen name="epg_prev_height">48px</dimen>
+
+		<dimen name="epg_current_x">48px</dimen>
+		<dimen name="epg_current_y">0px</dimen>
+		<dimen name="epg_current_width">194px</dimen>
+		<dimen name="epg_current_height">48px</dimen>
+		<dimen name="epg_current_font">20px</dimen>
+		
+		<dimen name="epg_next_x">242px</dimen>
+		<dimen name="epg_next_y">0px</dimen>
+		<dimen name="epg_next_width">48px</dimen>
+		<dimen name="epg_next_height">48px</dimen>
+		
+		<!-- epg -->
+		<dimen name="epg_list_x">0px</dimen>
+		<dimen name="epg_list_y">87px</dimen>
+		<dimen name="epg_list_width">490px</dimen>
+		<dimen name="epg_list_height">236px</dimen>
+		<dimen name="epg_list_font">18px</dimen>
+		
+		<dimen name="epg_row_height">58px</dimen>
+		<dimen name="epg_row_time_x">20px</dimen>
+		<dimen name="epg_row_time_width">147px</dimen>
+		<dimen name="epg_row_name_x">167px</dimen>		
+		<dimen name="epg_row_name_width">303px</dimen>		
+		
+		<dimen name="epg_view_x">506px</dimen>
+		<dimen name="epg_view_y">98px</dimen>
+		<dimen name="epg_view_width">280px</dimen>
+		<dimen name="epg_view_height">210px</dimen>
+		
+		<dimen name="epg_image_x">540px</dimen>
+		<dimen name="epg_image_y">98px</dimen>
+		<dimen name="epg_image_width">210px</dimen>
+		<dimen name="epg_image_height">210px</dimen>
+
+		<dimen name="epg_name_x">20px</dimen>
+		<dimen name="epg_name_y">343px</dimen>
+		<dimen name="epg_name_width">760px</dimen>
+		<dimen name="epg_name_height">30px</dimen>
+		<dimen name="epg_name_font">18px</dimen>
+		
+		<dimen name="epg_detail_x">20px</dimen>
+		<dimen name="epg_detail_y">373px</dimen>
+		<dimen name="epg_detail_width">760px</dimen>
+		<dimen name="epg_detail_height">65px</dimen>
+		<dimen name="epg_detail_font">18px</dimen>
+		
+		<dimen name="epg_title_text_x">89px</dimen>
+		<dimen name="epg_title_text_y">25px</dimen>
+		<dimen name="epg_title_text_width">50px</dimen>
+		<dimen name="epg_title_text_height">62px</dimen>
+		<dimen name="epg_title_text_font">24px</dimen>
+
+		<dimen name="epg_pnumber_text_x">149px</dimen>
+		<dimen name="epg_pnumber_text_y">25px</dimen>
+		<dimen name="epg_pnumber_text_width">130px</dimen>
+		<dimen name="epg_pnumber_text_height">62px</dimen>
+		<dimen name="epg_pnumber_text_font">24px</dimen>
+
+		<dimen name="epg_pname_text_x">279px</dimen>
+		<dimen name="epg_pname_text_y">25px</dimen>
+		<dimen name="epg_pname_text_width">220px</dimen>
+		<dimen name="epg_pname_text_height">62px</dimen>
+		<dimen name="epg_pname_text_font">24px</dimen>
+		
+	<!-- [ISDB-T] specific -->
+		<!-- list view -->
+		<dimen name="head_x">0px</dimen>
+		<dimen name="head_y">25px</dimen>
+		<dimen name="head_width">493px</dimen>
+		<dimen name="head_height">62px</dimen>
+		
+		<dimen name="head_icon_x">20px</dimen>
+		<dimen name="head_icon_y">6px</dimen>
+		<dimen name="head_icon_width">48px</dimen>
+		<dimen name="head_icon_height">48px</dimen>
+		
+		<dimen name="head_text_x">89px</dimen>
+		<dimen name="head_text_y">0px</dimen>
+		<dimen name="head_text_width">400px</dimen>
+		<dimen name="head_text_height">62px</dimen>
+		<dimen name="head_text_font">24px</dimen>
+		
+		<dimen name="body_x">0px</dimen>
+		<dimen name="body_y">87px</dimen>
+		<dimen name="body_width">490px</dimen>
+		<dimen name="body_height">393px</dimen>
+		<!-- list view -->
+	<!-- [ISDB-T] specific -->
+
+	<!-- Menu difine -->
+		<!-- Common -->
+		<dimen name="full_menu_bg_y">385px</dimen>
+		<dimen name="full_menu_bg_width">800px</dimen>
+		<dimen name="full_menu_bg_height">95px</dimen>
+
+		<dimen name="full_menu_text_font">18px</dimen>
+		<!-- Common -->
+
+		<!-- 3ea Menu -->
+		<dimen name="full_3menu_bg_x">0px</dimen>
+		<dimen name="full_3menu_bg_y">405px</dimen>
+		<dimen name="full_3menu_bg_width">800px</dimen>
+		<dimen name="full_3menu_bg_height">75px</dimen>
+
+		<dimen name="full_3menu_width">267px</dimen>
+
+		<dimen name="full_3menu1_x">0px</dimen>
+
+		<dimen name="full_3menu1_icon_x">108px</dimen>
+		<dimen name="full_3menu1_icon_y">408px</dimen>
+		<dimen name="full_3menu1_icon_width">48px</dimen>
+		<dimen name="full_3menu1_icon_height">48px</dimen>
+
+		<dimen name="full_3menu1_text_x">0px</dimen>
+		<dimen name="full_3menu1_text_y">456px</dimen>
+		<dimen name="full_3menu1_text_width">267px</dimen>
+		<dimen name="full_3menu1_text_height">20px</dimen>
+
+		<dimen name="full_3menu2_x">267px</dimen>
+
+		<dimen name="full_3menu2_icon_x">375px</dimen>
+		<dimen name="full_3menu2_icon_y">408px</dimen>
+		<dimen name="full_3menu2_icon_width">48px</dimen>
+		<dimen name="full_3menu2_icon_height">48px</dimen>
+
+		<dimen name="full_3menu2_text_x">267px</dimen>
+		<dimen name="full_3menu2_text_y">456px</dimen>
+		<dimen name="full_3menu2_text_width">267px</dimen>
+		<dimen name="full_3menu2_text_height">20px</dimen>
+
+		<dimen name="full_3menu3_x">534px</dimen>
+
+		<dimen name="full_3menu3_icon_x">643px</dimen>
+		<dimen name="full_3menu3_icon_y">408px</dimen>
+		<dimen name="full_3menu3_icon_width">48px</dimen>
+		<dimen name="full_3menu3_icon_height">48px</dimen>
+
+		<dimen name="full_3menu3_text_x">534px</dimen>
+		<dimen name="full_3menu3_text_y">456px</dimen>
+		<dimen name="full_3menu3_text_width">267px</dimen>
+		<dimen name="full_3menu3_text_height">20px</dimen>
+		<!-- 3ea Menu -->
+
+		<!-- 4ea Menu -->
+		<dimen name="full_4menu_bg_x">0px</dimen>
+		<dimen name="full_4menu_bg_y">405px</dimen>
+		<dimen name="full_4menu_bg_width">800px</dimen>
+		<dimen name="full_4menu_bg_height">75px</dimen>
+
+		<dimen name="full_4menu_width">200px</dimen>
+
+		<dimen name="full_4menu1_x">0px</dimen>
+
+		<dimen name="full_4menu1_icon_x">76px</dimen>
+		<dimen name="full_4menu1_icon_y">408px</dimen>
+		<dimen name="full_4menu1_icon_width">48px</dimen>
+		<dimen name="full_4menu1_icon_height">48px</dimen>
+
+		<dimen name="full_4menu1_text_x">0px</dimen>
+		<dimen name="full_4menu1_text_y">456px</dimen>
+		<dimen name="full_4menu1_text_width">200px</dimen>
+		<dimen name="full_4menu1_text_height">20px</dimen>
+
+		<dimen name="full_4menu2_x">200px</dimen>
+
+		<dimen name="full_4menu2_icon_x">276px</dimen>
+		<dimen name="full_4menu2_icon_y">408px</dimen>
+		<dimen name="full_4menu2_icon_width">48px</dimen>
+		<dimen name="full_4menu2_icon_height">48px</dimen>
+
+		<dimen name="full_4menu2_text_x">200px</dimen>
+		<dimen name="full_4menu2_text_y">456px</dimen>
+		<dimen name="full_4menu2_text_width">200px</dimen>
+		<dimen name="full_4menu2_text_height">20px</dimen>
+
+		<dimen name="full_4menu3_x">400px</dimen>
+
+		<dimen name="full_4menu3_icon_x">476px</dimen>
+		<dimen name="full_4menu3_icon_y">408px</dimen>
+		<dimen name="full_4menu3_icon_width">48px</dimen>
+		<dimen name="full_4menu3_icon_height">48px</dimen>
+
+		<dimen name="full_4menu3_text_x">400px</dimen>
+		<dimen name="full_4menu3_text_y">456px</dimen>
+		<dimen name="full_4menu3_text_width">200px</dimen>
+		<dimen name="full_4menu3_text_height">20px</dimen>
+
+		<dimen name="full_4menu4_x">600px</dimen>
+
+		<dimen name="full_4menu4_icon_x">676px</dimen>
+		<dimen name="full_4menu4_icon_y">408px</dimen>
+		<dimen name="full_4menu4_icon_width">48px</dimen>
+		<dimen name="full_4menu4_icon_height">48px</dimen>
+
+		<dimen name="full_4menu4_text_x">600px</dimen>
+		<dimen name="full_4menu4_text_y">456px</dimen>
+		<dimen name="full_4menu4_text_width">200px</dimen>
+		<dimen name="full_4menu4_text_height">20px</dimen>
+		<!-- 4ea Menu -->
+
+		<!-- 5ea Menu -->
+		<dimen name="full_5menu_bg_x">0px</dimen>
+		<dimen name="full_5menu_bg_y">405px</dimen>
+		<dimen name="full_5menu_bg_width">800px</dimen>
+		<dimen name="full_5menu_bg_height">75px</dimen>
+
+		<dimen name="full_5menu_width">160px</dimen>
+
+		<dimen name="full_5menu1_x">0px</dimen>
+
+		<dimen name="full_5menu1_icon_x">55px</dimen>
+		<dimen name="full_5menu1_icon_y">408px</dimen>
+		<dimen name="full_5menu1_icon_width">48px</dimen>
+		<dimen name="full_5menu1_icon_height">48px</dimen>
+
+		<dimen name="full_5menu1_text_x">0px</dimen>
+		<dimen name="full_5menu1_text_y">456px</dimen>
+		<dimen name="full_5menu1_text_width">160px</dimen>
+		<dimen name="full_5menu1_text_height">20px</dimen>
+
+		<dimen name="full_5menu2_x">161px</dimen>
+
+		<dimen name="full_5menu2_icon_x">216px</dimen>
+		<dimen name="full_5menu2_icon_y">408px</dimen>
+		<dimen name="full_5menu2_icon_width">48px</dimen>
+		<dimen name="full_5menu2_icon_height">48px</dimen>
+
+		<dimen name="full_5menu2_text_x">161px</dimen>
+		<dimen name="full_5menu2_text_y">456px</dimen>
+		<dimen name="full_5menu2_text_width">160px</dimen>
+		<dimen name="full_5menu2_text_height">20px</dimen>
+
+		<dimen name="full_5menu3_x">321px</dimen>
+
+		<dimen name="full_5menu3_icon_x">376px</dimen>
+		<dimen name="full_5menu3_icon_y">408px</dimen>
+		<dimen name="full_5menu3_icon_width">48px</dimen>
+		<dimen name="full_5menu3_icon_height">48px</dimen>
+
+		<dimen name="full_5menu3_text_x">321px</dimen>
+		<dimen name="full_5menu3_text_y">456px</dimen>
+		<dimen name="full_5menu3_text_width">160px</dimen>
+		<dimen name="full_5menu3_text_height">20px</dimen>
+
+		<dimen name="full_5menu4_x">481px</dimen>
+
+		<dimen name="full_5menu4_icon_x">537px</dimen>
+		<dimen name="full_5menu4_icon_y">408px</dimen>
+		<dimen name="full_5menu4_icon_width">48px</dimen>
+		<dimen name="full_5menu4_icon_height">48px</dimen>
+
+		<dimen name="full_5menu4_text_x">481px</dimen>
+		<dimen name="full_5menu4_text_y">456px</dimen>
+		<dimen name="full_5menu4_text_width">160px</dimen>
+		<dimen name="full_5menu4_text_height">20px</dimen>
+
+		<dimen name="full_5menu5_x">641px</dimen>
+
+		<dimen name="full_5menu5_icon_x">697px</dimen>
+		<dimen name="full_5menu5_icon_y">408px</dimen>
+		<dimen name="full_5menu5_icon_width">48px</dimen>
+		<dimen name="full_5menu5_icon_height">48px</dimen>
+
+		<dimen name="full_5menu5_text_x">641px</dimen>
+		<dimen name="full_5menu5_text_y">456px</dimen>
+		<dimen name="full_5menu5_text_width">160px</dimen>
+		<dimen name="full_5menu5_text_height">20px</dimen>
+		<!-- 5ea Menu -->
+
+		<!-- 6ea Menu -->
+		<dimen name="full_6menu_bg_x">0px</dimen>
+		<dimen name="full_6menu_bg_y">405px</dimen>
+		<dimen name="full_6menu_bg_width">800px</dimen>
+		<dimen name="full_6menu_bg_height">75px</dimen>
+
+		<dimen name="full_6menu_width">134px</dimen>
+
+		<dimen name="full_6menu1_x">0px</dimen>
+
+		<dimen name="full_6menu1_icon_x">42px</dimen>
+		<dimen name="full_6menu1_icon_y">408px</dimen>
+		<dimen name="full_6menu1_icon_width">48px</dimen>
+		<dimen name="full_6menu1_icon_height">48px</dimen>
+
+		<dimen name="full_6menu1_text_x">0px</dimen>
+		<dimen name="full_6menu1_text_y">456px</dimen>
+		<dimen name="full_6menu1_text_width">134px</dimen>
+		<dimen name="full_6menu1_text_height">20px</dimen>
+
+		<dimen name="full_6menu2_x">133px</dimen>
+
+		<dimen name="full_6menu2_icon_x">175px</dimen>
+		<dimen name="full_6menu2_icon_y">408px</dimen>
+		<dimen name="full_6menu2_icon_width">48px</dimen>
+		<dimen name="full_6menu2_icon_height">48px</dimen>
+
+		<dimen name="full_6menu2_text_x">133px</dimen>
+		<dimen name="full_6menu2_text_y">456px</dimen>
+		<dimen name="full_6menu2_text_width">134px</dimen>
+		<dimen name="full_6menu2_text_height">20px</dimen>
+
+		<dimen name="full_6menu3_x">267px</dimen>
+
+		<dimen name="full_6menu3_icon_x">309px</dimen>
+		<dimen name="full_6menu3_icon_y">408px</dimen>
+		<dimen name="full_6menu3_icon_width">48px</dimen>
+		<dimen name="full_6menu3_icon_height">48px</dimen>
+
+		<dimen name="full_6menu3_text_x">267px</dimen>
+		<dimen name="full_6menu3_text_y">456px</dimen>
+		<dimen name="full_6menu3_text_width">134px</dimen>
+		<dimen name="full_6menu3_text_height">20px</dimen>
+
+		<dimen name="full_6menu4_x">400px</dimen>
+
+		<dimen name="full_6menu4_icon_x">442px</dimen>
+		<dimen name="full_6menu4_icon_y">408px</dimen>
+		<dimen name="full_6menu4_icon_width">48px</dimen>
+		<dimen name="full_6menu4_icon_height">48px</dimen>
+
+		<dimen name="full_6menu4_text_x">400px</dimen>
+		<dimen name="full_6menu4_text_y">456px</dimen>
+		<dimen name="full_6menu4_text_width">134px</dimen>
+		<dimen name="full_6menu4_text_height">20px</dimen>
+
+		<dimen name="full_6menu5_x">534px</dimen>
+
+		<dimen name="full_6menu5_icon_x">576px</dimen>
+		<dimen name="full_6menu5_icon_y">408px</dimen>
+		<dimen name="full_6menu5_icon_width">48px</dimen>
+		<dimen name="full_6menu5_icon_height">48px</dimen>
+
+		<dimen name="full_6menu5_text_x">534px</dimen>
+		<dimen name="full_6menu5_text_y">456px</dimen>
+		<dimen name="full_6menu5_text_width">134px</dimen>
+		<dimen name="full_6menu5_text_height">20px</dimen>
+
+		<dimen name="full_6menu6_x">667px</dimen>
+
+		<dimen name="full_6menu6_icon_x">709px</dimen>
+		<dimen name="full_6menu6_icon_y">408px</dimen>
+		<dimen name="full_6menu6_icon_width">48px</dimen>
+		<dimen name="full_6menu6_icon_height">48px</dimen>
+
+		<dimen name="full_6menu6_text_x">667px</dimen>
+		<dimen name="full_6menu6_text_y">456px</dimen>
+		<dimen name="full_6menu6_text_width">134px</dimen>
+		<dimen name="full_6menu6_text_height">20px</dimen>
+		<!-- 6ea Menu -->
+
+		<!-- [ATSC] specific -->
+		<dimen name="epg_list_empty_x">181px</dimen>
+		<dimen name="epg_list_empty_y">133px</dimen>
+		<dimen name="epg_list_empty_width">128px</dimen>
+		<dimen name="epg_list_empty_height">128px</dimen>
+
+		<dimen name="ch_list_empty_x">181px</dimen>
+		<dimen name="ch_list_empty_y">250px</dimen>
+		<dimen name="ch_list_empty_width">128px</dimen>
+		<dimen name="ch_list_empty_height">128px</dimen>
+
+		<dimen name="custom_dialog_width">460px</dimen>
+		<dimen name="custom_dialog_height">230px</dimen>
+		<dimen name="custom_dialog_list_height">150px</dimen>
+		<dimen name="custom_dialog_listitem_height">74px</dimen>
+	<!-- [ATSC] specific -->
+</resources>

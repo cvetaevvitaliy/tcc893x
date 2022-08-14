@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+  
+	<ListPreference
+		android:title="@string/area_code"
+		android:key="area_code_select"
+		android:entries="@array/area_code_select_entries"
+		android:entryValues="@array/area_code_select_values">
+	</ListPreference>
+
+	<ListPreference
+		android:title="@string/audio"
+		android:key="audio_select"
+		android:entries="@array/audio_select_entries"
+		android:entryValues="@array/audio_select_values">
+	</ListPreference>
+  
+	<ListPreference
+		android:title="@string/dual_audio"
+		android:key="dual_audio_select"
+		android:entries="@array/dual_audio_select_entries"
+		android:entryValues="@array/dual_audio_select_values">
+	</ListPreference>
+  
+	<ListPreference
+		android:title="@string/caption"
+		android:key="caption_select"
+		android:entries="@array/caption_select_entries"
+		android:entryValues="@array/caption_select_values">
+	</ListPreference>
+  
+	<ListPreference
+		android:title="@string/super_impose"
+		android:key="super_impose_select"
+		android:entries="@array/super_impose_select_entries"
+		android:entryValues="@array/super_impose_select_values">
+	</ListPreference>
+  
+	<ListPreference
+		android:title="@string/storage"
+		android:key="storage_select"
+		android:entries="@array/storage_select_entries"
+		android:entryValues="@array/storage_select_values">
+	</ListPreference>
+
+</PreferenceScreen>

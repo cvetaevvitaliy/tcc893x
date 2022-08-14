@@ -1,0 +1,108 @@
+<mixer>
+  <!-- These are the initial mixer settings -->
+  <ctl name="Headphone Playback Volume" value="0" />
+  <ctl name="Mic1 Playback Volume" value="0" />
+  <ctl name="Speaker Playback Volume" value="0" />
+  <ctl name="Phone Playback Volume" value="0" />
+  <ctl name="AUXOUT Playback Volume" value="0" />
+  <ctl name="PCM Capture Volume" value="0" />
+  <ctl name="MIC1 Boost"  value="0" />
+  <ctl name="ADC Record Gain" value="0" />
+
+  <ctl name="SPK Amp Type" value="Class AB" />
+  <ctl name="AUX Vol Input Mux" value="VMID" />
+  <ctl name="ADCR fun select Mux" value="Stereo ADC" />
+  <ctl name="ADCL fun select Control" value="Stereo ADC" />
+  <ctl name="VDAC src Mux" value="TxDP" />
+  <ctl name="SPK Vol Input Mux"  value="SPK Mixer" />
+  <ctl name="VoDSP AEC" value="AEC Disable" />
+  <ctl name="Phone Mode Control" value="Differential" />
+  <ctl name="PLL Switch" value="11.2896->22.5792" />
+
+  <ctl name="Headphone Playback Switch" value="0" />
+  <ctl name="Speaker Playback Switch" value="0" />
+  <ctl name="AUXOUT Playback Switch" value="0" />
+  <ctl name="Left HP Mixer DAC Switch" value="0" />
+  <ctl name="Right HP Mixer DAC Switch" value="0" />
+  <ctl name="Mono HP Mixer Phone Switch" value="0" />
+  <ctl name="Mono HP Mixer Mic1 Switch" value="0" />
+  <ctl name="Mono Mixer Mic1 Switch" value="0" />
+  <ctl name="Mono Mixer Voice DAC Switch" value="0" />
+  <ctl name="Mono Mixer DAC Mixer Switch" value="0" />
+  <ctl name="Right Rec Mixer Mic1 Switch" value="0" />
+  <ctl name="Left Rec Mixer Mic1 Switch" value="0" />
+  <ctl name="Right Rec Mixer Phone Switch" value="0" />
+  <ctl name="Left Rec Mixer Phone Switch" value="0" />
+  <ctl name="Right Rec Mixer HP Mixer Switch" value="0" />
+  <ctl name="Left Rec Mixer HP Mixer Switch" value="0" />
+  <ctl name="SPK Mixer Phone Switch" value="0" />
+  <ctl name="SPK Mixer DAC Mixer Switch" value="0" />
+
+  <path name="speaker">
+    <ctl name="Speaker Playback Switch" value="1" />
+    <ctl name="SPK Mixer DAC Mixer Switch" value="1" />
+    <ctl name="Left HP Mixer DAC Switch" value="1" />
+    <ctl name="Right HP Mixer DAC Switch" value="1" />
+    <ctl name="Speaker Playback Volume" value="31" />
+    <ctl name="Jack Function" value="Speaker" />
+    <ctl name="Speaker Function" value="On" />
+  </path>
+
+  <path name="headphone">
+    <ctl name="Headphone Playback Switch" value="1" />
+    <ctl name="Left HP Mixer DAC Switch" value="1" />
+    <ctl name="Right HP Mixer DAC Switch" value="1" />
+    <ctl name="Headphone Playback Volume" value="31" />
+    <ctl name="Jack Function" value="HeadPhone" />
+    <ctl name="Speaker Function" value="Off" />
+  </path>
+
+  <path name="main-mic">
+    <ctl name="ADC Record Gain" value="21" />
+    <ctl name="Right Rec Mixer Mic1 Switch" value="1" />
+    <ctl name="Left Rec Mixer Mic1 Switch" value="1" />
+    <ctl name="Mic1 Playback Volume" value="31" />
+    <ctl name="MIC1 Boost"  value="1" />
+  </path>
+
+  <path name="line-in">
+  </path>
+
+  <path name="speaker_for_call">
+    <ctl name="Speaker Playback Switch" value="1" />
+    <ctl name="Mono HP Mixer Phone Switch" value="1" />
+    <ctl name="Phone Playback Volume" value="31" />
+    <ctl name="Headphone Playback Volume" value="31" />
+    <ctl name="Jack Function" value="Speaker" />
+    <ctl name="Speaker Function" value="On" />
+  </path>
+
+  <path name="headphone_for_call">
+    <ctl name="Headphone Playback Switch" value="1" />
+    <ctl name="Mono HP Mixer Phone Switch" value="1" />
+    <ctl name="Phone Playback Volume" value="31" />
+    <ctl name="Headphone Playback Volume" value="31" />
+    <ctl name="Jack Function" value="HeadPhone" />
+    <ctl name="Speaker Function" value="Off" />
+  </path>
+
+  <path name="mic_for_call_with_spk">
+    <ctl name="AUX Vol Input Mux" value="Mono Mixer" />
+    <ctl name="Mic1 Playback Volume" value="31" />
+    <ctl name="Mono Mixer Mic1 Switch" value="1" />
+    <ctl name="AUXOUT Playback Switch" value="1" />
+    <ctl name="AUXOUT Playback Volume" value="31" />
+    <ctl name="MIC1 Boost"  value="1" />
+  </path>
+
+  <path name="mic_for_call_with_hp">
+    <ctl name="AUX Vol Input Mux" value="Mono Mixer" />
+    <ctl name="Mic1 Playback Volume" value="31" />
+    <ctl name="ADC Record Gain" value="21" />
+    <ctl name="Mono Mixer Mic1 Switch" value="1" />
+    <ctl name="AUXOUT Playback Switch" value="1" />
+    <ctl name="AUXOUT Playback Volume" value="31" />
+    <ctl name="MIC1 Boost"  value="1" />
+  </path>
+
+</mixer>

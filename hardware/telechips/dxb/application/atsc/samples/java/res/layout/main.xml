@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/id_channel_bg"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	<SurfaceView
+		android:id="@+id/surface_view"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:clickable="true"
+		android:visibility="visible"
+		>
+	</SurfaceView>
+	
+	<include
+		android:id="@+id/layout_list"
+		android:visibility="invisible"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		layout="@layout/dxb_list_bg"
+		>
+	</include>
+	
+	<include
+		android:id="@+id/layout_list_isdbt"
+		android:visibility="invisible"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		layout="@layout/dxb_list_bg_isdbt"
+		>
+	</include>
+
+	<include
+		android:id="@+id/layout_full_4menu"
+		android:visibility="invisible"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		layout="@layout/dxb_full_bg_4menu"
+		>
+	</include>	
+
+	<include
+		android:id="@+id/layout_full_5menu"
+		android:visibility="invisible"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		layout="@layout/dxb_full_bg_5menu"
+		>
+	</include>	
+
+	<include
+		android:id="@+id/layout_full_6menu"
+		android:visibility="invisible"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		layout="@layout/dxb_full_bg_6menu"
+		>
+	</include>
+	
+	<include
+		android:id="@+id/layout_epg"
+		android:visibility="invisible"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		layout="@layout/dxb_epg_bg"
+		>
+	</include>
+
+	<!-- closed caption Display -->
+	<ImageView
+		android:id="@+id/full_closedcaption_display"
+		android:visibility="visible"
+		android:layout_x="@dimen/closedcaption_x"
+		android:layout_y="@dimen/closedcaption_y"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:focusable="false"
+	>
+	</ImageView>
+
+	<ImageView
+		android:id="@+id/indicator_section"
+		android:layout_x="@dimen/indicator_section_x"
+		android:layout_y="@dimen/indicator_section_y"
+		android:layout_width="@dimen/indicator_section_width"
+		android:layout_height="@dimen/indicator_section_height"
+		android:focusable="false"
+		>
+		</ImageView>
+
+	<TextView
+		android:id="@+id/indicator_time"
+		android:layout_x="@dimen/indicator_time_x"
+		android:layout_y="@dimen/indicator_time_y"
+		android:layout_width="@dimen/indicator_time_width"
+		android:layout_height="@dimen/indicator_time_height"
+		android:textSize="@dimen/indicator_time_font"
+		android:textColor="@color/color_2"
+		android:gravity="center_vertical"
+		>
+	</TextView>
+</AbsoluteLayout>

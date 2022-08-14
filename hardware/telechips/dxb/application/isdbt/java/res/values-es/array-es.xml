@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 Telechips, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+
+    <!-- Do not translate. -->
+	<string-array name="parental_rating_select_entries">
+		<item>O bloco se a idade será inferior a 10 anos</item>
+		<item>O bloco se a idade será inferior a 12 anos</item>
+		<item>O bloco se a idade será inferior a 14 anos</item>
+		<item>O bloco se a idade será inferior a 16 anos</item>
+		<item>O bloco se a idade será inferior a 18 anos</item>
+		<item>Todos</item>
+	</string-array>
+	
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="parental_rating_select_summaries">
+		<item>O bloco se a idade será inferior a 10 anos</item>
+		<item>O bloco se a idade será inferior a 12 anos</item>
+		<item>O bloco se a idade será inferior a 14 anos</item>
+		<item>O bloco se a idade será inferior a 16 anos</item>
+		<item>O bloco se a idade será inferior a 18 anos</item>
+		<item>Todos</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="parental_rating_select_values">
+		<!-- Do not translate. -->
+		<item>0</item>
+		<!-- Do not translate. -->
+		<item>1</item>
+		<!-- Do not translate. -->
+		<item>2</item>
+		<!-- Do not translate. -->
+		<item>3</item>
+		<!-- Do not translate. -->
+		<item>4</item>
+		<!-- Do not translate. -->
+		<item>5</item>
+	</string-array>
+
+    <!-- Do not translate. -->
+	<string-array name="video_select_entries">
+		<item>vídeo 1</item>
+		<item>vídeo 2</item>
+	</string-array>
+	
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="video_select_summaries">
+		<item>vídeo 1</item>
+		<item>vídeo 2</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="video_select_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+	</string-array>
+
+    <!-- Do not translate. -->
+	<string-array name="audio_select_entries">
+		<item>audio 1</item>
+		<item>audio 2</item>
+	</string-array>
+	
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="audio_select_summaries">
+		<item>audio 1</item>
+		<item>audio 2</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="audio_select_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+	</string-array>
+
+    <!-- Do not translate. -->
+	<string-array name="dual_audio_select_entries">
+		<item>principal</item>
+		<item>sub</item>
+		<item>principal+sub</item>
+	</string-array>
+	
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="dual_audio_select_summaries">
+		<item>principal</item>
+		<item>sub</item>
+		<item>principal+sub</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="dual_audio_select_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+        <!-- Do not translate. -->
+        <item>2</item>
+	</string-array>
+
+    <!-- Do not translate. -->
+	<string-array name="subtitle_select_entries">
+		<item>Apagado</item>
+		<item>Encendido</item>
+	</string-array>
+	
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="subtitle_select_summaries">
+		<item>Apagado</item>
+		<item>Encendido</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="subtitle_select_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+	</string-array>
+
+    <!-- Do not translate. -->
+	<string-array name="caption_select_entries">
+		<item>Apagado</item>
+		<item>Subtítulo 1</item>
+		<item>Subtítulo 2</item>
+	</string-array>
+	
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="caption_select_summaries">
+		<item>Apagado</item>
+		<item>Subtítulo 1</item>
+		<item>Subtítulo 2</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="caption_select_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+        <!-- Do not translate. -->
+        <item>2</item>
+	</string-array>
+	
+    <!-- Do not translate. -->
+	<string-array name="super_impose_select_entries">
+		<item>Apagado</item>
+		<item>Subtítulo 1</item>
+		<item>Subtítulo 2</item>
+	</string-array>
+	
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="super_impose_select_summaries">
+		<item>Apagado</item>
+		<item>Subtítulo 1</item>
+		<item>Subtítulo 2</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="super_impose_select_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+        <!-- Do not translate. -->
+        <item>2</item>
+	</string-array>
+	
+    <!-- Do not translate. -->
+	<string-array name="countrycode_select_entries">
+		<item>Austrália</item>
+		<item>China</item>
+		<item>Finlândia</item>
+		<item>França</item>
+		<item>Alemanha</item>
+		<item>Itália</item>
+		<item>Coréia</item>
+		<item>Luxemburgo</item>
+		<item>Holanda</item>
+		<item>Espanha</item>
+		<item>Suécia</item>
+		<item>Taiwan</item>
+		<item>Inglaterra</item>
+		<item>EUA</item>
+		<item>Other(6Mhz)</item>
+		<item>Other(7Mhz)</item>
+		<item>Other(8Mhz)</item>
+		<item>Other(8Mhz)UHF</item>
+	</string-array>
+	
+	<!-- Display setting.  Summary for each type of output. -->
+	<string-array name="countrycode_select_summaries">
+		<item>Austrália</item>
+		<item>China</item>
+		<item>Finlândia</item>
+		<item>França</item>
+		<item>Alemanha</item>
+		<item>Itália</item>
+		<item>Coréia</item>
+		<item>Luxemburgo</item>
+		<item>Holanda</item>
+		<item>Espanha</item>
+		<item>Suécia</item>
+		<item>Taiwan</item>
+		<item>Inglaterra</item>
+		<item>EUA</item>
+		<item>Other(6Mhz)</item>
+		<item>Other(7Mhz)</item>
+		<item>Other(8Mhz)</item>
+		<item>Other(8Mhz)UHF</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="countrycode_select_values">
+		<!-- Do not translate. -->
+		<item>0</item>
+		<!-- Do not translate. -->
+		<item>1</item>
+		<!-- Do not translate. -->
+		<item>2</item>
+		<!-- Do not translate. -->
+		<item>3</item>
+		<!-- Do not translate. -->
+		<item>4</item>
+		<!-- Do not translate. -->
+		<item>5</item>
+		<!-- Do not translate. -->
+		<item>6</item>
+		<!-- Do not translate. -->
+		<item>7</item>
+		<!-- Do not translate. -->
+		<item>8</item>
+		<!-- Do not translate. -->
+		<item>9</item>
+		<!-- Do not translate. -->
+		<item>10</item>
+		<!-- Do not translate. -->
+		<item>11</item>
+		<!-- Do not translate. -->
+		<item>12</item>
+		<!-- Do not translate. -->
+		<item>13</item>
+		<!-- Do not translate. -->
+		<item>14</item>
+		<!-- Do not translate. -->
+		<item>15</item>
+		<!-- Do not translate. -->
+		<item>16</item>
+		<!-- Do not translate. -->
+		<item>17</item>
+	</string-array>
+
+	<string-array name="epg_genre">
+	    <item>notícia</item>
+	    <item>Esportes</item>
+	    <item>informações</item>
+	    <item>drama</item>
+	    <item>música</item>
+	    <item>variedade</item>
+	    <item>filme</item>
+	    <item>animação</item>
+	    <item>documentário</item>
+	    <item>atuação</item>
+	    <item>passatempo/educação</item>
+	    <item>bem-estar</item>
+	    <item></item>
+	    <item></item>
+	    <item></item>
+	    <item>Others (indefinido)</item>
+	</string-array>
+
+	<string-array name="epg_audio_mode">
+	    <item>mono</item>
+	    <item>dual mono</item>
+	    <item>estéreo</item>
+	    <item>multi</item>
+	    <item>multi</item>
+	    <item>multi</item>
+	    <item>multi</item>
+	    <item>multi</item>
+	    <item>multi</item>
+	    <item>multi</item>
+	</string-array>
+		
+    <!-- Do not translate. -->
+	<string-array name="handover_select_entries">
+		<item>Apagado</item>
+		<item>Encendido</item>
+	</string-array>
+	
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="handover_select_summaries">
+		<item>Apagado</item>
+		<item>Encendido</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="handover_select_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+	</string-array>	
+		
+    <!-- Do not translate. -->
+	<string-array name="ews_select_entries">
+		<item>Apagado</item>
+		<item>Encendido</item>
+	</string-array>
+	
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="ews_select_summaries">
+		<item>Apagado</item>
+		<item>Encendido</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="ews_select_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+	</string-array>	
+	
+	<!-- Do not translate. -->
+	<string-array name="seamless_change_select_entries">
+		<item>Auto</item>
+		<item>Fullseg</item>
+		<item>1seg</item>
+	</string-array>
+
+    <!-- Do not translate. -->
+	<string-array name="seamless_change_select_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="seamless_change_select_summaries">
+		<item>Auto</item>
+		<item>Fullseg</item>
+		<item>1seg</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="schedule_select_select_entries">
+		<item>Editar</item>
+		<item>Apagar</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="schedule_select_select_values">
+        <item>0</item>
+        <item>1</item>
+	</string-array>
+	
+	 <!-- Do not translate. -->
+	<string-array name="signal_quality_select_entries">
+		<item>Apagado</item>
+		<item>Encendido</item>
+	</string-array>
+	
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="signal_quality_select_summaries">
+		<item>Apagado</item>
+		<item>Encendido</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="signal_quality_select_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+	</string-array>	
+	
+
+	<!-- preset mode -->
+	<string-array name="preset_mode_select_summaries">
+		<item>Preajuste1</item>
+		<item>Preajuste2</item>
+		<item>Preajuste3</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="preset_mode_select_entries">
+		<item>Preajuste1</item>
+		<item>Preajuste2</item>
+		<item>Preajuste3</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="preset_mode_select_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+	</string-array>
+</resources>

@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 Telechips, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:textColor="@color/color_3" >
+ 
+	<View
+	    android:id="@+id/epg_3list_margin_top"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="2"
+	    />
+    
+	<AbsoluteLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="155"
+		
+		android:paddingTop="@dimen/epg_margin_box"
+		android:paddingLeft="@dimen/epg_margin_box"
+		android:paddingRight="@dimen/epg_margin_box"
+		
+		android:alpha="0.85"
+		>
+	    <AbsoluteLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			
+			android:background="@color/color_e"
+			android:orientation="vertical"
+			android:padding="@dimen/epg_margin_outline"
+			>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				
+				android:background="#FF111111"
+				
+				android:orientation="vertical"
+				>
+				<include
+				    android:layout_width="fill_parent"
+				    android:layout_height="0dp"
+				    android:layout_weight="1"
+				    layout="@layout/dxb_view_epg_3list_title"
+				    />
+				
+				<include
+				    android:layout_width="fill_parent"
+				    android:layout_height="0dp"
+				    android:layout_weight="6"
+				    layout="@layout/dxb_view_epg_3list_list"
+				    />
+			</LinearLayout>
+		</AbsoluteLayout>
+	</AbsoluteLayout>
+
+	<View
+	    android:id="@+id/epg_3list_margin_mid"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="2"
+	    />
+    	
+	<LinearLayout
+	    android:id="@+id/epg_3list_button"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="12"
+	    
+	    android:orientation="horizontal"
+	    >
+	    <View
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+		    />
+	    
+		<Button
+		    android:id="@+id/epg_3list_b_book"
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+		    android:background="@color/color_red"
+		    android:text="@string/book"
+		    />
+		
+	    <View
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+		    />
+
+		<Button
+		    android:id="@+id/epg_3list_b_timer"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:background="@color/color_green"
+			android:text="@string/schedule"
+			/>
+
+	    <View
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+		    />
+				
+		<View
+	 		android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="5"
+			/>
+   	    
+	    <AbsoluteLayout
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+	        >
+			<Button
+			    android:id="@+id/epg_3list_button_left"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    />
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+	    
+				android:orientation="horizontal"
+			    >
+				<View
+				    android:layout_width="0dp"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    />
+				<LinearLayout
+				    android:layout_width="0dp"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+		    
+					android:orientation="vertical"
+				    >
+					<View
+					    android:layout_width="fill_parent"
+					    android:layout_height="0dp"
+					    android:layout_weight="1"
+					    />
+					<ImageView
+					    android:layout_width="fill_parent"
+					    android:layout_height="0dp"
+					    android:layout_weight="1"
+						android:background="@drawable/dxb_portable_navi_left"
+					    />
+					<View
+					    android:layout_width="fill_parent"
+					    android:layout_height="0dp"
+					    android:layout_weight="1"
+					    />
+				</LinearLayout>
+				<View
+				    android:layout_width="0dp"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    />
+			</LinearLayout>
+	    </AbsoluteLayout>
+	    
+	    <AbsoluteLayout
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+	        >
+			<Button
+			    android:id="@+id/epg_3list_button_up"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    />
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+	    
+				android:orientation="horizontal"
+			    >
+				<View
+				    android:layout_width="0dp"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    />
+				<LinearLayout
+				    android:layout_width="0dp"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+		    
+					android:orientation="vertical"
+				    >
+					<View
+					    android:layout_width="fill_parent"
+					    android:layout_height="0dp"
+					    android:layout_weight="1"
+					    />
+					<ImageView
+					    android:layout_width="fill_parent"
+					    android:layout_height="0dp"
+					    android:layout_weight="1"
+						android:background="@drawable/dxb_portable_navi_up"
+					    />
+					<View
+					    android:layout_width="fill_parent"
+					    android:layout_height="0dp"
+					    android:layout_weight="1"
+					    />
+				</LinearLayout>
+				<View
+				    android:layout_width="0dp"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    />
+			</LinearLayout>
+	    </AbsoluteLayout>
+	    	    
+	    <AbsoluteLayout
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+	        >
+			<Button
+			    android:id="@+id/epg_3list_button_down"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    />
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+	    
+				android:orientation="horizontal"
+			    >
+				<View
+				    android:layout_width="0dp"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    />
+				<LinearLayout
+				    android:layout_width="0dp"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+		    
+					android:orientation="vertical"
+				    >
+					<View
+					    android:layout_width="fill_parent"
+					    android:layout_height="0dp"
+					    android:layout_weight="1"
+					    />
+					<ImageView
+					    android:layout_width="fill_parent"
+					    android:layout_height="0dp"
+					    android:layout_weight="1"
+						android:background="@drawable/dxb_portable_navi_down"
+					    />
+					<View
+					    android:layout_width="fill_parent"
+					    android:layout_height="0dp"
+					    android:layout_weight="1"
+					    />
+				</LinearLayout>
+				<View
+				    android:layout_width="0dp"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    />
+			</LinearLayout>
+	    </AbsoluteLayout>
+	    	    
+	    <AbsoluteLayout
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+	        >
+			<Button
+			    android:id="@+id/epg_3list_button_right"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    />
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+	    
+				android:orientation="horizontal"
+			    >
+				<View
+				    android:layout_width="0dp"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    />
+				<LinearLayout
+				    android:layout_width="0dp"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+		    
+					android:orientation="vertical"
+				    >
+					<View
+					    android:layout_width="fill_parent"
+					    android:layout_height="0dp"
+					    android:layout_weight="1"
+					    />
+					<ImageView
+					    android:layout_width="fill_parent"
+					    android:layout_height="0dp"
+					    android:layout_weight="1"
+						android:background="@drawable/dxb_portable_navi_right"
+					    />
+					<View
+					    android:layout_width="fill_parent"
+					    android:layout_height="0dp"
+					    android:layout_weight="1"
+					    />
+				</LinearLayout>
+				<View
+				    android:layout_width="0dp"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    />
+			</LinearLayout>
+	    </AbsoluteLayout>
+	    	    
+	    <AbsoluteLayout
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+	        >
+			<Button
+			    android:id="@+id/epg_3list_button_detail"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    />
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+	    
+				android:orientation="horizontal"
+			    >
+				<View
+				    android:layout_width="0dp"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    />
+				<LinearLayout
+				    android:layout_width="0dp"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+		    
+					android:orientation="vertical"
+				    >
+					<View
+					    android:layout_width="fill_parent"
+					    android:layout_height="0dp"
+					    android:layout_weight="1"
+					    />
+					<ImageView
+					    android:layout_width="fill_parent"
+					    android:layout_height="0dp"
+					    android:layout_weight="1"
+						android:background="@drawable/dxb_portable_navi_epg1"
+					    />
+					<View
+					    android:layout_width="fill_parent"
+					    android:layout_height="0dp"
+					    android:layout_weight="1"
+					    />
+				</LinearLayout>
+				<View
+				    android:layout_width="0dp"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    />
+			</LinearLayout>
+	    </AbsoluteLayout>
+	    
+		<View
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+		    />
+	</LinearLayout>	   
+	
+	<View
+	    android:id="@+id/epg_3list_margin_bottom"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="7"
+	    />
+</LinearLayout>

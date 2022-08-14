@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 Telechips, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<!-- DebugMode -->
+	<string name="pcber">PCBER</string>
+	<string name="rssi">RSSI</string>
+	<string name="snr">SNR</string>
+	<string name="debug_wait_channel">Arming up... Please wait few minutes.</string>
+	<string name="debug_get_channel">Fetching for channels...</string>
+	<string name="volume_up">Up</string>
+	<string name="volume_down">Down</string>
+	
+	<string name="_0to799">0~799</string>
+	<string name="_6_mhz">6Mhz</string>
+	<string name="_7_mhz">7Mhz</string>
+	<string name="_8_mhz">8Mhz</string>
+	<string name="ad">AD</string>
+	<string name="add">Add</string>
+	<string name="age">Age</string>
+	<string name="antenna_power">Antenna power</string>
+	<string name="area_code">Area code</string>
+	<string name="audio">Audio</string>
+	<string name="audio_description">Audio description</string>
+	<string name="audio_channel">Audio Channel</string>
+	<string name="audio_mode">Audio Mode</string>
+	<string name="auto_search">Auto Search</string>
+	<string name="manual_search">Manual Search</string>
+	<string name="bandwidth_mhz">Bandwidth (MHz)</string>
+	<string name="book">Book</string>
+	<string name="bookmark">Bookmark</string>
+  	<string name="cancel">CANCEL</string>
+	<string name="caption">Caption</string>
+	<string name="capture">Capture</string>
+	<string name="change_password">Change password</string>
+	<string name="channel">Channel</string>
+	<string name="channel_list">Channel List</string>
+	<string name="channel_name">Channel Name</string>
+	<string name="channel_search">Channel Search</string>
+	<string name="channel_no">Channel No.</string>
+	<string name="channel_type">Channel Type</string>
+	<string name="confirm">Confirm</string>
+	<string name="confirm_new_password">Confirm new password</string>
+	<string name="copying">Copying...</string>
+	<string name="countrycode">Country Code</string>
+	<string name="current_password">Current password</string>
+	<string name="daily">Daily</string>
+	<string name="date">Date</string>
+	<string name="db_management">DB Management</string>
+	<string name="dBm">dBm</string>
+	<string name="del">Del</string>
+	<string name="delete">Delete</string>
+	<string name="dish_setup">Dish Setup</string>
+	<string name="done">Done</string>
+	<string name="dual_audio">Dual Audio</string>
+	<string name="edit">Edit</string>
+	<string name="end_time">End Time</string>
+	<string name="enter">Enter</string>
+	<string name="epg">EPG</string>
+	<string name="event">Event</string>
+	<string name="event_add">Event Add</string>
+	<string name="event_edit">Event Edit</string>
+	<string name="exit">Exit</string>
+	<string name="f10">F10</string>
+	<string name="failed">Failed!</string>
+	<string name="FAVOURITE">FAVOURITE</string>
+	<string name="file_open_error">File open error!</string>
+	<string name="first_service">First service!!!</string>
+	<string name="first_data">First data!!!</string>
+	<string name="frequency_khz">Frequency (KHz)</string>
+	<string name="goto_x">GotoX</string>
+	<string name="guide">Guide</string>
+	<string name="info">Information</string>
+	<string name="invalid_memory">Invalid memory!</string>
+	<string name="last_service">Last service!!!</string>
+	<string name="language">Language</string>
+	<string name="latitude_angle">Latitude Angle</string>
+	<string name="latitude_direction">Latitude Direction</string>
+	<string name="loading">Loading...</string>
+	<string name="location">Location</string>
+	<string name="longitude_angle">Longitude Angle</string>
+	<string name="longitude_direction">Longitude Direction</string>
+	<string name="manual">Manual</string>
+	<string name="manual_scan">Manual scan</string>
+	<string name="manual_scan_khz">Manual scan (KHz)</string>
+	<string name="media_scanning">Media Scanning</string>
+	<string name="memory_error">Memory Error!</string>
+	<string name="memory_full">Memory Full!</string>
+	<string name="menu">Menu</string>
+	<string name="move">Move</string>
+	<string name="new_password">New password</string>
+	<string name="mode">Mode</string>
+	<string name="no">No</string>
+	<string name="no_channel">No Channel</string>
+	<string name="no_information">No Information</string>
+	<string name="not_support">Not support</string>
+	<string name="option">Option</string>
+	<string name="option_subtitle">Option - Subtitle</string>
+	<string name="off">Off</string>
+	<string name="ok">OK</string>
+	<string name="on">On</string>
+	<string name="on_no_information">On (No Information)</string>
+	<string name="no_pvr_file_found">No PVR file found.</string>
+	<string name="once">Once</string>
+	<string name="page">Page</string>
+	<string name="parental_rating">Parental rating</string>
+	<string name="password">Password</string>
+	<string name="percentage">%</string>
+	<string name="please_scan">Please scan.</string>
+	<string name="please_wait">Please wait...</string>
+	<string name="preset">Preset</string>
+	<string name="program">Program</string>
+	<string name="quality">Quality</string>
+	<string name="radio">Radio</string>
+	<string name="rec">REC.</string>
+	<string name="rec_stop">REC Stop</string>
+	<string name="record">Record</string>
+	<string name="recording">Recording</string>
+	<string name="recording_error">Recording Error!</string>
+	<string name="recording_other_channel">Recording other channel</string>
+	<string name="reminder">Reminder</string>
+	<string name="repeat">Repeat</string>
+	<string name="saved">Saved!</string>
+	<string name="scan">Scan</string>
+	<string name="schedule">Schedule</string>
+	<string name="scrambled">Scrambled</string>
+	<string name="screen">Screen</string>
+	<string name="select">Select</string>
+	<string name="set_location">Set Location</string>
+	<string name="set_password">Set password</string>
+	<string name="settings">Settings</string>
+	<string name="sound_mode">Sound Mode</string>
+	<string name="start">Start</string>
+	<string name="start_date">Start Date(M/D/Y)</string>
+	<string name="start_time">Start Time</string>
+	<string name="status">Status</string>
+	<string name="storage">Storage</string>
+	<string name="strength">Strength</string>
+	<string name="subtitle">Subtitle</string>
+	<string name="super_impose">Super impose</string>
+	<string name="teletext">Teletext</string>
+	<string name="time">Time</string>
+	<string name="time_zone">Time zone</string>
+	<string name="time_zone_manual">Time zone - Manual</string>
+	<string name="timer">Timer</string>
+	<string name="trans_ponder">TransPonder</string>
+	<string name="ttx">TTX</string>
+	<string name="ttx_prev">&lt;</string>
+	<string name="ttx_next">&gt;</string>
+	<string name="ttx_fprev">&lt;&lt;</string>
+	<string name="ttx_fnext">&gt;&gt;</string>
+	<string name="tv">TV</string>
+	<string name="pvr_channel">PVR</string>
+	<string name="relative_vol">Relative Vol : </string>
+	<string name="unicable_config">Unicable Config</string>
+	<string name="update_channel">Update channel...</string>	
+	<string name="video">Video</string>
+	<string name="view">View</string>
+	<string name="weak_signal">Weak signal!</string>
+	<string name="weekly">Weekly</string>
+	<string name="yes">Yes</string>
+
+
+	<string name="are_you_sure_to_exit_DVB">Are you sure to exit DVB?</string>
+	<string name="book_event_time_up">Book event time up.</string> 
+	<string name="exiting_media_storage_inserted">Exiting...(Media storage inserted)\nPlease run application later...</string>
+	<string name="failed_no_free_space">Failed! Not enough free space</string>
+	<string name="failed_invalid_storage">Failed! Please use usb storage</string>
+	<string name="for_applying_a_country_code_the_application_will_be_closed">For applying a country code, the application will be closed.\nPlease, restart it.</string>
+	<string name="if_you_want_to_use_radio_scan_channel">No channels found, Please scan channels.</string>
+	<string name="if_you_want_to_use_tv_scan_channel">No channels found, Please scan channels.</string>
+	<string name="invalid_end_time">Invalid end time!</string>
+	<string name="is_playing_now">Is playing now!</string>
+	<string name="mismatch_in_confirm_password">mismatch in confirm password.</string>
+	<string name="no_disk_detected">no disk detected!</string>
+	<string name="no_sd_device_insert">NO SD Device Insert!</string>
+	<string name="no_usb_device_insert">NO USB Device Insert!</string>
+	<string name="now_playing">NOW PLAYING!</string>
+	<string name="now_scanning_media">Now scanning media...\nPlease run application later...</string>
+	<string name="no_scan_data">No channels found, Do you want to search for channels?</string>
+	<string name="please_enter_the_correct_password">Please enter the correct password.</string>
+	<string name="please_enter_page">Please enter page</string>
+	<string name="please_enter_password">Please enter password</string>
+	<string name="please_set_latitude_angle">Please set latitude angle.</string>
+	<string name="please_set_longitude_angle">Please set longitude angle.</string>
+	<string name="please_wait_cancel_scanning">Please wait cancel scanning...</string>
+	<string name="please_wait_DVB_is_shutting_off">Please wait.DVB is shutting off.</string>
+	<string name="please_wait_while_searching">Please wait while searching...</string>
+	<string name="receiving_signal_strength_is_weak">Receiving signal strength is weak.\nPlease wait a minute.</string>
+	<string name="the_schedule_is_invalid">The schedule is invalid.</string>
+	<string name="the_schedule_is_invalid_max_recording_time_is_10_hours">The schedule is invalid, max recording time is 10 hours.</string>
+	<string name="the_service_is_locked">The service is locked.</string>
+	<string name="the_service_is_locked_the_rating_is">The service is locked, the rating is</string>
+	<string name="this_schedule_is_conflict_with_event">This schedule is conflict with Event.</string>
+	<string name="this_transporder_existed">This transporder existed!!</string>
+	<string name="your_password_has_been_changed">Your password has been changed.</string>
+		
+	<!-- (option) key -->
+	<string name="key_antenna_power_select">key_antenna_power_select</string>
+	<string name="key_change_password_select">key_change_password_select</string>
+	<string name="key_db_management_select">key_db_management_select</string>
+	<string name="key_dish_setup_select">key_dish_setup_select</string>
+	<string name="key_parental_rating_select">key_parental_rating_select</string>
+	<string name="key_time_zone_select">key_time_zone_select</string>
+	<string name="key_unicable_config_select">key_unicable_config_select</string>
+	
+	<!-- [DVB] specific -->
+		<string name="app_name">DVR DVB</string>
+		<string name="dxb_options">[DVB] Options</string>
+	<!-- [DVB] specific -->
+	
+    <!--settings-->
+	<string name="scan_program">Channel Search</string>
+	
+	<!--  pvr manager-->
+
+	<string name="sure_delete">Are you sure delete</string>
+			
+	<!--pvr set-->
+	<string name="check_usb_device">Can not find the storage device</string>
+	
+	<string name="volume">Removable disk</string>
+	
+	<!--menu DBM-->
+	<string name="dvbs_dbm_title">DB Management</string>
+	<string name="dvbs_dbm_load">Load from USB or SDCard</string>
+	<string name="dvbs_dbm_backup">Backup to USB or SDCard</string>
+	
+	<string name ="xml_load_success">Load sagellites XML file success</string>
+	<string name ="xml_generator_success">Backup satellites XML file success</string>
+	<string name ="xml_generator_fail">Backup satellites XML file fail</string>
+
+	<string name="edit_title">Edit</string>
+	<string name="add_title">Add</string>
+			
+	<string name="item_no">No.</string>
+	<string name="sat_name">Satellite Name</string>
+		
+	<string name="title_sat_name">Name</string>
+	<string name="title_longitude_direction">Direction</string>
+	<string name="title_longitude_angle">Angle</string>
+	<string name="dot">.</string>
+	<string name="can_not_search">Need Transponder Info In Some Item</string>
+				
+	<string name="ts_frequency">Frequency</string>
+	<string name="ts_polarity">Polarity</string>
+	<string name="ts_symbol">Symbol</string>
+									
+    <string name="dish_setup_no">No.</string>
+    <string name="dish_setup_direction">Direction</string>
+    <string name="dish_setup_angle">Angle</string>
+    <string name="dish_setup_name">Name</string>
+    <string name="dish_setup_frequency">Frequency</string>
+    <string name="dish_setup_Symbol">Symbol</string>
+    <string name="dish_setup_polarisation">Polarity</string>
+    
+	<string name="dish_setup_lnb_no">LNB No.</string>
+	<string name="dish_setup_lnb_type">LNB Type</string>
+	<string name="dish_setup_lnb_power">LNB Power</string>
+	<string name="dish_setup_lnb_tone">Tone</string>
+	<string name="dish_setup_lnb_toneburst">ToneBurst</string>
+	<string name="dish_setup_lnb_diseqc">DiSEqC Mode</string>
+	<string name="dish_setup_lnb_committed_command">Committed DiSEqC</string>	
+	<string name="dish_setup_lnb_uncommitted_command">Uncommitted DiSEqC</string>
+	<string name="dish_setup_lnb_diseqc_repeat">DiSEqC Repeat</string>
+	<string name="dish_setup_lnb_command_order">Command Order</string>
+	<string name="dish_setup_lnb_moto_no">Motor No.</string>
+	<string name="dish_setup_lnb_moto_setting">Motor Setting</string>
+	<string name="dish_setup_lnb_motor">Motor</string>
+
+	<string name="dish_setup_tone_off">OFF</string>
+	<string name="dish_setup_tone_22K">ON</string>
+	<string name="dish_setup_tone_auto">AUTO</string>
+
+	<string name="dish_setup_none">None</string>
+	    
+	<string name="dish_setup_conf_lnb_single">Single</string>
+	<string name="dish_setup_conf_lnb_universal">Universal</string>
+	<string name="dish_setup_conf_lnb_low">LNB Low</string>
+	<string name="dish_setup_conf_lnb_high">LNB High</string>
+	<string name="dish_setup_conf_lnb_user_mode">User Mode</string>
+	<string name="dish_setup_conf_lnb_threshold">Threshold</string>
+	
+	<string name="dish_setup_diseqc0">DiSEqC 1.0</string>
+	<string name="dish_setup_diseqc1">DiSEqC 1.1</string>
+	<string name="dish_setup_diseqc2">DiSEqC 1.2</string>
+	<string name="dish_setup_diseqc3">DiSEqC 1.3</string>
+
+	<string name="scan_mode">Scan Mode</string>
+	<string name="scan_mode_default">Default</string>
+	<string name="scan_mode_blind">Blind Scan</string>
+	<string name="scan_mode_network">Network</string>
+
+	<string name="scan_crypted">Crypted</string>
+	<string name="scan_crypted_all">All</string>
+	<string name="scan_crypted_fta">FTA Channels</string>
+	
+	<string name="scan_ts">Transponder</string>
+			
+	<string name="dish_setup_motor_move">Motor Move</string>
+	<string name="dish_setup_motor_move_step">Move Step</string>
+	<string name="dish_setup_motor_position_save">Store Position</string>
+	<string name="dish_setup_motor_move_store">Goto Position</string>
+	<string name="dish_setup_motor_position_reset">Position Reset</string>
+	
+	<string name="dish_setup_motor_move_left">Left</string>
+	<string name="dish_setup_motor_move_stop">Stop</string>
+	<string name="dish_setup_motor_move_right">Right</string>
+	<string name="dish_setup_motor_move_position_save">Save</string>
+	<string name="dish_setup_motor_move_goto_position">Goto Store Position</string>
+	<string name="dish_setup_motor_move_position_reset">Reset</string>
+				
+	<string name="mhz">MHz</string>
+	<string name="dish_setup_conf_lnb_1">LNB1</string>
+	<string name="dish_setup_conf_lnb_2">LNB2</string>
+	<string name="dish_setup_conf_lnb_3">LNB3</string>
+	<string name="dish_setup_conf_lnb_4">LNB4</string>
+	<string name="dish_setup_conf_lnb_5">LNB5</string>
+	<string name="dish_setup_conf_lnb_6">LNB6</string>
+	<string name="dish_setup_conf_lnb_7">LNB7</string>
+	<string name="dish_setup_conf_lnb_8">LNB8</string>
+	
+	<string name="dish_setup_conf_button_add">Tv : Add</string>
+	<string name="dish_setup_conf_button_edit">Guide : Edit</string>
+	<string name="dish_setup_conf_button_delete">Bookmark : Delete</string>
+	<string name="dish_setup_conf_button_goto">Info : Sat/Ts</string>
+	<string name="dish_setup_conf_button_scan">Menu : Scan</string>
+	
+	<string name="add_to_scanlist">Add into Scan List</string>
+	<string name="no_scan_list">No scan task data,please add satellite information from satellites list.</string>
+	<string name="no_data_info">No satellites info,please add satellite and transponder information or load satellite and transponder information from SDcard or U disk.</string>
+
+	<string name="agc">AGC</string>
+	<string name="ber">BER</string>
+	<string name="lock_status">Lock</string>
+	<string name="sat_signal_info">Satellite Signal Information</string>
+	<string name="progress">Progress</string>
+	<string name="satellites_info_list">Satellites Information</string>
+	
+	<string name="sure">Are you sure?</string>
+	
+	<string name="recording_time_set">TIME</string>	
+	<string name="recording_time">RECORD OPTION</string>											
+	<string name="recording_time_message">Setup recording time\n(Maximum 180, Minimum 10)</string>
+	<string name="program_info">Program Info</string>
+	<string name="program_no">Program No</string>
+	<string name="program_name">Program Name</string>
+	<string name="channel_num">Channel No</string>
+	<string name="video_pid">Video PID</string>
+	<string name="frequency">Frequency</string>
+	<string name="audio_pid">Audio PID</string>
+	<string name="bandwidth">Bandwidth</string>
+	<string name="rotation">Rotation</string>
+	<string name="constellation">Constellation</string>
+	<string name="fec_length">FEC Length</string>
+	<string name="guard_interval">Guard Interval</string>
+	<string name="code_rate">Code Rate</string>
+	<string name="fft">FFT</string>
+	<string name="multiple_plp">Multiple PLP</string>
+	<string name="pilot_pp">PILOT PP</string>
+	<string name="single_plp">SINGLE PLP</string>
+	
+	<string name="default_dBm">--- dBm</string>
+	<string name="default_percentage">--- %</string>
+</resources>

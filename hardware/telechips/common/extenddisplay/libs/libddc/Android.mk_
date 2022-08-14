@@ -1,0 +1,23 @@
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+
+LOCAL_C_INCLUDES := \
+	$(LOCAL_PATH)/../ $(LOCAL_PATH)/../../ \
+	kernel/include
+
+L_CFLAGS := -DTELECHIPS
+
+LOCAL_SRC_FILES := \
+	libddc.c
+
+LOCAL_MODULE := libddc
+
+LOCAL_SHARED_LIBRARIES := \
+	libutils \
+	libcutils \
+	libui \
+	liblog \
+	libmedia
+	
+
+include $(BUILD_STATIC_LIBRARY)

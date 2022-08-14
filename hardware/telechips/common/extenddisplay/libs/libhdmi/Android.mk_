@@ -1,0 +1,25 @@
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+
+LOCAL_C_INCLUDES := \
+	$(LOCAL_PATH)/../ $(LOCAL_PATH)/../../ $(LOCAL_PATH)/../../modules/ 
+
+LOCAL_SRC_FILES := \
+	libhdmi.c 
+	
+LOCAL_MODULE := libhdmi
+
+L_CFLAGS := -DTELECHIPS
+
+#LOCAL_STATIC_LIBRARIES := \
+#	libphy
+
+LOCAL_SHARED_LIBRARIES := \
+	libutils \
+	libcutils \
+	libui \
+	liblog 
+
+	
+
+include $(BUILD_STATIC_LIBRARY)

@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Do not translate. -->
+	<string-array name="area_code_select_values">
+		<!-- Do not translate. -->
+		<item>0</item>
+		<!-- Do not translate. -->
+		<item>1</item>
+		<!-- Do not translate. -->
+		<item>2</item>
+		<!-- Do not translate. -->
+		<item>3</item>
+		<!-- Do not translate. -->
+		<item>4</item>
+		<!-- Do not translate. -->
+		<item>5</item>
+		<!-- Do not translate. -->
+		<item>6</item>
+		<!-- Do not translate. -->
+		<item>7</item>
+		<!-- Do not translate. -->
+		<item>8</item>
+		<!-- Do not translate. -->
+		<item>9</item>
+		<!-- Do not translate. -->
+		<item>10</item>
+		<!-- Do not translate. -->
+		<item>11</item>
+		<!-- Do not translate. -->
+		<item>12</item>
+		<!-- Do not translate. -->
+		<item>13</item>
+		<!-- Do not translate. -->
+		<item>14</item>
+		<!-- Do not translate. -->
+		<item>15</item>
+		<!-- Do not translate. -->
+		<item>16</item>
+		<!-- Do not translate. -->
+		<item>17</item>
+		<!-- Do not translate. -->
+		<item>18</item>
+		<!-- Do not translate. -->
+		<item>19</item>
+		<!-- Do not translate. -->
+		<item>20</item>
+		<!-- Do not translate. -->
+		<item>21</item>
+		<!-- Do not translate. -->
+		<item>22</item>
+		<!-- Do not translate. -->
+		<item>23</item>
+		<!-- Do not translate. -->
+		<item>24</item>
+		<!-- Do not translate. -->
+		<item>25</item>
+		<!-- Do not translate. -->
+		<item>26</item>
+		<!-- Do not translate. -->
+		<item>27</item>
+		<!-- Do not translate. -->
+		<item>28</item>
+		<!-- Do not translate. -->
+		<item>29</item>
+		<!-- Do not translate. -->
+		<item>30</item>
+		<!-- Do not translate. -->
+		<item>31</item>
+		<!-- Do not translate. -->
+		<item>32</item>
+		<!-- Do not translate. -->
+		<item>33</item>
+		<!-- Do not translate. -->
+		<item>34</item>
+		<!-- Do not translate. -->
+		<item>35</item>
+		<!-- Do not translate. -->
+		<item>36</item>
+		<!-- Do not translate. -->
+		<item>37</item>
+		<!-- Do not translate. -->
+		<item>38</item>
+		<!-- Do not translate. -->
+		<item>39</item>
+		<!-- Do not translate. -->
+		<item>40</item>
+		<!-- Do not translate. -->
+		<item>41</item>
+		<!-- Do not translate. -->
+		<item>42</item>
+		<!-- Do not translate. -->
+		<item>43</item>
+		<!-- Do not translate. -->
+		<item>44</item>
+		<!-- Do not translate. -->
+		<item>45</item>
+		<!-- Do not translate. -->
+		<item>46</item>
+		<!-- Do not translate. -->
+		<item>47</item>
+		<!-- Do not translate. -->
+		<item>48</item>
+		<!-- Do not translate. -->
+		<item>49</item>
+		<!-- Do not translate. -->
+		<item>50</item>
+		<!-- Do not translate. -->
+		<item>51</item>
+		<!-- Do not translate. -->
+		<item>52</item>
+	</string-array>
+
+    <!-- Do not translate. -->
+	<string-array name="parental_rating_select_entries">
+		<item>age of 10</item>
+		<item>age of 12</item>
+		<item>age of 14</item>
+		<item>age of 16</item>
+		<item>age of 18</item>
+		<item>All</item>
+	</string-array>
+	
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="parental_rating_select_summaries">
+		<item>age of 10</item>
+		<item>age of 12</item>
+		<item>age of 14</item>
+		<item>age of 16</item>
+		<item>age of 18</item>
+		<item>All</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="parental_rating_select_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+		<!-- Do not translate. -->
+		<item>2</item>
+		<!-- Do not translate. -->
+		<item>3</item>
+		<!-- Do not translate. -->
+		<item>4</item>
+		<!-- Do not translate. -->
+		<item>5</item>
+	</string-array>
+
+    <!-- Do not translate. -->
+	<string-array name="video_select_entries">
+		<item>Video 1</item>
+		<item>Video 2</item>
+	</string-array>
+	
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="video_select_summaries">
+		<item>Video 1</item>
+		<item>Video 2</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="video_select_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+	</string-array>
+
+    <!-- Do not translate. -->
+	<string-array name="audio_select_entries">
+		<item>Audio 1</item>
+		<item>Audio 2</item>
+	</string-array>
+	
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="audio_select_summaries">
+		<item>Audio 1</item>
+		<item>Audio 2</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="audio_select_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+	</string-array>
+
+    <!-- Do not translate. -->
+	<string-array name="dual_audio_select_entries">
+		<item>Main</item>
+		<item>Sub</item>
+		<item>Main + Sub</item>
+	</string-array>
+	
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="dual_audio_select_summaries">
+		<item>Main</item>
+		<item>Sub</item>
+		<item>Main + Sub</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="dual_audio_select_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+        <!-- Do not translate. -->
+        <item>2</item>
+	</string-array>
+
+    <!-- Do not translate. -->
+	<string-array name="subtitle_select_entries">
+		<item>OFF</item>
+		<item>ON</item>
+	</string-array>
+	
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="subtitle_select_summaries">
+		<item>Off</item>
+		<item>On</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="subtitle_select_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+	</string-array>
+
+    <!-- Do not translate. -->
+	<string-array name="teletext_select_entries">
+		<item>OFF</item>
+		<item>ON</item>
+	</string-array>
+	
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="teletext_select_summaries">
+		<item>Off</item>
+		<item>On</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="teletext_select_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+	</string-array>
+
+    <!-- Do not translate. -->
+	<string-array name="caption_select_entries">
+		<item>LANGUAGE 1</item>
+		<item>LANGUAGE 2</item>
+	</string-array>
+	
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="caption_select_summaries">
+		<item>Language 1</item>
+		<item>Language 2</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="caption_select_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+	</string-array>
+	
+    <!-- Do not translate. -->
+	<string-array name="super_impose_select_entries">
+		<item>OFF</item>
+		<item>LANGUAGE 1</item>
+		<item>LANGUAGE 2</item>
+	</string-array>
+	
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="super_impose_select_summaries">
+		<item>Off</item>
+		<item>Language 1</item>
+		<item>Language 2</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="super_impose_select_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+        <!-- Do not translate. -->
+        <item>2</item>
+	</string-array>
+
+
+	<!-- Do not translate. -->
+	<string-array name="storage_select_entries">
+		<item>NAND</item>
+		<item>SD Card</item>
+		<item>SCSI SDA 1</item>
+		<item>SCSI SDA 2</item>
+		<item>SCSI SDA 3</item>
+		<item>SCSI SDA 4</item>
+		<item>SCSI SDB 1</item>
+		<item>SCSI SDB 2</item>
+		<item>SCSI SDB 3</item>
+		<item>SCSI SDB 4</item>
+		<item>SATA SDA 1</item>
+		<item>SATA SDA 2</item>
+		<item>SATA SDA 3</item>
+		<item>SATA SDA 4</item>
+		<item>SATA SDB 1</item>
+		<item>SATA SDB 2</item>
+		<item>SATA SDB 3</item>
+		<item>SATA SDB 4</item>
+	</string-array>
+	
+	<!-- Display setting.  Summary for each type of output. -->
+	<string-array name="storage_select_summaries">
+		<item>NAND</item>
+		<item>SD Card</item>
+		<item>SCSI SDA 1</item>
+		<item>SCSI SDA 2</item>
+		<item>SCSI SDA 3</item>
+		<item>SCSI SDA 4</item>
+		<item>SCSI SDB 1</item>
+		<item>SCSI SDB 2</item>
+		<item>SCSI SDB 3</item>
+		<item>SCSI SDB 4</item>
+		<item>SATA SDA 1</item>
+		<item>SATA SDA 2</item>
+		<item>SATA SDA 3</item>
+		<item>SATA SDA 4</item>
+		<item>SATA SDB 1</item>
+		<item>SATA SDB 2</item>
+		<item>SATA SDB 3</item>
+		<item>SATA SDB 4</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string-array name="storage_select_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+        <!-- Do not translate. -->
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <!-- Do not translate. -->
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <!-- Do not translate. -->
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <!-- Do not translate. -->
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+	</string-array>	
+
+	<!-- Do not translate. -->
+	<string-array name="closedcaption_select_entries">
+		<item>OFF</item>
+		<item>ON</item>
+	</string-array>
+
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="closedcaption_select_summaries">
+		<item>Off</item>
+		<item>On</item>
+	</string-array>
+
+	<!-- Do not translate. -->
+	<string-array name="closedcaption_select_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+	</string-array>
+
+    <!-- Do not translate. -->
+	<string-array name="captionnum_select_entries">
+		<item>Caption 1</item>		
+		<item>Caption 2</item>
+		<item>Caption 3</item>
+		<item>Caption 4</item>
+		<item>Caption 5</item>
+		<item>Caption 6</item>	
+	</string-array>
+
+	<!-- Display setting.  Summary for each type of output. -->
+	<string-array name="captionnum_select_summaries">
+		<item>Caption 1</item>
+		<item>Caption 2</item>
+		<item>Caption 3</item>
+		<item>Caption 4</item>
+		<item>Caption 5</item>
+		<item>Caption 6</item>
+	</string-array>
+
+	<!-- Do not translate. -->
+	<string-array name="captionnum_select_values">
+        <!-- Do not translate. -->
+        <item>1</item>
+        <!-- Do not translate. -->
+        <item>2</item>
+        <!-- Do not translate. -->
+        <item>3</item>
+        <!-- Do not translate. -->
+        <item>4</item>
+        <!-- Do not translate. -->
+        <item>5</item>
+        <!-- Do not translate. -->
+        <item>6</item>        
+	</string-array>
+
+    <!-- Do not translate. -->
+	<string-array name="input_select_entries">
+		<item>AIR</item>
+		<item>CABLE</item>
+		<item>TEST_AIR</item>
+		<item>TEST_CABLE</item>
+	</string-array>
+
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="input_select_summaries">
+		<item>Air</item>
+		<item>Cable</item>
+		<item>TEST_Air</item>
+		<item>TEST_Cable</item>
+	</string-array>
+
+	<!-- Do not translate. -->
+	<string-array name="input_select_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+        <!-- Do not translate. -->
+        <item>2</item>
+        <!-- Do not translate. -->
+        <item>3</item>
+	</string-array>
+
+    <!-- Do not translate. -->
+	<string-array name="audio_pref_select_entries">
+		<item>English</item>
+		<item>Korean</item>
+	</string-array>
+
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="audio_pref_select_summaries">
+		<item>English</item>
+		<item>Korean</item>
+	</string-array>
+
+	<!-- Do not translate. -->
+	<string-array name="audio_pref_select_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+	</string-array>
+
+    <!-- Do not translate. -->
+	<string-array name="aspect_ratio_select_entries">
+		<item>LetterBox</item>
+		<item>PanScan</item>
+		<item>FULL</item>
+	</string-array>
+
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="aspect_ratio_select_summaries">
+		<item>LetterBox</item>
+		<item>PanScan</item>
+		<item>FULL</item>
+	</string-array>
+
+	<!-- Do not translate. -->
+	<string-array name="aspect_ratio_select_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+        <!-- Do not translate. -->
+        <item>2</item>
+	</string-array>
+
+    <!-- Do not translate. -->
+	<string-array name="countrycode_select_entries">
+		<item>Australia</item>
+		<item>China</item>
+		<item>Finland</item>
+		<item>France</item>
+		<item>Germany</item>
+		<item>Italy</item>
+		<item>Korea</item>
+		<item>Luxembourg</item>
+		<item>Netherlands</item>
+		<item>Spain</item>
+		<item>Sweden</item>
+		<item>Taiwan</item>
+		<item>UK</item>
+		<item>US</item>
+		<item>Other(6Mhz)</item>
+		<item>Other(7Mhz)</item>
+		<item>Other(8Mhz)</item>
+		<item>Other(8Mhz)UHF</item>
+	</string-array>
+
+	<!-- Display setting.  Summary for each type of output. -->
+	<string-array name="countrycode_select_summaries">
+		<item>Australia</item>
+		<item>China</item>
+		<item>Finland</item>
+		<item>France</item>
+		<item>Germany</item>
+		<item>Italy</item>
+		<item>Korea</item>
+		<item>Luxembourg</item>
+		<item>Netherlands</item>
+		<item>Spain</item>
+		<item>Sweden</item>
+		<item>Taiwan</item>
+		<item>UK</item>
+		<item>US</item>
+		<item>Other(6Mhz)</item>
+		<item>Other(7Mhz)</item>
+		<item>Other(8Mhz)</item>
+		<item>Other(8Mhz)UHF</item>
+	</string-array>
+
+	<!-- Do not translate. -->
+	<string-array name="countrycode_select_values">
+		<!-- Do not translate. -->
+		<item>0</item>
+		<!-- Do not translate. -->
+		<item>1</item>
+		<!-- Do not translate. -->
+		<item>2</item>
+		<!-- Do not translate. -->
+		<item>3</item>
+		<!-- Do not translate. -->
+		<item>4</item>
+		<!-- Do not translate. -->
+		<item>5</item>
+		<!-- Do not translate. -->
+		<item>6</item>
+		<!-- Do not translate. -->
+		<item>7</item>
+		<!-- Do not translate. -->
+		<item>8</item>
+		<!-- Do not translate. -->
+		<item>9</item>
+		<!-- Do not translate. -->
+		<item>10</item>
+		<!-- Do not translate. -->
+		<item>11</item>
+		<!-- Do not translate. -->
+		<item>12</item>
+		<!-- Do not translate. -->
+		<item>13</item>
+		<!-- Do not translate. -->
+		<item>14</item>
+		<!-- Do not translate. -->
+		<item>15</item>
+		<!-- Do not translate. -->
+		<item>16</item>
+		<!-- Do not translate. -->
+		<item>17</item>
+	</string-array>
+
+</resources>

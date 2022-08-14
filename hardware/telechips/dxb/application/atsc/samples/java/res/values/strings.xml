@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<!-- List Screen Menu -->
+	<string name="on">On</string>
+	<string name="off">Off</string>
+
+	<string name="folder_captured">Captured DMB</string>
+	<string name="folder_recorded">Recorded DMB</string>
+
+	<!-- DMB Position -->
+	<string name="key_position">key_position</string>
+
+	<!-- Full Screen View Text -->
+	<string name="internal_storage">internal storage</string>
+	<string name="sdcard">SD card</string>
+	<string name="capture_complete">"Capture is completed and stored in<xliff:g id="DATE">%s</xliff:g>space \'Captured DMB\'."</string>
+	<string name="record_complete">"Recording is completed and stored in<xliff:g id="DATE">%s</xliff:g>space \'Recorded DMB\'."</string>
+	<string name="recod_cancel">Recording is canceled.</string>
+
+	<!-- Dialog text -->
+	<string name="scaning_channel_title">[ATSC] Channel scan</string>
+	<string name="scaning_channel_message_percent">"Channels scanning.\n<xliff:g id="percent">%1d</xliff:g>"</string>
+	<string name="scaning_channel_message_count">" completed / Channel <xliff:g id="count">%2d</xliff:g> found."
+	</string>
+	
+	<string name="stop_record_signal_weak">Due to weak signal strength, stop recording.</string>
+
+	<!-- Memory Priority-->
+	<string name="change_storage_priority">Saving priority Modification</string>
+	<string name="change_storage_priority_message">"Due to insufficient <xliff:g id="DATE">%s</xliff:g> space, request job can't be proceeded. Do you want to change saving priority for Priority on \'<xliff:g id="DATE">%s</xliff:g>\'?
+	</string>
+
+	<string name="lack_storage_space">Insufficient memory space</string>
+	<string name="lack_all_storage_space_message">All memory space is insufficient.\nMake extra space and retry again.</string>
+	<string name="lack_storage_space_message">"<xliff:g id="DATE">%s</xliff:g> space is insufficient.\nMake extra space and retry again.</string>
+	<string name="stop_record_storage_lack_message">"Due to insufficient space in <xliff:g id="DATE">%s</xliff:g>, recording is stopped. Recorded file is stored at \'Recorded DMB\' in<xliff:g id="DATE">%s</xliff:g>.</string>
+	
+	<string name="stop_record_error_title">Unknown error</string>
+ <string name="stop_record_error_message">Recording was terminated by unknown reason.</string>
+ 
+	<string name="screen_lock">Touch lock is set.</string>
+	<string name="screen_unlock">Touch is unlocked.</string>
+	
+	<string name="finish_atsc">Please wait.ATSC is shoutting down.</string>
+	<string name="meta_toast">Megastudy approved device can\'t use ATSC.</string>
+ <string name="channel_scaning">Cancel channel-scan has not be completed.</string>
+ <string name="storage_not_available">Storage is not available.</string>
+
+	<!-- DebugMode -->
+	<string name="pcber">PCBER</string>
+	<string name="rssi">RSSI</string>
+	<string name="snr">SNR</string>
+	<string name="debug_wait_channel">Arming up... Please wait few minutes.</string>
+	<string name="debug_get_channel">Fetching for channels...</string>
+	<string name="volume_up">Up</string>
+	<string name="volume_down">Down</string>
+
+	
+	<string name="_0to799">0~799</string>
+	<string name="age">Age</string>
+	<string name="area_code">Area code</string>
+	<string name="audio">Audio</string>
+  	<string name="cancel">Cancel</string>
+	<string name="caption">Caption</string>
+	<string name="capture">Capture</string>
+	<string name="channel">Channel</string>
+	<string name="channel_list">Channel List</string>
+	<string name="countrycode">Country Code</string>
+	<string name="dual_audio">Dual Audio</string>
+	<string name="epg">EPG</string>
+	<string name="failed">Failed!</string>
+	<string name="file_open_error">File open error!</string>
+	<string name="first_service">First service!!!</string>
+	<string name="first_data">First data!!!</string>
+	<string name="invalid_memory">Invalid memory!</string>
+	<string name="last_service">Last service!!!</string>
+	<string name="media_scanning">Media Scanning</string>
+	<string name="memory_error">Memory Error!</string>
+	<string name="memory_full">Memory Full!</string>
+	<string name="no_channel">No Channel</string>
+	<string name="no_info">No info</string>
+	<string name="option">Option</string>
+	<string name="option_subtitle">Option - Subtitle</string>
+	<string name="ok">OK</string>
+	<string name="page">Page</string>
+	<string name="parental_rating">Parental rating</string>
+	<string name="password">Password</string>
+	<string name="please_scan">Please scan.</string>
+	<string name="please_wait">Please wait...</string>
+	<string name="radio_channel">Radio Channel</string>
+	<string name="rec">REC.</string>
+	<string name="rec_stop">REC Stop</string>
+	<string name="record">Record</string>
+	<string name="recording">Recording</string>
+	<string name="recording_error">Recording Error!</string>
+	<string name="saved">Saved!</string>
+	<string name="scan">Scan</string>
+	<string name="screen">Screen</string>
+	<string name="storage">Storage</string>
+	<string name="subtitle">Subtitle</string>
+	<string name="super_impose">Super impose</string>
+	<string name="teletext">Teletext</string>
+	<string name="ttx">TTX</string>
+	<string name="ttx_prev">&lt;</string>
+	<string name="ttx_next">&gt;</string>
+	<string name="ttx_fprev">&lt;&lt;</string>
+	<string name="ttx_fnext">&gt;&gt;</string>
+	<string name="tv_channel">TV Channel</string>
+	<string name="video">Video</string>
+	<string name="weak_signal">Weak signal!</string>
+	<string name="closedcaptionsetting">Closed Caption Setting</string>
+	<string name="closedcaption">Closed Caption</string>
+	<string name="caption_num">Caption Number</string>
+	<string name="input_selection">Input Selection</string>	
+	<string name="audio_preference">Audio Preference</string>
+	<string name="aspect_ratio">Aspect Ratio</string>
+	
+	<string name="exiting_media_storage_inserted">Exiting...(Media storage inserted)\nPlease run application later...</string>
+	<string name="now_scanning_media">Now scanning media...\nPlease run application later...</string>
+	<string name="if_you_want_to_use_radio_scan_channel">If you want to use Radio. Scan Channel.</string>
+	<string name="if_you_want_to_use_tv_scan_channel">If you want to use TV. Scan Channel.</string>
+	<string name="Please_enter_the_correct_password">Please enter the correct password.</string>
+	<string name="please_wait_cancel_scanning">Please wait cancel scanning...</string>
+	<string name="please_wait_while_searching">Please wait while searching...</string>
+	<string name="receiving_signal_strength_is_weak">Receiving signal strength is weak.\nPlease wait a minute.</string>
+	<!-- [ATSC] specific -->
+		<string name="app_name">DTV ATSC</string>
+		<string name="dxb_options">Options</string>
+		<string name="atsc_menusetting">Menu Setting</string>
+		<string name="atsc_scansetting">Scan Setting</string>
+		<string name="audio_pref_select">Select Audio Preference</string>
+		<string name="screen_mode_select">Select Screen Mode</string>
+		<string name="screen_mode">Screen Mode</string>
+	<!-- [ATSC] specific -->
+	
+</resources>

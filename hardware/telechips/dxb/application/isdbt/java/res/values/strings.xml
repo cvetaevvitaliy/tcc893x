@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 Telechips, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<string name="_0to799">0~799</string>
+	<string name="_6_mhz">6Mhz</string>
+	<string name="_7_mhz">7Mhz</string>
+	<string name="_8_mhz">8Mhz</string>
+	<string name="age">Age</string>
+	<string name="area_code">Area code</string>
+	<string name="audio">Audio</string>
+	<string name="auto_search">Initial Scan</string>
+	<string name="bcas_card_error">B-CAS Card Error</string>
+	<string name="bcas_card_information">BCAS Card information</string>
+	<string name="bilingual">Bilingual</string>
+	<string name="cancel">Cancel</string>
+	<string name="caption">Caption</string>
+	<string name="capture">Capture</string>
+	<string name="change_password">Change password</string>
+	<string name="card_identifier">Card Identifier</string>
+	<string name="change_area">Change area</string>
+	<string name="channel">Channel</string>
+	<string name="channel_list">Channel List</string>
+	<string name="confirm_new_password">Confirm new password</string>
+	<string name="countrycode">Country Code</string>
+	<string name="current_password">Current password</string>
+	<string name="dual_audio">Dual Audio</string>
+	<string name="descriptive_video_service">DVS</string>	
+	<string name="enter">Enter</string>
+	<string name="epg">EPG</string>
+	<string name="ews">EWS</string>
+	<string name="failed">Failed!</string>
+ 	<string name="FAVOURITE">FAVOURITE</string>
+	<string name="file_open_error">File open error!</string>
+	<string name="first_service">First service!!!</string>
+	<string name="first_data">First data!!!</string>
+	<string name="group_id">Group ID</string>
+	<string name="handover">Handover</string>
+	<string name="handover_relay">Handover</string>
+	<string name="handover_affiliate">Handover</string>
+	<string name="signal_quality">Signal Quality</string>
+	<string name="individual_id">Individual ID</string>
+	<string name="invalid_memory">Invalid memory!</string>
+	<string name="last_service">Last service!!!</string>
+	<string name="language">Language</string>
+	<string name="loading">Loading...</string>
+	<string name="manual">Manual</string>
+	<string name="manual_scan">Manual scan</string>
+	<string name="manual_scan_title">Manual scan (KHz)</string>
+	<string name="manual_scan_warning">Frequency must be 6 digit number.</string>
+	<string name="manual_scan_error">Frequency cannot be scanned due to invalid input.</string>
+	<string name="media_scanning">Media Scanning</string>
+	<string name="memory_error">Memory Error!</string>
+	<string name="memory_full">Memory Full!</string>
+	<string name="new_password">New password</string>
+	<string name="no">No</string>
+	<string name="no_channel">No Channel</string>
+	<string name="no_info">No Information</string>
+	<string name="not_support">Not support</string>
+	<string name="option">Option</string>
+	<string name="option_subtitle">Option - Subtitle</string>
+	<string name="off">Off</string>
+	<string name="ok">OK</string>
+	<string name="on">On</string>
+	<string name="page">Page</string>
+	<string name="parental_rating">Parental rating</string>
+	<string name="parental_guidance">Parental Guidance</string>
+	<string name="password">Password</string>
+	<string name="please_check_bcas_card">Please, Check B-CAS Card.</string>
+	<string name="please_scan">Please scan.</string>
+	<string name="please_wait">Please wait...</string>
+	<string name="preset">Preset</string>
+	<string name="radio">Radio</string>
+	<string name="rec">REC.</string>
+	<string name="rec_stop">REC Stop</string>
+	<string name="record">Record</string>
+	<string name="recording">Recording</string>
+	<string name="recording_error">Recording Error!</string>
+	<string name="recording_other_channel">Recording other channel</string>
+	<string name="rescan">Rescan</string>
+	<string name="saved">Saved!</string>
+	<string name="scan">Scan</string>
+	<string name="screen">Screen</string>
+	<string name="set_password">Set password</string>
+	<string name="settings">Settings</string>
+	<string name="seamless_change">Seamless Change</string>
+	<string name="start">Start</string>
+	<string name="storage">Storage</string>
+	<string name="subtitle">Subtitle</string>
+	<string name="super_impose">Super impose</string>
+	<string name="teletext">Teletext</string>
+	<string name="ttx">TTX</string>
+	<string name="ttx_prev">&lt;</string>
+	<string name="ttx_next">&gt;</string>
+	<string name="ttx_fprev">&lt;&lt;</string>
+	<string name="ttx_fnext">&gt;&gt;</string>
+	<string name="tv">TV</string>
+	<string name="tv_channel">TV Channel</string>
+	<string name="update_channel">Update channel...</string>	
+	<string name="video">Video</string>
+	<string name="weak_signal">Weak signal!</string>
+	<string name="yes">Yes</string>
+	<string name="bcas_mode">B-CAS MODE</string>
+	<string name="frequency_support">Frequency</string>
+	<string name="frequency_vhf">VHF</string>
+	<string name="frequency_mid">MID</string>
+	<string name="frequency_shb">SHB</string>
+
+	<!-- (option) key -->
+    <string name="key_change_password_select">key_change_password_select</string>
+	<string name="key_handover_select">key_handover_select</string>
+	<string name="key_ews_select">key_ews_select</string>
+	<string name="key_change_area_select">key_change_area_select</string>
+	<string name="key_signal_quality_select">key_signal_quality_select</string>
+	<string name="key_bcas_mode_select">key_bcas_mode_select</string>
+	<string name="key_seamless_change_select">key_seamless_change_select</string>
+	<string name="key_frequency_vhf">key_frequency_vhf</string>
+	<string name="key_frequency_mid">key_frequency_mid</string>
+	<string name="key_frequency_shb">key_frequency_shb</string>
+
+	<!-- (option) field_log -->
+	<string name="field_log">field_log</string>
+	<string name="key_field_log">key_field_log</string>
+	
+	<!-- [PVR-Recording/FilePlay] -->
+	<string name="pvr">PVR</string>
+	<string name="pvr_channel">PVR Channel</string>
+	<string name="info">Information</string>
+	
+	<!-- [PVR-Schedule] -->
+	<string name="book">Book</string>
+	<string name="schedule">Schedule</string>
+	<string name="event">Event</string>
+	<string name="event_edit">Event Edit</string>
+	<string name="program">Program</string>
+	<string name="date">Date</string>
+	<string name="time">Time</string>
+	<string name="reminder">Reminder</string>
+	<string name="repeat">Repeat</string>
+	<string name="status">Status</string>
+	<string name="add">Add</string>
+	<string name="edit">Edit</string>
+	<string name="del">Del</string>
+	<string name="exit">Exit</string>
+	<string name="event_add">Event_add</string>
+	<string name="channel_type">Channel_type</string>
+	<string name="channel_no">Channel_no</string>
+	<string name="channel_name">Channel_name</string>
+	<string name="start_date">Start_date</string>
+	<string name="start_time">Start_time</string>
+	<string name="end_time">End_time</string>
+	<string name="mode">Mode</string>
+	<string name="confirm">Confirm</string>
+	<string name="select">Select</string>
+	<string name="no_pvr_file_found">No PVR file found.</string>	
+	<string name="once">Once</string>
+	<string name="weekly">Weekly</string>
+	<string name="view">View</string>
+	<string name="daily">Daily</string>
+	
+	<string name="are_you_sure_to_exit_ISDBT">Are you sure to exit ISDBT-T?</string>
+	<string name="book_event_time_up">Book event time up.</string>
+	<string name="exiting_media_storage_inserted">Exiting...(Media storage inserted)\nPlease run application later...</string>
+	<string name="failed_no_free_space">Failed! Not enough free space</string>
+	<string name="failed_invalid_storage">Failed! Please use usb storage</string>
+	<string name="for_applying_a_country_code_the_application_will_be_closed">For applying a country code, the application will be closed.\nPlease, restart it.</string>
+	<string name="if_you_want_to_use_radio_scan_channel">No channels found, Please scan channels.</string>
+	<string name="if_you_want_to_use_tv_scan_channel">No channels found, Please scan channels.</string>
+	<string name="invalid_end_time">Invalid end time!</string>
+	<string name="is_playing_now">Is playing now!</string>
+	<string name="mismatch_in_confirm_password">mismatch in confirm password.</string>
+	<string name="no_disk_detected">no disk detected!</string>
+	<string name="now_playing">NOW PLAYING!</string>
+	<string name="now_scanning_media">Now scanning media...\nPlease run application later...</string>
+	<string name="please_enter_the_correct_password">Please enter the correct password.</string>
+	<string name="please_enter_page">Please enter page</string>
+	<string name="please_enter_password">Please enter password</string>
+	<string name="please_wait_cancel_scanning">Please wait cancel scanning...</string>
+	<string name="please_wait_ISDBT_is_shutting_off">Please wait. ISDBT-T is shutting off.</string>
+	<string name="please_wait_while_searching">Please wait while searching...</string>
+	<string name="receiving_signal_strength_is_weak">Receiving signal strength is weak.\nPlease wait a minute.</string>
+	<string name="the_schedule_is_invalid">The schedule is invalid.</string>
+	<string name="the_schedule_is_invalid_max_recording_time_is_10_hours">The schedule is invalid, max recording time is 10 hours.</string>
+	<string name="the_service_is_locked">The service is locked.</string>
+	<string name="the_service_is_locked_the_rating_is">The service is locked, the rating is</string>
+	<string name="this_schedule_is_conflict_with_event">This schedule is conflict with Event.</string>
+	<string name="your_password_has_been_changed">Your password has been changed.</string>
+
+	<string name="bcas_card_detect_error_please_check_bcas_card">B-CAS Card Detect Error!!!</string>
+	<string name="invalid_bcas_card_please_check_bcas_card">Invalid B-CAS Card!!!</string>
+	<string name="Please_enter_the_correct_password">Please enter the correct password.</string>	
+	
+	<!-- [ISDB-T] specific -->
+	<string name="app_name">DVR ISDBT</string>
+	<string name="dxb_options">[ISDBT-T] Options</string>
+	<!-- [ISDB-T] specific -->
+
+	<!-- preset mode -->
+	<string name="preset_mode_select">Preset</string>
+	<string name="key_preset_mode_select">key_preset_mode_select</string>
+</resources>

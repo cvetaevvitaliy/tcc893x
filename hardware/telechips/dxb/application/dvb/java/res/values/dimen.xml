@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 Telechips, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+	<!-- Font -->
+	<dimen name="font_list_data_s">18px</dimen>
+	<dimen name="font_list_data_b">28px</dimen>
+	
+	<!-- Main -->
+		<!-- toast -->
+		<dimen name="list_toast_x_offset">250px</dimen>
+		<dimen name="list_toast_y_offset">-80px</dimen>
+
+		<!--  ttx -->
+		<dimen name="ttx_display_x">35px</dimen>
+		<dimen name="ttx_display_y">0px</dimen>
+		<dimen name="ttx_display_width">610px</dimen>
+		<dimen name="ttx_display_height">480px</dimen>
+		
+		<dimen name="ttx_header_x">41px</dimen>
+		<dimen name="ttx_header_y">4px</dimen>
+		<dimen name="ttx_header_width">120px</dimen>
+		<dimen name="ttx_header_height">20px</dimen>
+		<dimen name="ttx_header_font">14px</dimen>
+		
+		<dimen name="ttx_menu_x">643px</dimen>
+		<dimen name="ttx_menu_y">0px</dimen>
+		<dimen name="ttx_menu_width">120px</dimen>
+		<dimen name="ttx_menu_height">480px</dimen>
+		
+		<dimen name="ttx_title_y">0px</dimen>
+		<dimen name="ttx_title_height">60px</dimen>
+		
+		<dimen name="ttx_page_x">5px</dimen>
+		<dimen name="ttx_page_y">60px</dimen>
+		<dimen name="ttx_page_width">110px</dimen>
+		<dimen name="ttx_page_height">60px</dimen>
+		
+		<dimen name="ttx_start_y">120px</dimen>
+		<dimen name="ttx_start_height">60px</dimen>
+		
+		<dimen name="ttx_red_y">180px</dimen>
+		<dimen name="ttx_red_width">60px</dimen>		
+		<dimen name="ttx_red_height">60px</dimen>		
+		
+		<dimen name="ttx_red_rec_x">15px</dimen>
+		<dimen name="ttx_red_rec_y">195px</dimen>
+		<dimen name="ttx_red_rec_width">30px</dimen>		
+		<dimen name="ttx_red_rec_height">30px</dimen>		
+		
+		<dimen name="ttx_green_x">60px</dimen>
+		<dimen name="ttx_green_y">180px</dimen>
+		<dimen name="ttx_green_width">60px</dimen>
+		<dimen name="ttx_green_height">60px</dimen>
+		
+		<dimen name="ttx_green_rec_x">75px</dimen>
+		<dimen name="ttx_green_rec_y">195px</dimen>
+		<dimen name="ttx_green_rec_width">30px</dimen>
+		<dimen name="ttx_green_rec_height">30px</dimen>
+		
+		<dimen name="ttx_yellow_y">240px</dimen>
+		<dimen name="ttx_yellow_width">60px</dimen>
+		<dimen name="ttx_yellow_height">60px</dimen>
+		
+		<dimen name="ttx_yellow_rec_x">15px</dimen>
+		<dimen name="ttx_yellow_rec_y">255px</dimen>
+		<dimen name="ttx_yellow_rec_width">30px</dimen>
+		<dimen name="ttx_yellow_rec_height">30px</dimen>
+		
+		<dimen name="ttx_cyan_x">60px</dimen>
+		<dimen name="ttx_cyan_y">240px</dimen>
+		<dimen name="ttx_cyan_width">60px</dimen>
+		<dimen name="ttx_cyan_height">60px</dimen>
+		
+		<dimen name="ttx_cyan_rec_x">75px</dimen>
+		<dimen name="ttx_cyan_rec_y">255px</dimen>
+		<dimen name="ttx_cyan_rec_width">30px</dimen>
+		<dimen name="ttx_cyan_rec_height">30px</dimen>
+		
+		<dimen name="ttx_prev_y">300px</dimen>
+		<dimen name="ttx_prev_width">60px</dimen>
+		<dimen name="ttx_prev_height">60px</dimen>
+		
+		<dimen name="ttx_next_x">60px</dimen>
+		<dimen name="ttx_next_y">300px</dimen>
+		<dimen name="ttx_next_width">60px</dimen>
+		<dimen name="ttx_next_height">60px</dimen>
+		
+		<dimen name="ttx_fprev_y">360px</dimen>
+		<dimen name="ttx_fprev_width">60px</dimen>
+		<dimen name="ttx_fprev_height">60px</dimen>
+		
+		<dimen name="ttx_fnext_x">60px</dimen>
+		<dimen name="ttx_fnext_y">360px</dimen>
+		<dimen name="ttx_fnext_width">60px</dimen>
+		<dimen name="ttx_fnext_height">60px</dimen>
+		
+		<dimen name="ttx_off_y">420px</dimen>
+		<dimen name="ttx_off_height">60px</dimen>
+		
+		<!--  rec -->
+		<dimen name="full_group_play_mode_x">0px</dimen>
+		<dimen name="full_group_play_mode_y">0px</dimen>
+		<dimen name="full_play_mode_text_x">1150px</dimen>
+		<dimen name="full_play_mode_text_y">100px</dimen>
+</resources>

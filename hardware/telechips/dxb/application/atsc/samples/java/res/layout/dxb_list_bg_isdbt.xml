@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+
+	<AbsoluteLayout 
+		android:layout_x="@dimen/head_x"
+		android:layout_y="@dimen/head_y"
+		android:layout_width="@dimen/head_width"
+		android:layout_height="@dimen/head_height"
+		>
+		<ImageView
+			android:layout_x="@dimen/head_icon_x"
+			android:layout_y="@dimen/head_icon_y"
+			android:layout_width="@dimen/head_icon_width"
+			android:layout_height="@dimen/head_icon_height"
+			android:src="@drawable/dxb_portable_tab_tv_btn_n"
+			android:focusable="false"
+			>
+		</ImageView>
+	
+		<TextView
+			android:layout_x="@dimen/head_text_x"
+			android:layout_y="@dimen/head_text_y"
+			android:layout_width="@dimen/head_text_width"
+			android:layout_height="@dimen/head_text_height"
+			android:gravity="center_vertical"
+			android:text="@string/channel_list"
+			android:textColor="@color/color_3"
+			android:textSize="@dimen/head_text_font"
+			android:focusable="false"
+			>
+		</TextView>
+	</AbsoluteLayout>
+
+	<ListView
+		android:id="@+id/service_list_isdbt"
+		android:layout_x="@dimen/body_x"
+		android:layout_y="@dimen/body_y"
+		android:layout_width="@dimen/body_width"
+		android:layout_height="@dimen/body_height"
+		android:scrollbarStyle="outsideInset"
+		android:scrollbarSize="4px"
+		android:dividerHeight="1px"
+		android:focusable="true"
+		>
+	</ListView>
+
+	<TextView
+		android:id="@+id/list_title_isdbt"
+		android:layout_x="@dimen/list_title_x"
+		android:layout_y="@dimen/list_title_y"
+		android:layout_width="@dimen/list_title_width"
+		android:layout_height="@dimen/list_title_height"
+		android:textSize="@dimen/list_title_font"
+		android:gravity="center"
+		android:focusable="false"
+		>
+	</TextView>
+
+	<TextView
+		android:id="@+id/list_message_isdbt"
+		android:layout_x="@dimen/list_message_x"
+		android:layout_y="@dimen/list_message_y"
+		android:layout_width="@dimen/list_message_width"
+		android:layout_height="@dimen/list_message_height"
+		android:textSize="@dimen/list_message_font"		
+		android:gravity="center"
+		>
+	</TextView>
+
+	<View
+		android:id="@+id/list_view_isdbt"
+		android:layout_x="@dimen/list_view_x"
+		android:layout_y="@dimen/list_view_y"
+		android:layout_width="@dimen/list_view_width"
+		android:layout_height="@dimen/list_view_height"
+		android:background="#00000000"
+		android:clickable="true"
+		android:focusable="false"
+		>
+	</View>
+	
+	<ImageView
+		android:id="@+id/list_image_isdbt"
+		android:layout_x="@dimen/list_image_x"
+		android:layout_y="@dimen/list_image_y"
+		android:layout_width="@dimen/list_image_width"
+		android:layout_height="@dimen/list_image_height"
+		android:focusable="false"
+		>
+	</ImageView>
+	
+	<TextView
+		android:id="@+id/list_count_isdbt"
+		android:layout_x="@dimen/list_count_x"
+		android:layout_y="@dimen/list_count_y"
+		android:layout_width="@dimen/list_count_width"
+		android:layout_height="@dimen/list_count_height"
+		android:textSize="@dimen/list_count_font"
+		android:gravity="center"
+		android:focusable="false"
+		>
+	</TextView>
+		
+	<Button
+		android:id="@+id/bu_scan_isdbt"
+		android:layout_x="@dimen/list_scan_x"
+		android:layout_y="@dimen/list_scan_y"
+		android:layout_width="@dimen/list_scan_width"
+		android:layout_height="@dimen/list_scan_height"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:background="@drawable/dxb_portable_toolbar_btn_bg_n"
+		android:textSize="@dimen/list_scan_font"
+		android:textColor="@color/color_2"
+		android:text="@string/scan"
+		android:focusable="true"
+	/>
+
+</AbsoluteLayout>

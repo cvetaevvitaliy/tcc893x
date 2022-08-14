@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="horizontal"
+	>
+	
+	<View
+		android:layout_width="0dp"
+		android:layout_height="fill_parent"
+		android:layout_weight="5"
+	    />
+	<SeekBar
+	    android:id="@+id/memory_seekbar"
+		android:layout_width="0dp"
+		android:layout_height="fill_parent"
+		android:layout_weight="45"
+		android:focusable="false"
+	    />
+	<View
+		android:layout_width="0dp"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+	    />
+	<TextView
+	    android:id="@+id/memory_text"
+		android:layout_width="0dp"
+		android:layout_height="fill_parent"
+		android:layout_weight="15"
+	    />
+	<View
+		android:layout_width="0dp"
+		android:layout_height="fill_parent"
+		android:layout_weight="5"
+	    />
+    
+</LinearLayout>

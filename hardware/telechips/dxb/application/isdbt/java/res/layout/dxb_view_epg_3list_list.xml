@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 Telechips, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="@dimen/epg_margin_inline"
+	
+	android:background="#FF888888"
+	>
+	<!-- Service - start -->
+		<TextView
+			android:id="@+id/epg_service0"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:gravity="center_vertical"
+			    
+			android:background="#FF3A3A3A"
+			/>
+	
+		<TextView
+			android:id="@+id/epg_service1"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:gravity="center_vertical"
+			    
+			android:background="#FF3A3A3A"
+			/>
+	
+		<TextView
+			android:id="@+id/epg_service2"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:gravity="center_vertical"
+			    
+			android:background="#FF3A3A3A"
+			/>
+	<!-- Service - end -->
+	
+	<!-- Time - start -->
+		<TextView
+			android:id="@+id/epg_time0"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:gravity="center"
+			    
+			android:background="#FF274E72"
+			/>
+		
+		<TextView
+			android:id="@+id/epg_time1"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:gravity="center"
+			    
+			android:background="#FF244366"
+			/>
+		
+		<TextView
+			android:id="@+id/epg_time2"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:gravity="center"
+			    
+			android:background="#FF393A62"
+			/>
+		
+		<TextView
+			android:id="@+id/epg_time3"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:gravity="center"
+			    
+			android:background="#FF4E315F"
+			/>
+	<!-- Time - end -->
+				
+	<!-- EPG data - start -->
+		<TextView
+		    android:id="@+id/epg_service0_0"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+			android:id="@+id/epg_service0_1"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+					    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+			    
+		<TextView
+		    android:id="@+id/epg_service0_2"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"			
+					    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+				    
+		<TextView
+		    android:id="@+id/epg_service0_3"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+				    
+		<TextView
+		    android:id="@+id/epg_service0_4"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service0_5"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+				    
+		<TextView
+		    android:id="@+id/epg_service0_6"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service0_7"
+			android:x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service0_8"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service0_9"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+				    
+		<TextView
+		    android:id="@+id/epg_service0_10"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service0_11"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service0_12"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service0_13"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service0_14"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+					    			
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service0_15"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+					    			
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service0_16"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+					    			
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service0_17"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+					    			
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service0_18"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+					    			
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service0_19"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+					    			
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service0_20"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service0_21"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service0_22"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service0_23"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service0_24"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+					    			
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service0_25"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+					    			
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service0_26"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+					    			
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service0_27"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+					    			
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service0_28"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+					    			
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service0_29"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+					    			
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service1_0"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+			android:id="@+id/epg_service1_1"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+			    
+		<TextView
+		    android:id="@+id/epg_service1_2"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+				    
+		<TextView
+		    android:id="@+id/epg_service1_3"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+				    
+		<TextView
+		    android:id="@+id/epg_service1_4"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+					    			
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service1_5"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+				    
+		<TextView
+		    android:id="@+id/epg_service1_6"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service1_7"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service1_8"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service1_9"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+				    
+		<TextView
+		    android:id="@+id/epg_service1_10"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service1_11"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service1_12"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service1_13"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service1_14"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+				
+		<TextView
+		    android:id="@+id/epg_service1_15"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+				
+		<TextView
+		    android:id="@+id/epg_service1_16"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+				
+		<TextView
+		    android:id="@+id/epg_service1_17"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+				
+		<TextView
+		    android:id="@+id/epg_service1_18"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service1_19"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service1_20"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service1_21"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service1_22"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service1_23"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service1_24"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service1_25"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+				
+		<TextView
+		    android:id="@+id/epg_service1_26"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+				
+		<TextView
+		    android:id="@+id/epg_service1_27"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+				
+		<TextView
+		    android:id="@+id/epg_service1_28"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service1_29"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+				
+		<TextView
+		    android:id="@+id/epg_service2_0"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+						
+		<TextView
+		    android:id="@+id/epg_service2_1"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+				    
+		<TextView
+		    android:id="@+id/epg_service2_2"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+				    
+		<TextView
+		    android:id="@+id/epg_service2_3"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+				    
+		<TextView
+		    android:id="@+id/epg_service2_4"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service2_5"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+				    
+		<TextView
+		    android:id="@+id/epg_service2_6"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service2_7"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service2_8"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service2_9"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+				    
+		<TextView
+		    android:id="@+id/epg_service2_10"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service2_11"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service2_12"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service2_13"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service2_14"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service2_15"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service2_16"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service2_17"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service2_18"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service2_19"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service2_20"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service2_21"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service2_22"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service2_23"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		
+		<TextView
+		    android:id="@+id/epg_service2_24"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service2_25"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service2_26"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service2_27"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service2_28"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service2_29"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+
+		<TextView
+		    android:id="@+id/epg_service_extend"
+			android:layout_x="0dp"
+			android:layout_y="0dp"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:paddingLeft="@dimen/epg_margin_text"
+			android:paddingRight="@dimen/epg_margin_text"
+			android:paddingTop="@dimen/epg_margin_text"
+								    
+			android:textColor="#FF383838"					    
+			android:background="#FFDDDDDD"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+		<!-- EPG data - end -->
+</AbsoluteLayout>

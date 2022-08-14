@@ -1,0 +1,23 @@
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+
+LOCAL_C_INCLUDES := \
+	$(LOCAL_PATH)/../ $(LOCAL_PATH)/../../  
+
+LOCAL_SRC_FILES := \
+	libedid.c \
+	edidparse.c
+
+L_CFLAGS := -DTELECHIPS
+	
+LOCAL_MODULE := libedid
+
+LOCAL_SHARED_LIBRARIES := \
+	libutils \
+	libcutils \
+	libui \
+	liblog 
+
+	
+
+include $(BUILD_STATIC_LIBRARY)

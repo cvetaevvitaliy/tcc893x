@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="@dimen/epg_row_height"
+	android:orientation="horizontal"
+    >
+    <TextView
+		android:id="@+id/epg_row_time"
+		android:layout_x="@dimen/epg_row_time_x"
+		android:layout_width="@dimen/epg_row_time_width"
+		android:layout_height="@dimen/epg_row_height"
+		android:gravity="center_vertical"
+		android:textSize="@dimen/epg_list_font"
+    	>
+    </TextView>
+  
+     <TextView
+    	android:id="@+id/epg_row_name"
+		android:layout_x="@dimen/epg_row_name_x"
+		android:layout_width="@dimen/epg_row_name_width"
+		android:layout_height="@dimen/epg_row_height"
+		android:gravity="center_vertical"
+		android:textSize="@dimen/epg_list_font"
+    	>
+    </TextView>
+</AbsoluteLayout>

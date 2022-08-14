@@ -1,0 +1,40 @@
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+
+ifeq ($(TARGET_BOARD_PLATFORM),tcc892x)
+LOCAL_PREBUILT_LIBS := \
+	libTCC892x_ASFDMX_ANDROID_V02.007.001.a
+endif
+ifeq ($(TARGET_BOARD_PLATFORM),tcc893x)
+LOCAL_PREBUILT_LIBS := \
+	libTCC893x_ASFDMX_ANDROID_V02.007.001.a
+endif
+
+LOCAL_MODULE_TAGS := optional
+include $(BUILD_MULTI_PREBUILT)
+
+#############################################################################
+#ifeq ($(INSTALL_LIB_FF6),true)
+include $(CLEAR_VARS)
+
+LOCAL_PRELINK_MODULE := false 
+
+LOCAL_MODULE := libff6
+LOCAL_MODULE_TAGS := optional
+
+LOCAL_CFLAGS :=  $(PV_CFLAGS_MINUS_VISIBILITY) \
+
+LOCAL_ARM_MODE := arm
+
+ifeq ($(TARGET_BOARD_PLATFORM),tcc892x)
+LOCAL_WHOLE_STATIC_LIBRARIES := \
+	libTCC892x_ASFDMX_ANDROID_V02.007.001
+endif
+ifeq ($(TARGET_BOARD_PLATFORM),tcc893x)
+LOCAL_WHOLE_STATIC_LIBRARIES := \
+	libTCC893x_ASFDMX_ANDROID_V02.007.001
+endif
+
+include $(BUILD_SHARED_LIBRARY)
+#endif
+#############################################################################

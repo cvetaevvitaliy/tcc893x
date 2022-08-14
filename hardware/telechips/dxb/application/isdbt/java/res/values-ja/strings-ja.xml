@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 Telechips, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<string name="_0to799">0~799</string>
+	<string name="age">お年</string>
+	<string name="area_code">地域番号</string>
+	<string name="audio">音声設定</string>
+	<string name="auto_search">初期スキャン</string>
+	<string name="bcas_card_error">B-CAS カ-ド エラー</string>
+	<string name="bcas_card_information">BCAS カ-ド 情報</string>
+	<string name="bilingual">2 カ国語</string>	
+	<string name="cancel">取消</string>
+	<string name="caption">字幕</string>
+	<string name="capture">キャプチャー</string>
+	<string name="card_identifier">カ-ド識別</string>
+	<string name="change_area">視聴エリア変更</string>
+	<string name="channel">リスト</string>
+	<string name="channel_list">チャンネルリスト</string>
+	<string name="countrycode">Country Code</string>
+	<string name="dual_audio">二重音声</string>
+	<string name="descriptive_video_service">音声解説</string>
+	<string name="epg">番組</string>
+	<string name="ews">緊急放送</string>
+	<string name="failed">失敗!</string>
+	<string name="file_open_error">ファイル オープン エラー!</string>
+	<string name="first_service">最初のサービス!</string>
+	<string name="first_data">最初のデータ!</string>
+	<string name="group_id">グル-プ ID</string>
+	<string name="handover">中継サーチ</string>
+	<string name="handover_relay">中継局サーチ</string>
+	<string name="handover_affiliate">系列局サーチ</string>
+	<string name="individual_id">カ-ド ID</string>
+	<string name="invalid_memory">ストレージ エラー!</string>
+	<string name="last_service">最後のサービス!</string>
+	<string name="language">言語</string>
+	<string name="loading">Loading...</string>
+	<string name="manual">マニュアル</string>
+	<string name="manual_scan">マニュアルスキャン</string>
+	<string name="manual_scan_title">マニュアルスキャン (KHz)</string>
+	<string name="manual_scan_warning">周波数は6桁の数字でなければなりません。</string>	
+	<string name="manual_scan_error">無効な入力のために周波数をスキャンすることができません。</string>	
+	<string name="media_scanning">Media Scanning</string>
+	<string name="memory_error">ストレージ エラー!</string>
+	<string name="memory_full">ストレージ フール!</string>
+	<string name="no">いいえ</string>
+	<string name="no_channel">チャンネルが見つかりません</string>
+	<string name="no_info">No Information</string>
+	<string name="not_support">Not support</string>
+	<string name="option">オプション</string>
+	<string name="option_subtitle">オプション - 字幕</string>
+	<string name="off">Off</string>
+	<string name="ok">OK</string>
+	<string name="on">On</string>
+	<string name="page">Page</string>
+	<string name="parental_rating">Parental rating</string>
+	<string name="password">暗証番号</string>
+	<string name="please_check_bcas_card">B-CAS カ-ドを 確認してください。</string>
+	<string name="please_scan">Please scan.</string>
+	<string name="please_wait">ちょっと待ってください</string>
+	<string name="preset">チャンネル設定</string>
+	<string name="rec">REC.</string>
+	<string name="rec_stop">REC Stop</string>
+	<string name="record">記録</string>
+	<string name="recording">記録中</string>
+	<string name="recording_error">録画失敗!</string>
+	<string name="rescan">再スキャン</string>
+	<string name="saved">セーブしました!</string>
+	<string name="scan">スキャン</string>
+	<string name="screen">画面</string>
+	<string name="settings">Settings</string>
+	<string name="start">Start</string>
+	<string name="storage">ストレージ</string>
+	<string name="subtitle">Subtitle</string>
+	<string name="super_impose">文字スーパー</string>
+	<string name="teletext">Teletext</string>
+	<string name="ttx">TTX</string>
+	<string name="ttx_prev">&lt;</string>
+	<string name="ttx_next">&gt;</string>
+	<string name="ttx_fprev">&lt;&lt;</string>
+	<string name="ttx_fnext">&gt;&gt;</string>
+	<string name="tv_channel">TVチャンネル</string>
+	<string name="update_channel">チャンネル更新中</string>	
+	<string name="video">ビデオの</string>
+	<string name="weak_signal">シグナルが弱い!</string>
+	<string name="yes">はい</string>
+	<string name="bcas_mode">B-CAS モ-ド</string>
+	<string name="frequency_support">受信チャンネル範囲</string>
+
+	<string name="bcas_card_detect_error_please_check_bcas_card">B-CAS Card Detect Error!!!\nPlease, Check B-CAS Card !!.</string>
+	<string name="exiting_media_storage_inserted">Exiting...(Media storage inserted)\nPlease run application later...</string>
+	<string name="for_applying_a_country_code_the_application_will_be_closed">For applying a country code, the application will be closed.\nPlease, restart it.</string>
+	<string name="if_you_want_to_use_radio_scan_channel">If you want to use Radio, scan Channel.</string>
+	<string name="if_you_want_to_use_tv_scan_channel">テレビを見たければ、チャネルをスキャンしてください</string>
+	<string name="invalid_bcas_card_please_check_bcas_card">Invalid B-CAS Card!!!\nPlease, Check B-CAS Card !!.</string>
+	<string name="now_scanning_media">Now scanning media...\nPlease run application later...</string>
+	<string name="Please_enter_the_correct_password">Please enter the correct password.</string>
+	<string name="please_wait_cancel_scanning">ちょっと待ってください</string>
+	<string name="please_wait_while_searching">チャンネルをスキャンしています</string>
+	<string name="receiving_signal_strength_is_weak">シグナルが弱い</string>
+	
+
+	<!-- [ISDB-T] specific -->
+		<string name="app_name">DTV ISDBT</string>
+		<string name="dxb_options">[ISDB-T] オプション</string>
+	<!-- [ISDB-T] specific -->
+
+	<!-- preset mode -->
+	<string name="preset_mode_select">プリセット</string>
+</resources>

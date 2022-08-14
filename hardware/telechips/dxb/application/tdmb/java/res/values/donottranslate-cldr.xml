@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 Telechips, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	
+    <!-- Do not translate. -->
+	<string-array name="area_code_select_entries">
+		<item>北海道（札幌）</item>
+		<item>北海道（函館）</item>
+		<item>北海道（旭川）</item>
+		<item>北海道（帯広）</item>
+		<item>北海道（釧路）</item>
+		<item>北海道（北見）</item>
+		<item>北海道（室蘭）</item>
+		<item>宮城</item>
+		<item>秋田</item>
+		<item>山形</item>
+		<item>岩手</item>
+		<item>福島</item>
+		<item>青森</item>
+		<item>東京</item>
+		<item>神奈川</item>
+		<item>群馬</item>
+		<item>茨城</item>
+		<item>千葉</item>
+		<item>栃木</item>
+		<item>埼玉</item>
+		<item>長野</item>
+		<item>新潟</item>
+		<item>山梨</item>
+		<item>愛知</item>
+		<item>石川</item>
+		<item>静岡</item>
+		<item>福井</item>
+		<item>富山</item>
+		<item>三重</item>
+		<item>岐阜</item>
+		<item>大阪</item>
+		<item>京都</item>
+		<item>兵庫</item>
+		<item>和歌山</item>
+		<item>奈良</item>
+		<item>滋賀</item>
+		<item>広島</item>
+		<item>岡山</item>
+		<item>島根</item>
+		<item>鳥取</item>
+		<item>山口</item>
+		<item>愛媛</item>
+		<item>香川</item>
+		<item>徳島</item>
+		<item>高知</item>
+		<item>福岡</item>
+		<item>熊本</item>
+		<item>長崎</item>
+		<item>鹿児島</item>
+		<item>宮崎</item>
+		<item>大分</item>
+		<item>佐賀</item>
+		<item>沖縄</item>
+	</string-array>
+	
+    <!-- Display setting.  Summary for each type of output. -->
+	<string-array name="area_code_select_summaries">
+		<item>北海道（札幌）</item>
+		<item>北海道（函館）</item>
+		<item>北海道（旭川）</item>
+		<item>北海道（帯広）</item>
+		<item>北海道（釧路）</item>
+		<item>北海道（北見）</item>
+		<item>北海道（室蘭）</item>
+		<item>宮城</item>
+		<item>秋田</item>
+		<item>山形</item>
+		<item>岩手</item>
+		<item>福島</item>
+		<item>青森</item>
+		<item>東京</item>
+		<item>神奈川</item>
+		<item>群馬</item>
+		<item>茨城</item>
+		<item>千葉</item>
+		<item>栃木</item>
+		<item>埼玉</item>
+		<item>長野</item>
+		<item>新潟</item>
+		<item>山梨</item>
+		<item>愛知</item>
+		<item>石川</item>
+		<item>静岡</item>
+		<item>福井</item>
+		<item>富山</item>
+		<item>三重</item>
+		<item>岐阜</item>
+		<item>大阪</item>
+		<item>京都</item>
+		<item>兵庫</item>
+		<item>和歌山</item>
+		<item>奈良</item>
+		<item>滋賀</item>
+		<item>広島</item>
+		<item>岡山</item>
+		<item>島根</item>
+		<item>鳥取</item>
+		<item>山口</item>
+		<item>愛媛</item>
+		<item>香川</item>
+		<item>徳島</item>
+		<item>高知</item>
+		<item>福岡</item>
+		<item>熊本</item>
+		<item>長崎</item>
+		<item>鹿児島</item>
+		<item>宮崎</item>
+		<item>大分</item>
+		<item>佐賀</item>
+		<item>沖縄</item>
+	</string-array>	
+</resources>

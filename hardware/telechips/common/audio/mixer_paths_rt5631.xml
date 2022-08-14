@@ -1,0 +1,63 @@
+<mixer>
+  <!-- These are the initial mixer settings -->
+  <ctl name="HP Playback Volume" value="0" />
+  <ctl name="Speaker Playback Volume" value="0" />
+  <ctl name="Jack Function" value="Speaker" />
+  <ctl name="Speaker Function" value="Off" />
+
+  <ctl name="HP Playback Switch" value="0" />
+  <ctl name="Speaker Playback Switch" value="0" />
+  <ctl name="RECMIXL Mixer MIC1_BST1 Capture Switch" value="0" />
+
+<!--
+  <ctl name="OUTMIXR Mixer DACR Playback Switch" value="0" />
+  <ctl name="OUTMIXL Mixer DACL Playback Switch" value="0" />
+  <ctl name="SPKMIXR Mixer DACR Playback Switch" value="0" />
+  <ctl name="SPKMIXL Mixer DACL Playback Switch" value="0" />
+  <ctl name="SPORMIX Mixer SPKVOLR Playback Switch" value="0" />
+  <ctl name="SPOLMIX Mixer SPKVOLL Playback Switch" value="0" />
+-->
+
+  <path name="speaker">
+<!--
+    <ctl name="Right SPKVOL Mux" value="SPKMIXR" />
+    <ctl name="Left SPKVOL Mux" value="SPKMIXL" />
+    <ctl name="SPOR Mux" value="SPORMIX" />
+    <ctl name="SPOL Mux" value="SPOLMIX" />
+    <ctl name="SPKMIXR Mixer DACR Playback Switch" value="1" />
+    <ctl name="SPKMIXL Mixer DACL Playback Switch" value="1" />
+    <ctl name="SPORMIX Mixer SPKVOLR Playback Switch" value="1" />
+    <ctl name="SPOLMIX Mixer SPKVOLL Playback Switch" value="1" />
+-->
+    <ctl name="Speaker Playback Switch" value="1" />
+    <ctl name="Speaker Playback Volume" value="31" />
+    <ctl name="Jack Function" value="Speaker" />
+    <ctl name="Speaker Function" value="On" />
+  </path>
+
+  <path name="headphone">
+<!--
+    <ctl name="Right HPVOL Mux" value="OUTMIXR" />
+    <ctl name="Left HPVOL Mux" value="OUTMIXL" />
+    <ctl name="OUTMIXR Mixer DACR Playback Switch" value="1" />
+    <ctl name="OUTMIXL Mixer DACL Playback Switch" value="1" />
+-->
+    <ctl name="HP Playback Switch" value="1" />
+    <ctl name="HP Playback Volume" value="31" />
+    <ctl name="Jack Function" value="HeadPhone" />
+    <ctl name="Speaker Function" value="Off" />
+  </path>
+
+  <path name="main-mic">
+    <ctl name="RECMIXL Mixer MIC1_BST1 Capture Switch" value="1" />
+  </path>
+
+  <path name="line-in">
+  </path>
+
+  <path name="hdmi-on">
+  	<ctl name="HP Playback Volume" value="0" />
+	<ctl name="Speaker Playback Volume" value="0" />
+  </path>
+
+</mixer>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 Telechips, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+	<!-- indicator display -->
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="2"
+			android:src="@drawable/dxb_portable_indicator_bg"
+			android:focusable="false"
+			>
+		</ImageView>
+	
+	<!-- title - display -->
+		<AbsoluteLayout
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="4"
+			>
+			<TextView
+				android:id="@+id/full_title"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:background="@drawable/dxb_portable_title_bg"
+				android:textColor="@color/color_3"
+				android:gravity="center"
+				android:text="@string/app_name"
+				android:focusable="false"
+			    >
+			</TextView>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="0dp"
+				android:layout_weight="10"
+			    >
+				<View
+					android:layout_width="0dp"
+					android:layout_height="fill_parent"
+					android:layout_weight="15"
+				    >
+				</View>
+				
+				<Button
+					android:id="@+id/full_title_ttx"
+					android:layout_width="0dp"
+					android:layout_height="fill_parent"
+					android:layout_weight="1"
+					android:background="@drawable/dxb_portable_ttx_main_btn_n"
+					android:focusable="true"
+				    >
+				</Button>
+				
+				<View
+					android:layout_width="0dp"
+					android:layout_height="fill_parent"
+					android:layout_weight="1"
+				    >
+				</View>			
+			</LinearLayout>			
+		</AbsoluteLayout>	
+
+	<!-- channel up/down - display -->	
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="23"
+		    >
+			<View
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="15"
+			    >
+			</View>
+			
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+			    >
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="0dp"
+					android:layout_weight="2"
+				    >
+				</View>
+				
+				<Button
+					android:id="@+id/full_ch_up"
+					android:layout_width="fill_parent"
+					android:layout_height="0dp"
+					android:layout_weight="2"
+					android:background="@drawable/dxb_portable_channel_up_btn_n"
+					android:focusable="true"
+					android:focusableInTouchMode="true"
+					>
+				</Button>
+			
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="0dp"
+					android:layout_weight="4"
+				    >
+				</View>
+				
+				<Button
+					android:id="@+id/full_ch_down"
+					android:layout_width="fill_parent"
+					android:layout_height="0dp"
+					android:layout_weight="2"
+					android:background="@drawable/dxb_portable_channel_down_btn_n"
+					android:focusable="true"
+					android:focusableInTouchMode="true"
+					>
+				</Button>
+				
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="0dp"
+					android:layout_weight="2"
+				    >
+				</View>			
+			</LinearLayout>
+			
+			<View
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+			    >
+			</View>			
+		</LinearLayout>
+
+	<!-- menu display -->
+		<include
+			android:id="@+id/layout_menu"
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="6"
+			layout="@layout/dxb_full_menu"
+			android:nextFocusUp="@id/full_ch_down"
+			>
+		</include>
+</LinearLayout>

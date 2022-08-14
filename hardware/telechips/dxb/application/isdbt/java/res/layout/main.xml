@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 Telechips, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	
+	<com.telechips.android.isdbt.player.DxbPlayer
+		android:id="@+id/surface_view"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+		
+	<View
+		android:id="@+id/full_view"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#00000000"
+		android:focusable="false" />
+    
+    <!-- Play Mode Display -->
+	<AbsoluteLayout
+		android:id="@+id/full_group_play_mode"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone"
+		android:focusable="false" >
+	    <LinearLayout
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_y="@dimen/full_play_mode_text_y"
+			android:gravity="right"
+			android:paddingRight="20dip"
+	    	android:orientation="vertical" >
+
+			<TextView
+				android:id="@+id/full_play_mode_text"
+				android:background="@color/color_t_c"
+				android:padding="5dip"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:focusable="false"
+				android:clickable="false"
+				android:text="@string/rec" />
+		</LinearLayout>
+	</AbsoluteLayout>
+	
+	<!-- Main Display -->
+	<LinearLayout
+		android:id="@+id/full_display_state"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"	>
+	    		
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3" />
+
+            <ImageView
+                android:id="@+id/full_image"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/full_text"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:focusable="false" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+	</LinearLayout>
+	
+	<!-- Recording Display -->
+	<include
+		android:id="@+id/full_group_rec"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		layout="@layout/dxb_view_full_record"
+		android:visibility="gone"	/>
+
+    <!-- UI -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- Top Layout -->
+        <include
+            android:id="@+id/layout_indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="40"
+            android:visibility="gone"
+            layout="@layout/dxb_view_indicator" />
+
+        <!-- Body Layout -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="640" >
+
+            <!-- Full Layout -->
+            <include
+                android:id="@+id/layout_full"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone"
+                layout="@layout/dxb_view_full" />
+
+            <!-- List Layout -->
+            <include
+                android:id="@+id/layout_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone"
+                layout="@layout/dxb_view_list" />
+
+            <!-- EPG Layout -->
+            <include
+                android:id="@+id/layout_epg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone"
+                layout="@layout/dxb_view_epg" />
+            
+			<include
+ 				android:id="@+id/layout_epg_3list"
+ 				android:layout_width="fill_parent"
+ 				android:layout_height="fill_parent"
+                android:visibility="gone"
+ 				layout="@layout/dxb_view_epg_3list" />
+        </RelativeLayout>
+
+        <!-- Bottom -->
+        <View
+            android:id="@+id/indicatorBottomView"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:background="@color/color_10"
+            android:visibility="gone" />
+    </LinearLayout>
+
+	<!-- TTX Layout -->
+	<include
+		android:id="@+id/layout_teletext"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:visibility="gone"
+		layout="@layout/dxb_view_ttx" />
+   
+    <!-- Debug Layout -->
+    <include
+        android:id="@+id/debug"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/dxb_debug" />
+
+	
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		>
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+		    />
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="2"
+			>
+			<View
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="20"
+			    />
+			<TextView
+				android:id="@+id/input_channel"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:gravity="center"
+				android:focusable="true"
+				android:visibility="gone"
+				android:background="@color/color_2"
+				android:alpha="0.8"
+				/>
+			<View
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+			    />
+		</LinearLayout>
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="20"
+		    />
+	</LinearLayout>
+</RelativeLayout>

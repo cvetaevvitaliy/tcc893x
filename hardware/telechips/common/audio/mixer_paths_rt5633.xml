@@ -1,0 +1,43 @@
+<mixer>
+  <!-- These are the initial mixer settings -->
+  <ctl name="Jack Function" value="Speaker" />
+  <ctl name="HP Playback Volume" value="0" />
+  <ctl name="MIC1 Playback Volume" value="0" />
+  <ctl name="SPK Playback Volume" value="0" />
+  <ctl name="HPL Playback Switch" value="0" />
+  <ctl name="HPR Playback Switch" value="0" />
+  <ctl name="SPK Playback Switch" value="0" />
+  <ctl name="HPMIXL Mixer DAC Playback Switch" value="0" />
+  <ctl name="HPMIXR Mixer DAC Playback Switch" value="0" />
+  <ctl name="SPXMIX Mixer DACL Playback Switch" value="0" />
+  <ctl name="SPXMIX Mixer DACR Playback Switch" value="0" />
+
+  <path name="speaker">
+    <ctl name="Jack Function" value="Speaker" />
+    <ctl name="SPK Playback Switch" value="1" />
+    <ctl name="SPXMIX Mixer DACL Playback Switch" value="1" />
+    <ctl name="SPXMIX Mixer DACR Playback Switch" value="1" />
+    <ctl name="SPK Playback Volume" value="31" />
+  </path>
+
+  <path name="headphone">
+    <ctl name="Jack Function" value="HeadPhone" />
+    <ctl name="HPL Playback Switch" value="1" />
+    <ctl name="HPR Playback Switch" value="1" />
+    <ctl name="HPMIXL Mixer DAC Playback Switch" value="1" />
+    <ctl name="HPMIXR Mixer DAC Playback Switch" value="1" />
+    <ctl name="HP Playback Volume" value="31" />
+  </path>
+
+  <path name="main-mic">
+  </path>
+
+  <path name="line-in">
+  </path>
+
+  <path name="hdmi-on">
+  	<ctl name="HP Playback Volume" value="0" />
+  	<ctl name="SPK Playback Volume" value="0" />
+  </path>
+
+</mixer>

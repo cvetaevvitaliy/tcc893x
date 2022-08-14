@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 Telechips, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory
+		android:title="@string/language">
+		<ListPreference
+			android:title="@string/audio"
+			android:key="language_audio_select"	/>
+		<ListPreference
+			android:title="@string/subtitle"
+			android:key="language_subtitle_select"	/>
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="@string/channel_search"
+		android:key="scan_category">
+		<PreferenceScreen
+			android:title="@string/dish_setup"
+			android:key="@string/key_dish_setup_select"	/>
+		<ListPreference
+		    android:title="@string/db_management"
+			android:key="@string/key_db_management_select"
+			android:entries="@array/db_management_select_entries"
+			android:entryValues="@array/db_management_select_values"	/>
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="@string/settings">
+		<ListPreference
+			android:title="@string/time_zone"
+			android:key="@string/key_time_zone_select"
+			android:entries="@array/time_zone_select_entries"
+			android:entryValues="@array/time_zone_select_values"	/>
+		<EditTextPreference
+			android:title="@string/parental_rating"
+			android:key="@string/key_parental_rating_select"
+			android:dialogTitle="@string/password"
+			android:inputType="number"
+			android:password="true"	/>
+		<EditTextPreference
+			android:title="@string/change_password"
+			android:key="@string/key_change_password_select"
+			android:dialogTitle="@string/current_password"
+			android:inputType="number"
+			android:password="true"	/>
+		<ListPreference
+			android:title="@string/storage"
+			android:key="storage_select"	/>
+	</PreferenceCategory>
+	
+</PreferenceScreen>

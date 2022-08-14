@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 Telechips, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<!-- Do not translate. -->
+	<string-array name="select_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+		<item>10</item>
+		<item>11</item>
+		<item>12</item>
+		<item>13</item>
+		<item>14</item>
+		<item>15</item>
+		<item>16</item>
+		<item>17</item>
+		<item>18</item>
+		<item>19</item>
+	</string-array>
+    	
+	<!-- Do not translate. -->
+	<string-array name="area_entries">
+		<item>北海道</item>
+		<item>東北</item>
+		<item>関東</item>
+		<item>北信越</item>
+		<item>東海</item>
+		<item>近畿</item>
+		<item>中国</item>
+		<item>四国</item>
+		<item>九州</item>
+	</string-array>
+		
+	<!-- Do not translate. -->
+	<string-array name="area_hokkaidou_entries">
+		<item>札幌地方</item>
+		<item>函館地方</item>
+		<item>旭川地方</item>
+		<item>帯広地方</item>
+		<item>釧路地方</item>
+		<item>北見地方</item>
+		<item>室蘭地方</item>
+	</string-array>
+
+	<!-- Do not translate. -->
+	<string-array name="area_touhoku_entries">
+		<item>宮城県</item>
+		<item>秋田県</item>
+		<item>山形県</item>
+		<item>岩手県</item>
+		<item>福島県</item>
+		<item>青森県</item>
+	</string-array>
+
+	<!-- Do not translate. -->
+	<string-array name="area_kantou_entries">
+		<item>東京都</item>
+		<item>神奈川県</item>
+		<item>群馬県</item>
+		<item>茨城県</item>
+		<item>千葉県</item>
+		<item>栃木県</item>
+		<item>埼玉県</item>
+		<item>山梨県</item>
+	</string-array>
+
+	<!-- Do not translate. -->
+	<string-array name="area_hokshinetsu_entries">
+		<item>長野県</item>
+		<item>新潟県</item>
+		<item>石川県</item>
+		<item>福井県</item>
+		<item>富山県</item>
+	</string-array>
+
+	<!-- Do not translate. -->
+	<string-array name="area_toukai_entries">
+		<item>愛知県</item>
+		<item>三重県</item>
+		<item>岐阜県</item>
+		<item>静岡県</item>
+	</string-array>
+
+	<!-- Do not translate. -->
+	<string-array name="area_kinki_entries">
+		<item>大阪府</item>
+		<item>京都府</item>
+		<item>兵庫県</item>
+		<item>和歌山県</item>
+		<item>奈良県</item>
+		<item>滋賀県</item>
+	</string-array>
+
+	<!-- Do not translate. -->
+	<string-array name="area_cyuugoku_entries">
+		<item>広島県</item>
+		<item>島根県</item>
+		<item>鳥取県</item>
+		<item>山口県</item>
+		<item>岡山県</item>
+	</string-array>
+
+	<!-- Do not translate. -->
+	<string-array name="area_shikoku_entries">
+		<item>香川県</item>
+		<item>愛媛県</item>
+		<item>徳島県</item>
+		<item>高知県</item>
+	</string-array>
+
+	<!-- Do not translate. -->
+	<string-array name="area_kyuusyuu_entries">
+		<item>福岡県</item>
+		<item>熊本県</item>
+		<item>長崎県</item>
+		<item>鹿児島県</item>
+		<item>宮崎県</item>
+		<item>大分県</item>
+		<item>佐賀県</item>
+		<item>沖縄県</item>
+	</string-array>
+	
+	<!-- Do not translate. -->
+	<string name="want_to_scan">スキャンを行ぃますか?</string>
+		
+	<!-- Do not translate. -->
+	<string name="ews_running_start">緊急放送が 始まりました。</string>
+
+	<!-- Do not translate. -->
+	<string name="ews_running_end">緊急放送が終了しました。</string>
+
+	<!-- Do not translate. -->
+	<string-array name="signal_type_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+
+	<!-- Do not translate. -->
+	<string-array name="signal_type_entries">
+		<item>種類 : 地震</item>
+		<item>種類 : 津波</item>
+	</string-array>
+
+	<!-- Do not translate. -->
+	<string-array name="local_code_values">
+		<item>845</item>
+		<item>1445</item>
+		<item>1834</item>
+		<item>2261</item>
+		<item>1689</item>
+		<item>1363</item>
+		<item>363</item>
+		<item>1127</item>
+		<item>1492</item>
+		<item>1880</item>
+		<item>2758</item>
+		<item>3660</item>
+		<item>430</item>
+		<item>3177</item>
+		<item>3640</item>
+		<item>2443</item>
+		<item>1611</item>
+		<item>455</item>
+		<item>2732</item>
+		<item>1388</item>
+		<item>1230</item>
+		<item>1337</item>
+		<item>1702</item>
+		<item>2541</item>
+		<item>3402</item>
+		<item>2514</item>
+		<item>2661</item>
+		<item>2650</item>
+		<item>2406</item>
+		<item>732</item>
+		<item>3300</item>
+		<item>1434</item>
+		<item>3250</item>
+		<item>1652</item>
+		<item>2707</item>
+		<item>918</item>
+		<item>3107</item>
+		<item>795</item>
+		<item>693</item>
+		<item>2865</item>
+		<item>2968</item>
+		<item>3682</item>
+		<item>2484</item>
+		<item>413</item>
+		<item>739</item>
+		<item>1581</item>
+		<item>2393</item>
+		<item>2603</item>
+		<item>2215</item>
+		<item>3213</item>
+		<item>3356</item>
+		<item>3397</item>
+		<item>882</item>
+	</string-array>
+
+	<!-- Do not translate. -->
+	<string name="local_code_entries_tag">地域 :</string>
+	
+	<!-- Do not translate. -->
+	<string-array name="local_code_entries">
+		<item> 地域共通符号</item>
+		<item> 関東広域圏</item>
+		<item> 中京広域圏</item>
+		<item> 近畿広域圏</item>
+		<item> 鳥取・島根圏</item>
+		<item> 岡山・香川圏</item>
+		<item> 北海道</item>
+		<item> 青森県</item>
+		<item> 岩手県</item>
+		<item> 宮城県</item>
+		<item> 秋田県</item>
+		<item> 山形県</item>
+		<item> 福島県</item>
+		<item> 茨城県</item>
+		<item> 栃木県</item>
+		<item> 群馬県</item>
+		<item> 埼玉県</item>
+		<item> 千葉県</item>
+		<item> 東京都</item>
+		<item> 神奈川県</item>
+		<item> 新潟県</item>
+		<item> 富山県</item>
+		<item> 石川県</item>
+		<item> 福井県</item>
+		<item> 山梨県</item>
+		<item> 長野県</item>
+		<item> 岐阜県</item>
+		<item> 静岡県</item>
+		<item> 愛知県</item>
+		<item> 三重県</item>
+		<item> 滋賀県</item>
+		<item> 京都府</item>
+		<item> 大阪府</item>
+		<item> 兵庫県</item>
+		<item> 奈良県</item>
+		<item> 和歌山県</item>
+		<item> 鳥取県</item>
+		<item> 島根県</item>
+		<item> 岡山県</item>
+		<item> 広島県</item>
+		<item> 山口県</item>
+		<item> 徳島県</item>
+		<item> 香川県</item>
+		<item> 愛媛県</item>
+		<item> 高知県</item>
+		<item> 福岡県</item>
+		<item> 佐賀県</item>
+		<item> 長崎県</item>
+		<item> 熊本県</item>
+		<item> 大分県</item>
+		<item> 宮崎県</item>
+		<item> 鹿児島県</item>
+		<item> 沖縄県</item>
+	</string-array>
+		
+</resources>

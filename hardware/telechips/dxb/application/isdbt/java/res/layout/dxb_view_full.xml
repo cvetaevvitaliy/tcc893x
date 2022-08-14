@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 Telechips, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Title only - Display -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/full_title_only"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/color_3"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:background="@drawable/dxb_portable_title_bg"
+            android:visibility="gone"
+            android:focusable="false" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7" />
+
+    </LinearLayout>
+
+    <!--  Full UI -->
+    <LinearLayout
+        android:id="@+id/full_view_navi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- title - display -->
+		<LinearLayout
+	    	android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7" 
+			android:background="@drawable/dxb_portable_title_bg" >
+            
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:paddingLeft="40dp" >
+			    
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="0dp"
+					android:layout_weight="1" />
+				
+				<TextView
+					android:id="@+id/full_title_video"
+					android:layout_width="100dp"
+					android:layout_height="34dp"
+					android:background="#0063E7"
+					android:textColor="@color/color_3"
+					android:gravity="center"
+					android:focusable="false" />
+
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="0dp"
+					android:layout_weight="1" />
+				
+				<TextView
+					android:id="@+id/full_title_audio"
+					android:layout_width="100dp"
+					android:layout_height="34dp"
+					android:background="#006432"
+					android:textColor="@color/color_3"
+					android:gravity="center"
+					android:focusable="false" />
+				
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="0dp"
+					android:layout_weight="1" />
+
+				<TextView
+					android:id="@+id/full_title_lang"
+					android:layout_width="100dp"
+					android:layout_height="34dp"
+					android:background="#ED1C24"
+					android:textColor="@color/color_3"
+					android:gravity="center"
+					android:focusable="false" />
+
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="0dp"
+					android:layout_weight="1" />
+				
+			</LinearLayout>	
+			
+            <TextView
+                android:id="@+id/full_title"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+				android:layout_weight="4.9"                
+                android:textColor="@color/color_3"
+                android:text="@string/app_name"
+                android:focusable="false" />
+
+			<TextView
+				android:id="@+id/full_title_info"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="0.6"
+				android:paddingBottom="4dp"
+				android:textColor="@color/color_3"
+				android:gravity="left|bottom"
+				android:focusable="false" />
+            
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="0.9"
+				android:paddingLeft="5dp"
+				android:paddingRight="20dp"
+				android:paddingBottom="5dp" >
+
+				<ImageView
+					android:id="@+id/full_title_logo"
+					android:layout_width="64dp"
+					android:layout_height="36dp"
+					android:paddingTop="5dp"
+					android:focusable="false" />
+
+				<Button
+					android:id="@+id/full_title_ttx"
+					android:layout_width="0dp"
+					android:layout_height="28dp"
+					android:focusable="true" />
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:gravity="left|bottom" >
+																					
+					<ImageView
+						android:id="@+id/full_title_subtitle"
+						android:layout_width="52dp"
+						android:layout_height="26dp"
+						android:focusable="false" />
+
+				</LinearLayout>	
+
+			</LinearLayout>	
+					
+        </LinearLayout>
+
+        <!-- channel up/down - display -->    
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="21" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="22" />
+            
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="9" />
+            
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2" />
+
+                <Button
+                    android:id="@+id/full_ch_up"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/dxb_portable_channel_up_btn_n"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4" />
+
+                <Button
+                    android:id="@+id/full_ch_down"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/dxb_portable_channel_down_btn_n"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <!-- PVR Controller -->
+            <LinearLayout
+				android:id="@+id/pvr_controller_group"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="30"
+				android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6"
+                    android:gravity="bottom" >
+
+                    <LinearLayout
+                        android:id="@+id/file_play"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:visibility="gone"
+                        android:background="@color/color_t_c" >
+
+                        <TextView android:id="@+id/time_current"
+                            android:padding="10dip"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <SeekBar
+                            android:id="@+id/mediacontroller_progress"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="0dip"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/time"
+                            android:padding="10dip"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/air_play"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/color_t_c" >
+
+                        <TextView
+                            android:id="@+id/full_epg_p"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/color_yellow"
+                            android:paddingLeft="20dp" />
+
+                        <TextView
+                            android:id="@+id/full_epg_f"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="20dp" />
+
+                        <SeekBar
+                            android:id="@+id/full_epg_progress"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:focusable="false" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/pvr_button_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:layout_weight="3"
+                    android:background="@color/color_t_c"
+                    android:orientation="horizontal">
+
+                    <ImageButton android:id="@+id/rew" style="@style/MediaButton.Rew" />
+                    <ImageButton android:id="@+id/pause" style="@style/MediaButton.Pause" />
+                    <ImageButton android:id="@+id/stop" style="@style/MediaButton.Stop" />
+                    <ImageButton android:id="@+id/ffwd" style="@style/MediaButton.Ffwd" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+	<!-- Loading image - Display -->
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:gravity = "center_vertical|center_horizontal">
+
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="5" />
+
+		<ProgressBar
+			android:id="@+id/progress_bar"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:visibility="invisible"
+			style="?android:attr/progressBarStyleLarge"/>
+		
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="5" />  
+	        
+	</LinearLayout>
+        
+    <!-- File Info Display -->
+    <include
+        android:id="@+id/layout_file_play"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        layout="@layout/dxb_view_full_info" />
+
+    <!-- Menu Display -->
+    <include
+        android:id="@+id/layout_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        layout="@layout/dxb_view_full_menu" />
+
+</AbsoluteLayout>

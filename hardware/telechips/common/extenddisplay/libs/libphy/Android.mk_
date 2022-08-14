@@ -1,0 +1,26 @@
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+
+LOCAL_C_INCLUDES := \
+	$(LOCAL_PATH)/../ $(LOCAL_PATH)/../../ $(LOCAL_PATH)/../../modules/ 
+
+LOCAL_SRC_FILES := \
+	libphy.c 
+
+	
+LOCAL_MODULE := libphy
+
+#LOCAL_STATIC_LIBRARIES := \
+#	libiic
+
+L_CFLAGS := -DTELECHIPS 
+
+LOCAL_SHARED_LIBRARIES := \
+	libutils \
+	libcutils \
+	libui \
+	liblog \
+	libmedia
+	
+
+include $(BUILD_STATIC_LIBRARY)

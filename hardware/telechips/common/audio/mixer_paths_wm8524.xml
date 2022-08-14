@@ -1,0 +1,29 @@
+<mixer>
+  <!-- These are the initial mixer settings -->
+  <ctl name="Master Playback Volume" value="118" />
+  <ctl name="Capture Volume" value="31" />
+  <ctl name="Line Capture Switch" value="0" />
+  <ctl name="Mic Capture Switch" value="0" />
+  <ctl name="Input Mux" value="1" />
+  <ctl name="Output Mixer Line Bypass Switch" value="0" />
+  <ctl name="Output Mixer Mic Sidetone Switc" value="0" />
+  <ctl name="Output Mixer HiFi Playback Switch" value="1" />
+
+  <path name="speaker">
+  </path>
+
+  <path name="headphone">
+  </path>
+
+  <path name="main-mic">
+    <ctl name="Input Mux" value="Mic" />
+    <ctl name="Mic Capture Switch" value="1" />
+  </path>
+
+  <path name="line-in">
+    <ctl name="Input Mux" value="Line In" />
+    <ctl name="Line Capture Switch" value="1" />
+    <ctl name="Output Mixer Line Bypass Switch" value="1" />
+  </path>
+
+</mixer>

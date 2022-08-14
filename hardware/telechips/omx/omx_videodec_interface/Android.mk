@@ -1,0 +1,82 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+
+LOCAL_PRELINK_MODULE := false
+
+LOCAL_SRC_FILES := \
+	src/vdec_k.c
+
+LOCAL_C_INCLUDES := \
+	$(LOCAL_PATH)/include \
+	$(OMX_TOP)/omx_base/include \
+	$(CDK_DIR)/video_codec/wmv78dec \
+	$(CDK_DIR)/video_codec/jpu_dec \
+	kernel/arch/arm/mach-$(TARGET_BOARD_PLATFORM)/include
+
+
+LOCAL_SHARED_LIBRARIES := \
+	libc \
+	liblog \
+	libdl \
+	libOMX.TCC.base \
+	libpmap \
+	libcutils
+
+LOCAL_CFLAGS := -fno-short-enums \
+	$(TARGET_BOOTLOADER_BOARD_CFLAGS) \
+	$(BOARD_HDMI_UI_SIZE_FLAGS)
+
+ifeq ($(TARGET_BOARD_PLATFORM),tcc92xx)
+LOCAL_C_INCLUDES += \
+	$(CDK_DIR)/video_codec/sorensonH263dec
+LOCAL_CFLAGS += -DTCC_89XX_INCLUDE
+endif
+
+ifeq ($(TARGET_BOARD_PLATFORM),tcc93xx)
+LOCAL_CFLAGS += -DTCC_93XX_INCLUDE
+LOCAL_CFLAGS += -DTCC_VPU_C5_INCLUDE
+endif
+
+ifeq ($(TARGET_BOARD_PLATFORM),tcc88xx)
+LOCAL_CFLAGS += -DTCC_88XX_INCLUDE
+LOCAL_CFLAGS += -DTCC_VPU_C5_INCLUDE
+endif
+
+ifeq ($(TARGET_BOARD_PLATFORM),tcc892x)
+LOCAL_CFLAGS += -DTCC_892X_INCLUDE
+LOCAL_LDFLAGS := \
+	-L$(CDK_DIR)/video_codec/jpu_dec \
+	-lTCC892x_JPUCODEC_ANDROID_V1.4.1
+ifeq ($(TARGET_BOARD_SOC),tcc892xS)
+LOCAL_CFLAGS += -DTCC_8925S_INCLUDE
+LOCAL_CFLAGS += -DTCC_VPU_C5_INCLUDE
+else
+LOCAL_CFLAGS += -DTCC_VPU_C7_INCLUDE
+endif
+endif
+
+ifeq ($(TARGET_BOARD_PLATFORM),tcc893x)
+LOCAL_CFLAGS += -DTCC_893X_INCLUDE
+LOCAL_LDFLAGS := \
+	-L$(CDK_DIR)/video_codec/jpu_dec \
+	-lTCC892x_JPUCODEC_ANDROID_V1.4.1
+ifeq ($(TARGET_BOARD_SOC),tcc893xS)
+LOCAL_CFLAGS += -DTCC_8935S_INCLUDE
+LOCAL_CFLAGS += -DTCC_VPU_C5_INCLUDE
+else
+LOCAL_CFLAGS += -DTCC_VPU_C7_INCLUDE
+endif
+endif
+
+ifeq ($(TARGET_BOARD_PLATFORM),tcc92xx)
+LOCAL_LDFLAGS := \
+	-L$(CDK_DIR)/video_codec/sorensonH263dec \
+	-lTCC89_92xx_H263DEC_ANDROID_V1.2.7_CTS
+endif
+
+LOCAL_MODULE := libOMX.TCC.VPUDec
+LOCAL_MODULE_TAGS := optional
+
+include $(BUILD_SHARED_LIBRARY)
+

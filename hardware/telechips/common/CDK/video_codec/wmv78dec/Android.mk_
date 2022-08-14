@@ -1,0 +1,55 @@
+LOCAL_PATH := $(call my-dir)
+
+# -----------------------------------------------------------------------
+#          WMV78
+# -----------------------------------------------------------------------
+include $(CLEAR_VARS)
+
+LOCAL_PRELINK_MODULE := false
+
+LOCAL_SRC_FILES := \
+	wmv78dec.c
+
+LOCAL_C_INCLUDES := \
+	hardware/telechips/common/CDK/video_codec/wmv78dec
+
+LOCAL_SHARED_LIBRARIES := \
+	libutils \
+	libcutils
+
+# RELEASE
+ifeq ($(TARGET_BOARD_PLATFORM),tcc92xx)
+LOCAL_LDFLAGS := \
+	-L$(LOCAL_PATH)/lib \
+	-lTCC89xx_WMV78DEC_ANDROID_V01.001.017_CTS
+endif
+ifeq ($(TARGET_BOARD_PLATFORM),tcc93xx)
+LOCAL_LDFLAGS := \
+	-L$(LOCAL_PATH)/lib \
+	-lTCC93xx_WMV78DEC_ANDROID_V01.001.017_CTS
+endif
+ifeq ($(TARGET_BOARD_PLATFORM),tcc88xx)
+LOCAL_LDFLAGS := \
+	-L$(LOCAL_PATH)/lib \
+	-lTCC88xx_WMV78DEC_ANDROID_V01.001.017_CTS
+endif
+ifeq ($(TARGET_BOARD_PLATFORM),tcc892x)
+LOCAL_LDFLAGS := \
+	-L$(LOCAL_PATH)/lib \
+	-lTCC892x_WMV78DEC_ANDROID_V01.001.017
+endif
+
+ifeq ($(TARGET_BOARD_PLATFORM),tcc893x)
+LOCAL_LDFLAGS := \
+	-L$(LOCAL_PATH)/lib \
+	-lTCC893x_WMV78DEC_ANDROID_V01.001.017
+endif
+
+
+# RELEASE
+
+
+LOCAL_MODULE := libTCC.wmv78dec
+LOCAL_MODULE_TAGS := optional
+
+include $(BUILD_SHARED_LIBRARY)

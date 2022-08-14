@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 Telechips, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <string name="app_name">DTV IPTV</string>
+    <string name="broad_cast">Broad Cast</string>
+	<string name="do_not_support_IP">Do not support IP.</string>
+	<string name="error">Error!!!</string>
+	<string name="time">12:12</string>
+	<string name="to_support_IP">To support IP.</string>
+	<string name="set_standby_mode">IPTV STANDBY MODE.</string>
+	<string name="set_play_mode">IPTV PLAY MODE.</string>
+	<string name="set_trick_play_mode">IPTV TRICK PLAY MODE.</string>
+</resources>

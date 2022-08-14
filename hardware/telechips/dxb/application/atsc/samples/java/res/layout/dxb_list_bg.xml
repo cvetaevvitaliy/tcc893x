@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+
+	<TabHost
+		android:id="@+id/list_tab"
+		android:layout_x="@dimen/list_body_x"
+		android:layout_y="@dimen/list_body_y"
+		android:layout_width="@dimen/list_body_width"
+		android:layout_height="@dimen/list_body_height"
+		>
+		<TabWidget
+			android:id="@android:id/tabs"
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/list_tab_height"
+			android:tabStripEnabled="false"
+			/>
+		<FrameLayout
+			android:id="@android:id/tabcontent"
+			android:paddingTop="@dimen/list_tab_height"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			>
+			<ListView
+				android:id="@+id/service_list"
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+				android:background="@color/color_2"
+				android:scrollbarStyle="outsideInset"
+				android:scrollbarSize="10px"
+				android:dividerHeight="1px"
+				android:focusable="true"
+				android:cacheColorHint="#00000000"
+				>
+			</ListView>
+		</FrameLayout>
+	</TabHost>
+
+	<ImageView
+		android:id="@+id/ch_list_empty"
+		android:layout_x="@dimen/ch_list_empty_x"
+		android:layout_y="@dimen/ch_list_empty_y"
+		android:layout_width="@dimen/ch_list_empty_width"
+		android:layout_height="@dimen/ch_list_empty_height"
+		android:gravity="center"
+		android:background="@drawable/dxb_portable_common_no_data_img"
+		android:focusable="false"
+		>
+	</ImageView>
+
+	<TextView
+		android:id="@+id/list_atsc_title"
+		android:layout_x="@dimen/list_atsc_title_x"
+		android:layout_y="@dimen/list_atsc_title_y"
+		android:layout_width="@dimen/list_atsc_title_width"
+		android:layout_height="@dimen/list_atsc_title_height"
+		android:textSize="@dimen/list_atsc_title_font"
+		android:gravity="left"
+		>
+	</TextView>
+
+	<ImageView
+		android:id="@+id/list_title_image"
+		android:layout_x="@dimen/list_atsc_title_image_x"
+		android:layout_y="@dimen/list_atsc_title_image_y"
+		android:layout_width="@dimen/list_title_image_width"
+		android:layout_height="@dimen/list_title_image_height"
+		android:gravity="center"
+		android:focusable="false"
+		>
+	</ImageView>
+
+	<TextView
+		android:id="@+id/list_message"
+		android:layout_x="@dimen/list_message_x"
+		android:layout_y="@dimen/list_message_y"
+		android:layout_width="@dimen/list_message_width"
+		android:layout_height="@dimen/list_message_height"
+		android:textSize="@dimen/list_message_font"		
+		android:gravity="center"
+		>
+	</TextView>
+
+	<View
+		android:id="@+id/list_view"
+		android:layout_x="@dimen/list_view_x"
+		android:layout_y="@dimen/list_view_y"
+		android:layout_width="@dimen/list_view_width"
+		android:layout_height="@dimen/list_view_height"
+		android:background="#00000000"
+		android:clickable="true"
+		android:focusable="false"
+		>
+	</View>
+	
+	<ImageView
+		android:id="@+id/list_image"
+		android:layout_x="@dimen/list_image_x"
+		android:layout_y="@dimen/list_image_y"
+		android:layout_width="@dimen/list_image_width"
+		android:layout_height="@dimen/list_image_height"
+		android:focusable="false"
+		>
+	</ImageView>
+
+	<TextView
+		android:id="@+id/list_count"
+		android:layout_x="@dimen/list_count_x"
+		android:layout_y="@dimen/list_atsc_count_y"
+		android:layout_width="@dimen/list_count_width"
+		android:layout_height="@dimen/list_count_height"
+		android:textSize="@dimen/list_count_font"		
+		android:gravity="center"
+		android:focusable="false"
+		>
+	</TextView>
+</AbsoluteLayout>

@@ -1,0 +1,22 @@
+<mixer>
+  <!-- These are the initial mixer settings -->
+  <ctl name="Jack Function" value="Speaker" />
+
+  <path name="speaker">
+    <ctl name="Jack Function" value="Speaker" />
+  </path>
+
+  <path name="headphone">
+    <ctl name="Jack Function" value="HeadPhone" />
+  </path>
+
+  <path name="main-mic">
+    <ctl name="Capture Switch" value="1" />
+    <ctl name="Right PGA Mux" value="LINE 2" />
+    <ctl name="Left PGA Mux" value="LINE 2" />
+  </path>
+
+  <path name="line-in">
+  </path>
+
+</mixer>

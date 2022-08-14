@@ -1,0 +1,144 @@
+1. Window media parser
+	(1) Copy static library into hardware/telechips/common/CDK/container/asf/lib
+			Copy header files into hardware/telechips/common/CDK/video_codec/asf
+		  Rename Android.mk_ to Android.mk
+		  Modify the library's name in the Android.mk file
+		  for example, If library's name is "libTCC_XXX_DMX_ANDROID_V0.0.0.a", {lib_name} is libTCC_XXX_DMX_ANDROID_V0.0.0
+		  The .mk file will be changed as follows
+		  --------------------------------------------
+			LOCAL_PREBUILT_LIBS := \
+				{lib_name}.a
+			endif
+
+			LOCAL_WHOLE_STATIC_LIBRARIES := \
+				{lib_name}
+			endif
+		  --------------------------------------------    					  	  
+	
+	(2) Add a property value in hardware/telechips/common/tcc_container_support.mk
+		  The .mk file will be changed as follows
+		  --------------------------------------------
+			  PRODUCT_PROPERTY_OVERRIDES += \
+				  tcc.container.support.asf = 1
+		  --------------------------------------------		  		
+		  
+	(3) Uncomment #define INCLUDE_ASF_DMX in hardware/telechips/common/CDK/cdk/cdk_pre_define.h		  
+
+2. Window video codec
+	(1) Copy static library into hardware/telechips/common/CDK/video_codec/wmv78dec/lib/
+			Copy header files into hardware/telechips/common/CDK/video_codec/wmv78dec/
+		  Rename Android.mk_ to Android.mk in hardware/telechips/common/CDK/video_codec/wmv78dec/
+		  Modify the library's name in the Android.mk file
+		  for example, If library's name is "libTCC_XXX_ANDROID_V0.0.0.a", {lib_name} is TCC_XXX_ANDROID_V0.0.0
+		  The .mk file will be changed as follows
+		  --------------------------------------------
+			LOCAL_LDFLAGS := \
+				-L$(LOCAL_PATH)/lib \
+				-lTCC_XXX_ANDROID_V0.0.0
+			endif
+		  -------------------------------------------- 
+
+ 	(2) Add a property value in hardware/telechips/common/tcc_video_support.mk
+		  The .mk file will be changed as follows
+		  --------------------------------------------
+			  PRODUCT_PROPERTY_OVERRIDES += \
+				  tcc.video.support.vc1 = 1 \
+				  tcc.video.support.wmv7 = 1 \
+				  tcc.video.support.wmv8 = 1
+				  
+		  --------------------------------------------
+		  
+	(3) Uncomment #define INCLUDE_WMV78_DEC in hardware/telechips/omx/omx_videodec_interface/include/cdk_pre_define.h
+	
+	(4) Change value of wmv related VideoDecoderCap to true at (ANDROID tree)/device/telechips/(CHIPSET)-common/media_profiles.xml
+			The .xml file will be changed as follows
+		  --------------------------------------------
+    		<VideoDecoderCap name="wmv" enabled="true"/>
+		  --------------------------------------------	
+	
+
+3. Window Audio codec
+	This codec depends on Window media parser, so the parser must exist. 
+	(1) Copy downloaded static library into hardware/telechips/common/CDK/audio_codec/wmadec/lib.
+			The library's name must have prefix lib.
+			
+	(2) Rename Android.mk_ to Android.mk in hardware/telechips/common/CDK/audio_codec/wmadec.
+			If the library's name doesn't match with the content in Android.mk, 
+			you should modify the name in Android.mk. 	
+
+	(3)	Rename Android.mk_ to Android.mk in hardware/telechips/omx/omx_wmadec_component.
+
+	(4)	Set "tcc.audio.support.wma" in hardware/telechips/common/tcc_audio_support.mk as '1'
+			ex) tcc.audio.support.wma = 1 \
+
+	(5)	Change value of wma related AudioDecoderCap to true at (ANDROID tree)/device/telechips/(CHIPSET)-common/media_profiles.xml
+  		The .xml file will be changed as follows
+		  --------------------------------------------
+    		<AudioDecoderCap name="wma" enabled="true"/>
+		  --------------------------------------------	
+
+3. AC3 audio codec
+	(1)	Make lib directory in hardware/telechips/common/CDK/audio_codec/ac3dec
+	
+	(2)	Copy downloaded static library into hardware/telechips/common/CDK/audio_codec/ac3dec/lib. 
+			The library's name must have prefix lib.
+
+	(3) Rename Android.mk_ to Android.mk in hardware/telechips/common/CDK/audio_codec/ac3dec.			
+			If the library's name doesn't match with the content in Android.mk, 
+			you should modify the name in Android.mk. 
+
+	(4)	Copy downloaded source folder, named omx_ac3dec_component, into hardware/telechips/omx/.
+		  "hardware/telechips/omx/omx_ac3dec_component", like this.
+
+	## Note : AC3 decoder and DDP decoder can not be applied simultaneously. ##
+	(5) Set "tcc.audio.support.ac3" in hardware/telechips/common/tcc_audio_support.mk as '1'
+			And "tcc.audio.support.ddp" must be set as '0' 
+			
+			ex) tcc.audio.support.ac3 = 1 \
+					tcc.audio.support.ddp = 0 \
+
+4. DDP audio codec
+	(1)	Make lib directory in hardware/telechips/common/CDK/audio_codec/ddpdec
+	
+	(2) Copy downloaded static library into hardware/telechips/common/CDK/audio_codec/ddpdec/lib.  
+			The library's name must have prefix lib.
+
+	(3) Rename Android.mk_ to Android.mk in hardware/telechips/common/CDK/audio_codec/ddpdec.						
+			If the library's name doesn't match with the content in Android.mk, 
+			you should modify the name in Android.mk. 
+
+	(4) Copy downloaded source folder, named omx_ddpdec_component, into hardware/telechips/omx/.
+		  "hardware/telechips/omx/omx_ddpdec_component", like this.
+	
+
+	## Note : AC3 decoder and DDP decoder can not be applied simultaneously. ##
+	(5) Set "tcc.audio.support.ddp" in hardware/telechips/common/tcc_audio_support.mk as '1'
+			And "tcc.audio.support.ac3" must be set as '0'
+
+			ex) tcc.audio.support.ac3 = 0 \
+					tcc.audio.support.ddp = 1 \
+	
+	Additionally, if DDP decoder is applied, you can use converting DDP to DD for spdif passthru.
+
+	
+
+5. DTS audio codec
+	(1)	Make lib directory in hardware/telechips/common/CDK/audio_codec/dtsdec
+	
+	(2)	Copy downloaded static library into hardware/telechips/common/CDK/audio_codec/dtsdec/lib.  
+			The library's name must have prefix lib.
+			
+	(3)	Rename Android.mk_ to Android.mk in hardware/telechips/common/CDK/audio_codec/dtsdec.			
+			If the library's name doesn't match with the content in Android.mk, 
+			you should modify the name in Android.mk. 
+
+	(4) Copy downloaded source folder, named omx_dtsdec_component, into hardware/telechips/omx/.
+			"hardware/telechips/omx/omx_dtsdec_component", like this.
+
+	(5)	Set "tcc.audio.support.dts" in hardware/telechips/common/tcc_audio_support.mk as '1'
+			ex) tcc.audio.support.dts = 1 \
+
+6. How to enable SPDIF output
+	Even if you don't have AC3, DTS libraries, you can enable SPDIF output.
+	Choose 'Passthrough' option at the SPDIF setting.
+

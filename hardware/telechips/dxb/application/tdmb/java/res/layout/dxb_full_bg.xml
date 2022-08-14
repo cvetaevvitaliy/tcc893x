@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2013 Telechips, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+
+	<!-- Main Display -->
+		<View
+			android:id="@+id/full_view"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:focusable="false"
+			>
+		</View>
+		
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+		    >
+		    <View
+				android:layout_width="fill_parent"
+				android:layout_height="0dp"
+				android:layout_weight="1"
+		        >
+		    </View>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="0dp"
+				android:layout_weight="2"
+				>
+			    <View
+					android:layout_width="0dp"
+					android:layout_height="fill_parent"
+					android:layout_weight="3"
+			        >
+			    </View>
+				<ImageView
+					android:id="@+id/full_image"
+					android:layout_width="0dp"
+					android:layout_height="fill_parent"
+					android:layout_weight="2"
+					android:focusable="false"
+					>
+				</ImageView>
+			    <View
+					android:layout_width="0dp"
+					android:layout_height="fill_parent"
+					android:layout_weight="3"
+			        >
+			    </View>
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="0dp"
+				android:layout_weight="1"
+				>
+			    <View
+					android:layout_width="0dp"
+					android:layout_height="fill_parent"
+					android:layout_weight="1"
+			        >
+			    </View>
+				<TextView
+					android:id="@+id/full_text"
+					android:layout_width="0dp"
+					android:layout_height="fill_parent"
+					android:layout_weight="5"
+					android:gravity="center"
+					android:focusable="false"
+					>
+				</TextView>
+			    <View
+					android:layout_width="0dp"
+					android:layout_height="fill_parent"
+					android:layout_weight="1"
+			        >
+			    </View>
+			</LinearLayout>
+		    <View
+				android:layout_width="fill_parent"
+				android:layout_height="0dp"
+				android:layout_weight="1"
+		        >
+		    </View>
+		</LinearLayout>
+		
+
+	<!-- Title only - Display -->
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+		    >
+			<TextView
+				android:id="@+id/full_title_only"
+				android:layout_width="fill_parent"
+				android:layout_height="0dp"
+				android:layout_weight="1"
+				android:textColor="@color/color_3"
+				android:gravity="center"
+				android:text="@string/app_name"
+				android:layout_alignParentTop="true"
+				android:background="@drawable/dxb_portable_title_bg"
+				android:visibility="gone"
+				android:focusable="false"
+				/>
+		    <View
+				android:layout_width="fill_parent"
+				android:layout_height="0dp"
+				android:layout_weight="7"
+		        />
+		</LinearLayout>
+
+	<!-- Subtitle Display -->
+		<ImageView
+			android:id="@+id/full_subtitle_display"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:focusable="false"
+			>
+		</ImageView>
+		
+	<!-- Teletext_Subtitle Display -->
+		<ImageView
+			android:id="@+id/ttx_subtitle"
+			android:layout_x="@dimen/ttx_display_x"
+			android:layout_y="@dimen/ttx_display_y"
+			android:layout_width="@dimen/ttx_display_width"
+			android:layout_height="@dimen/ttx_display_height"
+			android:typeface="monospace"
+			>
+		</ImageView>
+		
+	<!-- Teletext Display -->
+		<include
+			android:id="@+id/layout_teletext"
+			android:visibility="invisible"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			layout="@layout/dxb_teletext_bg"
+			>
+		</include>
+		
+	<!-- Menu Display -->
+		<include
+			android:id="@+id/layout_full_group"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			layout="@layout/dxb_full_navi"
+			>
+		</include>
+				
+	<!-- Recording Display -->
+		<include
+			android:id="@+id/layout_full_recording"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			layout="@layout/dxb_full_recording"
+			>
+		</include>
+</AbsoluteLayout>

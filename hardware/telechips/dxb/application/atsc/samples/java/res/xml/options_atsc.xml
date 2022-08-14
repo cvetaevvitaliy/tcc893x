@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory
+		android:title ="@string/closedcaptionsetting"
+		>
+	<ListPreference
+		android:title="@string/closedcaption"
+		android:key="closedcaption_select"
+		android:entries="@array/closedcaption_select_entries"
+		android:entryValues="@array/closedcaption_select_values">
+	</ListPreference>
+
+	<ListPreference
+			android:title="@string/caption_num"
+			android:key="closedcaption_svcnum"
+			android:entries="@array/captionnum_select_entries"
+			android:entryValues="@array/captionnum_select_values">
+		</ListPreference>
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:title ="@string/atsc_menusetting"
+		>
+	<ListPreference
+		android:title="@string/audio_preference"
+		android:key="audio_preference"
+		android:entries="@array/audio_pref_select_entries"
+		android:entryValues="@array/audio_pref_select_values">
+	</ListPreference>	
+
+	<ListPreference
+		android:title="@string/screen_mode"
+		android:key="aspect_ratio"
+		android:entries="@array/aspect_ratio_select_entries"
+		android:entryValues="@array/aspect_ratio_select_values">
+	</ListPreference>	
+	</PreferenceCategory>
+
+	<PreferenceCategory 
+		android:title ="@string/atsc_scansetting"
+		>
+		<ListPreference
+			android:title="@string/input_selection"
+			android:key="input_select"
+			android:entries="@array/input_select_entries"
+			android:entryValues="@array/input_select_values">
+		</ListPreference>
+		<Preference
+			android:title="@string/scan"
+			android:key="scan_select"
+			android:selectable="true"
+		/>
+	</PreferenceCategory>
+</PreferenceScreen>

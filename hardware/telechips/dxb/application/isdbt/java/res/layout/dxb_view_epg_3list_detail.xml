@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 Telechips, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="280dp"
+
+	android:background="#FF3A3A3A"
+    android:orientation="vertical"
+	android:padding="@dimen/epg_margin_detail"
+    >
+	
+    <TextView
+	   	android:id="@+id/epg_detail_title"
+        android:layout_width="fill_parent"
+   	    android:layout_height="0dp"
+   	    android:layout_weight="1.5"
+		android:padding="@dimen/epg_margin_detail_text"
+
+		android:textColor="#FFFFFFFF"		
+	    android:background="#FF000000"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+		/>
+
+    <TextView
+	   	android:id="@+id/epg_detail_time"
+        android:layout_width="fill_parent"
+   	    android:layout_height="0dp"
+   	    android:layout_weight="1"
+	   	
+	   	android:textColor="#FFFFFFFF"	
+	   	android:background="#FF000000"
+		/>
+        
+	<LinearLayout
+        android:layout_width="fill_parent"
+   	    android:layout_height="0dp"
+   	    android:layout_weight="6"
+	    android:background="#FF000000"
+		>    
+	    <ScrollView
+	        android:id="@+id/epg_detail_scroll"
+			android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    >
+	       	<TextView
+			   	android:id="@+id/epg_detail_text"
+				android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"	
+				android:padding="@dimen/epg_margin_detail_text"
+			    android:background="#FF000000"
+				/>
+	    </ScrollView>
+	</LinearLayout>
+    		
+    <Button
+	    android:id="@+id/epg_detail_button_exit"
+	    android:layout_width="fill_parent"
+	   	android:layout_height="0dp"
+  	    android:layout_weight="1"
+	    android:background="#FF000000"
+	    android:text="@string/ok"
+		android:focusable="true"						    
+		/>
+</LinearLayout>
+  	

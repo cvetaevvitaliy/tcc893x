@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 Telechips, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20sp"
+		android:layout_marginTop="10sp"
+		android:orientation="horizontal"
+		android:layout_weight="4">
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:textSize="20sp"
+			android:text="@string/program_no"/>
+		
+		<TextView
+		    android:id="@+id/program_no"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:textSize="20sp"/>
+		
+		<TextView
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="2"/>
+		    
+	</LinearLayout>
+	
+	<LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20sp"
+		android:layout_marginTop="10sp"
+		android:orientation="horizontal"
+		android:layout_weight="4">
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:textSize="20sp"
+			android:text="@string/program_name"/>
+		
+		<TextView
+		    android:id="@+id/program_name"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:textSize="20sp"/>
+		
+		<TextView
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="2"/>
+		    
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20sp"
+		android:layout_marginTop="10sp"
+		android:orientation="horizontal"
+		android:layout_weight="4">
+		
+	    <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="left"
+	        android:layout_weight="1"
+	        android:text="@string/channel_num"
+	        android:textSize="20sp" />
+		    
+	    <TextView
+	        android:id="@+id/channel_num"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:layout_gravity="left"
+	        android:layout_weight="1"
+	        android:textSize="20sp"/>
+
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:layout_gravity="left"
+	        android:layout_weight="1"
+	        android:textSize="20sp"
+	        android:text="@string/video_pid"/>
+		    
+	    <TextView
+	        android:id="@+id/video_pid"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:layout_gravity="left"
+	        android:layout_weight="1"
+	        android:textSize="20sp"/>
+
+	</LinearLayout>
+
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20sp"
+		android:layout_marginTop="10sp"
+		android:orientation="horizontal"
+		android:layout_weight="4">
+
+		<TextView 
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_gravity="left"
+			android:layout_weight="1"
+			android:textSize="20sp"
+			android:text="@string/frequency"/>
+
+		<TextView
+			android:id="@+id/frequency"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="left"
+			android:layout_weight="1"
+			android:textSize="20sp"/>
+
+		<TextView 
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_gravity="left"
+			android:layout_weight="1"
+			android:textSize="20sp"
+			android:text="@string/audio_pid"/>
+
+	    <TextView
+	        android:id="@+id/audio_pid"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="left"
+	        android:layout_weight="1"
+	        android:textSize="20sp"/>
+		    
+	</LinearLayout>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20sp"
+		android:layout_marginTop="10sp"
+		android:orientation="horizontal"
+		android:layout_weight="4">
+
+		<TextView 
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_gravity="left"
+			android:layout_weight="1"
+			android:textSize="20sp"
+			android:text="@string/bandwidth"/>
+
+		<TextView
+			android:id="@+id/bandwidth"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_gravity="left"
+			android:layout_weight="1"
+			android:textSize="20sp"/>
+
+		<TextView 
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_gravity="left"
+			android:layout_weight="1"
+			android:textSize="20sp"
+			android:text="@string/rotation"/>
+
+	    <TextView
+	        android:id="@+id/rotation"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:layout_gravity="left"
+	        android:layout_weight="1"
+	        android:textSize="20sp"/>
+		    
+	</LinearLayout>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20sp"
+		android:layout_marginTop="10sp"
+		android:orientation="horizontal"
+		android:layout_weight="4">
+
+		<TextView 
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_gravity="left"
+			android:layout_weight="1"
+			android:textSize="20sp"
+			android:text="@string/constellation"/>
+
+		<TextView
+			android:id="@+id/constellation"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_gravity="left"
+			android:layout_weight="1"
+			android:textSize="20sp"/>
+
+		<TextView 
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_gravity="left"
+			android:layout_weight="1"
+			android:textSize="20sp"
+			android:text="@string/fec_length"/>
+
+	    <TextView
+	        android:id="@+id/fec_length"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:layout_gravity="left"
+	        android:layout_weight="1"
+	        android:textSize="20sp"/>
+		    
+	</LinearLayout>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20sp"
+		android:layout_marginTop="10sp"
+		android:orientation="horizontal"
+		android:layout_weight="4">
+
+		<TextView 
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_gravity="left"
+			android:layout_weight="1"
+			android:textSize="20sp"
+			android:text="@string/guard_interval"/>
+
+		<TextView
+			android:id="@+id/guard_interval"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_gravity="left"
+			android:layout_weight="1"
+			android:textSize="20sp"/>
+
+		<TextView 
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_gravity="left"
+			android:textSize="20sp"
+			android:text="@string/code_rate"/>
+
+	    <TextView
+	        android:id="@+id/code_rate"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:layout_gravity="left"
+	        android:layout_weight="1"
+	        android:textSize="20sp"/>
+		    
+	</LinearLayout>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20sp"
+		android:layout_marginTop="10sp"
+		android:orientation="horizontal"
+		android:layout_weight="4">
+
+		<TextView 
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_gravity="left"
+			android:layout_weight="1"
+			android:textSize="20sp"
+			android:text="@string/fft"/>
+
+		<TextView
+			android:id="@+id/fft"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_gravity="left"
+			android:layout_weight="1"
+			android:textSize="20sp"/>
+
+		<TextView 
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_gravity="left"
+			android:layout_weight="1"
+			android:textSize="20sp"
+			android:text="@string/multiple_plp"/>
+
+	    <TextView
+	        android:id="@+id/multiple_plp"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:layout_gravity="left"
+	        android:layout_weight="1"
+	        android:textSize="20sp"/>
+		    
+	</LinearLayout>
+	
+	<LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20sp"
+		android:layout_marginTop="10sp"
+		android:layout_marginBottom="10sp"
+		android:orientation="horizontal"
+		android:layout_weight="4">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_gravity="left"
+			android:textSize="20sp"
+			android:text="@string/pilot_pp"/>
+		
+		<TextView
+		    android:id="@+id/pilot_pp"
+		    android:layout_height="wrap_content"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:textSize="20sp"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_gravity="left"
+			android:textSize="20sp"
+			android:text="@string/single_plp"/>
+		
+		<TextView
+		    android:id="@+id/single_plp"
+		    android:layout_height="wrap_content"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:textSize="20sp"/>
+		    
+	</LinearLayout>
+</LinearLayout>

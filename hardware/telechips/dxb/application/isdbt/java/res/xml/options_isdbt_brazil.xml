@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 Telechips, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+        <PreferenceCategory
+		android:title="@string/language"
+		>
+		<ListPreference
+			android:title="@string/audio"
+			android:key="key_audio_select"
+			android:entries="@array/audio_select_entries"
+			android:entryValues="@array/audio_select_values"
+			/>
+ 
+		<ListPreference
+			android:title="@string/dual_audio"
+			android:key="key_dual_audio_select"
+			android:entries="@array/dual_audio_select_entries"
+			android:entryValues="@array/dual_audio_select_values"
+			/>
+  
+		<ListPreference
+			android:title="@string/caption"
+			android:key="key_caption_select"
+			android:entries="@array/caption_select_entries"
+			android:entryValues="@array/caption_select_values"
+			/>
+	  
+		<ListPreference
+			android:title="@string/super_impose"
+			android:key="key_super_impose_select"
+			android:entries="@array/super_impose_select_entries"
+			android:entryValues="@array/super_impose_select_values"
+			/>
+	</PreferenceCategory>
+
+    <PreferenceCategory
+		android:title="@string/scan"
+		android:key="scan_category"
+		>
+
+		<PreferenceScreen
+			android:title="@string/auto_search"
+			android:key="key_auto_scan"
+			/>
+
+		<PreferenceScreen
+			android:title="@string/manual_scan"
+			android:key="key_manual_scan"
+			/>
+	</PreferenceCategory>		
+
+    <PreferenceCategory
+		android:title="@string/settings"
+		>
+		<!--
+		<ListPreference
+			android:title="@string/preset_mode_select"
+			android:key="@string/key_preset_mode_select"
+			android:entries="@array/preset_mode_select_entries"
+			android:entryValues="@array/preset_mode_select_values"
+			/>
+		-->
+
+		<EditTextPreference
+			android:title="@string/parental_rating"
+			android:key="key_parental_rating_select"
+			android:dialogTitle="@string/password"
+			android:inputType="number"			
+			android:password="true"
+			/>
+
+		<EditTextPreference
+			android:title="@string/change_password"
+			android:key="@string/key_change_password_select"
+			android:dialogTitle="@string/current_password"
+			android:inputType="number"
+			android:password="true"
+			/>
+
+		<ListPreference
+			android:title="@string/seamless_change"
+			android:key="@string/key_seamless_change_select"
+			android:entries="@array/seamless_change_select_entries"
+			android:entryValues="@array/seamless_change_select_values"
+			/>
+								
+		<ListPreference
+			android:title="@string/storage"
+			android:key="key_storage_select"
+			/>
+		
+		<ListPreference
+		    android:title="@string/signal_quality"
+		    android:key="@string/key_signal_quality_select"
+		    android:entries="@array/signal_quality_select_entries"
+		    android:entryValues="@array/signal_quality_select_values"
+			/>	
+	
+	<!--  this checkbox is used only while field test
+		<CheckBoxPreference
+			android:title="@string/field_log"
+			android:key="@string/key_field_log"
+			android:defaultValue="false"
+		/>
+	-->
+	</PreferenceCategory>	
+</PreferenceScreen>

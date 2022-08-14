@@ -1,0 +1,33 @@
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+
+LOCAL_C_INCLUDES := \
+	$(LOCAL_PATH)/../ $(LOCAL_PATH)/../../ $(LOCAL_PATH)/../../modules/ 
+
+LOCAL_SRC_FILES := \
+	hdmi_sha1.c \
+	smp_add.c \
+	smp_div.c \
+	smp_err.c \
+	smp_exp.c \
+	smp_mod.c \
+	smp_mont.c \
+	smp_mul.c \
+	smp_shift.c \
+	smp_sqr.c \
+	smp_util.c \
+	arm/smp_asm.s
+	
+LOCAL_MODULE := libsmp
+
+L_CFLAGS := -DTELECHIPS
+
+LOCAL_SHARED_LIBRARIES := \
+	libutils \
+	libcutils \
+	libui \
+	liblog \
+	libmedia
+	
+
+include $(BUILD_STATIC_LIBRARY)

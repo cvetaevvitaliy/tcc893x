@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 Telechips, Inc.
+
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+		http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".DishSetupActivity" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dip"
+		android:layout_weight="12"
+		android:orientation="horizontal">
+		
+		<LinearLayout
+			android:layout_width="0dip"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:layout_weight="1" >
+			<include
+				android:id="@+id/sat_list_header"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				layout="@layout/list_dvbs_sat" />
+            
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent" >
+				<TextView
+					android:id="@+id/no_data_info"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:gravity="center"
+					android:padding="60dip"
+					android:textSize="20sp"
+					android:text="@string/no_data_info"
+					android:visibility="gone" />
+				<ListView
+					android:id="@+id/sat_list"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:scrollbars="vertical"	/>
+			</RelativeLayout>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="0dip"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:layout_weight="1">
+			<TextView
+				android:id="@+id/selected_sat_name"
+				android:layout_width="match_parent"
+				android:layout_height="45dip"
+				android:layout_gravity="center_vertical"
+				android:gravity="center"
+				android:textSize="22sp" />
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dip"
+				android:layout_weight="1">
+				<ListView
+					android:id="@+id/lnb_list"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:scrollbars="vertical"	/>
+
+				<LinearLayout
+					android:id="@+id/ts_list_layout"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:visibility="gone" >
+					<include
+						android:id="@+id/ts_list_header"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						layout="@layout/list_dvbs_ts" />
+					<ListView
+						android:id="@+id/ts_list"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:scrollbars="vertical"	/>
+				</LinearLayout>
+			</RelativeLayout>
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:layout_marginTop="10px"
+		android:orientation="horizontal">
+		<View
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="6"	/>
+		<Button
+			android:id="@+id/button_dish_setup_add"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="13"
+			android:background="@color/color_red"
+			android:textColor="@color/color_t_c"
+			android:text="@string/dish_setup_conf_button_add"
+			android:focusable="false"	/>
+		<View
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="4"	/>
+		<Button
+			android:id="@+id/button_dish_setup_edit"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="13"
+			android:background="@color/color_green"
+			android:textColor="@color/color_t_c"
+			android:text="@string/dish_setup_conf_button_edit"
+			android:focusable="false"
+			android:clickable="true"	/>
+		<View
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="4"	/>
+		<Button
+			android:id="@+id/button_dish_setup_delete"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="13"
+			android:background="@color/color_yellow"
+			android:textColor="@color/color_t_c"
+			android:text="@string/dish_setup_conf_button_delete"
+			android:focusable="false"
+			android:clickable="true"	/>
+		<View
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="4"	/>
+		<Button
+			android:id="@+id/button_dish_setup_scan"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="13"
+			android:background="@color/color_blue"
+			android:textColor="@color/color_t_c"
+			android:text="@string/dish_setup_conf_button_scan"
+			android:focusable="false"
+			android:clickable="true"	/>
+		<View
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="4"	/>
+		<Button
+			android:id="@+id/button_dish_setup_goto"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="13"
+			android:background="@color/color_white"
+			android:textColor="@color/color_t_c"
+			android:text="@string/dish_setup_conf_button_goto"
+			android:focusable="false"
+			android:clickable="true"	/>
+		<View
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="6"	/>
+	</LinearLayout>
+
+</LinearLayout>

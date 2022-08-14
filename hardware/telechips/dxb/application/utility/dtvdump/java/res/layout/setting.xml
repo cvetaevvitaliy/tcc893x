@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="3"
+		android:orientation="horizontal">
+		<View
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"	/>
+		<TextView
+		    android:id="@+id/title_player"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="5"
+			android:gravity="center_vertical"
+			android:text="@string/player"	/>
+		<TextView
+		    android:id="@+id/title_dummy1"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center_vertical"
+			android:text="@string/_:"	/>
+		<RadioGroup
+		    android:id="@+id/group_player"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="20"
+			android:orientation="horizontal">
+			<RadioButton
+				android:id="@+id/setting_player_isdbt"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/ISDB_T"	/>
+			<RadioButton
+				android:id="@+id/setting_player_dvbt"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/DVB_T"	/>
+			<RadioButton
+				android:id="@+id/setting_player_dvbs"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/DVB_S"	/>
+			<RadioButton
+				android:id="@+id/setting_player_atsc"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/ATSC"	/>
+			<RadioButton
+				android:id="@+id/setting_player_iptv"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/IPTV"	/>
+		</RadioGroup>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="3"
+		android:orientation="horizontal">
+		<View
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"	/>
+	    <TextView
+		    android:id="@+id/title_channel"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="5"
+			android:gravity="center_vertical"
+			android:text="@string/channel"	/>
+		<TextView
+		    android:id="@+id/title_dummy2"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center_vertical"
+			android:text="@string/_:"	/>
+		<EditText
+		    android:id="@+id/setting_channel"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="6"
+			android:gravity="center_vertical"	/>
+		<TextView
+		    android:id="@+id/setting_channel_khz"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="5"
+			android:gravity="center_vertical"
+			android:text="@string/khz"	/>
+		<View
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="9"	/>
+	</LinearLayout>
+		
+	<LinearLayout
+	    android:id="@+id/layout_bandwidth"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="3"
+		android:visibility="invisible"
+		android:orientation="horizontal">
+		<View
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"	/>
+	    <TextView
+		    android:id="@+id/title_bandwidth"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="5"
+			android:gravity="center_vertical"
+			android:text="@string/bandwidth"	/>
+	    <TextView
+		    android:id="@+id/title_dummy3"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center_vertical"
+			android:text="@string/_:"	/>
+		<RadioGroup
+		    android:id="@+id/group_bandwidth_radio"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="20"
+			android:orientation="horizontal"
+			android:visibility="gone">
+			<RadioButton
+				android:id="@+id/setting_bandwidth_6"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/_6_mhz"	/>
+			<RadioButton
+				android:id="@+id/setting_bandwidth_7"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/_7_mhz"	/>
+			<RadioButton
+				android:id="@+id/setting_bandwidth_8"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/_8_mhz"	/>
+		</RadioGroup>
+		<LinearLayout
+		    android:id="@+id/group_bandwidth_edit"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="20"
+			android:orientation="horizontal">
+			<EditText
+			    android:id="@+id/setting_bandwidth_edit"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="6"
+				android:gravity="center_vertical"
+				android:inputType="number"	/>
+			<TextView
+			    android:id="@+id/setting_bandwidth_khz"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="5"
+				android:gravity="center_vertical"
+				android:text="@string/khz"	/>
+			<View
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="9"	/>
+		</LinearLayout>
+	</LinearLayout>
+	
+	<LinearLayout
+		android:id="@+id/layout_pol"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="3"
+		android:visibility="invisible"
+		android:orientation="horizontal">
+		<View
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"	/>
+	    <TextView
+		    android:id="@+id/title_pol"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="5"
+			android:gravity="center_vertical"
+			android:text="@string/pol"	/>
+		<TextView
+		    android:id="@+id/title_dummy4"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center_vertical"
+			android:text="@string/_:"	/>
+		<RadioGroup
+		    android:id="@+id/group_pol"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="20"
+			android:orientation="horizontal">
+			<RadioButton
+				android:id="@+id/setting_pol_vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:text="@string/v"	/>
+			<RadioButton
+				android:id="@+id/setting_pol_horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/h"	/>
+		</RadioGroup>
+	</LinearLayout>
+			
+	<LinearLayout
+	    android:id="@+id/layout_modulation"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="3"
+	    android:visibility="invisible"
+	    android:orientation="horizontal" >
+		<View
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center_vertical"	/>
+	    <TextView
+		    android:id="@+id/title_modulation"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="5"
+			android:gravity="center_vertical"
+			android:text="@string/modulation"	/>
+	    <TextView
+		    android:id="@+id/title_modulation_dummy"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center_vertical"
+			android:text="@string/_:"	/>
+		<RadioGroup
+		    android:id="@+id/group_modulation"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="20"
+			android:orientation="horizontal"	>
+			<RadioButton
+				android:id="@+id/setting_modulation_VSB_8"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/_VSB_8"	/>
+			<RadioButton
+				android:id="@+id/setting_modulation_VSB_16"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/_VSB_16"	/>
+			<RadioButton
+				android:id="@+id/setting_modulation_QAM_32"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/_QAM_32"	/>
+			<RadioButton
+				android:id="@+id/setting_modulation_QAM_64"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/_QAM_64"	/>			
+			<RadioButton
+				android:id="@+id/setting_modulation_QAM_128"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/_QAM_128"	/>				
+			<RadioButton
+				android:id="@+id/setting_modulation_QAM_256"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/_QAM_256"	/>
+		</RadioGroup>
+	</LinearLayout>	
+				
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="3"
+		android:orientation="horizontal">
+		<View
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"	/>
+	    <TextView
+		    android:id="@+id/title_storage"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="5"
+			android:gravity="center_vertical"
+			android:text="@string/storage"	/>
+		<TextView
+		    android:id="@+id/title_dummy4"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center_vertical"
+			android:text="@string/_:"	/>
+		<RadioGroup
+		    android:id="@+id/group_storage"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="20"
+			android:orientation="horizontal">
+			<RadioButton
+				android:id="@+id/setting_storage_usb0"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:text="@string/usb0"	/>
+			<RadioButton
+				android:id="@+id/setting_storage_usb1"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/usb1"	/>
+			<RadioButton
+				android:id="@+id/setting_storage_sdcard0"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/sdcard0"	/>
+			<RadioButton
+				android:id="@+id/setting_storage_sdcard1"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:text="@string/sdcard1"	/>
+		</RadioGroup>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="3"
+		android:orientation="horizontal">
+		<View
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"	/>
+	    <TextView
+		    android:id="@+id/title_name"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="5"
+			android:gravity="center_vertical"
+			android:text="@string/name"	/>
+		<TextView
+		    android:id="@+id/title_dummy5"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center_vertical"
+			android:text="@string/_:"	/>
+		<EditText
+		    android:id="@+id/setting_name"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="20"
+			android:gravity="center_vertical"
+			android:inputType="text"	/>
+	</LinearLayout>
+
+</LinearLayout>

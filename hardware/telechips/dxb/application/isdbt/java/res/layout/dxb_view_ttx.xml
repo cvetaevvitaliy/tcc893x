@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 Telechips, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="horizontal" >
+	
+	<!-- margin left -->
+	<View
+		android:id="@+id/ttx_margin_left"
+		android:layout_width="0dp"
+		android:layout_height="fill_parent"
+		android:layout_weight="2" />
+
+	<View
+		android:layout_width="0dp"
+		android:layout_height="fill_parent"
+		android:layout_weight="6" />
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="0dp"
+		android:layout_height="fill_parent"
+		android:layout_weight="57" >
+		
+		<!-- margin top -->
+		<View
+			android:id="@+id/ttx_margin_top"
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="4" />
+
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1" />
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="100" >
+
+			<!-- bitmap -->
+			<ImageView
+				android:id="@+id/ttx_display"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="40"
+				android:typeface="monospace" />
+	
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="7"
+				android:orientation="vertical" >
+				
+				<TextView
+					android:layout_width="fill_parent"
+					android:layout_height="0dp"
+					android:layout_weight="1"
+					android:background="@drawable/dxb_portable_list_id_icon_n"
+					android:gravity="center"
+					android:textColor="@color/color_2"
+					android:textStyle="bold"
+					android:text="@string/ttx" />
+				
+				<Button
+					android:id="@+id/ttx_page"
+					android:layout_width="fill_parent"
+					android:layout_height="0dp"
+					android:layout_weight="1"
+					android:background="@drawable/dxb_portable_ttx_input_box"
+					android:gravity="center"
+					android:textStyle="bold"
+					android:alpha="0.6" />
+
+				<Button
+					android:id="@+id/ttx_start"
+					android:layout_width="fill_parent"
+					android:layout_height="0dp"
+					android:layout_weight="1"
+					android:textStyle="bold"
+					android:text="@string/start" />
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="fill_parent"
+					android:layout_height="0dp"
+					android:layout_weight="1" >
+					<AbsoluteLayout
+						android:layout_width="0dp"
+						android:layout_height="fill_parent"
+						android:layout_weight="1" >
+						<Button
+							android:id="@+id/ttx_red"
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent" />
+					</AbsoluteLayout>
+					
+					<AbsoluteLayout
+						android:layout_width="0dp"
+						android:layout_height="fill_parent"
+						android:layout_weight="1" >
+						<Button
+							android:id="@+id/ttx_green"
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent" />
+					</AbsoluteLayout>
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="fill_parent"
+					android:layout_height="0dp"
+					android:layout_weight="1" >
+					<AbsoluteLayout
+						android:layout_width="0dp"
+						android:layout_height="fill_parent"
+						android:layout_weight="1" >
+						<Button
+							android:id="@+id/ttx_yellow"
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent" />
+					</AbsoluteLayout>
+					
+					<AbsoluteLayout
+						android:layout_width="0dp"
+						android:layout_height="fill_parent"
+						android:layout_weight="1" >
+						<Button
+							android:id="@+id/ttx_cyan"
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent" />
+					</AbsoluteLayout>
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="fill_parent"
+					android:layout_height="0dp"
+					android:layout_weight="1" >
+					<Button
+						android:id="@+id/ttx_prev"
+						android:layout_width="0dp"
+						android:layout_height="fill_parent"
+						android:layout_weight="1"
+						android:text="@string/ttx_prev" />
+					<Button
+						android:id="@+id/ttx_next"
+						android:layout_width="0dp"
+						android:layout_height="fill_parent"
+						android:layout_weight="1"
+						android:text="@string/ttx_next" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="fill_parent"
+					android:layout_height="0dp"
+					android:layout_weight="1" >
+					<Button
+						android:id="@+id/ttx_fprev"
+						android:layout_width="0dp"
+						android:layout_height="fill_parent"
+						android:layout_weight="1"
+						android:text="@string/ttx_fprev" />
+					<Button
+						android:id="@+id/ttx_fnext"
+						android:layout_width="0dp"
+						android:layout_height="fill_parent"
+						android:layout_weight="1"
+						android:text="@string/ttx_fnext" />
+				</LinearLayout>
+				<Button
+					android:id="@+id/ttx_off"
+					android:layout_width="fill_parent"
+					android:layout_height="0dp"
+					android:layout_weight="1"
+					android:text="@string/off" />
+				<View
+					android:id="@+id/ttx_margin_menu"
+					android:layout_width="fill_parent"
+					android:layout_height="0dp"
+					android:layout_weight="4" />
+			</LinearLayout>
+		</LinearLayout>
+
+		<!-- margin bottom -->
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1" />
+
+		<View
+			android:id="@+id/ttx_margin_bottom"
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="4" />
+	</LinearLayout>
+
+	<!-- margin right -->
+	<View
+		android:layout_width="0dp"
+		android:layout_height="fill_parent"
+		android:layout_weight="6" />
+
+	<View
+		android:id="@+id/ttx_margin_right"
+		android:layout_width="0dp"
+		android:layout_height="fill_parent"
+		android:layout_weight="2" />
+</LinearLayout>

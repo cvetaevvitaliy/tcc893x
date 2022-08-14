@@ -1,0 +1,22 @@
+
+What's new in MxL603 MxLWare 2.1.1.3 (07/18/2012)?
+
+   1. Support DTMB mode. change MXL603_DIG_DVB_T definition to MXL603_DIG_DVB_T_DTMB.  	   
+	    * Please refer to MxLWare API user guide for MxL603 for more information.	
+  
+--------------------------------------------------------------------------------------
+What's new in MxL603 MxLWare 2.1.1.2 (06/22/2012)?
+
+   1. Support for new hardware revision	  	   
+	    * Please refer to MxLWare API user guide for MxL603 for more information.	
+  
+--------------------------------------------------------------------------------------
+What's new in MxL603 MxLWare 1.1.2.1 (06/22/2012)?
+
+   1. Support for crystal sharing.
+   2. Updated API's.
+	  MXL_DEV_XTAL_SET_CFG:	
+	  	New Parameter added to support crystal sharing.
+	  	   
+	    * Please refer to MxLWare API user guide for MxL603 for more information.	
+   

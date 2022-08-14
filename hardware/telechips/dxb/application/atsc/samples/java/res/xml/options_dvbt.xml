@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+  
+	<ListPreference
+		android:title="@string/subtitle"
+		android:key="subtitle_select"
+		android:entries="@array/subtitle_select_entries"
+		android:entryValues="@array/subtitle_select_values">
+	</ListPreference>
+  
+	<ListPreference
+		android:title="@string/teletext"
+		android:key="teletext_select"
+		android:entries="@array/teletext_select_entries"
+		android:entryValues="@array/teletext_select_values">
+	</ListPreference>
+
+	<ListPreference
+		android:title="@string/storage"
+		android:key="storage_select"
+		android:entries="@array/storage_select_entries"
+		android:entryValues="@array/storage_select_values">
+	</ListPreference>
+	
+	<ListPreference
+		android:title="@string/countrycode"
+		android:key="countrycode_select"
+		android:entries="@array/countrycode_select_entries"
+		android:entryValues="@array/countrycode_select_values">
+	</ListPreference>
+	
+</PreferenceScreen>

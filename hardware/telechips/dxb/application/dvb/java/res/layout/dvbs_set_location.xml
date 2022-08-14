@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014 Telechips, Inc.
+
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+	
+		http://www.apache.org/licenses/LICENSE-2.0
+	
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+    
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:orientation="horizontal" >
+		<TextView
+			android:id="@+id/set_location_location_text"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="3"
+			android:layout_gravity="center_vertical"
+			android:singleLine="true"
+			android:text="@string/location"	/>
+		<Button
+			android:id="@+id/set_location_location_button"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="2"	/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:orientation="horizontal" >
+		<TextView
+			android:id="@+id/set_location_longitude_direction_text"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="3"
+			android:layout_gravity="center_vertical"
+			android:singleLine="true"
+			android:text="@string/longitude_direction"	/>
+		<Button
+			android:id="@+id/set_location_longitude_direction_button"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="2"	/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:orientation="horizontal" >
+		<TextView
+			android:id="@+id/set_location_longitude_angle_text"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="30"
+			android:layout_gravity="center_vertical"
+			android:singleLine="true"
+			android:text="@string/longitude_angle"/>
+		<EditText
+		    android:id="@+id/set_location_longitude_angle0"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="15"
+			android:singleLine="true"
+			android:numeric="integer"/>
+		<TextView
+			android:id="@+id/set_location_longitude_dot"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:text="@string/dot"/>
+		<EditText
+		    android:id="@+id/set_location_longitude_angle1"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="4"
+			android:singleLine="true"
+			android:numeric="integer"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:orientation="horizontal" >
+		<TextView
+			android:id="@+id/set_location_latitude_direction_text"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="3"
+			android:layout_gravity="center_vertical"
+			android:singleLine="true"
+			android:text="@string/latitude_direction"	/>
+		<Button
+			android:id="@+id/set_location_latitude_direction_button"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="2"	/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:orientation="horizontal" >
+		<TextView
+			android:id="@+id/set_location_latitude_angle_text"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="30"
+			android:layout_gravity="center_vertical"
+			android:singleLine="true"
+			android:text="@string/latitude_angle"/>
+		<EditText
+		    android:id="@+id/set_location_latitude_angle0"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="15"
+			android:singleLine="true"
+			android:numeric="integer"/>
+		<TextView
+			android:id="@+id/set_location_latitude_dot"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:text="@string/dot"/>
+		<EditText
+		    android:id="@+id/set_location_latitude_angle1"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="4"
+			android:singleLine="true"
+			android:numeric="integer"/>
+	</LinearLayout>
+</LinearLayout>
