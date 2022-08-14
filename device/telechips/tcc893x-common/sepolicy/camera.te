@@ -1,0 +1,6 @@
+# apply to SELinux for Telechips Camera
+
+type camera, domain;
+
+allow camera vpu_device:chr_file rw_file_perms;
+

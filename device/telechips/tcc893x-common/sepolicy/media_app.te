@@ -1,0 +1,1 @@
+allow media_app vpu_device:char_file rw_file_perms 

@@ -1,0 +1,11 @@
+# mount point	fstype		device					[device2]
+
+/boot		emmc		/dev/block/platform/bdm/by-num/p1
+/cache		ext4		/dev/block/platform/bdm/by-num/p5
+/data		ext4		/dev/block/platform/bdm/by-num/p3
+/misc		emmc		/dev/block/platform/bdm/by-num/p9
+/recovery	emmc		/dev/block/platform/bdm/by-num/p6
+/sdcard		vfat		/dev/block/mmcblk0			/dev/block/mmcblk0p1
+/system		ext4		/dev/block/platform/bdm/by-num/p2
+/snapshot	ext4	/dev/block/platform/bdm/by-num/p11
+/nand	vfat	/dev/block/ndda11

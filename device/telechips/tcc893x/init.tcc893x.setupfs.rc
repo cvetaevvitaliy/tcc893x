@@ -1,0 +1,11 @@
+
+on boot 
+
+# create filesystems if necessary
+service setup_fs /system/bin/setup_fs /dev/block/platform/bdm/by-name/userdata /dev/block/platform/bdm/by-name/cache
+    class core
+    user root
+    group root
+    oneshot
+
+

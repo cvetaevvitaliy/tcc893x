@@ -1,0 +1,13 @@
+# <src> <mnt_point> <type> <mnt_flags> <fs_mgr_flags> <device2>
+
+/dev/block/platform/bdm/by-num/p1	/boot	emmc	defaults	defaults
+/dev/block/platform/bdm/by-num/p2	/system	ext4	defaults	defaults
+/dev/block/platform/bdm/by-num/p3	/data	ext4	defaults	defaults
+/dev/block/platform/bdm/by-num/p5	/cache	ext4	defaults	defaults
+/dev/block/platform/bdm/by-num/p6	/recovery	emmc	defaults	defaults
+/dev/block/platform/bdm/by-num/p9	/misc	emmc	defaults	defaults
+#/dev/block/platform/bdm/by-name/p11	/snapshot	ext4	defaults	defaults
+/dev/block/sda	/usb	vfat	defaults	defaults	/dev/block/sda1
+/dev/block/mmcblk1	/sdcard	vfat	defaults	defaults	/dev/block/mmcblk1p1
+/dev/block/platform/bdm/by-num/p11	/snapshot	ext4	defaults	defaults
+/dev/block/platform/bdm/by-num/p12	/qb_data	ext4	defaults	defaults

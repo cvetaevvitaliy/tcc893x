@@ -1,0 +1,442 @@
+diff -crB patch_after/bootable/bootloader/lk/target/tcc8920st_evm/rules.mk patch_before/bootable/bootloader/lk/target/tcc8920st_evm/rules.mk
+*** patch_after/bootable/bootloader/lk/target/tcc8920st_evm/rules.mk	2014-03-25 11:55:02.000000000 +0900
+--- patch_before/bootable/bootloader/lk/target/tcc8920st_evm/rules.mk	2014-03-25 11:43:57.000000000 +0900
+***************
+*** 371,377 ****
+  #------------------------------------------------------------------
+  # SNAPSHOT BOOT Option
+  #------------------------------------------------------------------
+! TCC_QUICKBOOT_USE := 1
+  
+  ifeq ($(TCC_QUICKBOOT_USE),1)
+  DEFINES += CONFIG_SNAPSHOT_BOOT
+--- 371,377 ----
+  #------------------------------------------------------------------
+  # SNAPSHOT BOOT Option
+  #------------------------------------------------------------------
+! #TCC_QUICKBOOT_USE := 1
+  
+  ifeq ($(TCC_QUICKBOOT_USE),1)
+  DEFINES += CONFIG_SNAPSHOT_BOOT
+diff -crB patch_after/bootable/bootloader/lk/target/tcc892x_evm/rules.mk patch_before/bootable/bootloader/lk/target/tcc892x_evm/rules.mk
+*** patch_after/bootable/bootloader/lk/target/tcc892x_evm/rules.mk	2014-03-03 15:20:40.000000000 +0900
+--- patch_before/bootable/bootloader/lk/target/tcc892x_evm/rules.mk	2014-03-04 11:36:13.000000000 +0900
+***************
+*** 191,197 ****
+  #------------------------------------------------------------------
+  # Snapshot Boot Option
+  #------------------------------------------------------------------
+! TCC_QUICKBOOT_USE := 1
+  
+  ifeq ($(TCC_QUICKBOOT_USE),1)
+  DEFINES += CONFIG_SNAPSHOT_BOOT
+--- 191,197 ----
+  #------------------------------------------------------------------
+  # Snapshot Boot Option
+  #------------------------------------------------------------------
+! #TCC_QUICKBOOT_USE := 1
+  
+  ifeq ($(TCC_QUICKBOOT_USE),1)
+  DEFINES += CONFIG_SNAPSHOT_BOOT
+diff -crB patch_after/bootable/bootloader/lk/target/tcc8930st_evm/rules.mk patch_before/bootable/bootloader/lk/target/tcc8930st_evm/rules.mk
+*** patch_after/bootable/bootloader/lk/target/tcc8930st_evm/rules.mk	2014-03-25 11:58:05.000000000 +0900
+--- patch_before/bootable/bootloader/lk/target/tcc8930st_evm/rules.mk	2014-03-21 18:21:59.000000000 +0900
+***************
+*** 397,403 ****
+  #==================================================================
+  # Snapshot Boot Option 
+  #==================================================================
+! TCC_QUICKBOOT_USE := 1
+  
+  ifeq ($(TCC_QUICKBOOT_USE),1)
+  	DEFINES += CONFIG_SNAPSHOT_BOOT
+--- 397,403 ----
+  #==================================================================
+  # Snapshot Boot Option 
+  #==================================================================
+! #TCC_QUICKBOOT_USE := 1
+  
+  ifeq ($(TCC_QUICKBOOT_USE),1)
+  	DEFINES += CONFIG_SNAPSHOT_BOOT
+diff -crB patch_after/bootable/bootloader/lk/target/tcc893x_evm/rules.mk patch_before/bootable/bootloader/lk/target/tcc893x_evm/rules.mk
+*** patch_after/bootable/bootloader/lk/target/tcc893x_evm/rules.mk	2014-02-25 15:18:43.000000000 +0900
+--- patch_before/bootable/bootloader/lk/target/tcc893x_evm/rules.mk	2014-03-04 11:36:13.000000000 +0900
+***************
+*** 228,234 ****
+  #==================================================================
+  # Snapshot Boot Option
+  #==================================================================
+! TCC_QUICKBOOT_USE := 1
+  
+  ifeq ($(TCC_QUICKBOOT_USE),1)
+  	DEFINES += CONFIG_SNAPSHOT_BOOT
+--- 228,234 ----
+  #==================================================================
+  # Snapshot Boot Option
+  #==================================================================
+! #TCC_QUICKBOOT_USE := 1
+  
+  ifeq ($(TCC_QUICKBOOT_USE),1)
+  	DEFINES += CONFIG_SNAPSHOT_BOOT
+diff -crB patch_after/build/core/main.mk patch_before/build/core/main.mk
+*** patch_after/build/core/main.mk	2014-03-25 11:56:18.000000000 +0900
+--- patch_before/build/core/main.mk	2014-03-25 11:53:07.000000000 +0900
+***************
+*** 311,321 ****
+    # explicitly disabled and the build is running on Linux (since host
+    # Dalvik isn't built for non-Linux hosts).
+    ifneq (true,$(DISABLE_DEXPREOPT))
+! #    ifeq ($(user_variant),user)
+        ifeq ($(HOST_OS),linux)
+          WITH_DEXPREOPT := true
+        endif
+! #    endif
+    endif
+  
+    # Disallow mock locations by default for user builds
+--- 311,321 ----
+    # explicitly disabled and the build is running on Linux (since host
+    # Dalvik isn't built for non-Linux hosts).
+    ifneq (true,$(DISABLE_DEXPREOPT))
+!     ifeq ($(user_variant),user)
+        ifeq ($(HOST_OS),linux)
+          WITH_DEXPREOPT := true
+        endif
+!     endif
+    endif
+  
+    # Disallow mock locations by default for user builds
+***************
+*** 328,337 ****
+    ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
+    # Allow mock locations by default for non user builds
+    ADDITIONAL_DEFAULT_PROPERTIES += ro.allow.mock.location=1
+- 
+-   ifeq ($(HOST_OS),linux)
+-     WITH_DEXPREOPT := true
+-   endif
+  endif # !user_variant
+  
+  ifeq (true,$(strip $(enable_target_debugging)))
+--- 328,333 ----
+diff -crB patch_after/device/telechips/tcc8920/device.mk patch_before/device/telechips/tcc8920/device.mk
+*** patch_after/device/telechips/tcc8920/device.mk	2014-03-25 11:59:04.000000000 +0900
+--- patch_before/device/telechips/tcc8920/device.mk	2014-03-25 11:45:21.000000000 +0900
+***************
+*** 34,41 ****
+  	wifi.supplicant_scan_interval=15 \
+  	ro.carrier=wifi-only
+  
+! PRODUCT_PROPERTY_OVERRIDES += ro.QB.enable=1
+! PRODUCT_PACKAGES += quickboot
+  
+  PRODUCT_PROPERTY_OVERRIDES += \
+  	ro.system.hdmi_max_resolution = fullhd \
+--- 34,41 ----
+  	wifi.supplicant_scan_interval=15 \
+  	ro.carrier=wifi-only
+  
+! #PRODUCT_PROPERTY_OVERRIDES += ro.QB.enable=1
+! #PRODUCT_PACKAGES += quickboot
+  
+  PRODUCT_PROPERTY_OVERRIDES += \
+  	ro.system.hdmi_max_resolution = fullhd \
+***************
+*** 212,219 ****
+    frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml	
+  
+  PRODUCT_COPY_FILES += \
+! 	device/telechips/common/initlogo1024x600.rle:root/initlogo.rle \
+!         device/telechips/common/Quickboot_1024x600.rle:root/QuickBoot_logo.rle
+  #	device/telechips/common/initlogo800x480.rle:root/initlogo.rle
+  #	device/telechips/common/initlogo1280x720.rle:root/initlogo.rle
+  
+--- 212,218 ----
+    frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml	
+  
+  PRODUCT_COPY_FILES += \
+! 	device/telechips/common/initlogo1024x600.rle:root/initlogo.rle
+  #	device/telechips/common/initlogo800x480.rle:root/initlogo.rle
+  #	device/telechips/common/initlogo1280x720.rle:root/initlogo.rle
+  
+diff -crB patch_after/device/telechips/tcc8920/ums/vold.emmc.fstab patch_before/device/telechips/tcc8920/ums/vold.emmc.fstab
+*** patch_after/device/telechips/tcc8920/ums/vold.emmc.fstab	2014-03-04 11:15:07.000000000 +0900
+--- patch_before/device/telechips/tcc8920/ums/vold.emmc.fstab	2014-03-04 11:36:30.000000000 +0900
+***************
+*** 11,17 ****
+  ######################
+  
+  # External SD card
+! dev_mount sdcard0 /mnt/sdcard 12 /devices/platform/tcc-sdhc0
+  dev_mount sdcard1 /mnt/ext_sd auto /devices/platform/tcc-sdhc1
+  
+  # External USB storage
+--- 11,17 ----
+  ######################
+  
+  # External SD card
+! dev_mount sdcard0 /mnt/sdcard 11 /devices/platform/tcc-sdhc0
+  dev_mount sdcard1 /mnt/ext_sd auto /devices/platform/tcc-sdhc1
+  
+  # External USB storage
+diff -crB patch_after/device/telechips/tcc8920/ums/vold.fstab patch_before/device/telechips/tcc8920/ums/vold.fstab
+*** patch_after/device/telechips/tcc8920/ums/vold.fstab	2014-03-04 11:15:29.000000000 +0900
+--- patch_before/device/telechips/tcc8920/ums/vold.fstab	2014-03-04 11:36:30.000000000 +0900
+***************
+*** 11,17 ****
+  ######################
+  
+  # External SD card
+! dev_mount sdcard /mnt/sdcard 12 /devices/platform/tcc_nand
+  dev_mount ext_sd /mnt/ext_sd auto /devices/platform/tcc-sdhc
+  
+  # External USB storage
+--- 11,17 ----
+  ######################
+  
+  # External SD card
+! dev_mount sdcard /mnt/sdcard 11 /devices/platform/tcc_nand
+  dev_mount ext_sd /mnt/ext_sd auto /devices/platform/tcc-sdhc
+  
+  # External USB storage
+diff -crB patch_after/device/telechips/tcc8920st/device.mk patch_before/device/telechips/tcc8920st/device.mk
+*** patch_after/device/telechips/tcc8920st/device.mk	2014-03-25 11:59:10.000000000 +0900
+--- patch_before/device/telechips/tcc8920st/device.mk	2014-03-25 11:46:07.000000000 +0900
+***************
+*** 46,53 ****
+  	persist.sys.renderer_onthefly = true \
+  	persist.sys.hdmi_color_space = 1
+  
+! PRODUCT_PROPERTY_OVERRIDES += ro.QB.enable=1
+! PRODUCT_PACKAGES += quickboot
+  
+  PRODUCT_PROPERTY_OVERRIDES += \
+  	ro.system.composite_active = true \
+--- 46,53 ----
+  	persist.sys.renderer_onthefly = true \
+  	persist.sys.hdmi_color_space = 1
+  
+! #PRODUCT_PROPERTY_OVERRIDES += ro.QB.enable=1
+! #PRODUCT_PACKAGES += quickboot
+  
+  PRODUCT_PROPERTY_OVERRIDES += \
+  	ro.system.composite_active = true \
+***************
+*** 205,212 ****
+  	ro.sf.lcd_density=160
+  
+  PRODUCT_COPY_FILES += \
+!         device/telechips/common/initlogo1280x720.rle:root/initlogo.rle \
+! 	device/telechips/common/Quickboot_1280x720.rle:root/QuickBoot_logo.rle
+  
+  # Set default USB interface
+  ifeq ($(USE_MASS_STORAGE),true)
+--- 205,211 ----
+  	ro.sf.lcd_density=160
+  
+  PRODUCT_COPY_FILES += \
+!         device/telechips/common/initlogo1280x720.rle:root/initlogo.rle
+  
+  # Set default USB interface
+  ifeq ($(USE_MASS_STORAGE),true)
+diff -crB patch_after/device/telechips/tcc892x-common/device_tcc892x-common.mk patch_before/device/telechips/tcc892x-common/device_tcc892x-common.mk
+*** patch_after/device/telechips/tcc892x-common/device_tcc892x-common.mk	2014-03-25 12:07:02.000000000 +0900
+--- patch_before/device/telechips/tcc892x-common/device_tcc892x-common.mk	2014-03-25 11:53:19.000000000 +0900
+***************
+*** 66,79 ****
+  PRODUCT_COPY_FILES += \
+      device/telechips/tcc892x-common/audio_policy.conf:system/etc/audio_policy.conf
+  
+- # Prebuilted USB HOST driver modules
+- PRODUCT_COPY_FILES += \
+- 	kernel/drivers/usb/host/ohci-hcd.ko:root/lib/modules/ohci-hcd.ko
+- 
+- PRODUCT_COPY_FILES += \
+- 	kernel/drivers/usb/host/ehci-hcd.ko:root/lib/modules/ehci-hcd.ko
+- 
+- 
+  # Prebuilted NTFS driver modules
+  #
+  PRODUCT_COPY_FILES += \
+--- 66,71 ----
+diff -crB patch_after/device/telechips/tcc8930st/device.mk patch_before/device/telechips/tcc8930st/device.mk
+*** patch_after/device/telechips/tcc8930st/device.mk	2014-03-25 11:59:16.000000000 +0900
+--- patch_before/device/telechips/tcc8930st/device.mk	2014-03-25 11:49:07.000000000 +0900
+***************
+*** 47,54 ****
+  	persist.sys.renderer_onthefly = true \
+  	persist.sys.hdmi_color_space = 1
+  
+! PRODUCT_PROPERTY_OVERRIDES += ro.QB.enable=1
+! PRODUCT_PACKAGES += quickboot
+  
+  PRODUCT_PROPERTY_OVERRIDES += \
+  	ro.system.composite_active = true \
+--- 47,54 ----
+  	persist.sys.renderer_onthefly = true \
+  	persist.sys.hdmi_color_space = 1
+  
+! #PRODUCT_PROPERTY_OVERRIDES += ro.QB.enable=1
+! #PRODUCT_PACKAGES += quickboot
+  
+  PRODUCT_PROPERTY_OVERRIDES += \
+  	ro.system.composite_active = true \
+***************
+*** 309,320 ****
+  
+  ifeq ($(USE_FB_1080P),true)
+  PRODUCT_COPY_FILES += \
+! 	device/telechips/common/initlogo1920x1080.rle:root/initlogo.rle \
+!         device/telechips/common/Quickboot_1920x1080.rle:root/QuickBoot_logo.rle
+  else
+  PRODUCT_COPY_FILES += \
+! 	device/telechips/common/initlogo1280x720.rle:root/initlogo.rle \
+!         device/telechips/common/Quickboot_1280x720.rle:root/QuickBoot_logo.rle
+  endif
+  
+  #File system management packages
+--- 309,318 ----
+  
+  ifeq ($(USE_FB_1080P),true)
+  PRODUCT_COPY_FILES += \
+! 	device/telechips/common/initlogo1920x1080.rle:root/initlogo.rle
+  else
+  PRODUCT_COPY_FILES += \
+! 	device/telechips/common/initlogo1280x720.rle:root/initlogo.rle
+  endif
+  
+  #File system management packages
+diff -crB patch_after/device/telechips/tcc893x/device.mk patch_before/device/telechips/tcc893x/device.mk
+*** patch_after/device/telechips/tcc893x/device.mk	2014-03-25 11:58:46.000000000 +0900
+--- patch_before/device/telechips/tcc893x/device.mk	2014-03-25 11:53:32.000000000 +0900
+***************
+*** 34,41 ****
+  	wifi.supplicant_scan_interval=15 \
+  	ro.carrier=wifi-only
+  
+! PRODUCT_PROPERTY_OVERRIDES += ro.QB.enable=1
+! PRODUCT_PACKAGES += quickboot
+  
+  PRODUCT_PROPERTY_OVERRIDES += \
+  	ro.system.hdmi_max_resolution = fullhd \
+--- 34,41 ----
+  	wifi.supplicant_scan_interval=15 \
+  	ro.carrier=wifi-only
+  
+! #PRODUCT_PROPERTY_OVERRIDES += ro.QB.enable=1
+! #PRODUCT_PACKAGES += quickboot
+  
+  PRODUCT_PROPERTY_OVERRIDES += \
+  	ro.system.hdmi_max_resolution = fullhd \
+***************
+*** 227,234 ****
+    frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml	
+  
+  PRODUCT_COPY_FILES += \
+! 	device/telechips/common/initlogo1024x600.rle:root/initlogo.rle \
+!         device/telechips/common/Quickboot_1024x600.rle:root/QuickBoot_logo.rle
+  #	device/telechips/common/initlogo800x480.rle:root/initlogo.rle
+  #	device/telechips/common/initlogo1280x720.rle:root/initlogo.rle
+  
+--- 227,233 ----
+    frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml	
+  
+  PRODUCT_COPY_FILES += \
+! 	device/telechips/common/initlogo1024x600.rle:root/initlogo.rle
+  #	device/telechips/common/initlogo800x480.rle:root/initlogo.rle
+  #	device/telechips/common/initlogo1280x720.rle:root/initlogo.rle
+  
+diff -crB patch_after/device/telechips/tcc893x/ums/vold.emmc.fstab patch_before/device/telechips/tcc893x/ums/vold.emmc.fstab
+*** patch_after/device/telechips/tcc893x/ums/vold.emmc.fstab	2014-03-04 11:19:07.000000000 +0900
+--- patch_before/device/telechips/tcc893x/ums/vold.emmc.fstab	2014-03-04 11:36:31.000000000 +0900
+***************
+*** 11,17 ****
+  ######################
+  
+  # External SD card
+! dev_mount sdcard0 /mnt/sdcard 12 /devices/platform/tcc-sdhc0
+  dev_mount sdcard1 /mnt/ext_sd auto /devices/platform/tcc-sdhc1
+  
+  # External USB storage
+--- 11,17 ----
+  ######################
+  
+  # External SD card
+! dev_mount sdcard0 /mnt/sdcard 11 /devices/platform/tcc-sdhc0
+  dev_mount sdcard1 /mnt/ext_sd auto /devices/platform/tcc-sdhc1
+  
+  # External USB storage
+diff -crB patch_after/device/telechips/tcc893x/ums/vold.fstab patch_before/device/telechips/tcc893x/ums/vold.fstab
+*** patch_after/device/telechips/tcc893x/ums/vold.fstab	2014-03-04 11:19:18.000000000 +0900
+--- patch_before/device/telechips/tcc893x/ums/vold.fstab	2014-03-04 11:36:31.000000000 +0900
+***************
+*** 11,17 ****
+  ######################
+  
+  # External SD card
+! dev_mount sdcard /mnt/sdcard 12 /devices/platform/tcc_nand
+  dev_mount ext_sd /mnt/ext_sd auto /devices/platform/tcc-sdhc
+  
+  # External USB storage
+--- 11,17 ----
+  ######################
+  
+  # External SD card
+! dev_mount sdcard /mnt/sdcard 11 /devices/platform/tcc_nand
+  dev_mount ext_sd /mnt/ext_sd auto /devices/platform/tcc-sdhc
+  
+  # External USB storage
+diff -crB patch_after/device/telechips/tcc893x-common/device_tcc893x-common.mk patch_before/device/telechips/tcc893x-common/device_tcc893x-common.mk
+*** patch_after/device/telechips/tcc893x-common/device_tcc893x-common.mk	2014-03-25 12:06:42.000000000 +0900
+--- patch_before/device/telechips/tcc893x-common/device_tcc893x-common.mk	2014-03-04 11:36:31.000000000 +0900
+***************
+*** 77,89 ****
+  PRODUCT_COPY_FILES += \
+  	device/telechips/tcc893x-common/ufsd_$(TARGET_BOARD_SOC).ko:root/lib/modules/ufsd.ko
+  
+- # Prebuilted USB HOST driver modules
+- PRODUCT_COPY_FILES += \
+- 	kernel/drivers/usb/host/ohci-hcd.ko:root/lib/modules/ohci-hcd.ko
+- 
+- PRODUCT_COPY_FILES += \
+- 	kernel/drivers/usb/host/ehci-hcd.ko:root/lib/modules/ehci-hcd.ko
+- 
+  # Prebuilt NTFS tools
+  #
+  PRODUCT_COPY_FILES += \
+--- 77,82 ----
+diff -crB patch_after/packages/apps/Settings/res/xml/development_prefs.xml patch_before/packages/apps/Settings/res/xml/development_prefs.xml
+*** patch_after/packages/apps/Settings/res/xml/development_prefs.xml	2014-03-04 10:45:48.000000000 +0900
+--- patch_before/packages/apps/Settings/res/xml/development_prefs.xml	2014-03-04 11:38:51.000000000 +0900
+***************
+*** 271,277 ****
+  
+       </PreferenceCategory>
+      
+!     <PreferenceCategory
+          android:key="quickboot_category"
+          android:title="@string/quickboot_category"
+      >
+--- 271,277 ----
+  
+       </PreferenceCategory>
+      
+! <!--<PreferenceCategory
+          android:key="quickboot_category"
+          android:title="@string/quickboot_category"
+      >
+***************
+*** 281,286 ****
+              android:summary="@string/make_quickboot_image_summary"
+          />
+  
+!     </PreferenceCategory>
+  
+  </PreferenceScreen>
+--- 281,286 ----
+              android:summary="@string/make_quickboot_image_summary"
+          />
+  
+!     </PreferenceCategory>-->
+  
+  </PreferenceScreen>

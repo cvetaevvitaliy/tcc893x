@@ -1,0 +1,112 @@
+# bcm94335wlcspMS_XL_PP_RC171p24p20_03262013_AM.txt -- 3/26/2013 by Broadcom Corporation
+# Use with AARDVARK_REL_6_30_171_24_20 -- Murata BCM4335 WLCSP 11AC Module PP
+# Sample variables file for Murata Type-XL PP -- bcm94335wlcspMS_AM_P500.txt as original
+sromrev=11
+boardrev=0x1303
+boardtype=0x064b
+boardflags=0x10401001
+boardflags2=0x0
+boardflags3=0xc08b
+macaddr=00:90:4c:c5:12:38
+ccode=0
+regrev=0
+antswitch=0
+pdgain5g=1
+pdgain2g=1
+tworangetssi2g=0
+tworangetssi5g=0
+femctrl=4
+vendid=0x14e4
+devid=0x43ae
+manfid=0x2d0
+#prodid=0x052e
+nocrc=1
+#otpimagesize=502
+xtalfreq=37400
+extpagain2g=1
+extpagain5g=1
+rxgains2gelnagaina0=2
+rxgains2gtrisoa0=6
+rxgains2gtrelnabypa0=1
+rxgains5gelnagaina0=5
+rxgains5gtrisoa0=5
+rxgains5gtrelnabypa0=1
+rxchain=1
+txchain=1
+aa2g=1
+aa5g=1
+ag0=0
+ag1=0
+tssipos5g=1
+tssipos2g=1
+#PA parameters (2G20M/2G40M/5G20M/5G40M/5G80M)
+pa2ga0=-185,6183,-744
+pa2ga1=-139,7064,-815
+pa5ga0=-130,5797,-654,-125,5685,-641,-86,5738,-620,-78,5797,-628
+pa5ga1=-175,5633,-683,-146,5954,-700,-76,5896,-648,-72,6096,-699
+pa5ga2=-127,6162,-691,-150,5697,-666,-106,5852,-652,-66,6130,-662
+# Default Target Power for 2G -- 17dBm(b)/15dBm(g)/14dBm(n)
+maxp2ga0=74
+cckbw202gpo=0
+cckbw20ul2gpo=0
+dot11agofdmhrbw202gpo=0x4444
+ofdmlrbw202gpo=0x0044
+mcsbw202gpo=0xA8666666
+# Default Target Power for 5G -- 15dBm(a)/14dBm(HT20/40-n)/13dBm(VHT20/40-MCS8)/12dBm(VHT40/80-MCS9)
+maxp5ga0=74,74,74,74
+# Low
+mcslr5glpo=0
+mcsbw205glpo=0xA8644444
+mcsbw405glpo=0xA8666666
+mcsbw805glpo=0xAAAAAAAA
+# Mid
+mcslr5gmpo=0
+mcsbw205gmpo=0xA8644444
+mcsbw405gmpo=0xA8666666
+mcsbw805gmpo=0xAAAAAAAA
+# High
+mcslr5ghpo=0
+mcsbw205ghpo=0xA8644444
+mcsbw405ghpo=0xA8666666
+mcsbw805ghpo=0xAAAAAAAA
+#20MHz High Rate
+sb20in40hrpo=0x0
+sb20in80and160hr5glpo=0x0
+sb20in80and160hr5gmpo=0x0
+sb20in80and160hr5ghpo=0x0
+#40MHz High Rate
+sb40and80hr5glpo=0x0
+sb40and80hr5gmpo=0x0
+sb40and80hr5ghpo=0x0
+#20MHz Low Rate
+sb20in40lrpo=0x0
+sb20in80and160lr5glpo=0x0
+sb20in80and160lr5gmpo=0x0
+sb20in80and160lr5ghpo=0x0
+#40MHz Low Rate
+sb40and80lr5glpo=0x0
+sb40and80lr5gmpo=0x0
+sb40and80lr5ghpo=0x0
+dot11agduphrpo=0x0
+dot11agduplrpo=0x0
+#rpcal:use with 171.17 or later, compensates filter ripple -- need to tune
+#rpcal2g=0xE122
+#rpcal5gb0=0x008C
+#cckdigfilttype[0-7] 0:default, 2 shows best performance
+cckdigfilttype=2
+#Tempdelta -- needs to tune by final designs
+phycal_tempdelta=25
+#RSSI compensation factors -- need to tune by final designs
+rssicorrnorm_c0=-3,-3
+rssicorrnorm5g_c0=1,1,-2,0,1,-2,0,0,-3,-1,0,-3
+#TSSI floor, Need to tune -- should be set to max power -- 2G: CCK, 5G: 6Mbps
+tssifloor2g=80
+tssifloor5g=170,200,250,280
+#Index cap, Need to tune -- should be set to max power + 2dB -- 2G: CCK, 5G: 6Mbps
+txidxcap2g=34
+txidxcap5g=36
+#GPIO 0 for SDIO HW OOB interruption
+muxenab=0x10
+#sd_gpout=0
+#sd_oobonly=1
+paparambwver=1

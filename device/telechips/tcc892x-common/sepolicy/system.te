@@ -1,0 +1,7 @@
+
+allow system gpu_device:chr_file { open read write ioctl getattr };
+allow system vpu_device:chr_file {open read write ioctl getattr };
+
+allow system sdcard_type:dir { open read write create getattr add_name };
+allow system sdcard_type:file { open read write create getattr };
+

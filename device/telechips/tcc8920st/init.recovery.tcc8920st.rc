@@ -1,0 +1,13 @@
+import init.recovery.${ro.hardware}.${ro.bootmode}.rc
+
+on fs
+#mount	ext4	/dev/block/platform/bdm/by-name/system	/system	ro	wait
+		insmod /lib/modules/ehci-hcd.ko
+		insmod /lib/modules/ohci-hcd.ko
+		insmod /lib/modules/ufsd.ko
+
+on boot
+#insmod /system/lib/modules/ohci-hcd.ko
+#insmod /system/lib/modules/ehci-hcd.ko
+#unmount /system
+ 

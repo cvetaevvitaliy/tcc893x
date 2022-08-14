@@ -1,0 +1,7 @@
+ r_dir_file(mediaserver, sdcard_type)
+ 
+ allow mediaserver system:unix_stream_socket { read write setopt };
+ allow mediaserver sdcard_type:file write;
+
+
+

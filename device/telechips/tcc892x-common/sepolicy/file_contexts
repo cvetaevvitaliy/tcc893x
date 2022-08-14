@@ -1,0 +1,11 @@
+# GPU device
+/dev/mali       u:object_r:gpu_device:s0
+/dev/ump        u:object_r:gpu_device:s0
+
+#VPU Device 
+/dev/viqe	u:object_r:vpu_device:s0
+/dev/scaler	u:object_r:vpu_device:s0
+/dev/overlay	u:object_r:vpu_device:s0
+/dev/overlay1	u:object_r:vpu_device:s0
+/dev/tmem	u:object_r:vpu_device:s0
+/dev/vpu_.*	u:object_r:vpu_device:s0

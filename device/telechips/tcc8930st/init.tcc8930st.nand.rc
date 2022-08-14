@@ -1,0 +1,6 @@
+on early-init
+    insmod /lib/modules/tcc_nand_core.ko
+    insmod /lib/modules/tcc_nand.ko
+
+on init
+    symlink /dev/block/platform/tcc_nand /dev/block/platform/bdm

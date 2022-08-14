@@ -1,0 +1,19 @@
+# Vold 2.0 fstab
+
+#######################
+## Regular device mount
+##
+## Format: dev_mount <label> <mount_point> <part> <sysfs_path1...>
+## label        - Label for the volume
+## mount_point  - Where the volume will be mounted
+## part         - Partition # (1 based), or 'auto' for first usable partition.
+## <sysfs_path> - List of sysfs paths to source devices
+######################
+
+# External SD card
+dev_mount sdcard /mnt/sdcard 11 /devices/platform/tcc_nand
+dev_mount ext_sd /mnt/ext_sd auto /devices/platform/tcc-sdhc
+
+# External USB storage
+dev_mount usb_sda /storage/usb0 all /devices/platform/dwc_otg /devices/platform/tcc-ohci /devices/platform/tcc-ehci /devices/platform/tcc-xhci
+dev_mount usb_sdb /storage/usb1 all /devices/platform/dwc_otg /devices/platform/tcc-ohci /devices/platform/tcc-ehci /devices/platform/tcc-xhci
