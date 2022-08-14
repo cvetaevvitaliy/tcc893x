@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.telechips.tccAppsManager"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="15" />
+
+    <application
+      android:icon="@drawable/ic_launcher"
+       android:theme="@style/CustomTheme" >
+        <activity
+            android:name="com.telechips.tccAppsManager.FragmentPagerActivity"
+          >
+             <intent-filter>
+               <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            
+        </activity>
+    </application>
+
+</manifest>

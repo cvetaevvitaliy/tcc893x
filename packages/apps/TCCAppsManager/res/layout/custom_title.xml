@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@drawable/titlebar"
+    android:gravity="top"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/img_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:src="@drawable/tab_favorite_f" />
+
+    <ImageView
+        android:id="@+id/img_apps"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginRight="595dp"
+        android:src="@drawable/tab_application_n" />
+
+   
+    <ImageView
+        android:id="@+id/imgtele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/telechips" />
+        
+</LinearLayout>

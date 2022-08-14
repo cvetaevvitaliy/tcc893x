@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@drawable/stb_top_titlebar"
+    android:gravity="top"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/img_stbtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/stb_top_title_video_icon" />
+
+ 
+    <ImageView
+        android:id="@+id/imgtele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/stb_top_title_video" />
+    
+      <Button
+             android:id="@+id/btnVideoSet"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="741dp"
+             android:background="@drawable/settingbtn"
+             android:layout_marginTop="10dp"/>
+  
+        
+</LinearLayout>

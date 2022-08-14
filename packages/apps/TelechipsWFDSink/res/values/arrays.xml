@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Titles for wfd hdcp type preference. [CHAR LIMIT=35] -->    
+    <string-array name="wireless_display_setting_hdcp_entries">        
+    <item>None</item>        
+    <item>Facsimile Key</item>        
+    <item>Production Key</item>    
+    </string-array>    
+
+    <!-- Values for wfd hdcp type -->    
+    <string-array name="wireless_display_setting_hdcp_values" translatable="false" >        
+    <item>0</item>       
+    <item>1</item>
+    <item>2</item>    
+    </string-array>
+
+    <!-- Titles for p2p go intent preference. [CHAR LIMIT=35] -->    
+    <string-array name="wireless_display_setting_go_intent_entries">        
+    <item>0</item>        
+    <item>1</item>        
+    <item>2</item>    
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+    <item>8</item>
+    <item>9</item>
+    <item>10</item>
+    <item>11</item>
+    <item>12</item>
+    <item>13</item>
+    <item>14</item>
+    <item>15</item>    
+    </string-array>    
+
+    <!-- Values for p2p go intent  type -->    
+    <string-array name="wireless_display_setting_go_intent_values" translatable="false" >        
+    <item>0</item>        
+    <item>1</item>        
+    <item>2</item>    
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+    <item>8</item>
+    <item>9</item>
+    <item>10</item>
+    <item>11</item>
+    <item>12</item>
+    <item>13</item>
+    <item>14</item>
+    <item>15</item>    
+    </string-array>
+
+    <!-- Titles for p2p listen channel preference. [CHAR LIMIT=35] -->
+    <string-array name="wireless_display_setting_listen_channel_entries">
+        <item>None</item>
+        <item>Channel 1</item>
+        <item>Channel 6</item>
+        <item>Chaneel 11</item>
+    </string-array>
+
+    <!-- Values for p2p listen channel -->
+    <string-array name="wireless_display_setting_listen_channel_values" translatable="false" >
+        <item>0</item>
+        <item>1</item>
+        <item>6</item>
+        <item>11</item>
+    </string-array>
+
+    <!-- Titles for p2p operating channel preference. [CHAR LIMIT=35] -->
+    <string-array name="wireless_display_setting_operating_channel_entries">
+        <item>Auto</item>
+        <item>1 (2412)</item>
+        <item>6 (2437)</item>
+        <item>11 (2462)</item>
+        <item>12 (2467)</item>
+        <item>13 (2472)</item>
+        <item>14 (2484)</item>
+        <item>36 (5180)</item>
+        <item>40 (5200)</item>
+        <item>44 (5220)</item>
+        <item>48 (5240)</item>
+        <item>52 (5260)</item>
+        <item>56 (5280)</item>
+        <item>60 (5300)</item>
+        <item>64 (5320)</item>
+        <item>100 (5500)</item>
+        <item>104 (5520)</item> 
+        <item>108 (5540)</item> 
+        <item>112 (5560)</item>
+        <item>116 (5580)</item>
+        <item>120 (5600)</item>
+        <item>124 (5620)</item>
+        <item>128 (5640)</item>
+        <item>132 (5660)</item>
+        <item>136 (5680)</item>
+        <item>140 (5700)</item> 
+        <item>149 (5745)</item>
+        <item>153 (5765)</item>
+        <item>157 (5785)</item>
+        <item>161 (5805)</item>
+        <item>165 (5825)</item>
+        
+    </string-array>
+    
+    <!-- Values for p2p operating channel -->
+    <string-array name="wireless_display_setting_operating_channel_values" translatable="false" >
+        <item>0</item>
+        <item>1</item>
+        <item>6</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>36</item>
+        <item>40</item>
+        <item>44</item>
+        <item>48</item>
+        <item>52</item>
+        <item>56</item>
+        <item>60</item>
+        <item>64</item>
+        <item>100</item>
+        <item>104</item> 
+        <item>108</item> 
+        <item>112</item>
+        <item>116</item>
+        <item>120</item>
+        <item>124</item>
+        <item>128</item>
+        <item>132</item>
+        <item>136</item>
+        <item>140</item> 
+        <item>149</item>
+        <item>153</item>
+        <item>157</item>
+        <item>161</item>
+        <item>165</item>
+    </string-array>
+
+    <!-- Titles for p2p operating channel preference. [CHAR LIMIT=35] -->
+    <string-array name="wireless_display_setting_audio_codec_entries">
+        <item>AAC</item>
+        <item>LPCM</item>
+    </string-array>
+
+    <!-- Values for wfd source audio codec -->
+    <string-array name="wireless_display_setting_audio_codec_values" translatable="false" >
+        <item>0</item>
+        <item>1</item>
+	</string-array>
+
+            
+    <!-- Values for wfd frame skip time -->
+    <string-array name="wireless_display_setting_frame_skip_time_entries" >
+        <item>200ms</item>
+        <item>300ms</item>
+        <item>400ms</item>
+        <item>500ms</item>
+        <item>600ms</item>
+        <item>700ms</item>
+        <item>800ms</item>
+        <item>900ms</item>
+        <item>1000ms</item>
+    </string-array>        
+
+    <!-- Values for wfd frame skip time -->
+    <string-array name="wireless_display_setting_frame_skip_time_values" translatable="false" >
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+        <item>700</item>
+        <item>800</item>
+        <item>900</item>
+        <item>1000</item>
+    </string-array>
+    
+    
+</resources>

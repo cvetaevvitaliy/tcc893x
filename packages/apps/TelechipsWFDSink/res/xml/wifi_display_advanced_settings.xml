@@ -1,0 +1,109 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/wireless_display_setting_titlebar">
+
+    <!-- android:dependency="enable_wireless_display" -->
+    <CheckBoxPreference
+            android:key="wfd_miracast_certi"
+            android:title="@string/wireless_display_setting_enable_miracast"
+            android:summary="@string/wireless_display_setting_enable_miracast_summary"
+            android:persistent="false" />
+
+    <CheckBoxPreference
+            android:key="wfd_persistent_go"
+            android:title="@string/wireless_display_setting_persistent_go"
+            android:summary="@string/wireless_display_setting_persistent_go_summary"
+            android:persistent="false" />
+<!--   
+    <CheckBoxPreference
+            android:key="wfd_auto_pbc"
+            android:title="@string/wireless_display_setting_auto_pbc"
+            android:summary="@string/wireless_display_setting_auto_pbc_summary"
+            android:persistent="false" />    
+
+    <CheckBoxPreference
+            android:key="wfd_file_dump"
+            android:title="@string/wireless_display_setting_file_dump"
+            android:summary="@string/wireless_display_setting_file_dump_summary"
+            android:persistent="false" />  
+    <ListPreference
+            android:key="wfd_hdcp"
+            android:title="@string/wireless_display_setting_hdcp"
+            android:summary="@string/wireless_display_setting_hdcp_summary"            
+            android:persistent="false"
+            android:entries="@array/wireless_display_setting_hdcp_entries"
+            android:entryValues="@array/wireless_display_setting_hdcp_values"
+            />
+-->          
+    <ListPreference
+            android:key="wfd_go_intent"
+            android:title="@string/wireless_display_setting_go_intent"
+            android:summary="@string/wireless_display_setting_go_intent_summary"            
+            android:persistent="false"
+            android:entries="@array/wireless_display_setting_go_intent_entries"
+            android:entryValues="@array/wireless_display_setting_go_intent_values"
+            />
+
+    <ListPreference
+            android:key="wfd_listen_channel"
+            android:title="@string/wireless_display_setting_listen_channel"
+            android:summary="@string/wireless_display_setting_listen_channel_summary"            
+            android:persistent="false"
+            android:entries="@array/wireless_display_setting_listen_channel_entries"
+            android:entryValues="@array/wireless_display_setting_listen_channel_values"
+            />
+
+    <ListPreference
+            android:key="wfd_operaing_channel"
+            android:title="@string/wireless_display_setting_operating_channel"
+            android:summary="@string/wireless_display_setting_operating_channel_summary"            
+            android:persistent="false"
+            android:entries="@array/wireless_display_setting_operating_channel_entries"
+            android:entryValues="@array/wireless_display_setting_operating_channel_values"
+            />
+    
+    <CheckBoxPreference
+            android:key="wfd_sink_debug"
+            android:title="@string/wireless_display_setting_sink_debug"
+            android:summary="@string/wireless_display_setting_sink_debug_summary"            
+            android:persistent="false"
+            />
+<!--         
+    <CheckBoxPreference
+            android:key="wfd_frame_skip"
+            android:title="@string/wireless_display_setting_frame_skip"
+            android:summary="@string/wireless_display_setting_frame_skip_summary"            
+            android:persistent="false"
+            />    
+
+    <ListPreference
+            android:key="wfd_frame_skip_time"
+            android:title="@string/wireless_display_setting_frame_skip_time"
+            android:summary="@string/wireless_display_setting_frame_skip_time_summary"            
+            android:persistent="false"
+            android:entries="@array/wireless_display_setting_frame_skip_time_entries"
+            android:entryValues="@array/wireless_display_setting_frame_skip_time_values"
+            />
+    <CheckBoxPreference
+            android:key="wfd_dynamic_frame_skip"
+            android:title="@string/wireless_display_setting_dynamic_frame_skip"
+            android:summary="@string/wireless_display_setting_dynamic_frame_skip_summary"            
+            android:persistent="false"
+            />   
+    <CheckBoxPreference
+            android:key="wfd_vga"
+            android:title="@string/wireless_display_setting_vga"
+            android:summary="@string/wireless_display_setting_vga_summary"            
+            android:persistent="false"
+            />    
+    <ListPreference
+            android:key="wfd_audio_codec"
+            android:title="@string/wireless_display_setting_audio_codec"
+            android:summary="@string/wireless_display_setting_audio_codec_summary"            
+            android:persistent="false"
+            android:entries="@array/wireless_display_setting_audio_codec_entries"
+            android:entryValues="@array/wireless_display_setting_audio_codec_values"
+            />
+ -->    
+    
+
+</PreferenceScreen>   

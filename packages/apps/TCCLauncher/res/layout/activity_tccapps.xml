@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/stb_bg"
+    android:orientation="horizontal" >
+    
+        <GridView
+          android:id="@+id/gridiconview"
+          android:layout_width="936dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="20dp"
+          android:columnWidth="108dp"
+          android:numColumns="7"
+          android:orientation="horizontal"
+          android:horizontalSpacing="30dp"
+          android:verticalSpacing="30dp" >
+
+    </GridView>
+    
+      
+    
+</FrameLayout>

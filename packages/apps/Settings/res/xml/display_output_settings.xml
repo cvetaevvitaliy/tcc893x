@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 Telechips, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+	
+    <PreferenceCategory android:key="output_mode_settings_category"
+            android:title="@string/output_mode_settings_category" />
+            	
+    <ListPreference
+        android:key="output_mode"
+        android:title="@string/output_mode_title"
+        android:persistent="true"
+        android:entries="@array/output_mode_entries"
+        android:entryValues="@array/output_mode_values" />
+
+    <PreferenceCategory android:key="hdmi_settings_category"
+            android:title="@string/hdmi_settings_category" />
+
+    <ListPreference
+        android:key="hdmi_resolution"
+        android:title="@string/hdmi_resolution_title"
+        android:persistent="true"
+        android:entries="@array/hdmi_resolution_entries"
+        android:entryValues="@array/hdmi_resolution_values" />
+
+    <!--CheckBoxPreference
+        android:key="hdmi_auto_select"
+        android:title="@string/hdmi_auto_select_title"
+        android:persistent="true"
+        android:summaryOn="@string/hdmi_auto_select_on"
+        android:summaryOff="@string/hdmi_auto_select_off" /-->
+
+    <ListPreference
+        android:key="hdmi_mode"
+        android:title="@string/hdmi_mode_title"
+        android:persistent="true"
+        android:entries="@array/hdmi_mode_entries"
+        android:entryValues="@array/hdmi_mode_values" />
+
+    <CheckBoxPreference
+        android:key="hdmi_cec_select"
+        android:title="@string/hdmi_cec_select_title"
+        android:persistent="true"
+        android:summaryOn="@string/hdmi_cec_select_on"
+        android:summaryOff="@string/hdmi_cec_select_off" />
+
+    <ListPreference
+        android:key="hdmi_aspect_ratio"
+        android:title="@string/hdmi_aspect_ratio_title"
+        android:persistent="true"
+        android:entries="@array/hdmi_aspect_ratio_entries"
+        android:entryValues="@array/hdmi_aspect_ratio_values" />
+
+    <ListPreference
+        android:key="hdmi_color_space"
+        android:title="@string/hdmi_color_space_title"
+        android:persistent="true"
+        android:entries="@array/hdmi_color_space_entries"
+        android:entryValues="@array/hdmi_color_space_values" />
+
+    <ListPreference
+        android:key="hdmi_color_depth"
+        android:title="@string/hdmi_color_depth_title"
+        android:persistent="true"
+        android:entries="@array/hdmi_color_depth_entries"
+        android:entryValues="@array/hdmi_color_depth_values" />
+
+    <PreferenceCategory android:key="composite_settings_category"
+            android:title="@string/composite_settings_category" />
+
+    <ListPreference
+        android:key="composite_mode"
+        android:title="@string/composite_mode_title"
+        android:persistent="true"
+        android:entries="@array/composite_mode_entries"
+        android:entryValues="@array/composite_mode_values" />
+
+    <PreferenceCategory android:key="component_settings_category"
+            android:title="@string/component_settings_category" />
+
+    <ListPreference
+        android:key="component_resolution"
+        android:title="@string/component_resolution_title"
+        android:persistent="true"
+        android:entries="@array/component_resolution_entries"
+        android:entryValues="@array/component_resolution_values" />
+
+   <PreferenceCategory android:key="osd_position_setting_category"
+               android:title="@string/osd_position_setting_category" /> 
+
+   <com.android.settings.telechips.display.OSDPreference
+        android:key="osd_setting"
+        android:title="@string/osd_position_setting_title"
+        android:dialogTitle="@string/osd_position_setting_title" />
+
+    <PreferenceCategory android:key="native_video_mode_category"
+            android:title="@string/native_video_mode_category" />
+            
+    <CheckBoxPreference
+        android:key="native_mode_select"
+        android:title="@string/native_mode_select_title"
+    	android:summary="@string/native_mode_summary"
+        android:persistent="true" />
+
+    <MultiSelectListPreference
+        android:key="native_video_mode"
+        android:title="@string/native_video_mode_title"
+        android:persistent="true"
+        android:entries="@array/native_video_mode_entries"
+        android:entryValues="@array/native_video_mode_values" />
+
+</PreferenceScreen>

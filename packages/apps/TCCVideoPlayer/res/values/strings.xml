@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- General strings -->
+
+    <!-- alert to the user to wait for some operation to complete -->
+    <string name="wait">Please wait\u2026</string>
+
+    <!-- Settings stuff -->
+    <!-- Menu items: -->
+    <!-- menu pick to go to the settings screen -->
+    <string name="settings">Settings</string>
+    <!-- Settings screen, section heading  -->
+    <string name="pref_gallery_category">General settings</string>
+    <!-- Settings screen, section heading  -->
+    <string name="pref_video_category">Video settings</string>
+    <!-- Settings screen, setting summary text -->
+    <string name="pref_gallery_size_title">Display size</string>
+    <!-- Settings List Category -->
+    <string name="pref_list_category">List Settings</string>
+    <!-- shown in the video player view while the video is being loaded, before it starts playing -->
+    <string name="loading_video">Loading video\u2026</string>
+    <!-- Settings screen, setting option name -->
+    <string name="pref_gallery_video_repeat_title">Repeat</string>
+    <!-- Settings screen, setting summary text -->
+    <string name="pref_gallery_video_repeat_summary">Select repeat type for playing video</string>
+    <!-- Options in dialog that appears after selecting Video repeat setting option -->
+    <string-array name="pref_gallery_video_repeat_choices">
+        <!-- repeat normal -->
+        <item>Normal</item>
+        <!-- repeat one -->
+        <item>Repeat one</item>
+        <!-- repeat all -->
+        <item>Repeat all</item>
+    </string-array>
+    <!-- Option values in dialog that appears after selecting Video repeat setting option -->
+    <string-array name="pref_gallery_video_repeat_values" translatable="false">
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+    </string-array>
+    <!-- Title of dialog that appears after selecting Video repeat setting option -->
+    <string name="pref_gallery_video_repeat_dialogtitle">Repeat</string>
+    <!-- Default option value in dialog that appears after selecting Video repeat setting option -->
+    <string name="default_value_pref_gallery_video_repeat" translatable="false">"0"</string>
+    <!-- Settings screen, setting check box name -->
+    <string name="pref_gallery_video_subtitle_title">Subtitle</string>
+    <!-- Settings screen, setting summary text -->
+    <string name="pref_gallery_video_subtitle_summary">Enable/Disable subtitle</string>
+    <!-- Settings screen, setting option name -->
+    <string name="pref_gallery_video_fontsize_title">Subtitle font size</string>
+    <!-- Settings screen, setting summary text -->
+    <string name="pref_gallery_video_fontsize_summary">Select font size for subtitle</string>
+    <!-- Options in dialog that appears after selecting Video font size setting option -->
+    <string-array name="pref_gallery_video_fontsize_choices">
+        <!-- 24 font -->
+        <item>24</item>
+        <!-- 28 font -->
+        <item>28</item>
+        <!-- 32 font -->
+        <item>32</item>
+        <!-- 36 font -->
+        <item>36</item>
+        <!-- 40 font -->
+        <item>40</item>        
+    </string-array>
+    <!-- Option values in dialog that appears after selecting Video font size setting option -->
+    <string-array name="pref_gallery_video_fontsize_values" translatable="false">
+        <item>"24"</item>
+        <item>"28"</item>
+        <item>"32"</item>
+        <item>"36"</item>
+        <item>"40"</item>        
+        <item>"44"</item>        
+        <item>"48"</item>        
+        <item>"52"</item>        
+        <item>"56"</item>        
+        <item>"60"</item>        
+    </string-array>
+    <!-- Title of dialog that appears after selecting Video font size setting option -->
+    <string name="pref_gallery_video_fontsize_dialogtitle">Subtitle font size</string>
+    <!-- Default option value in dialog that appears after selecting Video font size setting option -->
+    <string name="default_value_pref_gallery_video_fontsize" translatable="false">"40"</string>
+    <!-- Deinterlace always -->
+    <string name="pref_gallery_video_always_deinterlace">Always Deinterlace Mode</string>
+
+    <string name="pref_gallery_video_3D_UI_title">3D UI Mode</string>
+    <!-- Settings screen, setting summary text -->
+    <string name="pref_gallery_video_3D_UI_summary">Select 3D Mode for 3D file</string>
+    <!-- Options in dialog that appears after selecting Video 3D UI setting option -->
+    <string-array name="pref_gallery_video_3D_UI_choices">
+        <!-- normal display -->
+        <item>Disable All</item>
+        <!-- side by side -->
+        <item>SBS For MKV</item>
+        <!-- top and bottom -->
+        <item>TNB For MKV</item>
+        <!-- MVC -->
+	<item>MVC</item>
+    </string-array>
+    <!-- Option values in dialog that appears after selecting Video 3D UI setting option -->
+    <string-array name="pref_gallery_video_3D_UI_values" translatable="false">
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+    </string-array>
+    <!-- Title of dialog that appears after selecting Video 3D UI setting option -->
+    <string name="pref_gallery_video_3D_UI_dialogtitle">3D Mode</string>
+    <!-- Default option value in dialog that appears after selecting Video 3D UI setting option -->
+    <string name="default_value_pref_gallery_video_3D_UI" translatable="false">"0"</string>
+
+    <!-- Activity label. This might show up in the activity-picker -->
+    <string name="movieviewlabel">Video Player</string>
+    <string name="video_player">Video Player</string>
+
+    <!-- Text message indicating that there are no pictures or videos in a particular
+         bucket on the SD card -->
+    <string name="image_gallery_NoImageView_text">No media found.</string>
+    <!-- Movie View Resume Playing dialog title -->
+    <string name="resume_playing_title">Resume video</string>
+    <!-- Movie View Start Playing dialog title -->
+    <string name="resume_playing_message">Resume playing from <xliff:g id="duration" example="5:30">%s</xliff:g> ?</string>
+    <!-- Movie View Start Playing button "Resume from bookmark" -->
+    <string name="resume_playing_resume">Resume playing</string>
+    <!-- Movie View Start Playing button "Beginning" -->
+    <string name="resume_playing_restart">Start over</string>
+
+    <!-- Title of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <string name="details_file_size">File size:</string>
+	<string name="details_folder_size">Folder size:</string>
+    <!-- Used to format short video duration in Details dialog. minutes:seconds e.g. 00:30 -->
+    <string name="details_ms"><xliff:g id="minutes">%1$02d</xliff:g>:<xliff:g id="seconds">%2$02d</xliff:g></string>
+    <!-- Used to format video duration in Details dialog. hours:minutes:seconds e.g. 0:21:30 -->
+    <string name="details_hms"><xliff:g id="hours">%1$d</xliff:g>:<xliff:g id="minutes">%2$02d</xliff:g>:<xliff:g id="seconds">%3$02d</xliff:g></string>
+
+    <!-- Subtitle Setting -->
+    <string name="subtitle_size">Size</string>
+    <string name="subtitle_sync">Sync</string>
+    <string name="subtitle_position">Position</string>
+</resources>

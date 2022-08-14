@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stb_bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".TccapkinstallActivity" >
+ 
+ <LinearLayout
+	     android:id="@+id/listlayout"
+	     android:layout_width="match_parent"
+	     android:layout_height="match_parent"
+	     android:layout_marginBottom="10dip"
+	     android:layout_marginLeft="10dip"
+	     android:layout_marginRight="10dip"
+	     android:layout_marginTop="10dip"
+	     android:layout_weight="1"
+	     android:orientation="vertical" >
+	
+	 
+	 <EditText android:id="@+id/path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#589bb3"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:editable="false"
+       android:marqueeRepeatLimit="marquee_forever"/>
+   
+   <ListView android:id="@+id/apklistview"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/path"/>
+  
+     </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+# Copyright (C) 2013 Telechips, Inc.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/wireless_display_setting_titlebar">
+
+    <!-- android:dependency="enable_wireless_display" -->
+    <CheckBoxPreference
+            android:key="wfd_miracast_certi"
+            android:title="@string/wireless_display_setting_enable_miracast"
+            android:summary="@string/wireless_display_setting_enable_miracast_summary"
+            android:persistent="false" />
+
+    <CheckBoxPreference
+            android:key="wfd_persistent_go"
+            android:title="@string/wireless_display_setting_persistent_go"
+            android:summary="@string/wireless_display_setting_persistent_go_summary"
+            android:persistent="false" />
+
+<!--
+    <ListPreference
+            android:key="wfd_hdcp"
+            android:title="@string/wireless_display_setting_hdcp"
+            android:summary="@string/wireless_display_setting_hdcp_summary"            
+            android:persistent="false"
+            android:entries="@array/wireless_display_setting_hdcp_entries"
+            android:entryValues="@array/wireless_display_setting_hdcp_values"
+            />
+-->
+
+    <ListPreference
+            android:key="wfd_go_intent"
+            android:title="@string/wireless_display_setting_go_intent"
+            android:summary="@string/wireless_display_setting_go_intent_summary"            
+            android:persistent="false"
+            android:entries="@array/wireless_display_setting_go_intent_entries"
+            android:entryValues="@array/wireless_display_setting_go_intent_values"
+            />
+
+    <ListPreference
+            android:key="wfd_listen_channel"
+            android:title="@string/wireless_display_setting_listen_channel"
+            android:summary="@string/wireless_display_setting_listen_channel_summary"            
+            android:persistent="false"
+            android:entries="@array/wireless_display_setting_listen_channel_entries"
+            android:entryValues="@array/wireless_display_setting_listen_channel_values"
+            />
+
+    <ListPreference
+            android:key="wfd_operaing_channel"
+            android:title="@string/wireless_display_setting_operating_channel"
+            android:summary="@string/wireless_display_setting_operating_channel_summary"            
+            android:persistent="false"
+            android:entries="@array/wireless_display_setting_operating_channel_entries"
+            android:entryValues="@array/wireless_display_setting_operating_channel_values"
+            />
+
+    <ListPreference
+            android:key="wfd_audio_codec"
+            android:title="@string/wireless_display_setting_audio_codec"
+            android:summary="@string/wireless_display_setting_audio_codec_summary"            
+            android:persistent="false"
+            android:entries="@array/wireless_display_setting_audio_codec_entries"
+            android:entryValues="@array/wireless_display_setting_audio_codec_values"
+            />
+
+</PreferenceScreen>   
+

@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/stb_bg"
+    android:orientation="horizontal" >
+
+            <Button
+             android:id="@+id/btnvideo"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="69dp"
+             android:background="@drawable/videobtn"
+             android:layout_marginTop="181dp"
+             android:focusable="true">
+             <requestFocus />
+           </Button>
+         
+         <Button
+             android:id="@+id/btnmusic"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="22dp"
+             android:background="@drawable/musicbtn"
+             android:layout_marginTop="181dp"/>
+         
+         <Button
+             android:id="@+id/btnimage"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="22dp"
+             android:background="@drawable/imagebtn"
+             android:layout_marginTop="181dp"/>
+         
+         <Button
+             android:id="@+id/btnapps"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="22dp"
+             android:background="@drawable/appsbtn"
+             android:layout_marginTop="181dp"/>
+         
+         <Button
+             android:id="@+id/btnbrowser"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="22dp"
+             android:background="@drawable/browserbtn"
+             android:layout_marginTop="181dp"/>
+         
+         <Button
+             android:id="@+id/btnsetting"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/settingbtn"
+             android:layout_marginTop="181dp"/>
+         
+         
+</LinearLayout>

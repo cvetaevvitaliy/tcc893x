@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/video_frame" android:orientation="vertical"
+  android:layout_height="fill_parent" android:layout_width="fill_parent">
+  
+
+    
+<SurfaceView android:layout_width="fill_parent" android:id="@+id/videoView" android:layout_height="fill_parent"></SurfaceView>
+<!-- 
+  <ProgressBar
+    android:id="@+id/progress" 
+    android:indeterminate="true" 
+    android:indeterminateBehavior="repeat" 
+    style="?android:attr/progressBarStyleLarge"
+    android:layout_width="100dp" 
+    android:layout_height="100dp" 
+    android:layout_gravity="center">
+</ProgressBar>
+-->
+
+<TextView
+    android:id="@+id/stanby"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@drawable/packetloss2"
+    android:textAlignment="center"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textSize="50sp" />
+
+<TextView
+    android:id="@+id/packetloss_bar_top"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:layout_gravity="top"
+    android:background="@drawable/packetloss2"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/packetloss_bar_left"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+	android:layout_gravity="left"
+    android:background="@drawable/packetloss2"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/packetloss_bar_right"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+	android:layout_gravity="right"
+    android:background="@drawable/packetloss2"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<ImageView
+    android:id="@+id/uibc"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top|center_horizontal|center_vertical"
+    android:background="#00000000"
+    android:layout_marginTop="60dp"
+    android:src="@drawable/uibc" />
+
+<ImageView
+    android:id="@+id/pause"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:background="#00000000"
+    android:src="@drawable/pause" />
+
+<ImageView
+    android:id="@+id/resume"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:background="#00000000"
+    android:src="@drawable/resume" />
+
+<ImageView
+    android:id="@+id/shutdown"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|center_horizontal|center_vertical"
+    android:layout_marginBottom="60dp"
+    android:background="#00000000"
+    android:src="@drawable/shutdown" />
+
+<TextView
+    android:id="@+id/playtime"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dip"
+    android:layout_marginTop="30dip"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/totalpacketlossnumber"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dip"
+    android:layout_marginTop="60dip"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/audioskipnumber"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dip"
+    android:layout_marginTop="90dip"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+<TextView
+    android:id="@+id/videoskipnumber"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dip"
+    android:layout_marginTop="120dip"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/packetloss"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dip"
+    android:layout_marginTop="170dip"
+    
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/packetloss_bar_bottom"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:layout_gravity="bottom"
+    android:background="@drawable/packetloss2"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</FrameLayout>
+
+
+
+

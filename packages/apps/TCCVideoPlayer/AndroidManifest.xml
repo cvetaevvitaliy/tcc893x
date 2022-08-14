@@ -1,0 +1,52 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.android.videoplayer"
+        android:sharedUserId="android.uid.system">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_ALL_EXTERNAL_STORAGE" />
+    <uses-sdk android:minSdkVersion="14"/>
+
+    <application android:icon="@drawable/video_icon"
+            android:label="@string/video_player">
+        
+        <activity android:name="com.android.videoplayer.GalleryFolderMode"
+                android:label="@string/video_player"
+                android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+                android:icon="@drawable/video_icon"
+                android:clearTaskOnLaunch="true"
+                android:theme="@style/CustomTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"/>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIDEO_PLAYER" />                
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+        </activity>
+        
+        <activity android:name="com.android.videoplayer.MovieActivity"
+                android:label="@string/movieviewlabel"
+                android:screenOrientation="landscape"
+                android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+                android:configChanges="orientation|keyboardHidden|keyboard|navigation">
+             <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.ALTERNATIVE"/>
+                <data android:mimeType="video/*" />
+             </intent-filter>
+        </activity>
+
+        <activity android:name="com.android.videoplayer.GallerySettings"
+                android:label="@string/settings"
+                android:theme="@style/CustomTheme"
+                android:configChanges="orientation|keyboardHidden|keyboard|navigation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEVELOPMENT_PREFERENCE" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>
+

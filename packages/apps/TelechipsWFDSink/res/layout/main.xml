@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="0dip"
+    android:orientation="horizontal"
+    android:layout_margin="50dip" 
+    android:layout_weight="95">
+
+    	<fragment
+    	    android:id="@+id/fragment1"
+    	    android:name="com.telechips.wfd.Fragment1"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="fill_parent"
+    	     />
+
+    	<fragment
+    	    android:id="@+id/frag_list"
+    	    android:name="com.telechips.wfd.WifiDisplaySettings"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="fill_parent"
+    	    android:layout_margin="5dip" />
+
+</LinearLayout>
+
+    	<TextView
+    	    android:id="@+id/tv_version"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_gravity="bottom|right"
+    	    />
+
+</LinearLayout>

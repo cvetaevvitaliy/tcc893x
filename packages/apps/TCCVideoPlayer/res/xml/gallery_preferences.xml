@@ -1,0 +1,52 @@
+<!-- This is the preference setting for Gallery. -->
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+      android:title="@string/pref_video_category" />
+
+        <!--  Repeat video -->
+        <ListPreference
+                android:key="pref_gallery_video_repeat_key"
+                android:title="@string/pref_gallery_video_repeat_title"
+                android:summary="@string/pref_gallery_video_repeat_summary"
+                android:entries="@array/pref_gallery_video_repeat_choices"
+                android:entryValues="@array/pref_gallery_video_repeat_values"
+                android:dialogTitle="@string/pref_gallery_video_repeat_dialogtitle"
+                android:defaultValue="@string/default_value_pref_gallery_video_repeat" />
+
+        <!-- Subtitle -->
+        <CheckBoxPreference
+                android:key="pref_gallery_video_subtitle_key"
+                android:title="@string/pref_gallery_video_subtitle_title"
+                android:summary="@string/pref_gallery_video_subtitle_summary"
+                android:defaultValue="true"/>
+                
+        <!-- Subtitle fontsize -->
+        <ListPreference
+                android:key="pref_gallery_video_fontsize_key"
+                android:title="@string/pref_gallery_video_fontsize_title"
+                android:summary="@string/pref_gallery_video_fontsize_summary"
+                android:entries="@array/pref_gallery_video_fontsize_choices"
+                android:entryValues="@array/pref_gallery_video_fontsize_values"
+                android:dialogTitle="@string/pref_gallery_video_fontsize_dialogtitle"
+                android:defaultValue="@string/default_value_pref_gallery_video_fontsize" />
+
+        <!-- Always Deinterlace -->
+        <CheckBoxPreference
+                android:key="pref_gallery_video_always_deinterlace"
+                android:title="@string/pref_gallery_video_always_deinterlace"
+                android:summary="@string/pref_gallery_video_always_deinterlace"
+                android:defaultValue="false"/>
+
+        <!--  3D UI Mode -->
+        <ListPreference
+                android:key="pref_gallery_video_3D_UI_key"
+                android:title="@string/pref_gallery_video_3D_UI_title"
+                android:summary="@string/pref_gallery_video_3D_UI_summary"
+                android:entries="@array/pref_gallery_video_3D_UI_choices"
+                android:entryValues="@array/pref_gallery_video_3D_UI_values"
+                android:dialogTitle="@string/pref_gallery_video_3D_UI_dialogtitle"
+                android:defaultValue="@string/default_value_pref_gallery_video_3D_UI" />
+
+</PreferenceScreen>

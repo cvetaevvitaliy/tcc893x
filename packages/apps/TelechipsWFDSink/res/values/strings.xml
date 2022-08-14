@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WFDSink</string>
+
+    <!-- Titles -->
+    <string name="title_enable_p2p">WiFi-Direct On/Off</string>
+    <string name="title_enable_p2p_on">ON</string>
+    <string name="title_enable_p2p_off">OFF</string>
+    <string name="title_discover_peers">Discover</string>
+    <string name="title_connect">Connect</string>
+    <string name="title_disconnect">Disconnect</string>
+    <string name="title_play">Play</string>
+    
+    <!-- progress messages -->
+    <string name="msg_cancel_back">Press back to cancel</string>
+    
+    <!-- messages for describing device -->
+    <string name="des_my_device">This is my device.</string>
+    
+    <!-- Toast messages -->
+    <string name="toast_disable_p2p">Enable P2P from action bar button above or system settings</string>
+    <string name="toast_connect_fail">Connect failed. Retry.</string>
+    <string name="toast_channel_lost">Channel lost. Trying again</string>
+    <string name="toast_channel_disable">Severe! Channel is probably lost premanently. Try Disable/Re-Enable P2P.</string>
+    <string name="toast_abort_connection">Aborting connection</string>
+    <string name="toast_fail_reason">Connect abort request failed. Reason Code: </string>
+    <string name="toast_search_initiate">Discovery Initiated</string>
+    <string name="toast_discovery_fail_reason">Discovery Failed : </string>
+    <!-- Wifi Display settings. The title of the screen. [CHAR LIMIT=40] -->
+    <string name="wifi_display_settings_title">Wireless display</string>
+    <!-- Wifi Display settings. Text displayed when Wifi display is off and device list is empty [CHAR LIMIT=80]-->
+    <string name="wifi_display_settings_empty_list_wifi_display_off">To see devices, turn wireless display on.</string>
+    <!-- Wifi Display settings. Text displayed when Wifi Display is off and device list is empty [CHAR LIMIT=80]-->
+    <string name="wifi_display_settings_empty_list_wifi_display_disabled">Wireless display is disabled because Wi-Fi is off.</string>
+    <!-- Wifi Display settings. The title of the action button that initiates a search for nearby devices [CHAR LIMIT=20] -->
+    <string name="wifi_display_search_for_devices">Search</string>
+    <!-- Wifi Display settings. The title of the action button while a search for nearby devices is in progress [CHAR LIMIT=20] -->
+    <string name="wifi_display_searching_for_devices">Searching\u2026</string>
+    <!-- Wifi Display settings. Text that appears when scanning for devices is finished and no nearby device was found [CHAR LIMIT=40]-->
+    <string name="wifi_display_no_devices_found">No nearby wireless displays were found.</string>
+    <!-- Wifi Display settings. The sub heading for devices which have already been paired with this device. [CHAR LIMIT=40] -->
+    <string name="wifi_display_paired_devices">Paired displays</string>
+    <!-- Wifi Display settings. The sub heading for available devices during and after scanning. [CHAR LIMIT=40] -->
+    <string name="wifi_display_available_devices">Available devices</string>
+    <!-- Wifi Display settings. The status summary for connecting devices. [CHAR LIMIT=40] -->
+    <string name="wifi_display_status_connecting">Connecting</string>
+    <!-- Wifi Display settings. The status summary for connected devices. [CHAR LIMIT=40] -->
+    <string name="wifi_display_status_connected">Connected</string>
+    <!-- Wifi Display settings. The status summary for available devices. [CHAR LIMIT=40] -->
+    <string name="wifi_display_status_available">Available</string>
+    <!-- Wifi Display settings. Image description for device details button. This opens the screen to rename, unpair, etc. a single device. -->
+    <string name="wifi_display_details">Display settings</string>
+    <string name="wifi_display_disconnect_title">Disconnect?</string>
+    <string name="toast_time_out">App timeout</string>    
+    <string name="connection_dialog_title">Connecting to wireless display device</string>
+    <string name="connection_persistent_dialog_title">Connect to paired device</string>
+    <string name="connection_p2p_wait_dialog_message">Please wait for p2p connecton</string>
+    <string name="connection_p2p_go_neg_success_dialog_message">Please wait for connecton..P2P GO Negotiation Success</string>
+    <string name="connection_p2p_gr_for_success_dialog_message">Please wait for connecton..P2P Group Formation Success</string>
+    <string name="connection_p2p_gr_start_dialog_message">Please wait for connecton..P2P Group Started</string>
+    <string name="connection_ip_assign_wait_dialog_message">Please wait for IP assigning</string>
+    <string name="connection_ip_get_wait_dialog_message">Please wait for IP getting</string>
+    <string name="connection_rtsp_wait_dialog_message">Please wait for RTSP negotiation</string>
+    <string name="connection_timeout_message">Connection timeout, try again</string>
+    <string name="p2prestart_dialog_title">Timeout</string>
+    <string name="p2prestart_dialog_message">Please wait for re-initialization</string>
+    <string name="wfdplay_connection_dialog_title">Preparing for Wireless Display</string>
+    <string name="wfdplay_connection_dialog_message">Please wait for preparing</string>
+    
+        <!-- Wireless display Settings -->
+    <string name="wireless_display_setting_titlebar">Advanced Settings</string>
+    <string name="wireless_display_setting_enable_miracast">Support Miracast Certification</string>
+    <string name="wireless_display_setting_enable_miracast_summary">Enable some functions for Miracast certification</string>
+    <string name="wireless_display_setting_hdcp">Enable HDCP</string>
+    <string name="wireless_display_setting_hdcp_summary">Select HDCP key</string>    
+    <string name="wireless_display_setting_go_intent">GO Intent value</string>
+    <string name="wireless_display_setting_go_intent_summary">Set GO Intent value</string>    
+    <string name="wireless_display_setting_listen_channel">P2P Listen Channel</string>
+    <string name="wireless_display_setting_listen_channel_summary">Set Listen Channel</string>    
+    <string name="wireless_display_setting_operating_channel">P2P Operating Channel</string>
+    <string name="wireless_display_setting_operating_channel_summary">Set Operating Channel</string>
+    <string name="wireless_display_setting_audio_codec">Audio Codec</string>
+    <string name="wireless_display_setting_audio_codec_summary">Set Audio Codec</string>
+    <string name="wireless_display_setting_persistent_go">Persistent GO</string>
+    <string name="wireless_display_setting_persistent_go_summary">Enable Persistent GO</string>
+    <string name="wireless_display_setting_auto_pbc">Automatic PBC(Automatic Connection)</string>
+    <string name="wireless_display_setting_auto_pbc_summary">Enable Automatic PBC</string>    
+    <string name="wireless_display_setting_file_dump">File dump</string>
+    <string name="wireless_display_setting_file_dump_summary">Enable file dump(/data/wfd)</string>    
+    <string name="wireless_display_setting_sink_debug">WFDSink Debug mode</string>
+    <string name="wireless_display_setting_sink_debug_summary">Enable WFDSink debug mode</string>        
+    <string name="wireless_display_setting_frame_skip">Frame Skip</string>
+    <string name="wireless_display_setting_frame_skip_summary">Enable Frame Skip</string>    
+    <string name="wireless_display_setting_frame_skip_time">Frame Skip Time</string>
+    <string name="wireless_display_setting_frame_skip_time_summary">Set Frame Skip Time</string>    
+    <string name="wireless_display_setting_dynamic_frame_skip">Dynamic Frame Skip</string>
+    <string name="wireless_display_setting_dynamic_frame_skip_summary">Enable Dynamic Frame Skip</string>   
+    <string name="wireless_display_setting_vga">VGA</string>
+    <string name="wireless_display_setting_vga_summary">Support only VGA(if source device dose not support VGA, you cannot connect)</string>   
+                        
+    <string name="lock_settings_picker_title">Choose screen lock</string>
+    <string name="help_label">Help</string>
+    
+</resources>

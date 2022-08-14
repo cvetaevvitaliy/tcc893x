@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_focused="true" android:drawable="@drawable/video_f" 
+       android:layout_width ="212dp" 
+       android:layout_height="296dp"/>
+     <item android:state_hovered="true"
+          android:drawable="@drawable/video_f" /> <!-- hovered -->
+ 	<item android:drawable="@drawable/video_n"
+ 	   android:layout_width ="172dp" 
+       android:layout_height="250dp"/>
+    
+    
+</selector>

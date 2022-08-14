@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF333333"
+        android:orientation="vertical">
+
+    <LinearLayout android:id="@+id/size_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <TextView
+            android:text="@string/subtitle_size"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingTop="4dip"
+            android:paddingLeft="4dip"
+            android:background="#00000000"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:paddingRight="4dip" />
+
+        <SeekBar android:id="@+id/size_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="32dip"
+            android:background="#00000000"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" />
+
+        <TextView android:id="@+id/size_value"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingTop="4dip"
+            android:paddingLeft="4dip"
+            android:background="#00000000"
+            android:layout_gravity="center_vertical"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:paddingRight="4dip" />
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/sync_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <TextView
+            android:text="@string/subtitle_sync"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingTop="4dip"
+            android:paddingLeft="4dip"
+            android:background="#00000000"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:paddingRight="4dip" />
+
+        <SeekBar android:id="@+id/sync_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="32dip"
+            android:background="#00000000"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" />
+
+        <TextView android:id="@+id/sync_value"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingTop="4dip"
+            android:paddingLeft="4dip"
+            android:background="#00000000"
+            android:layout_gravity="center_vertical"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:paddingRight="4dip" />
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/position_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <TextView
+            android:text="@string/subtitle_position"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingTop="4dip"
+            android:paddingLeft="4dip"
+            android:background="#00000000"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:paddingRight="4dip" />
+
+        <SeekBar android:id="@+id/position_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="32dip"
+            android:background="#00000000"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" />
+
+        <TextView android:id="@+id/position_value"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingTop="4dip"
+            android:paddingLeft="4dip"
+            android:background="#00000000"
+            android:layout_gravity="center_vertical"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:paddingRight="4dip" />
+
+    </LinearLayout>
+
+</LinearLayout>
