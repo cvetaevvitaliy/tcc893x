@@ -1,0 +1,120 @@
+ENTRY &bootloaderpath &bootloadersymbol
+
+AREA
+AREA.Clear
+
+Disconnect
+Unload
+DelBREAK
+
+print "Start TCC8930 Initialization..."
+WAIT	100.ms
+
+;Interface Option
+CPUTYPE CORTEXA9MPCore
+OPTION.JTAGCLOCK 10.000000Mhz
+OPTION.EnReset OFF
+OPTION.TRST ON
+OPTION.ResBreak OFF
+OPTION.WaitReset OFF
+OPTION.CR OFF
+OPTION.RegisterInit OFF
+OPTION.PCZero OFF
+OPTION.RTCK OFF
+OPTION.DACR ON
+OPTION.BigEndian OFF
+OPTION.SerialWire OFF
+OPTION.Update ON
+OPTION.DevName TCC893x
+OPTION.DisMode AUTO
+OPTION.SpeedUp OFF
+OPTION.InterruptRESet
+
+;JTAG Setting
+MULtiCore.IRPOST 0.
+MULtiCore.DRPost 0.
+MULtiCore.IRPRE 0.
+MULtiCore.DRPre 0.
+MULtiCore.DAPIRPOST 0.
+MULtiCore.DAPDRPOST 0.
+MULtiCore.DAPIRPRE 0.
+MULtiCore.DAPDRPRE 0.
+MULtiCore.ETBIRPOST 0.
+MULtiCore.ETBDRPOST 0.
+MULtiCore.ETBIRPRE 0.
+MULtiCore.ETBDRPRE 0.
+
+;CORESIGHT Setting
+MULtiCore.DEBUGACCESSPORT 1.
+MULtiCore.JTAGACCESSPORT 255.
+MULtiCore.MEMORYACCESSPORT 0.
+MULtiCore.COREJTAGPORT 255.
+MULtiCore.COREBASE 0x80110000 
+//MULtiCore.CTIBASE 
+//MULtiCore.ETMBASE 
+//MULtiCore.ETBBASE 
+MULtiCore.TPIUBASE 0xFFFFFFFF
+MULtiCore.FUNNELBASE 0xFFFFFFFF
+//MULtiCore.ETMFUNNELPORT 
+
+;Processor Properties Setting
+
+;Vector Catch Setting
+PROC.VCReset OFF
+PROC.VCUndefine OFF
+PROC.SWI OFF
+PROC.Pabort OFF
+PROC.Dabort OFF
+PROC.Reserved OFF
+PROC.IRQ OFF
+PROC.FIQ OFF
+PROC.VectorCatch OFF
+
+;Terminal Setting
+PROC.TERM.Method SERial
+PROC.TERM.MODE VT100
+
+;Serialport Setting
+PROC.SERialport COM3 115200 8 NONE 1STOP NONE
+;OPTION SET END
+
+ON POWERUP gosub
+(
+	;wait 10.ms
+	goto Start
+)
+
+ON POWERDOWN gosub
+(
+	while (1==1)
+	(
+		wait 1.ms
+	)
+)
+
+Start:
+
+Connect
+
+&Vector_bit=0x1005
+&Control=data.long(C15:0x1)
+if (&Control&&Vector_bit)==&Vector_bit
+(
+ &Control=&Control&(~&Vector_bit)
+)
+d.s C15:0x1 %long &Control
+r.s cpsr 0x60000153
+
+;DATA.LOAD.ELF Y:\android\79_tcc_jb_latest\bootable\bootloader\lk\build-tcc893x_evm\lk /NOCODE /NOCLEAR /NOREG
+;DATA.LOAD.ELF Y:\android\79_tcc_jb_latest\bootable\bootloader\lk\build-tcc893x_evm\lk
+;Data.LOAD.Elf "..\..\..\..\..\bootable\bootloader\lk\build-tcc893x_evm\lk" /RELPATH /PATH ..\..\..\..\..\bootable\bootloader\lk /GNU /ANYSYM
+Data.LOAD.Elf "&bootloadersymbol" /RELPATH /PATH &bootloaderpath /GNU /ANYSYM
+
+
+break.delete /ALL
+break.set kmain /onchip
+Go
+wait !run()
+B.d kmain
+
+end

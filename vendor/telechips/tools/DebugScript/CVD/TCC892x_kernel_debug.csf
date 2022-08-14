@@ -1,0 +1,116 @@
+ENTRY &kernelpath
+
+;WINCloseAll
+AREA
+AREA.Clear
+
+Disconnect
+Unload
+DelBREAK
+
+print "Start TCC8930 Initialization..."
+WAIT	100.ms
+
+;Interface Option
+
+CPUTYPE CORTEXA5
+OPTION.JTAGCLOCK 10.000000Mhz
+OPTION.EnReset OFF
+OPTION.TRST ON
+OPTION.ResBreak OFF
+OPTION.WaitReset OFF
+OPTION.CR OFF
+OPTION.RegisterInit OFF
+OPTION.PCZero OFF
+OPTION.RTCK OFF
+OPTION.DACR ON
+OPTION.BigEndian OFF
+OPTION.SerialWire OFF
+OPTION.Update ON
+OPTION.DevName TCC893x
+OPTION.DisMode CORTEXA9MPCore
+OPTION.SpeedUp OFF
+OPTION.InterruptRESet
+OPTION.InterruptDisable ASMSTEP
+OPTION.InterruptDisable CSTEP
+
+;JTAG Setting
+MULtiCore.IRPOST 0.
+MULtiCore.DRPost 0.
+MULtiCore.IRPRE 0.
+MULtiCore.DRPre 0.
+MULtiCore.DAPIRPOST 0.
+MULtiCore.DAPDRPOST 0.
+MULtiCore.DAPIRPRE 0.
+MULtiCore.DAPDRPRE 0.
+MULtiCore.ETBIRPOST 0.
+MULtiCore.ETBDRPOST 0.
+MULtiCore.ETBIRPRE 0.
+MULtiCore.ETBDRPRE 0.
+
+;CORESIGHT Setting
+MULtiCore.DEBUGACCESSPORT 0.
+MULtiCore.JTAGACCESSPORT 255.
+MULtiCore.MEMORYACCESSPORT 0.
+MULtiCore.COREJTAGPORT 255.
+MULtiCore.COREBASE 0x80110000 
+//MULtiCore.CTIBASE 
+//MULtiCore.ETMBASE 
+//MULtiCore.ETBBASE 
+MULtiCore.TPIUBASE 0xFFFFFFFF
+MULtiCore.FUNNELBASE 0xFFFFFFFF
+//MULtiCore.ETMFUNNELPORT 
+
+;Processor Properties Setting
+
+;Vector Catch Setting
+PROC.VCReset OFF
+PROC.VCUndefine OFF
+PROC.SWI OFF
+PROC.Pabort OFF
+PROC.Dabort OFF
+PROC.Reserved OFF
+PROC.IRQ OFF
+PROC.FIQ OFF
+PROC.VectorCatch OFF
+
+ON POWERUP gosub
+(
+	wait 10.ms
+	goto Start
+)
+
+ON POWERDOWN gosub
+(
+	while (1==1)
+	(
+		wait 1.ms
+	)
+)
+
+Start:
+
+Connect
+
+;LoadImage ".\vmlinux" %MULTI %KEEP %SYMBOL
+// download symbols only.
+Data.LOAD.Elf "&kernelpath\vmlinux" /RELPATH /PATH "&kernelpath" /macro /gnu /cpp /anysym /nocode
+;Data.LOAD.Elf "&kernelpath\vmlinux" /RELPATH /PATH "&kernelpath" /macro /gnu /cpp /anysym /NOCODE /NOCLEAR /NOREG
+
+//Please set the right path for vmlinux
+WAIT 100.ms
+
+SetBREAK start_kernel %hw
+
+print "vmlinux is loaded..."
+
+;go start_kernel
+;wait !run()
+
+print "Stopped at the function start_kernel..."
+
+DebugList
+go
+
+END
+

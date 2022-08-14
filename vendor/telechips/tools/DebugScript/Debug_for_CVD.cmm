@@ -1,0 +1,312 @@
+//===========================================================================
+//
+//                       ANDROID TRACE32 CMM FILE
+//
+//                        EDIT HISTORY FOR MODULE
+//
+//---------------------------------------------------------------------------
+// version     who      history
+//---------------------------------------------------------------------------
+// 110407-1   Bruce     Create file
+//===========================================================================
+
+//---------------------------------------------------------------------------
+// Variable
+//---------------------------------------------------------------------------
+global &chipset
+global &attach_symbol_check
+
+//---------------------------------------------------------------------------
+// Set Environment !!
+//---------------------------------------------------------------------------
+
+&chipset="TCC893x"
+&srcpath="Select location of source directory"
+&debugtarget="kernel"
+&csfpath=" "
+
+//----------------------------------------------------------
+
+//CMDPOS 0.0 0.0 135. 10.
+
+area.clear
+
+print ""
+print "==================================================="
+print "      TELECHIPS TRACE32 SCRIPT for ANDROID "
+print "==================================================="
+print ""
+
+
+//---------------------------------------------------------------------------
+// DIALOG
+//---------------------------------------------------------------------------
+WINPOS 5. 15. 44. 12. 0. 0. W001
+DIALOG
+(
+
+	HEADER "Kernel Debug Script for CVD"
+	icon ":mmu"
+
+	//-----------------------------------------------------
+	// Select target..
+	//-----------------------------------------------------
+
+	POS 1. 0. 18. 1.
+	DEBUG_SEL.1: choosebox "Bootloader Debugging" 
+	(
+		&debugtarget="bootloader"
+
+		dialog.enable BOOTSYMBOLPATH
+		dialog.enable BOOTSYMBOLBUTTON
+		dialog.disable SDRAM
+	)
+	POS 20. 0. 15. 1.
+	DEBUG_SEL.2: choosebox "Kernel Debugging" 
+	(
+		&debugtarget="kernel"
+
+		dialog.disable BOOTSYMBOLPATH
+		dialog.disable BOOTSYMBOLBUTTON
+		dialog.disable SDRAM
+	)
+
+	//-----------------------------------------------------
+	// Select chipset
+	//-----------------------------------------------------
+	POS 0. 1. 43. 0.
+	LINE ""
+
+	POS 1. 2. 8. 1.
+	TEXT "Chipset"
+
+	pos 13. 2. 10. 1.
+	CHIPSET: PULLDOWN "TCC893x,TCC892x"
+	(
+		&chipset=dialog.string(CHIPSET)
+	)
+
+	//-----------------------------------------------------
+	// SMP
+	//-----------------------------------------------------
+	pos 25. 2. 14. 1.
+	ATTACH_CHK: checkbox "attach with symbol"
+	(
+		if dialog.boolean(ATTACH_CHK)
+		(
+			&attach_symbol_check="ON"
+			print "Attach with downloading symbol - ON"
+		)
+		else
+		(
+			&attach_symbol_check="OFF"
+			print "Attach with downloading symbol - OFF"
+		)
+	)
+
+	//-----------------------------------------------------
+	// KERNEL DIR
+	//-----------------------------------------------------
+	POS 1. 3.5 10. 1.
+	TEXT "Source Directory"
+
+	POS 13. 3.5 27. 1.
+	SOURCEPATH: EDIT "Select location of source directory" ""
+
+	POS 41. 3.5 2. 1.
+	BUTTON "..."
+	(
+		dialog.setdir SOURCEPATH *
+	)
+
+	//-----------------------------------------------------
+	// Bootloader Symbol Directory
+	//-----------------------------------------------------
+	POS 1. 5. 11. 1.
+	TEXT "Bootloader Symbol"
+
+	POS 13. 5. 27. 1.
+	BOOTSYMBOLPATH: EDIT "Select a symbol file of the bootloader" ""
+
+	POS 41. 5. 2. 1.
+	BOOTSYMBOLBUTTON: BUTTON "..."
+	(
+		dialog.setfile BOOTSYMBOLPATH *
+	)
+
+	//-----------------------------------------------------
+	// SDRAM
+	//-----------------------------------------------------
+	POS 1. 6.5 8. 1.
+	TEXT "SDRAM"
+
+	pos 13. 6.5 30. 1.
+	SDRAM: PULLDOWN "TCC8935_H5TQ2G83BFRPBC_x4_2cs,TCC88xx_CT83486C1_x2,TCC88xx_HXB18T2G160AF_x2,TCC88xx_HY5PS1G1631CFPS6_x2,TCC88xx_HY5PS1G1631CFPS6_x4,TCC88xx_HY5PS1G831CFPS6_x4,TCC88xx_MT47H256M8EB25E_x4,TCC88xx_K4T1G164QE_HCF7_x4,TCC88xx_H5TQ2G63BFR_H9C_x2,TCC88xx_H5TQ2G83BFA_H9C_x4,TCC88xx_K4B1G1646E_HCH9_x2,TCC88xx_K4B2G1646C_HCK0_x2,TCC93xx_HXB18T2G160AF_x2,TCC93xx_HY5PS1G1631CFPS6_x2,TCC93xx_HY5PS1G1631CFPS6_x4,TCC93xx_HY5PS1G831CFPS6_x4,TCC93xx_H5TQ2G63BFR_H9C_x2,TCC93xx_K4B1G1646E_HCH9_x2,TCC93xx_K4B2G1646C_HCK0_x2,TCC89xx_HY5PS1G1631CFPS6_x2,TCC92xx_HY5PS1G1631CFPS6_x2,TCC892x_HY5PS1G831CFPS6_x4,TCC8930_H5TQ2G83BFRPBC_x4"
+	(
+		&sdram=dialog.string(SDRAM)
+	)
+
+	//-----------------------------------------------------
+	// Debugging
+	//-----------------------------------------------------
+	POS 1. 8. 22. 2.0
+	CALL_DEBUG_START: BUTTON " Debug Start "
+	(
+//---		do core\core.cmm &chipset &smp_check
+
+		//extract debug information ..
+		&srcpath=dialog.string(SOURCEPATH)
+		&bootloaderpath="&srcpath"+"\bootable\bootloader\lk"
+		&kernelpath="&srcpath"+"\kernel"
+		&bootloadersymbol=dialog.string(BOOTSYMBOLPATH)
+		&sdram=dialog.string(SDRAM)
+
+		print "source path : &srcpath"
+		print "bootloader path : &bootloaderpath"
+		print "kernel path : &kernelpath"
+		print "bootloader symbol : &bootloadersymbol"
+		print "sdram : &sdram"
+		do environment\save.cmm "chipset.sav" "srcpath.sav" "bootloadersymbol.sav" "sdram.sav"
+
+		print "Loading Symbol .."
+
+		if dialog.boolean(DEBUG_SEL.1)
+		(
+			&csfpath="CVD\&chipset"+"_lk_debug.csf"
+			print "csf path : &csfpath"
+			do &csfpath &bootloaderpath &bootloadersymbol
+
+		)
+		else
+		(
+			&csfpath="CVD\&chipset"+"_kernel_debug.csf"
+			print "csf path : &csfpath"
+			do &csfpath &kernelpath
+		)
+	)
+
+	//-----------------------------------------------------
+	// Debugging
+	//-----------------------------------------------------
+	POS 23. 8. 20. 2.0
+	CALL_DEBUG_START: BUTTON " Attach Start "
+	(
+//---		do core\core.cmm &chipset &smp_check
+
+		//extract debug information ..
+		&srcpath=dialog.string(SOURCEPATH)
+		&bootloaderpath="&srcpath"+"\bootable\bootloader\lk"
+		&kernelpath="&srcpath"+"\kernel"
+		&bootloadersymbol=dialog.string(BOOTSYMBOLPATH)
+		&sdram=dialog.string(SDRAM)
+
+		print "source path : &srcpath"
+		print "bootloader path : &bootloaderpath"
+		print "kernel path : &kernelpath"
+		print "bootloader symbol : &bootloadersymbol"
+		print "sdram : &sdram"
+		do environment\save.cmm "chipset.sav" "srcpath.sav" "bootloadersymbol.sav" "sdram.sav"
+
+		if os.dir(environment)
+		(
+			cd environment
+			open #1 "attach_symbol_check.sav" /create
+			write #1 "&attach_symbol_check"
+			close #1
+			cd ..
+		)
+
+		print "Loading Symbol .."
+
+		if dialog.boolean(DEBUG_SEL.1)
+		(
+			&csfpath="CVD\&chipset"+"_lk_attach.csf"
+			print "csf path : &csfpath"
+			do &csfpath &bootloaderpath &bootloadersymbol &attach_symbol_check
+
+		)
+		else
+		(
+			&csfpath="CVD\&chipset"+"_kernel_attach.csf"
+			print "csf path : &csfpath"
+			do &csfpath &kernelpath &attach_symbol_check
+		)
+
+	)
+	//-----------------------------------------------------
+	// jtag boot
+	//-----------------------------------------------------
+//	POS 1. 10. 42. 2.
+//	testbt: BUTTON "jtag boot"
+//	(
+//		do core\core.cmm &chipset &smp_check
+//
+//		SYStem.MODE ATTACH
+//		if run()
+//			Break
+//
+//		//extract debug information ..
+//		&srcpath=dialog.string(SOURCEPATH)
+//		&bootloaderpath="&srcpath"+"\bootable\bootloader\lk"
+//		&kernelpath="&srcpath"+"\kernel"
+//		&bootloadersymbol=dialog.string(BOOTSYMBOLPATH)
+//		&sdram=dialog.string(SDRAM)
+//
+//		print "source path : &srcpath"
+//		print "bootloader path : &bootloaderpath"
+//		print "kernel path : &kernelpath"
+//		print "bootloader symbol : &bootloadersymbol"
+//		print "sdram : &sdram"
+//		do environment\save.cmm "chipset.sav" "srcpath.sav" "bootloadersymbol.sav" "sdram.sav"
+//
+//		print "Loading Symbol .."
+//
+//		//ddr init..
+//		do sdram\sdram.cmm &sdram
+//
+//		//load kernel image
+//		Data.LOAD.Elf "&kernelpath\vmlinux" /RELPATH /PATH "&kernelpath" /macro /gnu /cpp /anysym
+//
+//		//load bootloader image
+//		Data.LOAD.Elf "&bootloadersymbol" /RELPATH /PATH &bootloaderpath /GNU /ANYSYM /noclear
+//
+//		//ramdisk
+//		data.load.binary "&srcpath\out\target\product\tcc893x\ramdisk.img" 0x81000000
+//
+//		//load kernel symbol..
+//		Data.LOAD.Elf "&kernelpath\vmlinux" /RELPATH /PATH "&kernelpath" /macro /gnu /cpp /anysym /noclear /nocode
+//
+//		break.delete /ALL
+//	 	B.s start_kernel /onchip
+//	 	Go
+//	 	wait !run()
+//	 	B.d start_kernel
+//	)
+)
+
+dialog.set DEBUG_SEL.2
+dialog.disable BOOTSYMBOLPATH
+dialog.disable BOOTSYMBOLBUTTON
+dialog.disable SDRAM
+
+do environment\load.cmm "chipset.sav" "srcpath.sav" "bootloadersymbol.sav" "sdram.sav"
+
+if os.dir(environment)
+(
+	cd environment
+		
+	if os.file("attach_symbol_check.sav")
+	(
+		open #1 "attach_symbol_check.sav" /read
+		read #1 %line &attach_symbol_check
+		close #1
+		dialog.SET ATTACH_CHK "&attach_symbol_check"
+	)
+	cd ..
+)
+
+ENDDO
+//----------------------------------------------------------
+
+
+

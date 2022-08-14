@@ -1,0 +1,630 @@
+&AL_DISABLED=0.
+&AL_CL_MINUS_ONE=1.
+&AL_CL_MINUS_TWO=2.
+
+&CONFIG_DRAM_16BIT_USED=1.
+&CONFIG_TCC_MEM_1024MB=1.
+&DDR3_PINMAP_TYPE=1.
+&DDR3_LOGICAL_CHIP_NUM=2.
+&DDR3_MAX_SPEED=1600.
+&DDR3_CL=11.
+&DDR3_AL=&AL_DISABLED
+&DDR3_BURST_LEN=0.
+&DDR3_READ_BURST_TYPE=0.
+&DDR3_EA_BIT_SIZE=2.
+&DDR3_TOTAL_MB_SIZE=1024.
+&DDR3_ROWBITS=15.
+&DDR3_COLBITS=10.
+&DDR3_BANKBITS=3.
+&DDR3_APBIT=10.
+
+&DDR3_tRFC_ps=160000.
+&DDR3_tREFI_ps=7800000.
+&DDR3_tRCD_ps=13750.
+&DDR3_tRCD_ck=1.
+&DDR3_tRP_ps=13750.
+&DDR3_tRP_ck=1.
+&DDR3_tRC_ps=48750.
+&DDR3_tRC_ck=1.
+&DDR3_tRAS_ps=35000.
+&DDR3_tRAS_ck=1.
+&DDR3_tRTP_ps=7500.
+&DDR3_tRTP_ck=4.
+&DDR3_tWTR_ps=7500.
+&DDR3_tWTR_ck=4.
+&DDR3_tWR_ps=15000.
+&DDR3_tWR_ck=1.
+&DDR3_tRRD_ps=7500.
+&DDR3_tRRD_ck=4.
+&DDR3_tFAW_ps=40000.
+&DDR3_tFAW_ck=20.
+&DDR3_tXS_ps=(&DDR3_tRFC_ps+10000.)
+&DDR3_tXS_ck=5.
+&DDR3_tXP_ps=6000.
+&DDR3_tXP_ck=3.
+&DDR3_tCKE_ps=5000.
+&DDR3_tCKE_ck=3.
+&DDR3_tMRD_ck=4.
+&DDR3_tCCD_ck=4.
+&DDR3_tRAS_MAX_ps=(&DDR3_tREFI_ps*9.)
+&DDR3_tMOD_ps=15000.
+&DDR3_tMOD_ck=12.
+&DDR3_tDLLK_ck=512.
+&DDR3_tXPDLL_ps=24000.
+&DDR3_tXPDLL_ck=10
+&DDR3_tXSDLL_ck=&DDR3_tDLLK_ck
+&DDR3_tCKSRX_ps=10000.
+&DDR3_tCKSRX_ck=5.
+&DDR3_tCKSRE_ps=10000.
+&DDR3_tCKSRE_ck=5.
+&DDR3_tZQCS_ck=64.
+&DDR3_tZQINIT_ck=512.
+&DDR3_tZQOPER_ck=256.
+
+&MEMCTRL_DDS=4
+&MEMCTRL_TERM=1
+&DDR3_DIC=1
+&DDR3_ODT=0x11
+
+&OLD_SETTING=1
+
+//---------------------------------------------------------------------------
+
+//&PLL0_VALUE=0x01012C03       // PLL0 : 1200MHz for CPU
+&PLL0_VALUE=0x02013803 // PLL0 : 624MHz for CPU
+//       210        250        280        300
+//PLL1   0x4201A406 0x4201F406 0x01011806 0x01012C06
+&PLL1_VALUE=0x01012C06
+&DDR3_CLK=600.
+&tCK=(1000000./&DDR3_CLK)
+
+//---------------------------------------------------------------------------
+
+local &i &j &nCL &nCWL &tmp
+
+//--------------------------------------------------------------------------
+//Clock setting..
+
+	&i=0.
+	while &i<200.
+	(
+		&i=&i+1
+	)
+
+	d.s 0x74000000 %L 0x002ffff4 //cpu bus : XIN
+	d.s 0x74000004 %L 0x00200014 //mem bus : XIN/2 
+	d.s 0x74000010 %L 0x00200014 //io bus : XIN/2
+	d.s 0x7400001C %L 0x00200014 //hsio bus : XIN/2
+	d.s 0x74000020 %L 0x00200014 //smu bus : XIN/2
+	d.s 0x74000030 %L &PLL0_VALUE //pll0 for cpu
+	d.s 0x74000030 %L 0x80000000|&PLL0_VALUE
+	d.s 0x74000034 %L &PLL1_VALUE //pll1 for mem
+	d.s 0x74000034 %L 0x80000000|&PLL1_VALUE
+
+	&i=0.
+	while &i<200.
+	(
+		&i=&i+1
+	)
+	//d.s 0x74000000 %L 0x00255550  // cpu
+	d.s 0x74000000 %L 0x002FFFF0  // cpu
+
+	//d.s 0x74000004 %L 0x00200011  // mem bus
+	d.s 0x74000050 %L 0x01810101
+	d.s 0x74000004 %L 0x00200011
+
+	
+	d.s 0x74000010 %L 0x00200031  // io bus
+	d.s 0x7400001C %L 0x00200031  // hsio bus
+	d.s 0x74000020 %L 0x00200031  // smu bus
+
+	d.s 0x740000E0 %L 0x2000001A  // sdmmc3         24MHz
+
+	&i=0.
+	while &i<200.
+	(
+		&i=&i+1
+	)
+
+//--------------------------------------------------------------------------
+// Phy setting..
+
+	//----------------------------------------
+	// PHY RESETn (de-assert)
+	d.s 0x73600008 %L 0x1
+	//----------------------------------------
+
+    //----------------------------------------
+    // PHY Configuration
+	d.s 0x7342042c %L (0xC8<<0)|(0x27E<<0x12)
+	d.s 0x7342041c %L (0x10<<0)|(0x07D0<<6)|(0x190<<0x15)
+	d.s 0x73420420 %L (0x578<<0)|(0x2EE0<<0x10)
+	d.s 0x73420424 %L (0x0F<<0)|(0x0F<<5)|(0x0F<<0xA)|(0x10<<0xF)
+	d.s 0x73420428 %L (0x82356<<0)|(0x180<<0x14)
+	d.s 0x73420404 %L 0x00050000
+
+	if &CONFIG_DRAM_16BIT_USED==1
+	(
+		d.s 0x73420640 %L (0x0<<0)|(0x1<<4)|(0x1<<5)|(0x1<<6)
+		d.s 0x73420680 %L (0x0<<0)|(0x1<<4)|(0x1<<5)|(0x1<<6)
+	)
+
+	d.s 0x734205e8 %L 0x20202020
+	d.s 0x73420628 %L 0x20202020
+	d.s 0x73420668 %L 0x20202020
+	d.s 0x734206a8 %L 0x20202020
+
+	//(*(volatile unsigned long *)0x73810010) |= 0x00008000; //Hw15; MBUSCFG.DCLKR - Bus Clock : DRAM Clock = 1:2
+	&i=data.long(R:0x73810010)
+	&i=&i|0x00008000
+	d.s 0x73810010 %L &i
+
+//--------------------------------------------------------------------------
+// Timing Parameter
+
+	if &tCK>=2500.
+	(
+		&nCL=6.
+		&nCWL=5.
+	)
+	else if &tCK>=1875.
+	(
+		&nCL=8.
+		&nCWL=6.
+	)
+	else if &tCK>=1500.
+	(
+		//Bruce_temp..
+		//if &DDR3_MAX_SPEED<1600.
+		if &DDR3_MAX_SPEED<=1600.
+			&nCL=9.
+		else
+			&nCL=10.
+		&nCWL=7.
+	)
+	else if &tCK>=1250.
+	(
+		&nCL=11.
+		&nCWL=8.
+	)
+	else if &tCK>=1070.
+	(
+		nCL=13.
+		nCWL=9.
+	)
+	else if &tCK>=935.
+	(
+		nCL=14.
+		nCWL=10.
+	)
+
+	d.s 0x73500000 %L 0x20410600
+
+	if &OLD_SETTING==1
+	(
+		d.s 0x73500008 %L ((10000.+&tCK-1)/&tCK)
+		d.s 0x7350000c %L ((200000000.+&tCK-1)/&tCK)
+		d.s 0x73500010 %L ((500000000.+&tCK-1)/&tCK)
+		d.s 0x73500014 %L (0x4<<24.|(&nCWL)<<16.|((&nCL<<1)|0)<<8)
+		if &DDR3_AL==&AL_DISABLED //nAL = 0;
+			d.s 0x73500014 %L (0x1<<24.|(&nCWL)<<16.|((&nCL<<1)|0)<<8.|0x8)
+		else if &DDR3_AL==&AL_CL_MINUS_ONE //nAL = nCL - 1;
+			d.s 0x73500014 %L (0x1<<24.|(&nCWL+&nCL-1)<<16.|((&nCL<<1)|0)<<8.|0x8)
+		else if &DDR3_AL==&AL_CL_MINUS_TWO //nAL = nCL - 2;
+			d.s 0x73500014 %L (0x1<<24.|(&nCWL+&nCL-2)<<16.|((&nCL<<1)|0)<<8.|0x8)
+	)
+	else
+	(
+		d.s 0x73500008 %L 0x00000007
+		d.s 0x7350000c %L 0xa0
+		d.s 0x73500010 %L 0x90
+		if &DDR3_AL==&AL_DISABLED //nAL = 0;
+			d.s 0x73500014 %L (0x4<<24.|(&nCWL)<<16.|((&nCL<<1)|0)<<8.|0x0)
+		else if &DDR3_AL==&AL_CL_MINUS_ONE //nAL = nCL - 1;
+			d.s 0x73500014 %L (0x4<<24.|(&nCWL+&nCL-1)<<16.|((&nCL<<1)|0)<<8.|0x0)
+		else if &DDR3_AL==&AL_CL_MINUS_TWO //nAL = nCL - 2;
+			d.s 0x73500014 %L (0x4<<24.|(&nCWL+&nCL-2)<<16.|((&nCL<<1)|0)<<8.|0x0)
+	)
+
+	d.s 0x73500018 %L ((&DDR3_tRAS_ps+&tCK-1)/&tCK)<<24.|((&DDR3_tRC_ps+&tCK-1)/&tCK)<<16.|((&DDR3_tRRD_ps+&tCK-1)/&tCK)<<8|&DDR3_tCCD_ck
+	d.s 0x7350001C %L &DDR3_tMRD_ck<<24.|((&DDR3_tRTP_ps+&tCK-1)/&tCK)<<16.|((&DDR3_tRP_ps+&tCK-1)/&tCK)<<8|(((&DDR3_tWTR_ps+&tCK-1)/&tCK)+1)
+	d.s 0x73500020 %L ((&DDR3_tRAS_MAX_ps+&tCK-1)/&tCK)<<8|((&DDR3_tMOD_ps+&tCK-1)/&tCK)
+	d.s 0x73500024 %L (((&DDR3_tCKE_ps+&tCK-1)/&tCK)+1)<<8|((&DDR3_tCKE_ps+&tCK-1)/&tCK)
+	d.s 0x73500028 %L ((&DDR3_tWR_ps+&tCK-1)/&tCK)<<24.|((&DDR3_tRCD_ps+&tCK-1)/&tCK)<<16.|1<<8|1
+	d.s 0x7350002C %L 1<<24.|&DDR3_tDLLK_ck<<8|(((&DDR3_tWR_ps+&tCK-1)/&tCK)+&nCL)
+	d.s 0x73500030 %L 1<<16.|((&DDR3_tFAW_ps+&tCK-1)/&tCK)<<8|3
+	d.s 0x73500034 %L ((&DDR3_tRP_ps+&tCK-1)/&tCK)+1
+	d.s 0x73500038 %L ((&DDR3_tRFC_ps+&tCK-1)/&tCK)<<16.|1<<8|0
+	d.s 0x7350003C %L ((&DDR3_tREFI_ps+&tCK-1)/&tCK)
+	d.s 0x73500040 %L ((&DDR3_tXPDLL_ps+&tCK-1)/&tCK)<<16.|((&DDR3_tXP_ps+&tCK-1)/&tCK)
+	d.s 0x73500044 %L 0x0
+	d.s 0x73500048 %L ((&DDR3_tXS_ps+&tCK-1)/&tCK)<<16.|&DDR3_tXSDLL_ck
+	d.s 0x7350004C %L 1<<16.
+	d.s 0x73500050 %L ((&DDR3_tCKSRX_ps+&tCK-1)/&tCK)<<16.|((&DDR3_tCKSRE_ps+&tCK-1)/&tCK)<<8
+
+	d.s 0x73500054 %L 0x0
+	d.s 0x73500060 %L 0x0
+	d.s 0x73500064 %L 0x0
+	d.s 0x73500068 %L 0x0
+
+//--------------------------------------------------------------------------
+// MRS Setting
+
+	&tmp=&DDR3_BURST_LEN|(&DDR3_READ_BURST_TYPE<<3)
+
+	if &nCL<5.
+		&tmp=&tmp|((5.-4.)<<4.)
+	else if &nCL>11.
+		&tmp=&tmp|((11.-4.)<<4.)
+	else
+		&tmp=&tmp|((&nCL-4.)<<4.)
+
+	&j=((&DDR3_tWR_ps+&tCK-1.)/&tCK)
+
+	if &j<=5.
+		&tmp=&tmp|1.<<9.
+	else if &j==6.
+		&tmp=&tmp|2.<<9.
+	else if &j==7.
+		&tmp=&tmp|3.<<9.
+	else if &j==8.
+		&tmp=&tmp|4.<<9.
+	else if &j==9.
+		&tmp=&tmp|5.<<9.
+	else if &j==10.
+		&tmp=&tmp|5.<<9.
+	else
+		&tmp=&tmp|6.<<9.
+
+	&tmp=&tmp|(1.<<8.); // DLL Reset
+
+	d.s 0x7350006C %L &tmp<<8.
+
+	//BITCSET(denali_ctl(30), 0x0000FFFF, tmp);
+	&i=data.long(R:0x73500078)
+	&i=&i&0xFFFF0000
+	&i=&i|&tmp
+	d.s 0x73500078 %L &i
+
+	// MRS1
+	//BITCSET(denali_ctl(28), 0x0000FFFF, (DDR3_AL<<3) | (DDR3_ODT<<2) | (DDR3_DIC<<1));
+	&i=data.long(R:0x73500070)
+	&i=&i&0xFFFF0000
+	&i=&i|(&DDR3_AL<<3)|(&DDR3_ODT<<2)|(&DDR3_DIC<<1)
+	d.s 0x73500070 %L &i
+
+	//BITCSET(denali_ctl(30), 0xFFFF0000, ((DDR3_AL<<3) | (DDR3_ODT<<2) | (DDR3_DIC<<1))<<16);
+	&i=data.long(R:0x73500078)
+	&i=&i&0x0000FFFF
+	&i=&i|((&DDR3_AL<<3)|(&DDR3_ODT<<2)|(&DDR3_DIC<<1))<<16.
+	d.s 0x73500078 %L &i
+
+	// MRS2
+	&tmp=0
+	if &nCWL<=5
+		&tmp=&tmp|0
+	else if &nCWL==6
+		&tmp=&tmp|1<<3
+	else if &nCWL==7
+		&tmp=&tmp|2<<3
+	else if &nCWL>=8
+		&tmp=&tmp|3<<3
+
+	//BITCSET(denali_ctl(28), 0xFFFF0000, tmp<<16);
+	&i=data.long(R:0x73500070)
+	&i=&i&0x0000FFFF
+	&i=&i|&tmp<<16.
+	d.s 0x73500070 %L &i
+	
+	//BITCSET(denali_ctl(31), 0x0000FFFF, tmp);
+	&i=data.long(R:0x7350007c)
+	&i=&i&0xFFFF0000
+	&i=&i|&tmp
+	d.s 0x7350007c %L &i
+
+	// MRS3
+	//BITCSET(denali_ctl(29), 0xFFFF0000, 0<<16.);
+	&i=data.long(R:0x73500074)
+	&i=&i&0x0000FFFF
+	&i=&i|0<<16.
+	d.s 0x73500074 %L &i
+
+	//BITCSET(denali_ctl(32), 0x0000FFFF, 0);
+	&i=data.long(R:0x73500080)
+	&i=&i&0xFFFF0000
+	&i=&i|0
+	d.s 0x73500080 %L &i
+
+//--------------------------------------------------------------------------
+
+	if &OLD_SETTING==0
+	(
+		//BIST Start
+		//BITCLR(denali_ctl(32), 1<<16); //BIST_GO = 0x0
+		&i=data.long(R:0x73500080)
+		&i=&i&0xFFFEFFFF
+		d.s 0x73500080 %L &i
+
+		d.s 0x73500084 %L (1<<16.)|(1<<8)
+	)
+
+	d.s 0x73500088 %L 0
+	d.s 0x7350008c %L 0
+	d.s 0x73500090 %L 0
+	d.s 0x73500094 %L 0
+	//BIST End
+
+	d.s 0x73500098 %L (&DDR3_tZQOPER_ck<<16.|&DDR3_tZQINIT_ck)
+	d.s 0x7350009c %L (0x2<<24.|&DDR3_tZQCS_ck)
+	d.s 0x735000a0 %L 0x1<<16.
+	d.s 0x735000a4 %L 0xFF<<24.|&DDR3_APBIT<<16.
+	d.s 0x735000a8 %L 0x1<<24.|0x1<<16.|0x1<<8|0xFF
+	d.s 0x735000ac %L 0x1<<16.|0x1<<8|0x1
+
+	if &CONFIG_DRAM_16BIT_USED==1
+	(
+		if &DDR3_LOGICAL_CHIP_NUM==2
+		(
+			d.s 0x735000b0 %L (0x1<<24.|0xc<<16.|0x3<<8)
+		)
+		else
+		(
+			d.s 0x735000b0 %L (0x1<<24.|0xc<<16.|0x1<<8)
+		)
+	)
+	else
+	(
+		if &DDR3_LOGICAL_CHIP_NUM==2
+		(
+			d.s 0x735000b0 %L (0x0<<24.|0xc<<16.|0x3<<8)
+		)
+		else
+		(
+			d.s 0x735000b0 %L (0x0<<24.|0xc<<16.|0x1<<8)
+		)
+	)
+
+	d.s 0x735000b4 %L 0x0
+
+	if &OLD_SETTING==0
+		d.s 0x735000bc %L 0x0
+
+	d.s 0x735000c0 %L 0x0
+
+
+//--------------------------------------------------------------------------
+// ODT Setting
+
+	if &OLD_SETTING==1
+	(
+		//BITCSET(denali_ctl(64), 0x00030000, 0x0<<16); //ODT_RD_MAP_CS0
+		&i=data.long(R:0x73500100)
+		&i=&i&0xFFFCFFFF
+		&i=&i|0x0<<16.
+		d.s 0x73500100 %L &i
+
+		if &DDR3_LOGICAL_CHIP_NUM==2
+		(
+			//BITCSET(denali_ctl(65), 0x00000003, 0x0<<0); //ODT_RD_MAP_CS1
+			&i=data.long(R:0x73500104)
+			&i=&i&0xFFFFFFFC
+			&i=&i|0x0
+			d.s 0x73500104 %L &i
+		)
+
+		if &DDR3_PINMAP_TYPE==0||&DDR3_PINMAP_TYPE==1
+		(
+			//BITCSET(denali_ctl(64), 0x03000000, 0x1<<24); //ODT_WR_MAP_CS0
+			&i=data.long(R:0x73500100)
+			&i=&i&0xFCFFFFFF
+			&i=&i|0x1<<24.
+			d.s 0x73500100 %L &i
+
+			if &DDR3_LOGICAL_CHIP_NUM==2
+			(
+				//BITCSET(denali_ctl(65), 0x00000300, 0x1<<8); //ODT_WR_MAP_CS1
+				&i=data.long(R:0x73500104)
+				&i=&i&0xFFFFFCFF
+				&i=&i|0x1<<8.
+				d.s 0x73500104 %L &i
+			)
+		)
+		else
+		(
+			//BITCSET(denali_ctl(64), 0x03000000, 0x3<<24); //ODT_WR_MAP_CS0
+			&i=data.long(R:0x73500100)
+			&i=&i&0xFCFFFFFF
+			&i=&i|0x3<<24.
+			d.s 0x73500100 %L &i
+
+			if &DDR3_LOGICAL_CHIP_NUM==2
+			(
+				//BITCSET(denali_ctl(65), 0x00000300, 0x3<<8); //ODT_WR_MAP_CS1
+				&i=data.long(R:0x73500104)
+				&i=&i&0xFFFFFCFF
+				&i=&i|0x3<<8.
+				d.s 0x73500104 %L &i
+			)
+		)
+	)
+	else
+	(
+		if &DDR3_LOGICAL_CHIP_NUM==1
+		(
+			//BITCSET(denali_ctl(64), 0x00030000, 0x2<<16); //ODT_RD_MAP_CS0
+			&i=data.long(R:0x73500100)
+			&i=&i&0xFFFCFFFF
+			&i=&i|0x2<<16.
+			d.s 0x73500100 %L &i
+			//BITCSET(denali_ctl(64), 0x03000000, 0x1<<24); //ODT_WR_MAP_CS0
+			&i=data.long(R:0x73500100)
+			&i=&i&0xFCFFFFFF
+			&i=&i|0x1<<24.
+			d.s 0x73500100 %L &i
+			//BITCSET(denali_ctl(65), 0x00000003, 0x1<<0); //ODT_RD_MAP_CS1
+			&i=data.long(R:0x73500104)
+			&i=&i&0xFFFFFFFC
+			&i=&i|0x1
+			d.s 0x73500104 %L &i
+			//BITCSET(denali_ctl(65), 0x00000300, 0x2<<8); //ODT_WR_MAP_CS1
+			&i=data.long(R:0x73500104)
+			&i=&i&0xFFFFFCFF
+			&i=&i|0x2<<8.
+			d.s 0x73500104 %L &i
+		)
+		else
+		(
+			//BITCSET(denali_ctl(64), 0x00030000, 0x0<<16); //ODT_RD_MAP_CS0
+			&i=data.long(R:0x73500100)
+			&i=&i&0xFFFCFFFF
+			&i=&i|0x0<<16.
+			d.s 0x73500100 %L &i
+			//BITCSET(denali_ctl(64), 0x03000000, 0x1<<24); //ODT_WR_MAP_CS0
+			&i=data.long(R:0x73500100)
+			&i=&i&0xFCFFFFFF
+			&i=&i|0x1<<24.
+			d.s 0x73500100 %L &i
+			//BITCSET(denali_ctl(65), 0x00000003, 0x0<<0); //ODT_RD_MAP_CS1
+			&i=data.long(R:0x73500104)
+			&i=&i&0xFFFFFFFC
+			&i=&i|0x0
+			d.s 0x73500104 %L &i
+			//BITCSET(denali_ctl(65), 0x00000300, 0x1<<8); //ODT_WR_MAP_CS1
+			&i=data.long(R:0x73500104)
+			&i=&i&0xFFFFFCFF
+			&i=&i|0x1<<8.
+			d.s 0x73500104 %L &i
+		)
+	)
+
+	//BITCSET(denali_ctl(65), 0x000F0000, 0x2<<16); //ADD_ODT_CLK_R2W_SAMECS = 0x2
+	&i=data.long(R:0x73500104)
+	&i=&i&0xFFF0FFFF
+	&i=&i|0x2<<16.
+	d.s 0x73500104 %L &i
+
+	d.s 0x73500108 %L 0x2<<24.|0x1<<16.|0x2<<8|0x2
+	d.s 0x7350010C %L 0x2<<24.|0x0<<16.|0x1<<8|0x0
+	d.s 0x73500110 %L (0x0<<8|0x0)
+	d.s 0x73500114 %L 0
+	d.s 0x7350011c %L 0
+	d.s 0x73500120 %L 0x0<<16.|0x28<<8|0x19
+	d.s 0x73500124 %L 0
+	d.s 0x73500128 %L (0x1<<8)
+	d.s 0x7350012c %L (0x1<<16.|0x1)
+	d.s 0x73500130 %L 0x1
+	d.s 0x73500134 %L 0
+	d.s 0x73500138 %L 0
+	d.s 0x73500140 %L 0
+	d.s 0x73500144 %L 0x1<<16.|0x2222
+	d.s 0x7350014C %L 0x0<<16.
+	d.s 0x73500150 %L 0x2222<<8
+	d.s 0x73500154 %L 0x1
+	d.s 0x7350015c %L 0
+
+	if &OLD_SETTING==1
+		d.s 0x73500160 %L 0x2121
+	else
+		d.s 0x73500160 %L 0x1<<16.|0x2222
+
+	d.s 0x73500168 %L 0
+
+	if &OLD_SETTING==1
+	(
+		d.s 0x7350016c %L 0x2121<<8
+		d.s 0x73500170 %L 0xFFFF<<16.
+	)
+	else
+	(
+		d.s 0x7350016c %L 0x2222<<8
+		d.s 0x73500170 %L 0xFFFF<<16.|0x1
+	)
+
+	d.s 0x73500174 %L 0x8<<8|0x8
+	d.s 0x73500178 %L 0
+	
+//--------------------------------------------------------------------------
+// DFI Timing
+
+	//BITCSET(denali_ctl(95), 0x3F0000FF, 0xd<<24); //TDFI_PHY_RDLAT = 0xd <- MOD_THIS (0x0d, FIXED) 0x0c, DLL_RST_ADJ_DLY = 0x00
+	&i=data.long(R:0x7350017c)
+	&i=&i&0xC0FFFF00
+	&i=&i|0xd<<24.
+	d.s 0x7350017c %L &i
+
+	//BITCLR(denali_ctl(96), 0x3<<8); //DRAM_CLK_DISABLE[9:8] = [CS1, CS0] = 0x0
+	&i=data.long(R:0x73500180)
+	&i=&i&0xFFFFFCFF
+	d.s 0x73500180 %L &i
+
+	d.s 0x73500184 %L 0x200<<16.|0x1450
+	d.s 0x73500188 %L 0x200<<16.|0x200
+	d.s 0x7350018C %L 0x1450<<16.|0x200
+	d.s 0x73500190 %L 0x00006590
+	d.s 0x73500194 %L (0x00<<24.|0x02<<16.|(&nCWL-3+(&nCWL%2))<<8|(&nCL-3+(&nCL%2)))
+	d.s 0x73500198 %L 0x3<<24.|0x8000<<8|0x1
+	d.s 0x7350019c %L 0x4<<16.|0x7<<8|0x3
+	d.s 0x735001a0 %L 0xA
+	d.s 0x735001a4 %L 0
+	d.s 0x735001a8 %L 0
+	d.s 0x735001ac %L 0x10<<16.|0xFFFF
+	d.s 0x735001b0 %L 0x1a<<24.|0x7<<16.|0x3<<8|0x3
+	d.s 0x735001b4 %L 0xF
+	d.s 0x735001b8 %L 0
+	d.s 0x735001bc %L 0
+	d.s 0x735001c0 %L 0
+	d.s 0x735001c4 %L 0
+	d.s 0x735001c8 %L 0
+	d.s 0x735001cc %L 0x2<<8|0x4
+	d.s 0x735001d4 %L 0
+	d.s 0x735001d8 %L 0
+	d.s 0x735001dc %L 0
+	d.s 0x735001e0 %L 0x00000040
+	d.s 0x735001e4 %L 0x1<<24.|(11.-&DDR3_COLBITS)<<16.|(16.-&DDR3_ROWBITS)<<8|(3.-&DDR3_BANKBITS)
+	d.s 0x735001e8 %L 0x0b<<24.|0x03<<16.|0x01<<8|0x01
+	d.s 0x735001ec %L 0x01<<24.|0x00<<16.|0x00<<8|0x00
+	d.s 0x735001f0 %L 0x1<<8|0x06
+
+//--------------------------------------------------------------------------
+// Start denali MC init
+
+	if &DDR3_LOGICAL_CHIP_NUM==1
+	(
+		//ddr_phy(0x1) = 0x00050001; // Wait for Synop. PHY init done...
+		d.s 0x73420404 %L 0x00050001
+	)
+
+	//BITSET(denali_ctl(0), 1); //START = 1
+	&i=data.long(R:0x73500000)
+	&i=&i|0x1
+	d.s 0x73500000 %L &i
+
+	if &DDR3_LOGICAL_CHIP_NUM==2
+	(
+		//while((ddr_phy(0x4)&0xf) != 0xf); // Wait for Synop. PHY init done...
+		&i=0.
+		while &i!=0xf
+		(
+			&i=data.long(R:0x73420410) 
+			&i=&i&0xf
+		)
+
+	    //ddr_phy(0x1) = 0x00050001; // PIR
+		d.s 0x73420404 %L 0x00050001
+
+		//while(!(denali_ctl(46)&0x20)); // PHY Init
+		&i=0.
+		while &i==0.
+		(
+			&i=data.long(R:0x735000b8) 
+			&i=&i&0x20
+		)
+	)
+
+//--------------------------------------------------------------------------
+//remap sram to 0x00000000..
+//	d.s 0x74400010 %L 0x10000000
+
+
+//--------------------------------------------------------------------------
+

@@ -1,0 +1,21 @@
+;CVD  Friday, November 02, 2012  12:22:45
+;OPTION SET START
+;DisConnect
+;Interface Option
+
+sys.cpu CORTEXM3
+system.jtagclock 10mhz
+;system.option.enreset OFF
+;system.option trst OFF
+;system.option.ResBreak OFF
+;system.option.WaitReset OFF
+;system.option.CR OFF
+system.OPTION.DisMode AUTO
+system.MULTiCore MEMORYACCESSPORT 3
+;system.MULTiCore COREBASE 0xE000E000
+
+SYStem.MODE ATTACH
+if run()
+	Break
+
+Data.LOAD.Elf Y:\android\drivers\tcc893x_cm3_avn\Build\TCC893xCM3AVN.axf A:0x00

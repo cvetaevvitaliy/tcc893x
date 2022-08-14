@@ -1,0 +1,53 @@
+;CVD  Friday, November 02, 2012  11:33:36
+;OPTION SET START
+;DisConnect
+;Interface Option
+CPUTYPE CORTEXA9MPCore
+OPTION.JTAGCLOCK 10.000000Mhz
+OPTION.EnReset OFF
+OPTION.TRST OFF
+OPTION.ResBreak OFF
+OPTION.WaitReset OFF
+OPTION.CR OFF
+OPTION.RegisterInit OFF
+OPTION.PCZero OFF
+OPTION.RTCK OFF
+OPTION.DACR OFF
+OPTION.BigEndian OFF
+OPTION.SerialWire OFF
+OPTION.Update ON
+OPTION.DevName TCC77x
+OPTION.DisMode CORTEXA9MPCore
+OPTION.SpeedUp ON
+OPTION.InterruptRESet
+OPTION.InterruptRESet
+MULTiCore.DEBUGACCESSPORT 1
+MULTiCore.COREBASE 0x80110000
+
+;WINCloseAll
+Connect
+;ConnectStop
+;ConnectPRE
+;Stop
+
+LoadBINary E:\WORK\Linux\TSDEMUX\TCC893xHWDemux\Build\TCC893xHWDemux.bin A:0x79080000
+;LoadIMAGE E:\WORK\Linux\TSDEMUX\TCC893xHWDemux\Build\TCC893xHWDemux.axf A:0x79080000
+
+
+WINCloseAll
+dump32 A:0x79000000
+dump32 A:0x79038000
+
+
+MWriteS32 A:0x742000F0 0x30770000  //GPIO port setting
+MWriteS32 A:0x742000F4 0x00000333  //GPIO port setting
+
+MWriteS32 A:0x79093FFC 0x5A5A5A5A
+MWriteS32 A:0x790f0018 0xfffffff9 //;m3 reset
+;Register
+WHERE ;go to current pc 
+
+go
+sys.down
+
+
