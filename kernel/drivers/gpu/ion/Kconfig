@@ -1,0 +1,15 @@
+menuconfig ION
+	tristate "Ion Memory Manager"
+	select GENERIC_ALLOCATOR
+	select DMA_SHARED_BUFFER
+	default n
+	help
+	  Chose this option to enable the ION Memory Manager.
+
+config ION_TCC
+	tristate "Ion for TCC"
+	depends on ION
+	default y
+	help
+	  Choose this option if you wish to use ion on a Telechips board.
+

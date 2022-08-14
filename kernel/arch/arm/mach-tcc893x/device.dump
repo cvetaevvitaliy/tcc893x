@@ -1,0 +1,838 @@
+
+devices.o:     file format elf32-littlearm
+devices.o
+architecture: arm, flags 0x00000011:
+HAS_RELOC, HAS_SYMS
+start address 0x00000000
+private flags = 5000000: [Version5 EABI]
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000208  00000000  00000000  00000034  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  1 .data         000031b0  00000000  00000000  00000240  2**3
+                  CONTENTS, ALLOC, LOAD, RELOC, DATA
+  2 .bss          00000018  00000000  00000000  000033f0  2**2
+                  ALLOC
+  3 .init.text    00000120  00000000  00000000  000033f0  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  4 .ARM.extab.init.text 00000000  00000000  00000000  00003510  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  5 .ARM.exidx.init.text 00000028  00000000  00000000  00003510  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, DATA
+  6 .ARM.extab    00000018  00000000  00000000  00003538  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  7 .ARM.exidx    00000018  00000000  00000000  00003550  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, DATA
+  8 .initcall3.init 00000004  00000000  00000000  00003568  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, DATA
+  9 .rodata.str1.1 00000170  00000000  00000000  0000356c  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 10 .taglist.init 00000018  00000000  00000000  000036dc  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, DATA
+ 11 .debug_frame  000000c8  00000000  00000000  000036f4  2**2
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 12 .debug_info   000057af  00000000  00000000  000037bc  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 13 .debug_abbrev 00000377  00000000  00000000  00008f6b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .debug_loc    000001f1  00000000  00000000  000092e2  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 15 .debug_pubnames 000006a0  00000000  00000000  000094d3  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 16 .debug_pubtypes 00001269  00000000  00000000  00009b73  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 17 .debug_aranges 00000048  00000000  00000000  0000addc  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 18 .debug_ranges 00000038  00000000  00000000  0000ae24  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 19 .debug_line   000005a7  00000000  00000000  0000ae5c  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 20 .debug_str    00003561  00000000  00000000  0000b403  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 21 .comment      0000002f  00000000  00000000  0000e964  2**0
+                  CONTENTS, READONLY
+ 22 .note.GNU-stack 00000000  00000000  00000000  0000e993  2**0
+                  CONTENTS, READONLY
+ 23 .ARM.attributes 0000002f  00000000  00000000  0000e993  2**0
+                  CONTENTS, READONLY
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 devices.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .init.text	00000000 .init.text
+00000000 l     F .init.text	00000018 parse_tag_tcc_panel
+00000000 l    d  .ARM.extab.init.text	00000000 .ARM.extab.init.text
+00000000 l    d  .ARM.exidx.init.text	00000000 .ARM.exidx.init.text
+00000018 l     F .init.text	00000018 parse_tag_tcc_is_camera_enable
+00000030 l     F .init.text	00000018 parse_tag_chip_revision
+00000000 l     F .text	00000024 tcc_usb30_phy_exit
+00000000 l    d  .ARM.extab	00000000 .ARM.extab
+00000000 l    d  .ARM.exidx	00000000 .ARM.exidx
+00000024 l     F .text	00000128 tcc_usb30_phy_init
+000000bc l     F .init.text	00000064 tcc893x_init_devices
+00000000 l    d  .initcall3.init	00000000 .initcall3.init
+00000000 l     O .initcall3.init	00000004 __initcall_tcc893x_init_devices3
+00000000 l    d  .rodata.str1.1	00000000 .rodata.str1.1
+00000010 l     O .data	00000190 ram_console_device
+00003190 l     O .data	0000001c ram_console_resources
+000001a0 l     O .data	00000190 tcc_pcm
+00000330 l     O .data	00000190 tcc_dai
+000004c0 l     O .data	00000190 tcc_iec958
+00000650 l     O .data	00000190 tcc_pcm_ch1
+000007e0 l     O .data	00000190 tcc_dai_ch1
+00000970 l     O .data	00000190 tcc_iec958_ch1
+00000b00 l     O .data	00000190 tcc_cm3_ctrl
+00000c90 l     O .data	00000054 spi0_resources
+00000ce4 l     O .data	00000054 tsif_resources
+00003188 l     O .data	00000008 tcc_device_sdhc0_dmamask
+00000ec8 l     O .data	000000e0 tcc_sdhc_resource
+00003180 l     O .data	00000008 tcc_device_sdhc1_dmamask
+00003178 l     O .data	00000008 tcc_device_sdhc2_dmamask
+00002f78 l     O .data	00000008 tcc_device_lcd_dmamask
+00002f80 l     O .data	0000000c dwc3_tcc_data
+00002f90 l     O .data	00000008 tcc8930_dwc3_dmamask
+00002f98 l     O .data	00000038 uart5_resources
+00002fd0 l     O .data	00000038 uart4_resources
+00003008 l     O .data	00000038 uart3_resources
+00003040 l     O .data	00000038 uart2_resources
+00003078 l     O .data	00000038 uart1_resources
+000030b0 l     O .data	00000038 uart0_resources
+000030e8 l     O .data	0000001c tcc8930_i2c_smu_resources
+00003104 l     O .data	0000001c tcc8930_i2c_core3_resources
+00003120 l     O .data	0000001c tcc8930_i2c_core2_resources
+0000313c l     O .data	0000001c tcc8930_i2c_core1_resources
+00003158 l     O .data	0000001c tcc8930_i2c_core0_resources
+00000000 l    d  .taglist.init	00000000 .taglist.init
+00000000 l     O .taglist.init	00000008 __tagtable_parse_tag_chip_revision
+00000008 l     O .taglist.init	00000008 __tagtable_parse_tag_tcc_is_camera_enable
+00000010 l     O .taglist.init	00000008 __tagtable_parse_tag_tcc_panel
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_pubnames	00000000 .debug_pubnames
+00000000 l    d  .debug_pubtypes	00000000 .debug_pubtypes
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .note.GNU-stack	00000000 .note.GNU-stack
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000         *UND*	00000000 __aeabi_unwind_cpp_pr0
+00000000         *UND*	00000000 tcc_usb30_phy_off
+00000000         *UND*	00000000 tcc_usb30_clkset
+00000000         *UND*	00000000 tcc_dwc3_vbus_ctrl
+00000000         *UND*	00000000 tcc_usb30_vbus_exit
+00000000         *UND*	00000000 __aeabi_unwind_cpp_pr1
+00000000         *UND*	00000000 tcc_usb30_vbus_init
+00000000         *UND*	00000000 tcc_usb30_phy_on
+00000000         *UND*	00000000 msleep
+00000000         *UND*	00000000 printk
+00000048 g     F .init.text	00000074 tcc_add_ram_console
+00000000         *UND*	00000000 pmap_get_info
+00000000         *UND*	00000000 platform_get_resource
+00000000         *UND*	00000000 platform_device_register
+0000014c g     F .text	000000bc tcc_init_sdhc_devices
+00000000         *UND*	00000000 tcc8930_mmc_platform_data
+000012c8 g     O .data	00000190 tcc_tsif_device
+00001458 g     O .data	00000190 tcc8930_rtc_device
+000015e8 g     O .data	00000038 tcc8930_rtc_resource
+00001620 g     O .data	00000190 tcc8930_spi0_device
+000017b0 g     O .data	00000190 tcc_battery_device
+00001940 g     O .data	00000190 tcc8930_adc_device
+00001ad0 g     O .data	0000001c tcc8930_adc_resources
+00000000 g     O .bss	00000018 tcc_display_data
+00000008 g     O .data	00000004 tcc_chip_rev
+00000004 g     O .data	00000004 tcc_is_camera_enable
+00000000 g     O .data	00000004 tcc_panel_id
+00001af0 g     O .data	00000190 tcc_lcd_device
+00001c80 g     O .data	00000190 tcc8930_dwc3_device
+00001e10 g     O .data	00000038 dwc3_resources
+00001e48 g     O .data	00000190 tcc8930_uart5_device
+00001fd8 g     O .data	00000190 tcc8930_uart4_device
+00002168 g     O .data	00000190 tcc8930_uart3_device
+000022f8 g     O .data	00000190 tcc8930_uart2_device
+00002488 g     O .data	00000190 tcc8930_uart1_device
+00002618 g     O .data	00000190 tcc8930_uart0_device
+000027a8 g     O .data	00000190 tcc8930_i2c_smu_device
+00002938 g     O .data	00000190 tcc8930_i2c_core3_device
+00002ac8 g     O .data	00000190 tcc8930_i2c_core2_device
+00002c58 g     O .data	00000190 tcc8930_i2c_core1_device
+00002de8 g     O .data	00000190 tcc8930_i2c_core0_device
+00001138 g     O .data	00000190 tcc_sdhc2_device
+00000fa8 g     O .data	00000190 tcc_sdhc1_device
+00000d38 g     O .data	00000190 tcc_sdhc0_device
+
+
+
+Disassembly of section .text:
+
+00000000 <tcc_usb30_phy_exit>:
+	
+	return 0;
+}
+
+static int tcc_usb30_phy_exit(struct platform_device *pdev, int type)
+{
+   0:	e92d4008 	push	{r3, lr}
+   tcc_usb30_phy_off();
+   4:	ebfffffe 	bl	0 <tcc_usb30_phy_off>
+			4: R_ARM_CALL	tcc_usb30_phy_off
+#define TXRISE_SHIFT 10
+#define TXRISE_MASK (0x3 << TXRISE_SHIFT)
+
+static void tcc_stop_dwc3(void)
+{
+	tcc_usb30_clkset(0);
+   8:	e3a00000 	mov	r0, #0
+   c:	ebfffffe 	bl	0 <tcc_usb30_clkset>
+			c: R_ARM_CALL	tcc_usb30_clkset
+
+static int tcc_usb30_phy_exit(struct platform_device *pdev, int type)
+{
+   tcc_usb30_phy_off();
+   tcc_stop_dwc3();
+   tcc_dwc3_vbus_ctrl(0);
+  10:	e3a00000 	mov	r0, #0
+  14:	ebfffffe 	bl	0 <tcc_dwc3_vbus_ctrl>
+			14: R_ARM_CALL	tcc_dwc3_vbus_ctrl
+#if !defined(CONFIG_TCC_USB_DRD)
+   tcc_usb30_vbus_exit();
+  18:	ebfffffe 	bl	0 <tcc_usb30_vbus_exit>
+			18: R_ARM_CALL	tcc_usb30_vbus_exit
+#endif
+
+   return 0;
+}
+  1c:	e3a00000 	mov	r0, #0
+  20:	e8bd8008 	pop	{r3, pc}
+
+00000024 <tcc_usb30_phy_init>:
+}
+
+#include <asm/mach-types.h>
+
+static int tcc_usb30_phy_init(struct platform_device *pdev, int type)
+{
+  24:	e92d45f8 	push	{r3, r4, r5, r6, r7, r8, sl, lr}
+	PUSBPHYCFG USBPHYCFG = (PUSBPHYCFG)tcc_p2v(HwUSBPHYCFG_BASE);
+	PUSB3_GLB	gUSB3_GLB = (PUSB3_GLB)tcc_p2v(HwUSBGLOBAL_BASE);
+
+   	unsigned int uTmp, time_delay = 0;
+  28:	e3a06000 	mov	r6, #0
+
+		msleep(1);
+		//msleep(time_delay);
+		
+		// Initialize All PHY & LINK CFG Registers
+		USBPHYCFG->UPCR0 = 0xB5484068;
+  2c:	e59f40f0 	ldr	r4, [pc, #240]	; 124 <tcc_usb30_phy_init+0x100>
+		USBPHYCFG->UPCR1 = 0x0000041C;
+  30:	e300841c 	movw	r8, #1052	; 0x41c
+
+		msleep(1);
+		//msleep(time_delay);
+		
+		// Initialize All PHY & LINK CFG Registers
+		USBPHYCFG->UPCR0 = 0xB5484068;
+  34:	e59fa0ec 	ldr	sl, [pc, #236]	; 128 <tcc_usb30_phy_init+0x104>
+  38:	ea000000 	b	40 <tcc_usb30_phy_init+0x1c>
+		BITCLR(USBPHYCFG->UPCR1,Hw9);
+
+		//USBPHYCFG->UPCR1 |= Hw8; 	//test_powerdown_hsp
+#endif
+		// Wait USB30 PHY initialization finish. PHY FREECLK should be stable.
+		msleep(time_delay++);
+  3c:	e1a06005 	mov	r6, r5
+
+   	unsigned int uTmp, time_delay = 0;
+	
+	while (1) {
+#if !defined(CONFIG_TCC_USB_DRD)
+      tcc_usb30_vbus_init();
+  40:	ebfffffe 	bl	0 <tcc_usb30_vbus_init>
+			40: R_ARM_CALL	tcc_usb30_vbus_init
+#endif
+
+		tcc_dwc3_vbus_ctrl(1);
+  44:	e3a00001 	mov	r0, #1
+  48:	ebfffffe 	bl	0 <tcc_dwc3_vbus_ctrl>
+			48: R_ARM_CALL	tcc_dwc3_vbus_ctrl
+	tcc_usb30_clkset(0);
+}
+
+static void tcc_start_dwc3(void)
+{
+	tcc_usb30_clkset(1);
+  4c:	e3a00001 	mov	r0, #1
+  50:	ebfffffe 	bl	0 <tcc_usb30_clkset>
+			50: R_ARM_CALL	tcc_usb30_clkset
+		//HwHSB_CFG->uUSB30LINK_CFG.bReg.SUSCLK_DIV_EN = 0x1;
+		//HwHSB_CFG->uUSB30LINK_CFG.bReg.SUSCLK_DIV = 0x3; // busclk / (3+1) = 250 / 4 = 15.625MHz
+
+		//HC DC controll
+		BITCSET(USBPHYCFG->UPCR2, TXVRT_MASK, 0xC << TXVRT_SHIFT);
+		BITCSET(gUSB3_GLB->GCTL.nREG,(Hw12|Hw13), Hw13);
+  54:	e59f70d0 	ldr	r7, [pc, #208]	; 12c <tcc_usb30_phy_init+0x108>
+      tcc_usb30_vbus_init();
+#endif
+
+		tcc_dwc3_vbus_ctrl(1);
+		tcc_start_dwc3();
+		tcc_usb30_phy_on();
+  58:	ebfffffe 	bl	0 <tcc_usb30_phy_on>
+			58: R_ARM_CALL	tcc_usb30_phy_on
+
+		msleep(1);
+  5c:	e3a00001 	mov	r0, #1
+  60:	ebfffffe 	bl	0 <msleep>
+			60: R_ARM_CALL	msleep
+		//msleep(time_delay);
+		
+		// Initialize All PHY & LINK CFG Registers
+		USBPHYCFG->UPCR0 = 0xB5484068;
+		USBPHYCFG->UPCR1 = 0x0000041C;
+		USBPHYCFG->UPCR2 = 0x919E14C8;
+  64:	e59f30c4 	ldr	r3, [pc, #196]	; 130 <tcc_usb30_phy_init+0x10c>
+
+		msleep(1);
+		//msleep(time_delay);
+		
+		// Initialize All PHY & LINK CFG Registers
+		USBPHYCFG->UPCR0 = 0xB5484068;
+  68:	e584a0a4 	str	sl, [r4, #164]	; 0xa4
+		USBPHYCFG->UPCR5 = 0x00108001;
+		USBPHYCFG->LCFG = 0x80420013;
+#if defined(CONFIG_TCC_USB_DRD)
+		BITSET(USBPHYCFG->UPCR4, Hw20|Hw21); //ID pin interrupt enable
+#endif
+		msleep(1);
+  6c:	e3a00001 	mov	r0, #1
+		msleep(1);
+		//msleep(time_delay);
+		
+		// Initialize All PHY & LINK CFG Registers
+		USBPHYCFG->UPCR0 = 0xB5484068;
+		USBPHYCFG->UPCR1 = 0x0000041C;
+  70:	e58480a8 	str	r8, [r4, #168]	; 0xa8
+		BITCLR(USBPHYCFG->UPCR1,Hw9);
+
+		//USBPHYCFG->UPCR1 |= Hw8; 	//test_powerdown_hsp
+#endif
+		// Wait USB30 PHY initialization finish. PHY FREECLK should be stable.
+		msleep(time_delay++);
+  74:	e2865001 	add	r5, r6, #1
+		//msleep(time_delay);
+		
+		// Initialize All PHY & LINK CFG Registers
+		USBPHYCFG->UPCR0 = 0xB5484068;
+		USBPHYCFG->UPCR1 = 0x0000041C;
+		USBPHYCFG->UPCR2 = 0x919E14C8;
+  78:	e58430ac 	str	r3, [r4, #172]	; 0xac
+		USBPHYCFG->UPCR3 = 0x4AB05D00;
+  7c:	e59f30b0 	ldr	r3, [pc, #176]	; 134 <tcc_usb30_phy_init+0x110>
+  80:	e58430b0 	str	r3, [r4, #176]	; 0xb0
+#if !defined(CONFIG_TCC_USB_DRD)
+		USBPHYCFG->UPCR4 = 0x00000000;
+  84:	e3a03000 	mov	r3, #0
+  88:	e58430b4 	str	r3, [r4, #180]	; 0xb4
+#endif
+		USBPHYCFG->UPCR5 = 0x00108001;
+  8c:	e59f30a4 	ldr	r3, [pc, #164]	; 138 <tcc_usb30_phy_init+0x114>
+  90:	e58430b8 	str	r3, [r4, #184]	; 0xb8
+		USBPHYCFG->LCFG = 0x80420013;
+  94:	e59f30a0 	ldr	r3, [pc, #160]	; 13c <tcc_usb30_phy_init+0x118>
+  98:	e58430bc 	str	r3, [r4, #188]	; 0xbc
+#if defined(CONFIG_TCC_USB_DRD)
+		BITSET(USBPHYCFG->UPCR4, Hw20|Hw21); //ID pin interrupt enable
+#endif
+		msleep(1);
+  9c:	ebfffffe 	bl	0 <msleep>
+			9c: R_ARM_CALL	msleep
+		
+		USBPHYCFG->UPCR1 = 0x00000412;
+  a0:	e3003412 	movw	r3, #1042	; 0x412
+  a4:	e58430a8 	str	r3, [r4, #168]	; 0xa8
+		BITCLR(USBPHYCFG->UPCR1,Hw9);
+
+		//USBPHYCFG->UPCR1 |= Hw8; 	//test_powerdown_hsp
+#endif
+		// Wait USB30 PHY initialization finish. PHY FREECLK should be stable.
+		msleep(time_delay++);
+  a8:	e1a00006 	mov	r0, r6
+		BITSET(USBPHYCFG->UPCR4, Hw20|Hw21); //ID pin interrupt enable
+#endif
+		msleep(1);
+		
+		USBPHYCFG->UPCR1 = 0x00000412;
+		USBPHYCFG->LCFG	 = 0x86420013;
+  ac:	e59f308c 	ldr	r3, [pc, #140]	; 140 <tcc_usb30_phy_init+0x11c>
+  b0:	e58430bc 	str	r3, [r4, #188]	; 0xbc
+		// Setting LINK Suspend clk dividor (all are reset values)
+		//HwHSB_CFG->uUSB30LINK_CFG.bReg.SUSCLK_DIV_EN = 0x1;
+		//HwHSB_CFG->uUSB30LINK_CFG.bReg.SUSCLK_DIV = 0x3; // busclk / (3+1) = 250 / 4 = 15.625MHz
+
+		//HC DC controll
+		BITCSET(USBPHYCFG->UPCR2, TXVRT_MASK, 0xC << TXVRT_SHIFT);
+  b4:	e59430ac 	ldr	r3, [r4, #172]	; 0xac
+  b8:	e3c33d0f 	bic	r3, r3, #960	; 0x3c0
+  bc:	e3833c03 	orr	r3, r3, #768	; 0x300
+  c0:	e58430ac 	str	r3, [r4, #172]	; 0xac
+		BITCSET(gUSB3_GLB->GCTL.nREG,(Hw12|Hw13), Hw13);
+  c4:	e5973110 	ldr	r3, [r7, #272]	; 0x110
+  c8:	e3c33a03 	bic	r3, r3, #12288	; 0x3000
+  cc:	e3833a02 	orr	r3, r3, #8192	; 0x2000
+  d0:	e5873110 	str	r3, [r7, #272]	; 0x110
+#if 1
+		// USB20 Only Mode
+		USBPHYCFG->LCFG	 |= Hw30;	//USB2.0 HS only mode
+  d4:	e59430bc 	ldr	r3, [r4, #188]	; 0xbc
+  d8:	e3833101 	orr	r3, r3, #1073741824	; 0x40000000
+  dc:	e58430bc 	str	r3, [r4, #188]	; 0xbc
+		USBPHYCFG->UPCR1 |= Hw9;	//test_powerdown_ssp
+  e0:	e59430a8 	ldr	r3, [r4, #168]	; 0xa8
+  e4:	e3833c02 	orr	r3, r3, #512	; 0x200
+  e8:	e58430a8 	str	r3, [r4, #168]	; 0xa8
+		BITCLR(USBPHYCFG->UPCR1,Hw9);
+
+		//USBPHYCFG->UPCR1 |= Hw8; 	//test_powerdown_hsp
+#endif
+		// Wait USB30 PHY initialization finish. PHY FREECLK should be stable.
+		msleep(time_delay++);
+  ec:	ebfffffe 	bl	0 <msleep>
+			ec: R_ARM_CALL	msleep
+		// GDBGLTSSM : Check LTDB Sub State is non-zero
+		// When PHY FREECLK is valid, LINK mac_resetn is released and LTDB Sub State change to non-zero
+		uTmp = readl(tcc_p2v(HwUSBDEVICE_BASE+0x164));
+  f0:	e5973164 	ldr	r3, [r7, #356]	; 0x164
+  f4:	f57ff04f 	dsb	sy
+		uTmp = (uTmp>>18)&0xF;
+  f8:	e7e33953 	ubfx	r3, r3, #18, #4
+
+		// Break when LTDB Sub state is non-zero and CNR is zero
+		if (uTmp != 0 || time_delay > 500) {
+  fc:	e3550f7d 	cmp	r5, #500	; 0x1f4
+ 100:	93530000 	cmpls	r3, #0
+ 104:	0affffcc 	beq	3c <tcc_usb30_phy_init+0x18>
+		        break;
+		}
+	}
+	
+	if(uTmp)
+ 108:	e3530000 	cmp	r3, #0
+		printk("\x1b[1;33mtime delay = %d  \x1b[0m\n",time_delay);
+	else
+		printk("\x1b[1;31mPHY stable is not guaranteed\x1b[0m\n",time_delay);
+ 10c:	e1a01005 	mov	r1, r5
+		        break;
+		}
+	}
+	
+	if(uTmp)
+		printk("\x1b[1;33mtime delay = %d  \x1b[0m\n",time_delay);
+ 110:	159f002c 	ldrne	r0, [pc, #44]	; 144 <tcc_usb30_phy_init+0x120>
+	else
+		printk("\x1b[1;31mPHY stable is not guaranteed\x1b[0m\n",time_delay);
+ 114:	059f002c 	ldreq	r0, [pc, #44]	; 148 <tcc_usb30_phy_init+0x124>
+ 118:	ebfffffe 	bl	0 <printk>
+			118: R_ARM_CALL	printk
+	
+	return 0;
+}
+ 11c:	e3a00000 	mov	r0, #0
+ 120:	e8bd85f8 	pop	{r3, r4, r5, r6, r7, r8, sl, pc}
+ 124:	f2ea0000 	.word	0xf2ea0000
+ 128:	b5484068 	.word	0xb5484068
+ 12c:	f200c000 	.word	0xf200c000
+ 130:	919e14c8 	.word	0x919e14c8
+ 134:	4ab05d00 	.word	0x4ab05d00
+ 138:	00108001 	.word	0x00108001
+ 13c:	80420013 	.word	0x80420013
+ 140:	86420013 	.word	0x86420013
+ 144:	00000000 	.word	0x00000000
+			144: R_ARM_ABS32	.rodata.str1.1
+ 148:	0000001e 	.word	0x0000001e
+			148: R_ARM_ABS32	.rodata.str1.1
+
+0000014c <tcc_init_sdhc_devices>:
+void tcc_init_sdhc_devices(void)
+{
+	int core;
+
+#if defined(CONFIG_MMC_TCC_SDHC0)
+	core = tcc8930_mmc_platform_data[0].slot % 4;
+ 14c:	e59f30a4 	ldr	r3, [pc, #164]	; 1f8 <tcc_init_sdhc_devices+0xac>
+	tcc_sdhc0_device.num_resources	= ARRAY_SIZE(tcc_sdhc_resource[core]);
+ 150:	e3a02002 	mov	r2, #2
+ 154:	e59f10a0 	ldr	r1, [pc, #160]	; 1fc <tcc_init_sdhc_devices+0xb0>
+	tcc_sdhc0_device.resource		= (struct resource *)&tcc_sdhc_resource[core];
+ 158:	e3a00038 	mov	r0, #56	; 0x38
+void tcc_init_sdhc_devices(void)
+{
+	int core;
+
+#if defined(CONFIG_MMC_TCC_SDHC0)
+	core = tcc8930_mmc_platform_data[0].slot % 4;
+ 15c:	e5933000 	ldr	r3, [r3]
+	tcc_sdhc0_device.num_resources	= ARRAY_SIZE(tcc_sdhc_resource[core]);
+ 160:	e5812eb8 	str	r2, [r1, #3768]	; 0xeb8
+void tcc_init_sdhc_devices(void)
+{
+	int core;
+
+#if defined(CONFIG_MMC_TCC_SDHC0)
+	core = tcc8930_mmc_platform_data[0].slot % 4;
+ 164:	e213310e 	ands	r3, r3, #-2147483645	; 0x80000003
+	tcc_sdhc0_device.num_resources	= ARRAY_SIZE(tcc_sdhc_resource[core]);
+	tcc_sdhc0_device.resource		= (struct resource *)&tcc_sdhc_resource[core];
+ 168:	e59f2090 	ldr	r2, [pc, #144]	; 200 <tcc_init_sdhc_devices+0xb4>
+void tcc_init_sdhc_devices(void)
+{
+	int core;
+
+#if defined(CONFIG_MMC_TCC_SDHC0)
+	core = tcc8930_mmc_platform_data[0].slot % 4;
+ 16c:	42433001 	submi	r3, r3, #1
+ 170:	41e03f03 	mvnmi	r3, r3, lsl #30
+ 174:	41e03f23 	mvnmi	r3, r3, lsr #30
+ 178:	42833001 	addmi	r3, r3, #1
+	tcc_sdhc0_device.num_resources	= ARRAY_SIZE(tcc_sdhc_resource[core]);
+	tcc_sdhc0_device.resource		= (struct resource *)&tcc_sdhc_resource[core];
+ 17c:	e0232390 	mla	r3, r0, r3, r2
+#endif
+#if defined(CONFIG_MMC_TCC_SDHC1)
+	core = tcc8930_mmc_platform_data[1].slot % 4;
+	tcc_sdhc1_device.num_resources	= ARRAY_SIZE(tcc_sdhc_resource[core]);
+ 180:	e3a00002 	mov	r0, #2
+	int core;
+
+#if defined(CONFIG_MMC_TCC_SDHC0)
+	core = tcc8930_mmc_platform_data[0].slot % 4;
+	tcc_sdhc0_device.num_resources	= ARRAY_SIZE(tcc_sdhc_resource[core]);
+	tcc_sdhc0_device.resource		= (struct resource *)&tcc_sdhc_resource[core];
+ 184:	e5813ebc 	str	r3, [r1, #3772]	; 0xebc
+#endif
+#if defined(CONFIG_MMC_TCC_SDHC1)
+	core = tcc8930_mmc_platform_data[1].slot % 4;
+ 188:	e59f3068 	ldr	r3, [pc, #104]	; 1f8 <tcc_init_sdhc_devices+0xac>
+ 18c:	e5932050 	ldr	r2, [r3, #80]	; 0x50
+	tcc_sdhc1_device.num_resources	= ARRAY_SIZE(tcc_sdhc_resource[core]);
+ 190:	e3013128 	movw	r3, #4392	; 0x1128
+ 194:	e7810003 	str	r0, [r1, r3]
+	tcc_sdhc1_device.resource		= (struct resource *)&tcc_sdhc_resource[core];
+ 198:	e3a03038 	mov	r3, #56	; 0x38
+	core = tcc8930_mmc_platform_data[0].slot % 4;
+	tcc_sdhc0_device.num_resources	= ARRAY_SIZE(tcc_sdhc_resource[core]);
+	tcc_sdhc0_device.resource		= (struct resource *)&tcc_sdhc_resource[core];
+#endif
+#if defined(CONFIG_MMC_TCC_SDHC1)
+	core = tcc8930_mmc_platform_data[1].slot % 4;
+ 19c:	e212210e 	ands	r2, r2, #-2147483645	; 0x80000003
+	tcc_sdhc1_device.num_resources	= ARRAY_SIZE(tcc_sdhc_resource[core]);
+	tcc_sdhc1_device.resource		= (struct resource *)&tcc_sdhc_resource[core];
+ 1a0:	e59f0058 	ldr	r0, [pc, #88]	; 200 <tcc_init_sdhc_devices+0xb4>
+	core = tcc8930_mmc_platform_data[0].slot % 4;
+	tcc_sdhc0_device.num_resources	= ARRAY_SIZE(tcc_sdhc_resource[core]);
+	tcc_sdhc0_device.resource		= (struct resource *)&tcc_sdhc_resource[core];
+#endif
+#if defined(CONFIG_MMC_TCC_SDHC1)
+	core = tcc8930_mmc_platform_data[1].slot % 4;
+ 1a4:	42422001 	submi	r2, r2, #1
+ 1a8:	41e02f02 	mvnmi	r2, r2, lsl #30
+ 1ac:	41e02f22 	mvnmi	r2, r2, lsr #30
+ 1b0:	42822001 	addmi	r2, r2, #1
+	tcc_sdhc1_device.num_resources	= ARRAY_SIZE(tcc_sdhc_resource[core]);
+	tcc_sdhc1_device.resource		= (struct resource *)&tcc_sdhc_resource[core];
+ 1b4:	e0220293 	mla	r2, r3, r2, r0
+ 1b8:	e301312c 	movw	r3, #4396	; 0x112c
+ 1bc:	e7812003 	str	r2, [r1, r3]
+#endif
+#if defined(CONFIG_MMC_TCC_SDHC2)
+	core = tcc8930_mmc_platform_data[2].slot % 4;
+	tcc_sdhc2_device.num_resources	= ARRAY_SIZE(tcc_sdhc_resource[core]);
+ 1c0:	e3a01002 	mov	r1, #2
+	core = tcc8930_mmc_platform_data[1].slot % 4;
+	tcc_sdhc1_device.num_resources	= ARRAY_SIZE(tcc_sdhc_resource[core]);
+	tcc_sdhc1_device.resource		= (struct resource *)&tcc_sdhc_resource[core];
+#endif
+#if defined(CONFIG_MMC_TCC_SDHC2)
+	core = tcc8930_mmc_platform_data[2].slot % 4;
+ 1c4:	e59f302c 	ldr	r3, [pc, #44]	; 1f8 <tcc_init_sdhc_devices+0xac>
+	tcc_sdhc2_device.num_resources	= ARRAY_SIZE(tcc_sdhc_resource[core]);
+ 1c8:	e59f2034 	ldr	r2, [pc, #52]	; 204 <tcc_init_sdhc_devices+0xb8>
+	core = tcc8930_mmc_platform_data[1].slot % 4;
+	tcc_sdhc1_device.num_resources	= ARRAY_SIZE(tcc_sdhc_resource[core]);
+	tcc_sdhc1_device.resource		= (struct resource *)&tcc_sdhc_resource[core];
+#endif
+#if defined(CONFIG_MMC_TCC_SDHC2)
+	core = tcc8930_mmc_platform_data[2].slot % 4;
+ 1cc:	e59330a0 	ldr	r3, [r3, #160]	; 0xa0
+	tcc_sdhc2_device.num_resources	= ARRAY_SIZE(tcc_sdhc_resource[core]);
+ 1d0:	e5021d40 	str	r1, [r2, #-3392]	; 0xd40
+	tcc_sdhc2_device.resource		= (struct resource *)&tcc_sdhc_resource[core];
+ 1d4:	e3a01038 	mov	r1, #56	; 0x38
+	core = tcc8930_mmc_platform_data[1].slot % 4;
+	tcc_sdhc1_device.num_resources	= ARRAY_SIZE(tcc_sdhc_resource[core]);
+	tcc_sdhc1_device.resource		= (struct resource *)&tcc_sdhc_resource[core];
+#endif
+#if defined(CONFIG_MMC_TCC_SDHC2)
+	core = tcc8930_mmc_platform_data[2].slot % 4;
+ 1d8:	e213310e 	ands	r3, r3, #-2147483645	; 0x80000003
+ 1dc:	42433001 	submi	r3, r3, #1
+ 1e0:	41e03f03 	mvnmi	r3, r3, lsl #30
+ 1e4:	41e03f23 	mvnmi	r3, r3, lsr #30
+ 1e8:	42833001 	addmi	r3, r3, #1
+	tcc_sdhc2_device.num_resources	= ARRAY_SIZE(tcc_sdhc_resource[core]);
+	tcc_sdhc2_device.resource		= (struct resource *)&tcc_sdhc_resource[core];
+ 1ec:	e0230391 	mla	r3, r1, r3, r0
+ 1f0:	e5023d3c 	str	r3, [r2, #-3388]	; 0xd3c
+#if defined(CONFIG_MMC_TCC_SDHC3)
+	core = tcc8930_mmc_platform_data[3].slot % 4;
+	tcc_sdhc3_device.num_resources	= ARRAY_SIZE(tcc_sdhc_resource[core]);
+	tcc_sdhc3_device.resource		= (struct resource *)&tcc_sdhc_resource[core];
+#endif
+}
+ 1f4:	e12fff1e 	bx	lr
+	...
+			1f8: R_ARM_ABS32	tcc8930_mmc_platform_data
+			1fc: R_ARM_ABS32	.data
+ 200:	00000ec8 	.word	0x00000ec8
+			200: R_ARM_ABS32	.data
+ 204:	00001ff8 	.word	0x00001ff8
+			204: R_ARM_ABS32	.data
+
+Disassembly of section .init.text:
+
+00000000 <parse_tag_tcc_panel>:
+int tcc_panel_id = -1;
+static int __init parse_tag_tcc_panel(const struct tag *tag)
+{
+	int *id = (int *) &tag->u;
+
+	tcc_panel_id = *id;
+   0:	e5902008 	.word	0xe5902008
+
+	return 0;
+}
+   4:	e3a00000 	mov	r0, #0
+int tcc_panel_id = -1;
+static int __init parse_tag_tcc_panel(const struct tag *tag)
+{
+	int *id = (int *) &tag->u;
+
+	tcc_panel_id = *id;
+   8:	e59f3004 	.word	0xe59f3004
+   c:	e5832000 	str	r2, [r3]
+
+	return 0;
+}
+  10:	e12fff1e 	.word	0xe12fff1e
+  14:	00000000 	andeq	r0, r0, r0
+			14: R_ARM_ABS32	.data
+
+00000018 <parse_tag_tcc_is_camera_enable>:
+
+static int __init parse_tag_tcc_is_camera_enable(const struct tag *tag)
+{
+        int *is_camera_enable = (int *) &tag->u;
+
+        tcc_is_camera_enable = *is_camera_enable;
+  18:	e5902008 	.word	0xe5902008
+
+        return 0;
+}
+  1c:	e3a00000 	mov	r0, #0
+
+static int __init parse_tag_tcc_is_camera_enable(const struct tag *tag)
+{
+        int *is_camera_enable = (int *) &tag->u;
+
+        tcc_is_camera_enable = *is_camera_enable;
+  20:	e59f3004 	ldr	r3, [pc, #4]	; 2c <parse_tag_tcc_is_camera_enable+0x14>
+  24:	e5832004 	str	r2, [r3, #4]
+
+        return 0;
+}
+  28:	e12fff1e 	bx	lr
+  2c:	00000000 	.word	0x00000000
+			2c: R_ARM_ABS32	.data
+
+00000030 <parse_tag_chip_revision>:
+
+static int __init parse_tag_chip_revision(const struct tag *tag)
+{
+        int *chip_rev = (int *) &tag->u;
+
+        tcc_chip_rev = (unsigned int)*chip_rev;
+  30:	e5902008 	ldr	r2, [r0, #8]
+
+        return 0;
+}
+  34:	e3a00000 	mov	r0, #0
+
+static int __init parse_tag_chip_revision(const struct tag *tag)
+{
+        int *chip_rev = (int *) &tag->u;
+
+        tcc_chip_rev = (unsigned int)*chip_rev;
+  38:	e59f3004 	ldr	r3, [pc, #4]	; 44 <parse_tag_chip_revision+0x14>
+  3c:	e5832008 	str	r2, [r3, #8]
+
+        return 0;
+}
+  40:	e12fff1e 	bx	lr
+  44:	00000000 	.word	0x00000000
+			44: R_ARM_ABS32	.data
+
+00000048 <tcc_add_ram_console>:
+	.num_resources	= ARRAY_SIZE(ram_console_resources),
+	.resource	= ram_console_resources,
+};
+
+void __init tcc_add_ram_console(void)
+{
+  48:	e92d407f 	push	{r0, r1, r2, r3, r4, r5, r6, lr}
+	struct resource *res;
+	pmap_t pmap_ram_console;
+	if (!pmap_get_info("ram_console", &pmap_ram_console))
+  4c:	e1a0100d 	mov	r1, sp
+  50:	e59f0058 	ldr	r0, [pc, #88]	; b0 <tcc_add_ram_console+0x68>
+  54:	ebfffffe 	bl	0 <pmap_get_info>
+			54: R_ARM_CALL	pmap_get_info
+  58:	e3500000 	cmp	r0, #0
+  5c:	0a000011 	beq	a8 <tcc_add_ram_console+0x60>
+		return;
+
+	res = platform_get_resource(&ram_console_device, IORESOURCE_MEM, 0);
+  60:	e59f004c 	ldr	r0, [pc, #76]	; b4 <tcc_add_ram_console+0x6c>
+  64:	e3a01c02 	mov	r1, #512	; 0x200
+  68:	e3a02000 	mov	r2, #0
+  6c:	ebfffffe 	bl	0 <platform_get_resource>
+			6c: R_ARM_CALL	platform_get_resource
+	if (!res) {
+  70:	e3500000 	cmp	r0, #0
+  74:	1a000002 	bne	84 <tcc_add_ram_console+0x3c>
+		pr_err("Failed to get resource for ram console\n");
+  78:	e59f0038 	ldr	r0, [pc, #56]	; b8 <tcc_add_ram_console+0x70>
+  7c:	ebfffffe 	bl	0 <printk>
+			7c: R_ARM_CALL	printk
+		return;
+  80:	ea000008 	b	a8 <tcc_add_ram_console+0x60>
+	}
+	res->start = pmap_ram_console.base;
+  84:	e59d3010 	ldr	r3, [sp, #16]
+  88:	e5803000 	str	r3, [r0]
+	res->end = pmap_ram_console.base + pmap_ram_console.size - 1;
+  8c:	e59d3014 	ldr	r3, [sp, #20]
+  90:	e59d2010 	ldr	r2, [sp, #16]
+  94:	e0823003 	add	r3, r2, r3
+  98:	e2433001 	sub	r3, r3, #1
+  9c:	e5803004 	str	r3, [r0, #4]
+	platform_device_register(&ram_console_device);
+  a0:	e59f000c 	ldr	r0, [pc, #12]	; b4 <tcc_add_ram_console+0x6c>
+  a4:	ebfffffe 	bl	0 <platform_device_register>
+			a4: R_ARM_CALL	platform_device_register
+}
+  a8:	e28dd01c 	add	sp, sp, #28
+  ac:	e8bd8000 	pop	{pc}
+  b0:	00000047 	.word	0x00000047
+			b0: R_ARM_ABS32	.rodata.str1.1
+  b4:	00000010 	.word	0x00000010
+			b4: R_ARM_ABS32	.data
+  b8:	00000053 	.word	0x00000053
+			b8: R_ARM_ABS32	.rodata.str1.1
+
+000000bc <tcc893x_init_devices>:
+       .name   = "tcc_cm3_ctrl",
+       .id     = -1,
+};
+
+static int __init tcc893x_init_devices(void)
+{
+  bc:	e92d4010 	push	{r4, lr}
+#ifdef CONFIG_ANDROID_RAM_CONSOLE
+	tcc_add_ram_console();
+  c0:	ebfffffe 	bl	48 <tcc_add_ram_console>
+			c0: R_ARM_CALL	tcc_add_ram_console
+};
+#endif
+
+static void tcc_init_audio(void)
+{
+	platform_device_register(&tcc_pcm);
+  c4:	e59f4050 	ldr	r4, [pc, #80]	; 11c <tcc893x_init_devices+0x60>
+  c8:	e2840e1a 	add	r0, r4, #416	; 0x1a0
+  cc:	ebfffffe 	bl	0 <platform_device_register>
+			cc: R_ARM_CALL	platform_device_register
+	platform_device_register(&tcc_dai);
+  d0:	e2840e33 	add	r0, r4, #816	; 0x330
+  d4:	ebfffffe 	bl	0 <platform_device_register>
+			d4: R_ARM_CALL	platform_device_register
+	platform_device_register(&tcc_iec958);
+  d8:	e2840d13 	add	r0, r4, #1216	; 0x4c0
+  dc:	ebfffffe 	bl	0 <platform_device_register>
+			dc: R_ARM_CALL	platform_device_register
+
+	platform_device_register(&tcc_pcm_ch1);		//Planet 20120615 Audio Driver Improvement
+  e0:	e2840e65 	add	r0, r4, #1616	; 0x650
+  e4:	ebfffffe 	bl	0 <platform_device_register>
+			e4: R_ARM_CALL	platform_device_register
+	platform_device_register(&tcc_dai_ch1);		//Planet 20120615 Audio Driver Improvement
+  e8:	e2840e7e 	add	r0, r4, #2016	; 0x7e0
+  ec:	ebfffffe 	bl	0 <platform_device_register>
+			ec: R_ARM_CALL	platform_device_register
+	platform_device_register(&tcc_iec958_ch1);	//Planet 20120615 Audio Driver Improvement
+  f0:	e2840e97 	add	r0, r4, #2416	; 0x970
+  f4:	ebfffffe 	bl	0 <platform_device_register>
+			f4: R_ARM_CALL	platform_device_register
+	tcc_add_ram_console();
+#endif
+
+    tcc_init_audio();
+
+    platform_device_register(&tcc_cm3_ctrl);
+  f8:	e2840c0b 	add	r0, r4, #2816	; 0xb00
+  fc:	ebfffffe 	bl	0 <platform_device_register>
+			fc: R_ARM_CALL	platform_device_register
+    spi0_resources[2].end = 12;
+  #endif
+ #elif defined(CONFIG_CHIP_TCC8930)
+  #if defined(CONFIG_STB_BOARD_EV_TCC893X) || defined(CONFIG_STB_BOARD_YJ8930T)
+  #else
+    spi0_resources[2].start = 17; /* Port17 GPIO_G[0:3] */
+ 100:	e3a03011 	mov	r3, #17
+    tsif_resources[2].start = 17; /* Port17 GPIO_G[0:3] */
+    tsif_resources[2].end = 17;
+ #endif
+#endif    
+	return 0;
+}
+ 104:	e3a00000 	mov	r0, #0
+    spi0_resources[2].end = 12;
+  #endif
+ #elif defined(CONFIG_CHIP_TCC8930)
+  #if defined(CONFIG_STB_BOARD_EV_TCC893X) || defined(CONFIG_STB_BOARD_YJ8930T)
+  #else
+    spi0_resources[2].start = 17; /* Port17 GPIO_G[0:3] */
+ 108:	e5843cc8 	str	r3, [r4, #3272]	; 0xcc8
+    spi0_resources[2].end = 17;
+ 10c:	e5843ccc 	str	r3, [r4, #3276]	; 0xccc
+ #endif
+#endif    
+
+#if defined(CONFIG_SPI_TCCXXXX_TSIF_SLAVE)
+ #if   defined(CONFIG_MACH_TCC893X)
+    tsif_resources[2].start = 17; /* Port17 GPIO_G[0:3] */
+ 110:	e5843d1c 	str	r3, [r4, #3356]	; 0xd1c
+    tsif_resources[2].end = 17;
+ 114:	e5843d20 	str	r3, [r4, #3360]	; 0xd20
+ #endif
+#endif    
+	return 0;
+}
+ 118:	e8bd8010 	pop	{r4, pc}
+ 11c:	00000000 	.word	0x00000000
+			11c: R_ARM_ABS32	.data

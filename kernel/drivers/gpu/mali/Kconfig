@@ -1,0 +1,74 @@
+config MALI_GPU
+	tristate "Mali GPU device driver"
+	depends on FB && ARM
+	---help---
+	  Device driver for ARM Mali-200 and Mali-400 GPUs.
+
+config MALI400
+	bool
+	depends on MALI_GPU
+
+config GPU_BUS_SCALING
+	bool "Use GPU bus scaling"
+	default n
+	depends on MALI_GPU
+	---help---
+	   Use GPU bus scaling for Mali GPU
+
+config MALI_OS_MEMORY
+	bool "Use OS memory"
+	default y
+	depends on MALI_GPU
+	---help---
+	   Use OS memory for Mali GPU
+
+config MALI_MEMORY_SIZE
+	int "Mali memory size"
+	default 512 if TCC_MEM_1024MB
+	default 300 if TCC_MEM_512MB
+	depends on MALI_GPU
+	----help---
+	    Memory size for Mali GPU
+
+config MALI400_PROFILING
+	bool "Enable Mali profiling"
+	depends on MALI400
+	select TRACEPOINTS
+	default y
+	---help---
+	  This enables gator profiling of Mali GPU events.
+
+config MALI400_INTERNAL_PROFILING
+	bool "Enable internal Mali profiling API"
+	depends on MALI400_PROFILING
+	default n
+	---help---
+	  This enables the internal legacy Mali profiling API.
+
+config MALI_UMP
+	tristate "UMP device driver"
+	depends on MALI_GPU
+	default y
+	---help---
+	  Device driver for ARM Unified Memory Provider (UMP).
+
+config UMP_OS_MEMORY
+	bool "Use OS memory"
+	default y
+	depends on MALI_UMP
+	---help---
+	   Use OS memory for UMP
+
+config UMP_MEMORY_ADDRESS
+	int "UMP memory address"
+	default 0
+	depends on MALI_UMP
+	---help---
+	   Memory address for UMP
+
+config UMP_MEMORY_SIZE
+	int "UMP memory size"
+	default 72
+	depends on MALI_UMP
+	---help---
+	   Memory size for UMP in MB

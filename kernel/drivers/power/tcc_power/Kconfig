@@ -1,0 +1,14 @@
+menuconfig TCC_CHARGER
+	bool "TCC Series Charger drivers"
+	select CHARGER
+	default n
+	---help---
+	  This option allows you to select X-Powers TCC power driver
+
+if TCC_CHARGER
+
+
+
+
+
+endif # !KP_TCC

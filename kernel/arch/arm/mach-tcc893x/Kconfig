@@ -1,0 +1,217 @@
+if ARCH_TCC893X
+
+comment "Machine Features"
+
+choice
+	prompt "TCC893x Chipset Type"
+	default CHIP_TCC8930
+	depends on ARCH_TCC893X
+	help
+	  Select TCC893x Chipset type.
+
+config CHIP_TCC8930
+	bool "TCC8930 Chipset"
+	select HAVE_SMP
+	select PM_GENERIC_DOMAINS
+	select DRAM_32BIT_USED
+	help
+	  Support for the TCC8930 Chipset. Say Y here if you
+	  have such a device.
+
+config CHIP_TCC8933
+	bool "TCC8933 Chipset"
+	select HAVE_SMP
+	select PM_GENERIC_DOMAINS
+	select DRAM_32BIT_USED
+	help
+	  Support for the TCC8933 Chipset. Say Y here if you
+	  have such a device.
+
+config CHIP_TCC8935
+	bool "TCC8935 Chipset"
+	select HAVE_SMP
+	select PM_GENERIC_DOMAINS
+	select DRAM_16BIT_USED
+	help
+	  Support for the TCC8935 Chipset. Say Y here if you
+	  have such a device.
+
+config CHIP_TCC8933S
+	bool "TCC8933S Chipset"
+	select HAVE_SMP
+	select PM_GENERIC_DOMAINS
+	select DRAM_32BIT_USED
+	help
+	  Support for the TCC8933S Chipset. Say Y here if you
+	  have such a device.
+
+config CHIP_TCC8935S
+	bool "TCC8935S Chipset"
+	select HAVE_SMP
+	select PM_GENERIC_DOMAINS
+	select DRAM_16BIT_USED
+	help
+	  Support for the TCC8935S Chipset. Say Y here if you
+	  have such a device.
+
+config CHIP_TCC8937S
+	bool "TCC8937S Chipset"
+	select HAVE_SMP
+	select PM_GENERIC_DOMAINS
+	select DRAM_32BIT_USED
+	help
+	  Support for the TCC8937S Chipset. Say Y here if you
+	  have such a device.
+
+endchoice
+
+choice
+	prompt "TCC893x Board(Machine) Type"
+	default MACH_TCC893X
+	depends on ARCH_TCC893X
+	help
+	  Select TCC893x board type.
+
+config MACH_TCC893X
+	bool "TCC8930 evaluation board"
+	help
+	  Support for the TCC8930 evaluation board. Say Y here if you
+	  have such a device.
+
+config MACH_TCC8930ST
+	bool "TCC8930 STB evaluation board"
+	help
+	  Support for the TCC8930 STB evaluation board. Say Y here if you
+	  have such a device.
+
+config MACH_M805_893X
+	bool "M805_TCC893x board"
+	help
+	  Support for the TCC893x M805 board. Say Y here if you
+	  have such a device.
+endchoice
+
+choice
+	prompt "TCC893x STB Board"
+	default STB_BOARD_EV_TCC893X
+	depends on MACH_TCC8930ST
+	help
+	  Select TCC893x STB Board Type.
+
+config STB_BOARD_EV_TCC893X
+	bool "TCC8930 STB EV board"
+	depends on MACH_TCC8930ST
+	help
+	  Support for TCC8930 STB Base Board.
+
+config STB_BOARD_YJ8930T
+	bool "TCC8930 YJ8930T board"
+	depends on MACH_TCC8930ST
+	help
+	  Support for TCC8930 YJ8930T Board.
+
+config STB_BOARD_YJ8933T
+	bool "TCC8933 YJ8933T board"
+	depends on MACH_TCC8930ST
+	help
+	  Support for TCC8933 YJ8933T Board.
+
+config STB_BOARD_YJ8935T
+	bool "TCC8935 YJ8935T board"
+	depends on MACH_TCC8930ST
+	help
+	  Support for TCC8935 YJ8935T Board.
+
+config STB_BOARD_DONGLE_TCC893X
+	bool "TCC8935 HDMI dongle board"
+	depends on MACH_TCC8930ST
+	help
+	  Support for TCC8935 HDMI Dongle Board.
+
+config STB_BOARD_UPC_TCC893X
+        bool "TCC8935 uPC board"
+        depends on MACH_TCC8930ST
+        help
+          Support for TCC8935 UPC Board.
+endchoice
+
+choice
+	prompt "TCC893x HDMI Dongle WiFi Chip"
+	default HDMI_DONGLE_WIFI_REALTEK_TCC893x
+	depends on STB_BOARD_DONGLE_TCC893X
+	help
+	  Select WiFi Chip of TCC8935 HDMI Dongle Board.
+
+config HDMI_DONGLE_WIFI_REALTEK_TCC893x
+	bool "Realtek RTL8188/8189"
+	depends on STB_BOARD_DONGLE_TCC893X
+	help
+	  Support Realtek RTL8188/8189 for TCC8935 HDMI Dongle Board.
+endchoice
+
+config GPIO_CORE_VOLTAGE_CONTROL
+        bool "Ctrl cpu voltage A/B voltage by gpio ports"
+        depends on MACH_TCC8930ST
+        help
+          Support for the TCC8930 STB Board.
+
+
+config TCC_OUTPUT_STARTER
+        bool "TCC OUTPUT show boot logo image on HDMI/CVBS/Component"
+        depends on (ARCH_TCC893X || MACH_TCC8930ST)
+        default n
+        help
+          Support for the TCC893x STB board, Say Y here if you want
+          to show boot logo by using HDMI/CVBS/Component output
+
+config CLOCK_TABLE
+	bool "Clock Table"
+	depends on (ARCH_TCC893X) && (DRAM_16BIT_USED) && !(MACH_TCC8930ST) && !(ARM_TRUSTZONE)
+	select AUTO_HOTPLUG
+	default y
+
+config AUTO_HOTPLUG
+	bool "Auto Hotplug"
+	depends on (ARCH_TCC893X) && (CLOCK_TABLE)
+	default n
+
+config IOBUS_DFS
+	bool "I/O(HS I/O) Bus DFS"
+	depends on (ARCH_TCC893X) && !(CLOCK_TABLE)
+	default n
+
+config AUDIO_PLL_USE
+	bool "Audio PLL use"
+	depends on (CHIP_TCC8930 || CHIP_TCC8933 || CHIP_TCC8935) && ARCH_TCC893X
+	default y
+
+config TCC_CPUFREQ_HIGHSPEED_CLOCK
+	int "Rate of Highspeed CPU clock (850 ~ 1000, 1200)MHz (1200MHz is for test)"
+	range 850 1200
+	depends on ARCH_TCC893X
+	default "1000"
+
+config HIGHSPEED_TIME_LIMIT
+	bool "HighSpeed Time Limit"
+	depends on ARCH_TCC893X
+	default n
+
+config HIGHSPEED_HIGHSPEED_TIME
+	int "Time(sec) of Highspeed CPU clock (1-30)"
+	range 1 30
+	depends on HIGHSPEED_TIME_LIMIT
+	default "5"
+
+config HIGHSPEED_LIMITED_TIME
+	int "Time(sec) of Limited CPU clock (1-30)"
+	range 1 30
+	depends on HIGHSPEED_TIME_LIMIT
+	default "15"
+
+config HIGHSPEED_LIMITED_CLOCK
+	int "Rate of Time Limited CPU clock (524 ~ 1000)MHz"
+	range 524 1000
+	depends on HIGHSPEED_TIME_LIMIT
+	default "1000"
+
+endif
