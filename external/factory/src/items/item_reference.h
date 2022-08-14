@@ -1,0 +1,12 @@
+extern char* ITEM_REFERENCE_HEADER[];
+extern char* ITEM_REFERENCE_MENUS[];
+
+enum PRINT_ {
+	ID_ITEM_REFERENCE_RUN		,
+	ID_ITEM_REFERENCE_PASS	,
+	ID_ITEM_REFERENCE_FAIL	,
+	ID_ITEM_REFERENCE_BACK	,
+	ID_ITEM_REFERENCE_NUM
+};
+
+int init_item_reference(void);

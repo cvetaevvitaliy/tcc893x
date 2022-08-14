@@ -1,0 +1,22 @@
+Downloading the busybox 1.8.1 binary for Android:
+
+    http://benno.id.au/blog/2007/11/14/android-busybox
+
+Downloading the busybox 1.8.1 source code:
+
+    http://benno.id.au/android/busybox-1.8.1.tar.bz2
+
+Downloading the latest source code:
+
+  Source for the latest released version, as well as daily snapshots, can always
+  be downloaded from
+
+    http://busybox.net/downloads/
+
+  You can browse the up to the minute source code and change history online.
+
+    http://git.busybox.net/busybox/
+
+  Anonymous GIT access is available.  For instructions, check out:
+
+    http://www.busybox.net/source.html
